@@ -1,5 +1,6 @@
 package controller;
 
+import java.util.List;
 import model.FirstLetterFrequency;
 
 public class State {
@@ -9,15 +10,20 @@ public class State {
     private Double estimatedCost;
 
     private Text text;
+    
+    private List<Operation> appliedOperations;
 
-    public void State(Text text, Double cost) {
+    public void State(Text text, Double cost, List<Operation> appliedOperations) {
         if (text == null)
             throw new IllegalArgumentException("State: Parameter text must not be null");
         if (cost == null)
             throw new IllegalArgumentException("State: Parameter cost must not be null");
+        if (appliedOperations == null)
+            throw new IllegalArgumentException("State: Parameter appliedOperations must not be null");
         
         this.text = text;
         this.cost = cost;
+        this.appliedOperations = appliedOperations;
         this.estimatedCost = 0.0;
     }
 

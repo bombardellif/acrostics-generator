@@ -71,6 +71,15 @@ public class Text {
         
         return leastFrequent;
     }
+    
+    protected String concatenateLines(Integer l1, Integer l2) {
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return null;
+    }
 
     @Override
     public int hashCode() {

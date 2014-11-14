@@ -2,7 +2,7 @@ package controller;
 
 import java.util.List;
 
-public class WordInsertionDeletionOperation extends Operation {
+public class WordInsertionDeletionOperation extends ContextDependentOperation {
 
     private static final Double COST = 0.0;
 
