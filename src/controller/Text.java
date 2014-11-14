@@ -9,19 +9,23 @@ public class Text {
 
     private ArrayList<String> lines;
 
-    public void Text(Text text) {
+    public Text(Text text) {
         if (text == null)
             throw new IllegalArgumentException("Text: Parameter text must not be null");
         
-        Text(text.lines);
+        setLines(text.lines);
     }
     
-    public void Text(List<String> lines) {
-        if (lines == null)
+    public Text(List<String> lines) {
+        setLines(lines);
+    }
+	
+	private void setLines(List<String> lines){
+		if (lines == null)
             throw new IllegalArgumentException("Text: Parameter lines must not be null");
         
         this.lines = new ArrayList<>(lines);
-    }
+	} 
 
     public String remainingAcrostic(String acrostic) {
         if (acrostic == null)
