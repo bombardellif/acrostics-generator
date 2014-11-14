@@ -73,12 +73,38 @@ public class Text {
     }
     
     protected String concatenateLines(Integer l1, Integer l2) {
-        return null;
+        Integer size = this.lines.size();
+        if (l1 == null || l1 < 0 || l1 >= size)
+            throw new IllegalArgumentException("concatenateLines: Parameter l1 is invallid");
+        if (l2 == null || l2 < 0 || l2 >= size)
+            throw new IllegalArgumentException("concatenateLines: Parameter l2 is invallid");
+        
+        String result;
+        
+        String line1 = this.lines.get(l1);
+        
+        if (line1.endsWith("-")) {
+            result = line1.substring(0, line1.length()-1) + this.lines.get(l2);
+        } else {
+            result = line1 + " " + this.lines.get(l2);
+        }
+        
+        return result;
     }
 
     @Override
     public String toString() {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        
+        for (String line: this.lines) {
+            if (line.endsWith("-")) {
+                sb.append(line.substring(0, line.length()-1));
+            } else {
+                sb.append(line).append(' ');
+            }
+        }
+        
+        return sb.toString().trim();
     }
 
     @Override
