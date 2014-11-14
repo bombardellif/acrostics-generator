@@ -1,5 +1,6 @@
 package controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import model.FirstLetterFrequency;
 
@@ -21,9 +22,9 @@ public class State {
         if (appliedOperations == null)
             throw new IllegalArgumentException("State: Parameter appliedOperations must not be null");
         
-        this.text = text;
+        this.text = new Text(text);
         this.cost = cost;
-        this.appliedOperations = appliedOperations;
+        this.appliedOperations = new ArrayList<>(appliedOperations);
         this.estimatedCost = 0.0;
     }
 
@@ -55,7 +56,11 @@ public class State {
     }
 
     public Text getText() {
-        return this.text;
+        return new Text(this.text);
+    }
+	
+	public List<Operation> getAppliedOperations() {
+        return new ArrayList<>(this.appliedOperations);
     }
 
 }
