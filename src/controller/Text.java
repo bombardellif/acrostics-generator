@@ -20,12 +20,12 @@ public class Text {
         setLines(lines);
     }
 	
-	private void setLines(List<String> lines){
-		if (lines == null)
+    private void setLines(List<String> lines){
+        if (lines == null)
             throw new IllegalArgumentException("Text: Parameter lines must not be null");
         
         this.lines = new ArrayList<>(lines);
-	} 
+    } 
 
     public String remainingAcrostic(String acrostic) {
         if (acrostic == null)
@@ -79,9 +79,9 @@ public class Text {
     protected String concatenateLines(Integer l1, Integer l2) {
         Integer size = this.lines.size();
         if (l1 == null || l1 < 0 || l1 >= size)
-            throw new IllegalArgumentException("concatenateLines: Parameter l1 is invallid");
+            throw new IllegalArgumentException("concatenateLines: Parameter l1 is invalid");
         if (l2 == null || l2 < 0 || l2 >= size)
-            throw new IllegalArgumentException("concatenateLines: Parameter l2 is invallid");
+            throw new IllegalArgumentException("concatenateLines: Parameter l2 is invalid");
         
         String result;
         
