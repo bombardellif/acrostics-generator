@@ -138,12 +138,5 @@ public class Text {
     public ArrayList<String> getLines() {
         return lines;
     }
-
-    /**
-     * @param lines the lines to set
-     */
-    public void setLines(ArrayList<String> lines) {
-        this.lines = lines;
-    }
     
 }
