@@ -1,4 +1,3 @@
-
 package model;
 
 import java.io.IOException;
@@ -19,95 +18,97 @@ import org.netspeak.client.Request;
  * @author bombardelli.f
  */
 public class NetSpeakDAO {
-    
+
     private static final String TOPK = "10";
     private static final Integer MIN_FREQUENCY = 500;
     private static Map<String, List<String>> cache = new HashMap();
-    
+
     public static List<Phrase> search(String query) throws IOException, Exception {
-        if (query == null)
+        if (query == null) {
             throw new IllegalArgumentException("NetSpeakDAO.search: Parameter query must not be null");
-        
+        }
+
         Netspeak netspeak = new Netspeak();
-        
+
         Request request = new Request();
         request.put(Request.QUERY, query);
         request.put(Request.TOPK, TOPK);
-        
+
         Response response = netspeak.search(request);
-        
+
         ErrorCode errorCode = ErrorCode.cast(response.getErrorCode());
         if (errorCode != ErrorCode.NO_ERROR) {
             throw new Exception("NetSpeakAPI error. Code: " + errorCode + ". Message: " + response.getErrorMessage());
         }
-        
+
         /*for (Phrase phrase : response.getPhraseList()) {
-            System.out.printf("%d\t%d\t%s\n", phrase.getId(),
-                    phrase.getFrequency(), CommonUtils.toString(phrase));
-        }
-        System.out.println("------------");*/
-        
+         System.out.printf("%d\t%d\t%s\n", phrase.getId(),
+         phrase.getFrequency(), CommonUtils.toString(phrase));
+         }
+         System.out.println("------------");*/
         return response.getPhraseList();
     }
-    
-    public static List<String> searchNewWords(String nGram, Character operator, Integer position) throws Exception {
-        if (nGram == null)
+
+    public static List<String> searchNewWords(List<String> splittedNGram, Character operator, Integer position) throws Exception {
+        if (splittedNGram == null) {
             throw new IllegalArgumentException("NetSpeakDAO.searchNewWords: Parameter nGram must not be null");
-        if (operator == null)
+        }
+        if (operator == null) {
             throw new IllegalArgumentException("NetSpeakDAO.searchNewWords: Parameter operator must not be null");
-        
-        String splittedNGram[] = nGram.split(" ");
-        if (position == null || position < 0 || position > splittedNGram.length)
+        }
+        int sizeNGram = splittedNGram.size();
+        if (position == null || position < 0 || position > sizeNGram) {
             throw new IllegalArgumentException("NetSpeakDAO.searchNewWords: Parameter position is invalid");
-        
+        }
+
         // Build the query placing the operator in the especified position
         StringBuilder queryBuilder = new StringBuilder()
-                .append(String.join(" ", Arrays.copyOfRange(splittedNGram, 0, position)))
+                .append(String.join(" ", splittedNGram.subList(0, position)))
                 .append(' ').append(operator).append(' ')
-                .append(String.join(" ", Arrays.copyOfRange(splittedNGram, position, splittedNGram.length)));
-        
+                .append(String.join(" ", splittedNGram.subList(position, sizeNGram)));
+
         String query = queryBuilder.toString().trim();
-        
+
         // Consult NetSpeak.org webservice on the web (check local cache)
         List<String> result;
         if (cache.containsKey(query)) {
             result = cache.get(query);
         } else {
-        
+
             List<Phrase> phrasesFromNetspeak = NetSpeakDAO.search(query);
 
             result = phrasesFromNetspeak.parallelStream()
-            // Filter the results removing those without enough frequency or that,
-            // instead of words, has comma or dots
-                .filter(phrase -> 
-                    (phrase.getFrequency() >= MIN_FREQUENCY
-                    && !CommonUtils.toString(phrase).contains(","))
-                )
-            // For each possible phrase, return only the new words given by Netspeak
-                .map(phrase -> 
-                    phrase.getWordList()                            // Get the words
-                    .subList(position, position + phrase.getWordCount() - splittedNGram.length) // Get only the new ones
-                    .stream()                                       // Initialize a stream
-                    .reduce(new StringBuffer(),                     // Reduce the list into a StringBuffer
-                        (sb, word) -> sb.append(word.getText())     // The reduce function is: concatenate the words
-                                        .append(' '),
-                        StringBuffer::append)                       // The combine function concatenates the StringBuffers
-                    .toString()                                     // Get a string from the Buffer
-                    .trim()                                         // Trim to remove extra spaces in the end of it
-                )
-                .collect(toList());
+                    // Filter the results removing those without enough frequency or that,
+                    // instead of words, has comma or dots
+                    .filter(phrase
+                            -> (phrase.getFrequency() >= MIN_FREQUENCY
+                            && !CommonUtils.toString(phrase).contains(","))
+                    )
+                    // For each possible phrase, return only the new words given by Netspeak
+                    .map(phrase
+                            -> phrase.getWordList() // Get the words
+                            .subList(position, position + phrase.getWordCount() - sizeNGram) // Get only the new ones
+                            .stream() // Initialize a stream
+                            .reduce(new StringBuffer(), // Reduce the list into a StringBuffer
+                                    (sb, word) -> sb.append(word.getText()) // The reduce function is: concatenate the words
+                                    .append(' '),
+                                    StringBuffer::append) // The combine function concatenates the StringBuffers
+                            .toString() // Get a string from the Buffer
+                            .trim() // Trim to remove extra spaces in the end of it
+                    )
+                    .collect(toList());
 
             cache.put(query, result);
             /*for (Phrase phrase : test) {
-                System.out.printf("%d\t%d\t%s\n", phrase.getId(),
-                        phrase.getFrequency(), CommonUtils.toString(phrase));
-            }*/
+             System.out.printf("%d\t%d\t%s\n", phrase.getId(),
+             phrase.getFrequency(), CommonUtils.toString(phrase));
+             }*/
 
             /*for (String s : test) {
-                System.out.println(s);
-            }*/
+             System.out.println(s);
+             }*/
         }
-        
+
         return result;
     }
 }

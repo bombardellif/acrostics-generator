@@ -14,12 +14,12 @@ public class Text {
         if (text == null)
             throw new IllegalArgumentException("Text: Parameter text must not be null");
         
-        this.lines = text.getLines();
+        setLines(text.lines);
     }
     
     //constructor 
     public Text(List<String> lines) {
-        this.lines = (new ArrayList<>(lines));
+        setLines(lines);
     }
 	
     private void setLines(List<String> lines){

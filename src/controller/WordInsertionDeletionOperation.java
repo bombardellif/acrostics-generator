@@ -1,6 +1,5 @@
 package controller;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -14,7 +13,7 @@ public class WordInsertionDeletionOperation extends ContextDependentOperation {
     }
     
     @Override
-    public List<Text> execute(Text text) {
+    public List<Text> execute(Text text) throws Exception{
         if (text != null){
             //Get all the text in one line
             String textInString = text.toString();
