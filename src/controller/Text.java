@@ -9,13 +9,7 @@ public class Text {
 
     private ArrayList<String> lines;
 
-    
-   
-    
-    
-    
-    
-    //constructor 
+    //constructor
     public Text(Text text) {
         if (text == null)
             throw new IllegalArgumentException("Text: Parameter text must not be null");
@@ -23,7 +17,6 @@ public class Text {
         this.lines = text.getLines();
     }
     
- 
     //constructor 
     public Text(List<String> lines) {
         this.lines = (new ArrayList<>(lines));
@@ -36,9 +29,6 @@ public class Text {
         this.lines = new ArrayList<>(lines);
     } 
 
-
-        
-   
     public String remainingAcrostic(String acrostic) {
         if (acrostic == null)
             throw new IllegalArgumentException("remainingAcrostic: Parameter acrostic must not be null");
@@ -107,21 +97,7 @@ public class Text {
         
         return result;
     }
-
     
-    //printing the lines after each other as a text
-     @Override
-    public String toString(){
-        String str="";
-        str = getLines().stream().map((line) -> (line + "\n")).reduce(str, String::concat);
-            
-
-        return str;
-        
-    }
-    
-
-    /*
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -136,17 +112,7 @@ public class Text {
         
         return sb.toString().trim();
     }
-    */
     
-    
-    
-    
-    
-    
-    
-    
-    
-
     @Override
     public int hashCode() {
         int hash = 5;
@@ -166,9 +132,7 @@ public class Text {
         return Objects.equals(this.lines, other.lines);
     }
     
-    
-    
-        /**
+    /**
      * @return the lines
      */
     public ArrayList<String> getLines() {
@@ -181,7 +145,5 @@ public class Text {
     public void setLines(ArrayList<String> lines) {
         this.lines = lines;
     }
-    
-
     
 }
