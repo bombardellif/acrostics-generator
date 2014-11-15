@@ -9,13 +9,7 @@ public class Text {
 
     private ArrayList<String> lines;
 
-    
-   
-    
-    
-    
-    
-    //constructor 
+    //constructor
     public Text(Text text) {
         if (text == null)
             throw new IllegalArgumentException("Text: Parameter text must not be null");
@@ -23,17 +17,18 @@ public class Text {
         this.lines = text.getLines();
     }
     
- 
     //constructor 
     public Text(List<String> lines) {
         this.lines = (new ArrayList<>(lines));
     }
 	
-    
-
-
+    private void setLines(List<String> lines){
+        if (lines == null)
+            throw new IllegalArgumentException("Text: Parameter lines must not be null");
         
-   
+        this.lines = new ArrayList<>(lines);
+    } 
+
     public String remainingAcrostic(String acrostic) {
         if (acrostic == null)
             throw new IllegalArgumentException("remainingAcrostic: Parameter acrostic must not be null");
@@ -86,9 +81,9 @@ public class Text {
     protected String concatenateLines(Integer l1, Integer l2) {
         Integer size = this.lines.size();
         if (l1 == null || l1 < 0 || l1 >= size)
-            throw new IllegalArgumentException("concatenateLines: Parameter l1 is invallid");
+            throw new IllegalArgumentException("concatenateLines: Parameter l1 is invalid");
         if (l2 == null || l2 < 0 || l2 >= size)
-            throw new IllegalArgumentException("concatenateLines: Parameter l2 is invallid");
+            throw new IllegalArgumentException("concatenateLines: Parameter l2 is invalid");
         
         String result;
         
@@ -102,21 +97,7 @@ public class Text {
         
         return result;
     }
-
     
-    //printing the lines after each other as a text
-     @Override
-    public String toString(){
-        String str="";
-        str = getLines().stream().map((line) -> (line + "\n")).reduce(str, String::concat);
-            
-
-        return str;
-        
-    }
-    
-
-    /*
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -131,17 +112,7 @@ public class Text {
         
         return sb.toString().trim();
     }
-    */
     
-    
-    
-    
-    
-    
-    
-    
-    
-
     @Override
     public int hashCode() {
         int hash = 5;
@@ -161,9 +132,7 @@ public class Text {
         return Objects.equals(this.lines, other.lines);
     }
     
-    
-    
-        /**
+    /**
      * @return the lines
      */
     public ArrayList<String> getLines() {
@@ -176,7 +145,5 @@ public class Text {
     public void setLines(ArrayList<String> lines) {
         this.lines = lines;
     }
-    
-
     
 }
