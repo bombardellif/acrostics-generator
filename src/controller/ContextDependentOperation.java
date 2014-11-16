@@ -6,7 +6,7 @@ import model.NetSpeakDAO;
 
 public abstract class ContextDependentOperation extends Operation {
     
-    protected static final String REGEX_SPLITINWORDS = "\\s";
+    protected static final String REGEX_SPLITINWORDS = " ";
     private static final char MANYNEWWORDS_SEARCHCHARACTER = '*';
     private static final int DEFAULTINSERT_NGRAM_SIZE = 4;
     private static final int MIN_NGRAM_SIZE = 1;
@@ -104,6 +104,8 @@ public abstract class ContextDependentOperation extends Operation {
             
             //@TODO: Assert that words correspond to text
             
+            ArrayList<Text> newPossibleTexts = new ArrayList<>();
+            
             //Iterate over space positions. Zero means position just before first word. words.size() means position after last word
             for (int textSpacePos = 0; textSpacePos <= words.size(); textSpacePos++){
                 
@@ -128,13 +130,13 @@ public abstract class ContextDependentOperation extends Operation {
                 List<String> newPossibleWords = NetSpeakDAO.searchNewWords(nGram, MANYNEWWORDS_SEARCHCHARACTER, posIntoNGram);
                 assert newPossibleWords != null;
                 
+                //Create new versions of the text. One new version for each possible word
                 for (String newWord : newPossibleWords){
-                    Text newText = new Text(text);
-                    //text.addWordInSpace(newWord, textSpacePos);
+                    newPossibleTexts.add(text.addWordInSpace(newWord, textSpacePos));
                 }
             }
             
-            return null;
+            return newPossibleTexts;
         }else{
             return null;
         }

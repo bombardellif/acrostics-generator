@@ -27,8 +27,22 @@ public class Text {
             throw new IllegalArgumentException("Text: Parameter lines must not be null");
         
         this.lines = new ArrayList<>(lines);
-    } 
-
+    }
+    
+    /**
+     * Add the new word inside the text at the space position given. Zero means beginning of the text.
+     * One means first space. Last position is after the last word. Does not modify original text, instead create
+     * new version (new instance). If new word is not empty nor null, inserts also a space right after.
+     * Take care about Capitalized characters (Beginning of sentences) and punctuations.
+     * @param word New word to be inserted
+     * @param spacePosition n-th space in which the word should be inserted. Must lie in the right limits.
+     * @return new instance of text modified. if word is null or empty return copy of the exact original text
+     */
+    public Text addWordInSpace(String word, int spacePosition){
+        return null;
+        //@TODO: Implement
+    }
+    
     public String remainingAcrostic(String acrostic) {
         if (acrostic == null)
             throw new IllegalArgumentException("remainingAcrostic: Parameter acrostic must not be null");
