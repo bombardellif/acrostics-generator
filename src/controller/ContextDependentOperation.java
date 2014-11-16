@@ -134,6 +134,7 @@ public abstract class ContextDependentOperation extends Operation {
                 for (String newWord : newPossibleWords){
                     newPossibleTexts.add(text.addWordInSpace(newWord, textSpacePos));
                 }
+                assert newPossibleTexts.size() == newPossibleWords.size();
             }
             
             return newPossibleTexts;
