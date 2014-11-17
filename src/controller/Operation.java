@@ -21,14 +21,10 @@ public abstract class Operation {
     /**
      * 						
      */
-    public abstract List<Text> execute(Text text);
+    public abstract List<Text> execute(Text text) throws Exception;
 
     public Double getCost() {
         return this.cost;
-    }
-
-    public String getWord(String source, int position) {
-        return null;
     }
     
     

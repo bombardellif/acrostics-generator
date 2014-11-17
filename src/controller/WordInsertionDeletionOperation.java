@@ -1,5 +1,7 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class WordInsertionDeletionOperation extends ContextDependentOperation {
@@ -11,8 +13,21 @@ public class WordInsertionDeletionOperation extends ContextDependentOperation {
     }
     
     @Override
-    public List<Text> execute(Text text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<Text> execute(Text text) throws Exception{
+        if (text != null){
+            //Get all the text in one line
+            String textInString = text.toString();
+            
+            ArrayList<String> words = new ArrayList<>( Arrays.asList(textInString.split(REGEX_SPLITINWORDS)) );
+        
+            return insertWord(text, words);
+            
+            //@TODO
+            //deleteWord(textInString);
+            
+        }else{
+            return null;
+        }
     }
 
 }

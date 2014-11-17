@@ -59,7 +59,7 @@ public class State {
         return new Text(this.text);
     }
 	
-	public List<Operation> getAppliedOperations() {
+    public List<Operation> getAppliedOperations() {
         return new ArrayList<>(this.appliedOperations);
     }
 
