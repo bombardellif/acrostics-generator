@@ -10,6 +10,12 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import model.NetSpeakDAO;
 
 /**
  *
@@ -23,7 +29,15 @@ public class Main {
      * @throws java.lang.InterruptedException
      */
     public static void main(String[] args)throws FileNotFoundException, IOException, InterruptedException {
+        try {
             // TODO code application logic here
+            List list = new ArrayList<String>();
+            Collections.addAll(list, "ich", "gehe" ,"nach");
+            
+            NetSpeakDAO.searchNewWords(list, '*', 3);
+        } catch (Exception ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
         
        //Read in the input text as string

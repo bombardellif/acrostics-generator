@@ -41,11 +41,11 @@ public class NetSpeakDAO {
             throw new Exception("NetSpeakAPI error. Code: " + errorCode + ". Message: " + response.getErrorMessage());
         }
 
-        /*for (Phrase phrase : response.getPhraseList()) {
-         System.out.printf("%d\t%d\t%s\n", phrase.getId(),
-         phrase.getFrequency(), CommonUtils.toString(phrase));
-         }
-         System.out.println("------------");*/
+        for (Phrase phrase : response.getPhraseList()) {
+            System.out.printf("%d\t%d\t%s\n", phrase.getId(),
+            phrase.getFrequency(), CommonUtils.toString(phrase));
+        }
+        System.out.println("------------");
         return response.getPhraseList();
     }
 
@@ -68,7 +68,8 @@ public class NetSpeakDAO {
                 .append(String.join(" ", splittedNGram.subList(position, sizeNGram)));
 
         String query = queryBuilder.toString().trim();
-
+        
+        System.out.println(query);
         // Consult NetSpeak.org webservice on the web (check local cache)
         List<String> result;
         if (cache.containsKey(query)) {
@@ -78,35 +79,36 @@ public class NetSpeakDAO {
             List<Phrase> phrasesFromNetspeak = NetSpeakDAO.search(query);
 
             result = phrasesFromNetspeak.parallelStream()
-                    // Filter the results removing those without enough frequency or that,
-                    // instead of words, has comma or dots
-                    .filter(phrase
-                            -> (phrase.getFrequency() >= MIN_FREQUENCY
-                            && !CommonUtils.toString(phrase).contains(","))
-                    )
-                    // For each possible phrase, return only the new words given by Netspeak
-                    .map(phrase
-                            -> phrase.getWordList() // Get the words
-                            .subList(position, position + phrase.getWordCount() - sizeNGram) // Get only the new ones
-                            .stream() // Initialize a stream
-                            .reduce(new StringBuffer(), // Reduce the list into a StringBuffer
-                                    (sb, word) -> sb.append(word.getText()) // The reduce function is: concatenate the words
-                                    .append(' '),
-                                    StringBuffer::append) // The combine function concatenates the StringBuffers
-                            .toString() // Get a string from the Buffer
-                            .trim() // Trim to remove extra spaces in the end of it
-                    )
-                    .collect(toList());
+                // Filter the results removing those without enough frequency or that,
+                // instead of words, has comma or dots
+                .filter(phrase
+                    -> (phrase.getFrequency() >= MIN_FREQUENCY
+                    && phrase.getWordCount() > sizeNGram
+                    && !CommonUtils.toString(phrase).contains(","))
+                )
+                // For each possible phrase, return only the new words given by Netspeak
+                .map(phrase
+                    -> phrase.getWordList() // Get the words
+                    .subList(position, position + phrase.getWordCount() - sizeNGram) // Get only the new ones
+                    .stream() // Initialize a stream
+                    .reduce(new StringBuffer(), // Reduce the list into a StringBuffer
+                            (sb, word) -> sb.append(word.getText()) // The reduce function is: concatenate the words
+                            .append(' '),
+                            StringBuffer::append) // The combine function concatenates the StringBuffers
+                    .toString() // Get a string from the Buffer
+                    .trim() // Trim to remove extra spaces in the end of it
+                )
+                .collect(toList());
 
             cache.put(query, result);
-            /*for (Phrase phrase : test) {
-             System.out.printf("%d\t%d\t%s\n", phrase.getId(),
-             phrase.getFrequency(), CommonUtils.toString(phrase));
-             }*/
+            /*for (Phrase phrase : result) {
+                System.out.printf("%d\t%d\t%s\n", phrase.getId(),
+                phrase.getFrequency(), CommonUtils.toString(phrase));
+            }*/
 
-            /*for (String s : test) {
-             System.out.println(s);
-             }*/
+            for (String s : result) {
+                System.out.println(s);
+            }
         }
 
         return result;
