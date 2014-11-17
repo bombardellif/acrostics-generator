@@ -20,7 +20,7 @@ import org.netspeak.client.Request;
 public class NetSpeakDAO {
 
     private static final String TOPK = "10";
-    private static final Integer MIN_FREQUENCY = 500;
+    private static final Integer MIN_FREQUENCY = 0;
     private static Map<String, List<String>> cache = new HashMap();
 
     public static List<Phrase> search(String query) throws IOException, Exception {

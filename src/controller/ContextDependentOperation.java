@@ -50,11 +50,11 @@ public abstract class ContextDependentOperation extends Operation {
                 end += -begin;
                 begin = 0;
             }
-            //In case that the centralPosition is one of the first words
+            //In case that the centralPosition is one of the last words
             if (end >= words.size()){
                 //Then shifts the NGRAM to the left, so it keeps the desired size
-                begin -= end - words.size();
-                end = words.size();
+                begin -= end - words.size() + 1;
+                end = words.size() - 1;
             }
             
             assert begin >= 0 && begin < words.size();
@@ -116,16 +116,16 @@ public abstract class ContextDependentOperation extends Operation {
                 
                 int posIntoNGram;
                 //If it is in the beginning of the text, then position into NGRAM have to be correspondent (go to the begin of NGRAM)
-                if (textSpacePos < DEFAULTINSERT_NGRAM_SIZE / 2){
+                if (textSpacePos < nGram.size() / 2){
                     posIntoNGram = textSpacePos;
-                }else if (textSpacePos > words.size() - (DEFAULTINSERT_NGRAM_SIZE / 2)){
+                }else if (textSpacePos > words.size() - (nGram.size() / 2)){
                     //If it is int the end of text, then position into NGRAM have to be correspondent (go to the end of NGRAM)
-                    posIntoNGram = DEFAULTINSERT_NGRAM_SIZE - (words.size() - textSpacePos);
+                    posIntoNGram = nGram.size() - (words.size() - textSpacePos);
                 }else{
                     //otherwise the position will be always in center of NGRAM
-                    posIntoNGram = DEFAULTINSERT_NGRAM_SIZE / 2;
+                    posIntoNGram = nGram.size() / 2;
                 }
-                assert posIntoNGram >=0 && posIntoNGram <= DEFAULTINSERT_NGRAM_SIZE;
+                assert posIntoNGram >=0 && posIntoNGram <= nGram.size();
                 
                 List<String> newPossibleWords = NetSpeakDAO.searchNewWords(nGram, MANYNEWWORDS_SEARCHCHARACTER, posIntoNGram);
                 assert newPossibleWords != null;
@@ -134,7 +134,6 @@ public abstract class ContextDependentOperation extends Operation {
                 for (String newWord : newPossibleWords){
                     newPossibleTexts.add(text.addWordInSpace(newWord, textSpacePos));
                 }
-                assert newPossibleTexts.size() == newPossibleWords.size();
             }
             
             return newPossibleTexts;
