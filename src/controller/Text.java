@@ -234,8 +234,7 @@ public class Text {
         return result;
     }
     
-    @Override
-    public String toString() {
+    public String toOneLineString() {
         StringBuilder sb = new StringBuilder();
         
         for (String line: this.lines) {
@@ -247,6 +246,13 @@ public class Text {
         }
         
         return sb.toString().trim();
+    }
+
+    @Override
+    public String toString() {
+        return getLines().stream()
+            .map(line -> line + "\n")
+            .reduce("", String::concat);
     }
     
     @Override
