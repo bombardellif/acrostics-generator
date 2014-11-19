@@ -278,7 +278,7 @@ public class Text {
      * @return the lines
      */
     public ArrayList<String> getLines() {
-        return lines;
+        return new ArrayList<>(lines);
     }
     
 }
