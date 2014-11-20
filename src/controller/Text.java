@@ -205,7 +205,7 @@ public class Text {
         
         double leastFrequent = Double.NEGATIVE_INFINITY;
         double curentValue;
-        for (int i=remainingAcrostic.length(); i>=0; i--) {
+        for (int i=0; i<remainingAcrostic.length(); i++) {
             curentValue = LetterFrequency.getFrequencyInversed(remainingAcrostic.charAt(i));
             if (curentValue > leastFrequent)
                 leastFrequent = curentValue;

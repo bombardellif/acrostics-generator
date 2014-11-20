@@ -19,7 +19,7 @@ public class EnsureConstraintsOperation extends Operation {
     
     
         //ensures that linelength values are between lmin and lmax
-    public boolean EnsureLineLengthConstraints(Text text){
+    public boolean ensureLineLengthConstraints(Text text){
         ArrayList<String> lines = text.getLines();
         for(int i=0; i<lines.size(); i++){
             
