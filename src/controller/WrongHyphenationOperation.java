@@ -5,7 +5,8 @@ import java.util.List;
 
 public class WrongHyphenationOperation extends Operation {
 
-    private static final Double COST = 0.0;
+    private static final double localQuality = 0.8;
+    private static final Double COST = ((double)1)/localQuality;
     
     public WrongHyphenationOperation() {
         super(COST);

@@ -174,7 +174,8 @@ public class Text {
         int acrosticsLength = acrostic.length();
         
         for (int i=0; i < acrosticsLength; i++) {
-            if (this.lines.get(i).charAt(0) != acrostic.charAt(i)) {
+            if (i >= this.lines.size()
+                    || Character.toLowerCase(this.lines.get(i).charAt(0)) != Character.toLowerCase(acrostic.charAt(i))) {
                 return acrostic.substring(i);
             }
         }
@@ -193,7 +194,7 @@ public class Text {
         }
         
         for (int i=0; i < acrosticsLength; i++) {
-            if (this.lines.get(i).charAt(0) != acrostic.charAt(i)) {
+            if (Character.toLowerCase(this.lines.get(i).charAt(0)) != Character.toLowerCase(acrostic.charAt(i))) {
                 return false;
             }
         }

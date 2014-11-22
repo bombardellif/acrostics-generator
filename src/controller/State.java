@@ -80,6 +80,7 @@ public class State {
         
         
         this.setEstimatedCost((Double) Math.log(this.estimatedEffort(remainingAcrostic))*((double)1/qmax) / Math.log(this.getText().probabilityLeastFrequentLetterInversed(remainingAcrostic)));
+        //System.out.println("rem="+remainingAcrostic+"; est="+estimatedCost);
         
         return this.getEstimatedCost();
     }

@@ -9,6 +9,8 @@ import controller.LineBreakOperation;
 import controller.Operation;
 import controller.State;
 import controller.Text;
+import controller.WordInsertionDeletionOperation;
+import controller.WrongHyphenationOperation;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -46,6 +48,8 @@ public class Algorithm {
         //has to be corrected later!
         ArrayList<Operation> operatorList = new ArrayList<>();
         operatorList.add(lbOp);
+        operatorList.add(new WrongHyphenationOperation());
+        operatorList.add(new WordInsertionDeletionOperation());
         
         
         Comparator<State> comparator = new StateCostComparator();
@@ -86,6 +90,7 @@ public class Algorithm {
                 
                 State Si;
                 Si = stateQueue.poll();
+                System.out.println(Si.getCost()+" , "+Si.getEstimatedCost());
                 
                 
                 

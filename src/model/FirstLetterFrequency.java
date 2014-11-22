@@ -72,6 +72,6 @@ private final static char firstletters[]= {'d','s','a','e','u','w','i','b','m','
                 frequencyMap.put(firstletters[i], ((double)1/(firstLetterFrequencies[i]/100.0)));
         }
         
-        return frequencyMap.get(c);
+        return frequencyMap.get(Character.toLowerCase(c));
     }
 }

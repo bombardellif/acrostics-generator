@@ -46,7 +46,7 @@ public class Main {
        //Read in the input text as string
        String input ="";
        String temp;
-       FileReader fr = new FileReader ("Text/Goethe");
+       FileReader fr = new FileReader ("Text/DonaldKnuth");
         try (BufferedReader br = new BufferedReader (fr)) {
             while( (temp = br.readLine()) != null ) {
                 input += temp;
@@ -61,7 +61,7 @@ public class Main {
         System.out.println(input);
        
         
-        
+            
         
         
         LineBreakOperation lbOp = new LineBreakOperation();
@@ -73,7 +73,7 @@ public class Main {
         //lbOp.execute(text);
         
         Algorithm bestfit = new Algorithm();
-        State state = bestfit.execute(text,"Jigdijeo");
+        State state = bestfit.execute(text,"knuth");
         if(state == null){
             System.out.println("NO ACROSTIC CONSTRUCTABLE!");
             return;
