@@ -15,6 +15,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import model.Algorithm;
 import model.NetSpeakDAO;
 
 /**
@@ -28,8 +29,8 @@ public class Main {
      * @throws java.io.FileNotFoundException
      * @throws java.lang.InterruptedException
      */
-    public static void main(String[] args)throws FileNotFoundException, IOException, InterruptedException {
-        try {
+    public static void main(String[] args)throws FileNotFoundException, IOException, InterruptedException, Exception {
+       /* try {
             // TODO code application logic here
             List list = new ArrayList<String>();
             Collections.addAll(list, "ich", "gehe" ,"nach");
@@ -38,6 +39,8 @@ public class Main {
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
+        */
+        
         
         
        //Read in the input text as string
@@ -50,7 +53,7 @@ public class Main {
             }
             br.close();
         
-       
+        
             
             
         System.out.println("ORIGINAL TEXT");
@@ -67,7 +70,32 @@ public class Main {
         System.out.println(text);
         
         //apply linebreak operation
-        lbOp.execute(text);
+        //lbOp.execute(text);
+        
+        Algorithm bestfit = new Algorithm();
+        State state = bestfit.execute(text,"Jigdijeo");
+        if(state == null){
+            System.out.println("NO ACROSTIC CONSTRUCTABLE!");
+            return;
+        }
+        
+        System.out.println("The Algorithm Result:");
+        System.out.println();
+        System.out.println(state.getText());
+        
+       
+        System.out.println("Print Operator List:");
+        List<Operation> operatorList = state.getAppliedOperations();
+        for(Operation operator : operatorList){
+            System.out.println(operator);
+            
+        }
+        
+        System.out.println();
+        System.out.println("Number Generated Nodes: " + bestfit.getGeneratedNodesNo());
+        
+        
+        
         
         
         
