@@ -69,9 +69,11 @@ public class Text {
 
             assert targetPos >= 0 && targetPos <= line.length();
             
-            String extraSpace =  (targetPos == 0) ? "" : " ";
+            String preExtraSpace =  (targetPos == 0) ? "" : " ";
+            String posExtraSpace =  (targetPos == 0) ? " " : "";
+            
             sb.append(line.substring(0, targetPos)) //before new word position
-                    .append(extraSpace).append(word)       //new word
+                    .append(preExtraSpace).append(word).append(posExtraSpace)       //new word
                     .append(line.substring(targetPos)); //Rest of line
             
             return sb.toString();
