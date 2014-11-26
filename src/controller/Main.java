@@ -46,7 +46,7 @@ public class Main {
        //Read in the input text as string
        String input ="";
        String temp;
-       FileReader fr = new FileReader ("Text/Goethe");
+       FileReader fr = new FileReader ("Text/DonaldKnuth");
         try (BufferedReader br = new BufferedReader (fr)) {
             while( (temp = br.readLine()) != null ) {
                 input += temp;
@@ -68,7 +68,7 @@ public class Main {
         Text text = lbOp.StringToText(input);
         System.out.println();
         System.out.println(text);
-        
+        /*
         //apply linebreak operation
         List<Text> resultLineBreakOp = lbOp.execute(text);
         for(Text te : resultLineBreakOp){
@@ -79,10 +79,7 @@ public class Main {
        
        System.out.println("SIZE:" + resultLineBreakOp.size());
         
-        
-        
-        
-        /*
+        */
         
         
         Algorithm bestfit = new Algorithm();
@@ -109,7 +106,7 @@ public class Main {
         
         System.out.println();
         System.out.println("Number Generated Nodes: " + bestfit.getGeneratedNodesNo());
-        */
+        
         
         
         

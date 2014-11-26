@@ -49,7 +49,7 @@ public class Algorithm {
         ArrayList<Operation> operatorList = new ArrayList<>();
         operatorList.add(lbOp);
         operatorList.add(new WrongHyphenationOperation());
-        operatorList.add(new WordInsertionDeletionOperation());
+        //operatorList.add(new WordInsertionDeletionOperation());
         
         
         Comparator<State> comparator = new StateCostComparator();
@@ -90,7 +90,7 @@ public class Algorithm {
                 
                 State Si;
                 Si = stateQueue.poll();
-                System.out.println(Si.getCost()+" , "+Si.getEstimatedCost());
+                //System.out.println(Si.getCost()+" , "+Si.getEstimatedCost());
                 
                 
                 
