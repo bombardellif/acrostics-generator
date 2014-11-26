@@ -103,7 +103,7 @@ public class LineBreakOperation extends Operation {
             
             for(int k=0; k< line.length(); k++){
                 //I assume only one Dot per line
-                if( line.charAt(k) == '.' ){
+                if( (line.charAt(k) == '.')  &&  !line.substring(k-1,k).matches("[0-9]")   ){
                     
                     if( (k== (line.length() -1)) && (i == (lines.size()-1)) )
                         break;

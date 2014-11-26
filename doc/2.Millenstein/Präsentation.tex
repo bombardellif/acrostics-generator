@@ -83,6 +83,8 @@
 \usepackage{listings}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{pdfpages}
+\usepackage{textpos}
 
 \graphicspath{ {img/} }
 
@@ -151,10 +153,89 @@ DBPRO – Database Projects (WS 2014/2015) \\
 
 \begin{frame}
 \frametitle{Line Break}
+
+
+\begin{itemize}
+\item Constraints on line length $l_{min}=50$ and $l_{max}=70.$
+
+
+
+\item Two cases: 
+
+
+
+\begin{itemize}
+\item After a word when line length falls in the\\
+ $[l_{min},l_{max}]$-window.
+\item After a full stop. (i.e., paragraph break)
+\end{itemize}
+
+
+\item Succeeding line break, lines have to be aligned.
+
+\item A greedy word wrap algorithm is applied. 
+
+\item Avoid words of length $>20$ in the start text.
+\end{itemize}
+
+
+
+
 \end{frame}
+
+
+
+\begin{frame}
+\frametitle{Line Break}
+
+%\begin{textblock}{200}(0,0)
+%\leavevmode
+%\includegraphics[scale=0.5]{Goethe.pdf}
+
+%\put(0,50){\includegraphics[scale=0.5]{Goethe.pdf}}
+%\end{textblock}
+
+\begin{itemize}
+\item \textbf{Example:}
+\item 39 linebreaks,
+\item No full stop after 28!
+\item Third often applied operator on a solution path
+\item Fastest operator
+%\item Hier steht ein längerer Text mit Foto
+%\end{itemize}
+
+\end{itemize}
+
+\begin{picture}(300,400)
+\put(-10,-165){\includegraphics[scale=0.7]{Goethe.pdf}}
+\end{picture}
+
+
+
+
+
+%\begin{picture}(220,450)
+%\put(40,80){ \includegraphics[height=15\textheight]{Goethe.pdf} }
+%\end{picture}
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
 
 \begin{frame}
 \frametitle{Wrong Hyphenation}
+
+ 
 \end{frame}
 
 \begin{frame}

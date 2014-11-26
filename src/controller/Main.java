@@ -46,7 +46,7 @@ public class Main {
        //Read in the input text as string
        String input ="";
        String temp;
-       FileReader fr = new FileReader ("Text/DonaldKnuth");
+       FileReader fr = new FileReader ("Text/Goethe");
         try (BufferedReader br = new BufferedReader (fr)) {
             while( (temp = br.readLine()) != null ) {
                 input += temp;
@@ -70,7 +70,20 @@ public class Main {
         System.out.println(text);
         
         //apply linebreak operation
-        //lbOp.execute(text);
+        List<Text> resultLineBreakOp = lbOp.execute(text);
+        for(Text te : resultLineBreakOp){
+            System.out.println(te);
+            System.out.println();
+            
+        }
+       
+       System.out.println("SIZE:" + resultLineBreakOp.size());
+        
+        
+        
+        
+        /*
+        
         
         Algorithm bestfit = new Algorithm();
         State state = bestfit.execute(text,"knuth");
@@ -78,6 +91,9 @@ public class Main {
             System.out.println("NO ACROSTIC CONSTRUCTABLE!");
             return;
         }
+        
+        
+        
         
         System.out.println("The Algorithm Result:");
         System.out.println();
@@ -93,7 +109,7 @@ public class Main {
         
         System.out.println();
         System.out.println("Number Generated Nodes: " + bestfit.getGeneratedNodesNo());
-        
+        */
         
         
         
