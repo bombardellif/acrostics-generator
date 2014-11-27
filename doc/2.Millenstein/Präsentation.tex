@@ -242,8 +242,8 @@ DBPRO – Database Projects (WS 2014/2015) \\
 
 \begin{frame}
 \frametitle{Word Insertion}
-\begin{picture}(0,186)
-\put(50,0){\includegraphics[scale=0.167]{img/WordInsertionDeletion.jpg}}
+\begin{picture}(0,190)
+\put(30,0){\includegraphics[scale=0.32]{img/WordInsertionDeletion.png}}
 \end{picture}
 \end{frame}
 
@@ -277,12 +277,11 @@ Informatik an der Stanford University.\\}
 
 Result Text: \\
 
-\texttt{\tiny
-$\boldsymbol{K}$nuth ist der Sohn eines Lehrers. Er besuchte die Milwaukee Luthera- \hskip 22pt \emph{//Wrong Hyphenation} \\
-$\boldsymbol{n}$ High School und begann sein Physikstudium am California Instit- \hskip 35pt \emph{//Wrong Hyphenation} \\
-$\boldsymbol{u}$te of Technology im September 1956. Aus zweierlei Gründen schlug er \hskip 22pt \emph{//Line Break} \\
-$\boldsymbol{t}$atsächlich seinem zweiten Studienjahr jedoch den Weg zur Mat- \hskip 45pt \emph{//Wrong Hyphenation} \\
-$\boldsymbol{h}$ematik ein: Zum einen löste er ein Problem eines seiner \\
+\texttt{\scriptsize{K}\tiny nuth ist der Sohn eines Lehrers. Er besuchte die Milwaukee Luthera- \hskip 18pt \emph{//Wrong Hyphenation} \\
+\scriptsize{n}\tiny  High School und begann sein Physikstudium am California Instit- \hskip 33pt \emph{//Line Break +} \\
+\scriptsize{u}\tiny te of Technology im September 1956. Aus zweierlei Gründen schlug er \hskip 23pt \emph{//Wrong Hyphenation} \\
+\scriptsize{t}\tiny atsächlich seinem zweiten Studienjahr jedoch den Weg zur Mat- \hskip 39pt \emph{//Wrong Hyphenation} \\
+\scriptsize{h}\tiny ematik ein: Zum einen löste er ein Problem eines seiner \\
 Mathematikprofessoren, was ihm eine 1,0 als Note einbrachte, zum \\
 anderen fand er wenig Gefallen an den physikalischen Praktika. Er \\
 erhielt einen Bachelor- und einen Master-Abschluss 1960 an der Case \\
@@ -309,11 +308,10 @@ Konflikten in der Familie führte. \\
 
 Result Text: \\
 
-\texttt{\tiny
-$\boldsymbol{J}$ohann Wolfgang von Goethe wurde am 28. August 1749 im he- \hskip 16pt \emph{//Wrong Hyphenation} \\
-$\boldsymbol{u}$tigen Goethe-Haus am Frankfurter Großen Hirschgraben gebore- \hskip 10pt \emph{//LineBreak + Wrong Hyphenation} \\
-$\boldsymbol{n}$. Der Vater Johann Caspar Goethe (1710–1782), der die ursprün- \emph{//Wrong Hyphenation} \\
-$\boldsymbol{g}$liche Schreibung des Familiennamens von Göthe in Goethe änderte, war \\
+\texttt{\scriptsize{J}\tiny ohann Wolfgang von Goethe wurde am 28. August 1749 im he- \hskip 16pt \emph{//Wrong Hyphenation} \\
+\scriptsize{u}\tiny tigen Goethe-Haus am Frankfurter Großen Hirschgraben gebore- \hskip 10pt \emph{//LineBreak + Wrong Hyphenation} \\
+\scriptsize{n}\tiny . Der Vater Johann Caspar Goethe (1710–1782), der die ursprün- \emph{//Wrong Hyphenation} \\
+\scriptsize{g}\tiny liche Schreibung des Familiennamens von Göthe in Goethe änderte, war \\
 promovierter Jurist, übte diesen Beruf jedoch nicht aus, sondern lebte \\
 von den Erträgen seines ererbten Vermögens, das später auch dem Sohn \\
 ein Leben ohne finanzielle Zwänge ermöglichen sollte. Er war \\
@@ -341,11 +339,10 @@ zwölf Bezirke. \\
 
 Result Text: \\
 
-\texttt{\tiny
-$\boldsymbol{B}$erlin ist die Hauptstadt und zugleich ein Land der Bundesrepubl- \hskip 15pt \emph{//Wrong Hyphenation} \\
-$\boldsymbol{i}$k Deutschland. Der Stadtstaat Berlin bildet eine \hskip 65pt \emph{//Line Break + Line Break} \\
-$\boldsymbol{E}$inheitsgemeinde und ist mit über 3,4 Millionen Einwohne- \hskip 40pt \emph{//Wrong Hyphenation} \\
-$\boldsymbol{r}$n die bevölkerungsreichste und mit knapp 892 Quadratkilometern die \\
+\texttt{\scriptsize{B}\tiny erlin ist die Hauptstadt und zugleich ein Land der Bundesrepubl- \hskip 15pt \emph{//Wrong Hyphenation} \\
+\scriptsize{i}\tiny k Deutschland. Der Stadtstaat Berlin bildet eine \hskip 62pt \emph{//Line Break + Line Break} \\
+\scriptsize{E}\tiny inheitsgemeinde und ist mit über 3,4 Millionen Einwohne- \hskip 40pt \emph{//Wrong Hyphenation} \\
+\scriptsize{r}\tiny n die bevölkerungsreichste und mit knapp 892 Quadratkilometern die \\
 flächengrößte Kommune Deutschlands sowie nach Einwohnern die \\
 zweitgrößte der Europäischen Union. Zudem ist Berlin mit rund 3800 \\
 Einwohnern je Quadratkilometer die am drittdichtesten bevölkerte \\
@@ -374,6 +371,9 @@ Der Stadtstaat unterteilt sich in zwölf Bezirke. \\
 \section{References}
 %------------------------------------------------
 
+\begin{frame}
+\frametitle{References}
+\footnotesize
 \begin{thebibliography}{1}
 \bibitem{Stein}
 	Benno Stein, Matthias Hagen, and Christof Bräutigam. \emph{Generating Acrostics via Paraphrasing and Heuristic Search}. \\
@@ -383,6 +383,7 @@ Der Stadtstaat unterteilt sich in zwölf Bezirke. \\
 	\emph{Netspeak: Assisting Writers in Choosing Words}. \\
 	In Cathal Gurrin et al, editors, Advances in Information Retrieval. 32nd European Conference on Information Retrieval (ECIR 10) volume 5993 of Lecture Notes in Computer Science, pages 672, Berlin Heidelberg New York, March 2010. Springer.
 \end{thebibliography}
+\end{frame}
 %------------------------------------------------
 
 \begin{frame}
