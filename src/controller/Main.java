@@ -46,7 +46,7 @@ public class Main {
        //Read in the input text as string
        String input ="";
        String temp;
-       FileReader fr = new FileReader ("Text/DonaldKnuth");
+       FileReader fr = new FileReader ("Text/Berlin.txt");
         try (BufferedReader br = new BufferedReader (fr)) {
             while( (temp = br.readLine()) != null ) {
                 input += temp;
@@ -83,7 +83,7 @@ public class Main {
         
         
         Algorithm bestfit = new Algorithm();
-        State state = bestfit.execute(text,"knuth");
+        State state = bestfit.execute(text,"bier");
         if(state == null){
             System.out.println("NO ACROSTIC CONSTRUCTABLE!");
             return;
