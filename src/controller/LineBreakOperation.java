@@ -5,7 +5,9 @@ import java.util.List;
 
 public class LineBreakOperation extends Operation {
 
-    private static final Double COST = 0.0;
+    private static final double localQuality = 0.8;
+    private static final Double COST = ((double)1)/localQuality;
+    //private int lineNo;
 
     public LineBreakOperation() {
         super(COST);
@@ -45,6 +47,7 @@ public class LineBreakOperation extends Operation {
                 if(sum >= lmin && sum <= lmax){
                     String str1 = line.substring(0,sum);
                     String str2 = line.substring(sum);
+                  
 
                     //System.out.println("str1:");
                     //System.out.println(str1);
@@ -79,12 +82,12 @@ public class LineBreakOperation extends Operation {
                     
                     
                     
-                    if(ecOp.EnsureLineLengthConstraints(textResult) )
+                    if(ecOp.ensureLineLengthConstraints(textResult) )
                         LineBreakList.add(textResult);
                     
 
-                    System.out.println();
-                    System.out.println(textResult);
+                    //System.out.println();
+                    //System.out.println(textResult);
                  
                 }
             
@@ -100,7 +103,7 @@ public class LineBreakOperation extends Operation {
             
             for(int k=0; k< line.length(); k++){
                 //I assume only one Dot per line
-                if( line.charAt(k) == '.' ){
+                if( (line.charAt(k) == '.')  &&  !line.substring(k-1,k).matches("[0-9]")   ){
                     
                     if( (k== (line.length() -1)) && (i == (lines.size()-1)) )
                         break;
@@ -133,10 +136,10 @@ public class LineBreakOperation extends Operation {
                     Text text4 = new Text(list3);
                     
                     
-                    System.out.println();
-                    System.out.println(text4);
+                    //System.out.println();
+                    //System.out.println(text4);
                     
-                    if(ecOp.EnsureLineLengthConstraints(text4) )
+                    if(ecOp.ensureLineLengthConstraints(text4) )
                         LineBreakList.add(text4);
                     
                     
@@ -176,6 +179,16 @@ public class LineBreakOperation extends Operation {
         //System.out.println("Size of LineBreakList: " + LineBreakList.size());
         return LineBreakList;
     }
+
+  
+    
+    @Override
+    public String toString(){
+        return "LineBreakOperation";
+        
+    }
+    
+    
         
    
 

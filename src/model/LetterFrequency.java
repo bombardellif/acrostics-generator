@@ -18,6 +18,6 @@ public class LetterFrequency {
                 frequencyMap.put(letters[i], inverseFrequence[i]);
         }
         
-        return frequencyMap.get(c);
+        return frequencyMap.get(Character.toLowerCase(c));
     }
 }

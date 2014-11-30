@@ -69,9 +69,11 @@ public class Text {
 
             assert targetPos >= 0 && targetPos <= line.length();
             
-            String extraSpace =  (targetPos == 0) ? "" : " ";
+            String preExtraSpace =  (targetPos == 0) ? "" : " ";
+            String posExtraSpace =  (targetPos == 0) ? " " : "";
+            
             sb.append(line.substring(0, targetPos)) //before new word position
-                    .append(extraSpace).append(word)       //new word
+                    .append(preExtraSpace).append(word).append(posExtraSpace)       //new word
                     .append(line.substring(targetPos)); //Rest of line
             
             return sb.toString();
@@ -172,7 +174,8 @@ public class Text {
         int acrosticsLength = acrostic.length();
         
         for (int i=0; i < acrosticsLength; i++) {
-            if (this.lines.get(i).charAt(0) != acrostic.charAt(i)) {
+            if (i >= this.lines.size()
+                    || Character.toLowerCase(this.lines.get(i).charAt(0)) != Character.toLowerCase(acrostic.charAt(i))) {
                 return acrostic.substring(i);
             }
         }
@@ -191,7 +194,7 @@ public class Text {
         }
         
         for (int i=0; i < acrosticsLength; i++) {
-            if (this.lines.get(i).charAt(0) != acrostic.charAt(i)) {
+            if (Character.toLowerCase(this.lines.get(i).charAt(0)) != Character.toLowerCase(acrostic.charAt(i))) {
                 return false;
             }
         }
@@ -205,7 +208,7 @@ public class Text {
         
         double leastFrequent = Double.NEGATIVE_INFINITY;
         double curentValue;
-        for (int i=remainingAcrostic.length(); i>=0; i--) {
+        for (int i=0; i<remainingAcrostic.length(); i++) {
             curentValue = LetterFrequency.getFrequencyInversed(remainingAcrostic.charAt(i));
             if (curentValue > leastFrequent)
                 leastFrequent = curentValue;

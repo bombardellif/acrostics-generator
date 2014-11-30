@@ -118,7 +118,7 @@ public abstract class ContextDependentOperation extends Operation {
                 //If it is in the beginning of the text, then position into NGRAM have to be correspondent (go to the begin of NGRAM)
                 if (textSpacePos < nGram.size() / 2){
                     posIntoNGram = textSpacePos;
-                }else if (textSpacePos > words.size() - (nGram.size() / 2)){
+                }else if (textSpacePos >= words.size() - (nGram.size() / 2)){
                     //If it is int the end of text, then position into NGRAM have to be correspondent (go to the end of NGRAM)
                     posIntoNGram = nGram.size() - (words.size() - textSpacePos);
                 }else{
