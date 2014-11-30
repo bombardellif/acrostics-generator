@@ -178,9 +178,6 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \item Avoid words of length $>20$ in the start text.
 \end{itemize}
 
-
-
-
 \end{frame}
 
 
@@ -223,21 +220,27 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \end{frame}
 
 
-
-
-
-
-
-
-
-
-
 \begin{frame}
 \frametitle{Wrong Hyphenation}
+\begin{itemize}
+\item Returns a list of all possible variations of a given text by hyphenating the last word.
+\item Previous words are hyphenated through the execution of a Line Break operation.
+\item For every line, find the last word and split it between the current and next line n-1 times, where n is the length of the word. 
+\item Each division adds a new text to the list it returns, so there's a maximun of one new hyphenation per text in the list.
+\item This way every possible combination is added to the list.
+\item If a world is already hyphenated in a given line nothing is done at that line.
+\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Ensure Constraints}
+\begin{itemize}
+\item Our other operations are not concerned with keeping the text correct
+\item This operation ensures that all constraints are met
+\item In order to do this the algorithm goes from top to bottom
+\item Shifting characters between the line being analyzed and the next line
+	
+\end{itemize}	
 \end{frame}
 
 \begin{frame}
