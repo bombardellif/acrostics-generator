@@ -28,33 +28,42 @@ public class WrongHyphenationOperation extends Operation {
             String words[] = currentLine.split(" ");
             String lastWord = words[words.length-1];
 
-            /* For every letter separate the word */
-            for(int letter = 1; letter < lastWord.length(); letter++)
+            if (currentLine.endsWith("-"))
             {
-                /* Create new Text */
-                ArrayList<String> newText = text.getLines();
-                
-                /* Determine which parts go where */
-                String startOfWord = lastWord.substring(0,letter);
-                String endOfWord = lastWord.substring(letter);
-                
-                /* Current line minus the hyphenated end */
-                String finishedLine = currentLine.substring(0, currentLine.length()-lastWord.length());
-                finishedLine = finishedLine + startOfWord + "-";
-                
-                /* Next line must be altered as well */
-                String nextLine = lines.get(lineNumber + 1);
-                String alteredNextLine = endOfWord + " " + nextLine;
-                
-                /* Sets the new lines into the new text*/
-                newText.set(lineNumber, finishedLine);
-                newText.set(lineNumber + 1, alteredNextLine);               
-                
-                /* Adds the new text to the list */
-                Text completeNewText = new Text(newText);
-                /* DEBUG
-                System.out.println(completeNewText); */
-                hyphenationList.add(completeNewText);
+                /* Line already hyphenated, do nothing */ 
+            }
+            else
+            {
+                /* For every letter separate the word */
+                for(int letter = 1; letter < lastWord.length(); letter++)
+                {
+                    /* Create new Text */
+                    ArrayList<String> newText = text.getLines();
+
+                    /* Determine which parts go where */
+                    String startOfWord = lastWord.substring(0,letter);
+                    String endOfWord = lastWord.substring(letter);
+
+                    /* Current line minus the hyphenated end */
+                    String finishedLine = currentLine.substring(0, currentLine.length()-lastWord.length());
+                    finishedLine = finishedLine + startOfWord + "-";
+
+                    /* Next line must be altered as well */
+                    String nextLine = lines.get(lineNumber + 1);
+                    String alteredNextLine = endOfWord + " " + nextLine;
+
+                    /* Sets the new lines into the new text*/
+                    newText.set(lineNumber, finishedLine);
+                    newText.set(lineNumber + 1, alteredNextLine);               
+
+                    /* Adds the new text to the list */
+                    Text completeNewText = new Text(newText);
+
+                    /* DEBUG */
+                    //System.out.println(completeNewText); 
+
+                    hyphenationList.add(completeNewText);
+                }
             }
         }
         return hyphenationList;

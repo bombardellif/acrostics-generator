@@ -12,8 +12,82 @@ public class EnsureConstraintsOperation extends Operation {
     }
 
     @Override
-    public List<Text> execute(Text text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<Text> execute(Text text) 
+    {
+        /*Initializing Variables*/
+        ArrayList<Text> correctedTextinList = new ArrayList();
+        ArrayList<String> lines = text.getLines();
+
+        Text correctedText = new Text(text);
+        correctedTextinList.add(correctedText);
+        
+        for (int lineNumber = 0; lineNumber < lines.size() -1; lineNumber++)
+        {
+            int sizeDifference = 0;
+            String currentLine = lines.get(lineNumber);
+            String nextLine = lines.get(lineNumber + 1);
+            String movedPart;
+            String remainingPart;
+            
+            if(currentLine.length() < lmin)
+            {
+                sizeDifference = lmin - currentLine.length();
+                movedPart = nextLine.substring(0,sizeDifference);
+                remainingPart = nextLine.substring(sizeDifference);
+                
+                /* See if a word is broken in two */
+                if(remainingPart.startsWith(" "))
+                {
+                    /* If it is remove the blank space */
+                    nextLine = remainingPart.substring(1);
+                    currentLine = currentLine + movedPart;
+                    
+                    lines.set(lineNumber, currentLine);
+                    lines.set(lineNumber + 1, nextLine);
+                }
+                else
+                {
+                    /* Otherwise move one letter less to accomodate the hyphen */
+                    movedPart = nextLine.substring(0, sizeDifference-1);
+                    currentLine = currentLine + movedPart + "-";
+                    nextLine = remainingPart;
+                    
+                    lines.set(lineNumber, currentLine);
+                    lines.set(lineNumber + 1, nextLine);
+                }
+            }
+            
+            if(currentLine.length() > lmax)
+            {
+                sizeDifference = currentLine.length() - lmax;
+                movedPart = currentLine.substring(sizeDifference);
+                remainingPart = currentLine.substring(0,sizeDifference);
+                
+                /* See if a word is broken in two */
+                if(movedPart.startsWith(" "))
+                {
+                    /* If it is remove the blank space */
+                    nextLine = movedPart.substring(1) + nextLine;
+                    currentLine = remainingPart;
+                    
+                    lines.set(lineNumber, currentLine);
+                    lines.set(lineNumber + 1, nextLine);
+                }
+                else
+                {
+                    /* Otherwise move one letter more to accomodate the hyphen */
+                    movedPart = currentLine.substring(sizeDifference -1);
+                    nextLine =  movedPart + nextLine;
+                    currentLine = remainingPart + "-";
+                    
+                    lines.set(lineNumber, currentLine);
+                    lines.set(lineNumber + 1, nextLine);
+                }
+            }
+        }
+        
+        
+        return correctedTextinList;
     }
     
     
