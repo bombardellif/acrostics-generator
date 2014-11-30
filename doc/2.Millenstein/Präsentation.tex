@@ -133,18 +133,36 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \begin{frame}
 \frametitle{Overview}
 \begin{itemize}
-\item \textbf{Entrada:} Um grafo virtual e um grafo do substrato físico
-\item \textbf{Problema de Localização:} Encontrar um mapeamento \emph{válido} dos vértices do grafo virtual para os vértices do grafo físico, assim como das arestas do virtual para caminhos no físico
-\item \textbf{Problema de Otimização:} Minimizar a banda total utilizada pelo mapeamento
+\item \textbf{The problem:} Given a text T and an acrostic X, find a paraphased version of T that encodes X in the first letters of each line.
+\item \textbf{Main goal of the project:} Implement the paper for the German language.
+\item \textbf{Main idea of the algorithm:}
+	\begin{itemize}
+	\item Modeled as a search problem in a tree.
+	\item The vertices are states (texts) and the edges are operations over states.
+	\item Artificial inteligence is applied for the search strategy (A* Algorithm).
+	\end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Classes Diagram}
+\begin{figure}
+\includegraphics[scale=0.2]{Controller}
+\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{Activity Diagram and Search Strategy}
+\begin{figure}
+\includegraphics[scale=0.16]{Main_1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Activity Diagram and Search Strategy}
+\begin{figure}
+\includegraphics[scale=0.16]{Main_2}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------
@@ -360,10 +378,10 @@ Der Stadtstaat unterteilt sich in zwölf Bezirke. \\
 \begin{frame}
 \frametitle{Next Steps}
 \begin{itemize}
-\item Mapeamento de redes virtuais é complexo até mesmo para localização de solução inicial
-\item Importância do algoritmo de vizinhança para uma boa convergência do método
-\item \emph{Solvers} genéricos não são viáveis na prática
-\item Decisões na fase de projeto do algoritmo são cruciais para o resultado com a meta-heurística
+\item 
+\item 
+\item 
+\item 
 \end{itemize}
 \end{frame}
 
