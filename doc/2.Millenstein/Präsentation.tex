@@ -116,7 +116,7 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Organisation} % Table of contents slide, comment this block out to remove it
+\frametitle{Organization} % Table of contents slide, comment this block out to remove it
 \tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
 
@@ -133,13 +133,13 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \begin{frame}
 \frametitle{Overview}
 \begin{itemize}
-\item \textbf{The problem:} Given a text T and an acrostic X, find a paraphased version of T that encodes X in the first letters of each line.
+\item \textbf{The problem:} Given a text T and an acrostic X, find a paraphrased version of T that encodes X in the first letters of each line.
 \item \textbf{Main goal of the project:} Implement the paper for the German language.
 \item \textbf{Main idea of the algorithm:}
 	\begin{itemize}
 	\item Modeled as a search problem in a tree.
 	\item The vertices are states (texts) and the edges are operations over states.
-	\item Artificial inteligence is applied for the search strategy (A* Algorithm).
+	\item Artificial intelligence is applied for the search strategy (A* Algorithm).
 	\end{itemize}
 \end{itemize}
 \end{frame}
@@ -244,7 +244,7 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \item Returns a list of all possible variations of a given text by hyphenating the last word.
 \item Previous words are hyphenated through the execution of a Line Break operation.
 \item For every line, find the last word and split it between the current and next line n-1 times, where n is the length of the word. 
-\item Each division adds a new text to the list it returns, so there's a maximun of one new hyphenation per text in the list.
+\item Each division adds a new text to the list it returns, so there's a maximum of one new hyphenation per text in the list.
 \item This way every possible combination is added to the list.
 \item If a world is already hyphenated in a given line nothing is done at that line.
 \end{itemize}
@@ -272,7 +272,7 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \frametitle{Word Insertion $-$ Databases}
 \begin{itemize}
 \item Current: Netspeak Requests  \emph{(netspeak.org)} \cite{Netspeak}
-\item Possibility: Google NGram Database Manually Handled
+\item Possibility: Google NGram Database Manually Handled plus Thesaurus Database
 \end{itemize}
 \end{frame}
 
@@ -299,7 +299,7 @@ Informatik an der Stanford University.\\}
 Result Text: \\
 
 \texttt{\scriptsize{K}\tiny nuth ist der Sohn eines Lehrers. Er besuchte die Milwaukee Luthera- \hskip 18pt \emph{//Wrong Hyphenation} \\
-\scriptsize{n}\tiny  High School und begann sein Physikstudium am California Instit- \hskip 33pt \emph{//Line Break +} \\
+\scriptsize{n} \tiny  High School und begann sein Physikstudium am California Instit- \hskip 33pt \emph{//Line Break +} \\
 \scriptsize{u}\tiny te of Technology im September 1956. Aus zweierlei Gründen schlug er \hskip 23pt \emph{//Wrong Hyphenation} \\
 \scriptsize{t}\tiny atsächlich seinem zweiten Studienjahr jedoch den Weg zur Mat- \hskip 39pt \emph{//Wrong Hyphenation} \\
 \scriptsize{h}\tiny ematik ein: Zum einen löste er ein Problem eines seiner \\
