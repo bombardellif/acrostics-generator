@@ -113,4 +113,9 @@ public class NetSpeakDAO {
 
         return result;
     }
+    
+    public static boolean isFrequent(final List<String> splitedNGram){
+        //@TODO Implement
+        return true;
+    }
 }

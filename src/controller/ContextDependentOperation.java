@@ -7,10 +7,11 @@ import model.NetSpeakDAO;
 public abstract class ContextDependentOperation extends Operation {
     
     protected static final String REGEX_SPLITINWORDS = " ";
-    private static final char MANYNEWWORDS_SEARCHCHARACTER = '*';
-    private static final int DEFAULTINSERT_NGRAM_SIZE = 4;
-    private static final int MIN_NGRAM_SIZE = 1;
-    private static final int MAX_NGRAM_SIZE = 5;
+    protected static final char MANYNEWWORDS_SEARCHCHARACTER = '*';
+    protected static final int DEFAULTINSERT_NGRAM_SIZE = 4;
+    protected static final int DEFAULTDELETE_NGRAM_SIZE = 5;
+    protected static final int MIN_NGRAM_SIZE = 1;
+    protected static final int MAX_NGRAM_SIZE = 5;
     
     public ContextDependentOperation(Double cost) {
         super(cost);
@@ -25,7 +26,7 @@ public abstract class ContextDependentOperation extends Operation {
      * @param centralPosition Position in the list of the central word of desired NGRAM. Cannot be out of bounds.
      * @return List of words that represents the NGRAM just taken. Or null in case of null arguments
      */
-    private List<String> getNGramAroundWord(int n, List<String> words, int centralPosition) throws IllegalArgumentException{
+    protected List<String> getNGramAroundWord(int n, List<String> words, int centralPosition) throws IllegalArgumentException{
         if (words != null){
             if (n < MIN_NGRAM_SIZE || n > MAX_NGRAM_SIZE){
                 throw new IllegalArgumentException("Invalid value for n");
@@ -99,7 +100,7 @@ public abstract class ContextDependentOperation extends Operation {
      * Or null (in case of null arguments). If there is no possibilities, return empty list.
      * @throws java.lang.Exception Database or Network connection problems
      */
-    protected List<Text> insertWord(Text text, List<String> words) throws Exception{
+    protected List<Text> insertWord(final Text text, final List<String> words) throws Exception{
         if (text != null && words != null){
             
             //@TODO: Assert that words correspond to text
@@ -142,8 +143,54 @@ public abstract class ContextDependentOperation extends Operation {
         }
     }
     
-    protected List<Text> deleteWord(Text text, List<String> words) throws Exception{
-        return null;
+    /**
+     * Given a list of words of a text, find all possible words that can be removed from this text keeping the semantics. And creates
+     * new versions of the original text with these possibilities. If text or words are null, return null
+     * @param text Original Text
+     * @param words List of words corresponding to the text
+     * @return List of new possible versions of the text. Each element represents a different possibility of removing a word.
+     * Or null (in case of null arguments). If there is no possibilities, return empty list.
+     * @throws java.lang.Exception Database or Network connection problems
+     */
+    protected List<Text> deleteWord(final Text text, final List<String> words) throws Exception{
+        if (text != null && words != null){
+            //@TODO: Assert that words correspond to text
+            
+            ArrayList<Text> newPossibleTexts = new ArrayList<>();
+            
+            //Iterate over word positions. Zero means first word. words.size()-1 means position of last word
+            for (int textWordPos = 0; textWordPos < words.size(); textWordPos++){
+                
+                List<String> nGram = getNGramAroundWord(DEFAULTDELETE_NGRAM_SIZE, words, textWordPos);
+                
+                assert nGram != null;
+                assert nGram.size() > 0;
+                
+                int posIntoNGram;
+                //If it is in the beginning of the text, then position into NGRAM have to be correspondent (go to the begin of NGRAM)
+                if (textWordPos < nGram.size() / 2){
+                    posIntoNGram = textWordPos;
+                }else if (textWordPos >= words.size() - (nGram.size() / 2)){
+                    //If it is int the end of text, then position into NGRAM have to be correspondent (go to the end of NGRAM)
+                    posIntoNGram = nGram.size() - (words.size() - textWordPos);
+                }else{
+                    //otherwise the position will be always in center of NGRAM
+                    posIntoNGram = nGram.size() / 2;
+                }
+                assert posIntoNGram >=0 && posIntoNGram < nGram.size();
+                
+                //Actual removal of the word
+                nGram.remove(posIntoNGram);
+                
+                //Create new version of the text without this word if the nGram without this word is frequent in the language
+                if (NetSpeakDAO.isFrequent(nGram))
+                    newPossibleTexts.add(text.removeWord(textWordPos));
+            }
+            
+            return newPossibleTexts;
+        }else{
+            return null;
+        }
     }
 
 }

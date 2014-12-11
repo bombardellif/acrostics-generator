@@ -30,19 +30,7 @@ public class Main {
      * @throws java.lang.InterruptedException
      */
     public static void main(String[] args)throws FileNotFoundException, IOException, InterruptedException, Exception {
-       /* try {
-            // TODO code application logic here
-            List list = new ArrayList<String>();
-            Collections.addAll(list, "ich", "gehe" ,"nach");
-            
-            NetSpeakDAO.searchNewWords(list, '*', 3);
-        } catch (Exception ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        */
-        
-        
-        
+
        //Read in the input text as string
        String input ="";
        String temp;
@@ -61,13 +49,16 @@ public class Main {
         System.out.println(input);
        
         
-            
-        
-        
         LineBreakOperation lbOp = new LineBreakOperation();
         Text text = lbOp.StringToText(input);
         System.out.println();
         System.out.println(text);
+        
+        
+        //new WordInsertionDeletionOperation().execute(text);
+        //new SynonymOperation().execute(text);
+        //System.exit(0);
+        
         /*
         //apply linebreak operation
         List<Text> resultLineBreakOp = lbOp.execute(text);
@@ -107,21 +98,6 @@ public class Main {
         System.out.println();
         System.out.println("Number Generated Nodes: " + bestfit.getGeneratedNodesNo());
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-            // TODO code application logic here
-        }//try  
-        
-        
-   
+        }//try
     }
-	
 }
