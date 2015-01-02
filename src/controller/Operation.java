@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -32,15 +33,18 @@ public abstract class Operation {
     * @param input 
     * A single string representing the input text
     * @return A text with lines of length \le lmax
+     * @throws java.io.IOException
     */
-    public Text StringToText(String input){
+    public Text StringToText(String input) throws IOException{
               	
+        
+        HyphenationOperation hyOp = new HyphenationOperation();
         StringTokenizer st=new StringTokenizer(input);
         String row ="";
         ArrayList<String> lines;
         lines = new ArrayList<>();
         Text text;
-       
+        
         
         
         int SpaceLeft= lmax;
@@ -53,15 +57,20 @@ public abstract class Operation {
             String word=st.nextToken();
 		if((word.length()+SpaceWidth)>SpaceLeft)
 		{
-                    row = row.substring(0, row.length()-1);
-                    lines.add(row);
-                    row = "";
-                    row += (word + " ");
+                    //long word have to be hyphenated to fulfill the line
+                    //length constraints
                     
-                    if(!st.hasMoreTokens())
-                        lines.add(word);
+                        row = row.substring(0, row.length()-1);
+                        lines.add(row);
+                        row = "";
+                        row += (word + " ");
+
+                        if(!st.hasMoreTokens())
+                            lines.add(word);
+
+
+                        SpaceLeft = lmax - word.length();
                     
-                    SpaceLeft = lmax - word.length();
 		}
 		else
 		{

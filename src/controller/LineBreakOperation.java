@@ -1,11 +1,20 @@
 package controller;
 
+import de.denkselbst.sentrick.sbd.SentenceBoundaryDetector;
+import de.denkselbst.sentrick.tokeniser.token.Token;
+import de.denkselbst.sentrick.util.SbdProvider;
+import de.denkselbst.sentrick.util.SbdProviderException;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
 public class LineBreakOperation extends Operation {
 
-    private static final double localQuality = 0.8;
+    private static final double localQuality = 1.0;
     private static final Double COST = ((double)1)/localQuality;
     //private int lineNo;
 
@@ -14,7 +23,7 @@ public class LineBreakOperation extends Operation {
     }
     
     @Override
-    public List<Text> execute(Text text) {
+    public List<Text> execute(Text text) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException, SbdProviderException {
        
    
         ArrayList<Text> LineBreakList = new ArrayList();
@@ -45,16 +54,13 @@ public class LineBreakOperation extends Operation {
 
 
                 if(sum >= lmin && sum <= lmax){
+                   
                     String str1 = line.substring(0,sum);
                     String str2 = line.substring(sum);
-                  
 
-                    //System.out.println("str1:");
-                    //System.out.println(str1);
-                    //System.out.println("str2:");
-                    //System.out.println(str2);
 
                     String str3= (str2 + " ");
+                    
                     for(int j=i+1; j< lines.size(); j++){
 
                         if(j == (lines.size() -1)){
@@ -95,88 +101,110 @@ public class LineBreakOperation extends Operation {
 
         }
         
+        
+
         //Now perform the line break associated with a fullstop.
         
-        for(int i=0; i< (lines.size() ) ; i++){
-            String line = lines.get(i);
             
+        String provider = "de.denkselbst.sentrick.classifiers.german.GermanSbdProvider";
+        SbdProvider sbdProvider = (SbdProvider) Class.forName(provider).newInstance(); 
+        
+        //concatenate the lines to a single string
+        String str="";
+        
+        for(int i=0; i< lines.size(); i++){
             
-            for(int k=0; k< line.length(); k++){
-                //I assume only one Dot per line
-                if( (line.charAt(k) == '.')  &&  !line.substring(k-1,k).matches("[0-9]")   ){
-                    
-                    if( (k== (line.length() -1)) && (i == (lines.size()-1)) )
-                        break;
-                    
-                    
-                    String untilDot = line.substring(0,k+1);
-                    String afterDot = line.substring(k+1);
-                    
-                    
-                    String str2 = afterDot;
-                    
-                    for(int j= i+1; j< lines.size(); j++){                        
-                       
-                            str2 += (" " + lines.get(j));                                           
-                        
-                    }
-                    
-                    
-                    Text text2;
-                    text2 = StringToText(str2);
-                    
-                    
-                   
-                    ArrayList<String> list3 = new ArrayList();
-                    list3.addAll(lines.subList(0, i));
-                    list3.add(untilDot);
-                    list3.addAll(text2.getLines());
-                    
-                    
-                    Text text4 = new Text(list3);
-                    
-                    
-                    //System.out.println();
-                    //System.out.println(text4);
-                    
-                    if(ecOp.ensureLineLengthConstraints(text4) )
-                        LineBreakList.add(text4);
-                    
-                    
-                    
-                    
-                   
-                }
-                
-            }
-            
-            
-            
-            
-            
+            if(i != (lines.size() -1) )
+                str += (lines.get(i) + " ");
+            else
+                str += lines.get(i);
             
             
         }
         
+ 
+	//convert String into InputStream
+	InputStream is = new ByteArrayInputStream(str.getBytes());
+ 
+	//read it with Reader
+        Reader in = new InputStreamReader(is);
+        
+
+        
+        SentenceBoundaryDetector sbd = sbdProvider.getPlainTextSentenceBoundaryDetector(in);
+        
+        Token t;
+        
+        //list of full stop positions
+        ArrayList<Integer> dotIndexList = new ArrayList<>();
+        
+        //ith-list entry
+        int i=0;
+        
+        while( (t=sbd.readToken()) != null){
+            
+            if(dotIndexList.isEmpty())
+                dotIndexList.add(t.getLength());
+            
+            else
+                dotIndexList.set(i, dotIndexList.get(i)+t.getLength());
+            
+            System.out.print(t.getText());
+            
+            if(t.isSentenceBoundary()){
+		
+                i++;               
+                dotIndexList.add(i,dotIndexList.get(i-1));
+                
+                //System.out.print("</s>");
+                
+                
+            }
+        }
         
         
-        //printing out the result
         
-        /*
-        LineBreakList.stream().map((LineBreakList1) -> {
-            System.out.println();
-            return LineBreakList1;
-        }).map((LineBreakList1) -> {
-            System.out.println();
-            return LineBreakList1;
-        }).forEach((LineBreakList1) -> {
-            System.out.println(LineBreakList1);
-        });
-        */
+        sbd.close();
+        
+        //last entry is inserted twice, remove one copy
+        dotIndexList.remove((dotIndexList.size()-1));
+       
+        //System.out.println(dotIndexList);
+
+	//System.err.println("\n\nDone.");
         
         
         
-        //System.out.println("Size of LineBreakList: " + LineBreakList.size());
+        for(i=0; i< dotIndexList.size(); i++){
+            
+            //last dot is excluded
+            if(i != (dotIndexList.size()-1)){
+                
+                String untilDot = str.substring(0,dotIndexList.get(i)+1);
+
+                String afterDot = str.substring(dotIndexList.get(i)+1);
+
+
+                Text text1 = StringToText(untilDot);
+                Text text2 = StringToText(afterDot);
+
+                ArrayList<String> list3 = new ArrayList();
+                list3.addAll(text1.getLines());          
+                list3.addAll(text2.getLines());
+
+
+                Text text3 = new Text(list3);
+
+                System.out.println(text3);
+                System.out.println();
+
+                LineBreakList.add(text3);
+            }
+            
+            
+        }
+         
+       
         return LineBreakList;
     }
 
