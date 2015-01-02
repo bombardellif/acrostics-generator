@@ -18,10 +18,13 @@ public class EnsureConstraintsOperation extends Operation {
         ArrayList<Text> correctedTextinList = new ArrayList();
         ArrayList<String> lines = text.getLines();
 
-        Text correctedText = new Text(text);
-        correctedTextinList.add(correctedText);
+        //Text correctedText = new Text(text);
+       
+        //correctedTextinList.add(correctedText);
         
-        for (int lineNumber = 0; lineNumber < lines.size() -1; lineNumber++)
+        
+        
+        for (int lineNumber = 0; lineNumber < lines.size()-1; lineNumber++)
         {
             int sizeDifference = 0;
             String currentLine = lines.get(lineNumber);
@@ -85,6 +88,10 @@ public class EnsureConstraintsOperation extends Operation {
                 }
             }
         }
+        
+        Text correctedText = new Text(lines);
+       
+        correctedTextinList.add(correctedText);
         
         
         return correctedTextinList;
