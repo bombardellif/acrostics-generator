@@ -3,7 +3,9 @@ package controller;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 import model.NetSpeakDAO;
+import model.SynonymDAO;
 
 public class SynonymOperation extends ContextDependentOperation {
 
@@ -70,13 +72,18 @@ public class SynonymOperation extends ContextDependentOperation {
                 assert posIntoNGram >=0 && posIntoNGram < nGram.size();
                 
                 //Actual change of the word
-                //@TODO Implement Synonym Database
-                String synonym = "_123_";
-                nGram.set(posIntoNGram, synonym);
+                String original = nGram.get(posIntoNGram);
+                Set<String> synonyms = SynonymDAO.getSynonyms(original);
                 
-                //Create new version of the text without this word if the nGram without this word is frequent in the language
-                if (NetSpeakDAO.isFrequent(nGram))
-                    newPossibleTexts.add(text.changeWord(textWordPos, synonym));
+                for (String synonym : synonyms) {
+                    
+                    //System.out.println(original+ " => " +synonym);
+                    nGram.set(posIntoNGram, synonym);
+
+                    //Create new version of the text without this word if the nGram without this word is frequent in the language
+                    if (NetSpeakDAO.isFrequent(nGram))
+                        newPossibleTexts.add(text.changeWord(textWordPos, synonym));
+                }
             }
             
             return newPossibleTexts;

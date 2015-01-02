@@ -1,6 +1,7 @@
 package model;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -22,6 +23,9 @@ public class NetSpeakDAO {
     private static final String TOPK = "10";
     private static final Integer MIN_FREQUENCY = 0;
     private static Map<String, List<String>> cache = new HashMap();
+    
+    private static final List<String> notEmptyList = Arrays.asList("");
+    private static final List<String> emptyList = new ArrayList<>();
 
     public static List<Phrase> search(String query) throws IOException, Exception {
         if (query == null) {
@@ -41,17 +45,17 @@ public class NetSpeakDAO {
             throw new Exception("NetSpeakAPI error. Code: " + errorCode + ". Message: " + response.getErrorMessage());
         }
 
-        for (Phrase phrase : response.getPhraseList()) {
+        /*for (Phrase phrase : response.getPhraseList()) {
             System.out.printf("%d\t%d\t%s\n", phrase.getId(),
             phrase.getFrequency(), CommonUtils.toString(phrase));
         }
-        System.out.println("------------");
+        System.out.println("------------");*/
         return response.getPhraseList();
     }
 
     public static List<String> searchNewWords(List<String> splittedNGram, Character operator, Integer position) throws Exception {
         if (splittedNGram == null) {
-            throw new IllegalArgumentException("NetSpeakDAO.searchNewWords: Parameter nGram must not be null");
+            throw new IllegalArgumentException("NetSpeakDAO.searchNewWords: Parameter splitedNGram must not be null");
         }
         if (operator == null) {
             throw new IllegalArgumentException("NetSpeakDAO.searchNewWords: Parameter operator must not be null");
@@ -106,16 +110,35 @@ public class NetSpeakDAO {
                 phrase.getFrequency(), CommonUtils.toString(phrase));
             }*/
 
-            for (String s : result) {
+            /*for (String s : result) {
                 System.out.println(s);
-            }
+            }*/
         }
 
         return result;
     }
     
-    public static boolean isFrequent(final List<String> splitedNGram){
-        //@TODO Implement
-        return true;
+    public static boolean isFrequent(final List<String> splittedNGram) throws Exception {
+        if (splittedNGram == null) {
+            throw new IllegalArgumentException("NetSpeakDAO.isFrequent: Parameter splitedNGram must not be null");
+        }
+        
+        String query = String.join(" ", splittedNGram);
+        
+        if (cache.containsKey(query)) {
+            return ! cache.get(query).isEmpty();
+        } else {
+            List<Phrase> phrasesFromNetspeak = NetSpeakDAO.search(query);
+            
+            if (!phrasesFromNetspeak.isEmpty() && phrasesFromNetspeak.get(0).getFrequency() >= MIN_FREQUENCY) {
+                
+                cache.put(query, notEmptyList);
+                return true;
+            } else {
+                
+                cache.put(query, emptyList);
+                return false;
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@ package model;
 import controller.LineBreakOperation;
 import controller.Operation;
 import controller.State;
+import controller.SynonymOperation;
 import controller.Text;
 import controller.WordInsertionDeletionOperation;
 import controller.WrongHyphenationOperation;
@@ -49,7 +50,8 @@ public class Algorithm {
         ArrayList<Operation> operatorList = new ArrayList<>();
         operatorList.add(lbOp);
         operatorList.add(new WrongHyphenationOperation());
-        //operatorList.add(new WordInsertionDeletionOperation());
+        operatorList.add(new WordInsertionDeletionOperation());
+        operatorList.add(new SynonymOperation());
         
         
         Comparator<State> comparator = new StateCostComparator();
