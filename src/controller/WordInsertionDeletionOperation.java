@@ -21,10 +21,10 @@ public class WordInsertionDeletionOperation extends ContextDependentOperation {
             
             ArrayList<String> words = new ArrayList<>( Arrays.asList(textInString.split(REGEX_SPLITINWORDS)) );
         
-            //@TODO Adicionar insertWord
-            List<Text> ret = new ArrayList<>(); //insertWord(text, words);
+            List<Text> ret = insertWord(text, words);
             ret.addAll(deleteWord(text, words));
             
+            System.out.println("==========");
             ret.stream().forEach(r -> {
                 System.out.println(r);
             });

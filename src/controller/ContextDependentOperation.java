@@ -131,9 +131,11 @@ public abstract class ContextDependentOperation extends Operation {
                 List<String> newPossibleWords = NetSpeakDAO.searchNewWords(nGram, MANYNEWWORDS_SEARCHCHARACTER, posIntoNGram);
                 assert newPossibleWords != null;
                 
+                EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
                 //Create new versions of the text. One new version for each possible word
                 for (String newWord : newPossibleWords){
-                    newPossibleTexts.add(text.addWordInSpace(newWord, textSpacePos));
+                    newPossibleTexts.add(
+                            ecOp.execute(text.addWordInSpace(newWord, textSpacePos)).get(0));
                 }
             }
             
@@ -183,8 +185,11 @@ public abstract class ContextDependentOperation extends Operation {
                 nGram.remove(posIntoNGram);
                 
                 //Create new version of the text without this word if the nGram without this word is frequent in the language
-                if (NetSpeakDAO.isFrequent(nGram))
-                    newPossibleTexts.add(text.removeWord(textWordPos));
+                if (NetSpeakDAO.isFrequent(nGram)){
+                    EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
+                    newPossibleTexts.add(
+                            ecOp.execute(text.removeWord(textWordPos)).get(0));
+                }
             }
             
             return newPossibleTexts;
