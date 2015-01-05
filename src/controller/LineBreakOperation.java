@@ -149,7 +149,7 @@ public class LineBreakOperation extends Operation {
             else
                 dotIndexList.set(i, dotIndexList.get(i)+t.getLength());
             
-            System.out.print(t.getText());
+            //System.out.print(t.getText());
             
             if(t.isSentenceBoundary()){
 		
@@ -195,8 +195,8 @@ public class LineBreakOperation extends Operation {
 
                 Text text3 = new Text(list3);
 
-                System.out.println(text3);
-                System.out.println();
+                //System.out.println(text3);
+                //System.out.println();
 
                 LineBreakList.add(text3);
             }

@@ -5,6 +5,7 @@
  */
 package model;
 
+import controller.HyphenationOperation;
 import controller.LineBreakOperation;
 import controller.Operation;
 import controller.State;
@@ -52,6 +53,8 @@ public class Algorithm {
         operatorList.add(new WrongHyphenationOperation());
         operatorList.add(new WordInsertionDeletionOperation());
         operatorList.add(new SynonymOperation());
+        //operatorList.add(new HyphenationOperation());
+        ///operatorList.add(new ) TODO Add new operation by Bruno
         
         
         Comparator<State> comparator = new StateCostComparator();

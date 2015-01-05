@@ -63,7 +63,7 @@ public class Main {
             
             
             
-            
+         
         //System.out.println("input:");
         //System.out.println(input);
             
@@ -78,7 +78,7 @@ public class Main {
         System.out.println();
         
         
-        
+/*
         
         List<Text> resultList = hyOp.execute(text1);
         
@@ -94,7 +94,7 @@ public class Main {
         
         
         
-        
+ */       
         
         
         
@@ -203,9 +203,9 @@ public class Main {
         
         */
         
-        /*
+
         Algorithm bestfit = new Algorithm();
-        State state = bestfit.execute(text,"bier");
+        State state = bestfit.execute(text1, "knet");
         if(state == null){
             System.out.println("NO ACROSTIC CONSTRUCTABLE!");
             return;
@@ -230,7 +230,8 @@ public class Main {
         System.out.println("Number Generated Nodes: " + bestfit.getGeneratedNodesNo());
         
                 
-        */        
+        
         }//try
+               
     }
 }
