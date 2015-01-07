@@ -43,7 +43,7 @@ public class Main {
        //Read in the input text as string
        String input ="";
        String temp;
-       FileReader fr = new FileReader ("Text/DonaldKnuth");
+       FileReader fr = new FileReader ("Text/FriedrichDerGrosse");
         try (BufferedReader br = new BufferedReader (fr)) {
             while( (temp = br.readLine()) != null ) {
                 input += temp;
@@ -66,7 +66,7 @@ public class Main {
          
         //System.out.println("input:");
         //System.out.println(input);
-            
+        /*    
         HyphenationOperation hyOp = new HyphenationOperation();
         //String res = hyOp.correctHyphenation(input);
         //System.out.println(res);
@@ -76,7 +76,7 @@ public class Main {
         System.out.println("Text1:");
         System.out.println(text1);
         System.out.println();
-        
+        */
         
 /*
         
@@ -202,10 +202,17 @@ public class Main {
        System.out.println("SIZE:" + resultLineBreakOp.size());
         
         */
+        HyphenationOperation  hyOp= new HyphenationOperation();
+        Text text1 = hyOp.StringToText(input);    
+            
         
+        System.out.println("ORIGINAL TEXT:");
+        System.out.println(text1);
+        System.out.println();
+            
 
         Algorithm bestfit = new Algorithm();
-        State state = bestfit.execute(text1, "knet");
+        State state = bestfit.execute(text1, "Fritz");
         if(state == null){
             System.out.println("NO ACROSTIC CONSTRUCTABLE!");
             return;
