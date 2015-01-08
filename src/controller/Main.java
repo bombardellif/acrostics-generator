@@ -58,6 +58,33 @@ public class Main {
         List<Text> lineBreakResults = lbOp.execute(text5);
           */  
             
+        
+            
+        /*    
+        SynonymOperation syOp = new SynonymOperation();
+        //String res = hyOp.correctHyphenation(input);
+        //System.out.println(res);
+        
+        
+        Text text1 = syOp.StringToText(input);
+        System.out.println("Text1:");
+        System.out.println(text1);
+        System.out.println();
+        
+         List<Text> resultList = syOp.execute(text1);
+        
+        for(int i=0; i< resultList.size(); i++){
+            
+            System.out.println(i + ".");
+            System.out.println(resultList.get(i));
+            System.out.println();
+            System.out.println();
+            
+            
+        }
+        
+        */
+        
             
             
             
@@ -202,6 +229,8 @@ public class Main {
        System.out.println("SIZE:" + resultLineBreakOp.size());
         
         */
+            
+            
         HyphenationOperation  hyOp= new HyphenationOperation();
         Text text1 = hyOp.StringToText(input);    
             

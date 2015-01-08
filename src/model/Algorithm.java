@@ -51,7 +51,7 @@ public class Algorithm {
         ArrayList<Operation> operatorList = new ArrayList<>();
         operatorList.add(new LineBreakOperation());
         operatorList.add(new WrongHyphenationOperation());
-        //operatorList.add(new WordInsertionDeletionOperation());
+        operatorList.add(new WordInsertionDeletionOperation());
         //operatorList.add(new SynonymOperation());
         operatorList.add(new HyphenationOperation());
         ///operatorList.add(new ) TODO Add new operation by Bruno
