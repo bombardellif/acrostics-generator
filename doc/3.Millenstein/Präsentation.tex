@@ -170,6 +170,107 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \section{New Results}
 %------------------------------------------------
 
+%***********HYPHENATION START *******************************************
+%This is the 1st slide!!
+\begin{frame}
+\frametitle{Hyphenation}
+
+
+\begin{itemize}
+\item Line Length constraints $l_{min}=50$ and $l_{max}=70.$
+
+
+
+\item For hyphenation a re-implementation of Knuth's hyphenation algorithm in
+TeX is used (TEXHyphenator-J by David Tolpin) 
+
+\item A word can be hyphenated if: The part of the current line \textbf{from} the beginning \textbf{to} the hyphen has a length of at least $l_{min}=50.$
+
+\item The text \textbf{after} the hyphen has to be aligned again to fulfill the line length
+constraints.
+
+
+
+\item A greedy word wrap algorithm is applied. 
+
+\item Don't allow words of length $>20$ in the start text.
+\end{itemize}
+
+\end{frame}
+
+
+%This is the 2nd slide!!
+\begin{frame}
+\frametitle{Hyphenation}
+
+
+
+
+\begin{itemize}
+
+
+\item \textbf{Example:}
+\item 38 hyphenations!
+
+
+\end{itemize}
+
+\begin{picture}(300,400)
+\put(-10,-165){\includegraphics[scale=0.7]{KnuthHyphenation.pdf}}
+\end{picture}
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+%***********HYPHENATION END ****************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \begin{frame}
 \frametitle{Results $-$ Deletion Of Words}
 \texttt{\tiny
@@ -218,6 +319,58 @@ hinterher wahrscheinlich blau. Blau sein bedeutet im Deutschen nämlich \\
 betrunken sein. \\
 }
 \end{frame}
+
+
+%********************START GENERAL EXAMPLE (all Operators included)***************************************************
+
+% 1st Slide
+\begin{frame}
+\frametitle{Examples}
+
+
+\begin{itemize}
+
+\item  1 min 22 sec, 17517 nodes, Ops: Hyph,WrHyph,LB
+
+
+\end{itemize}
+
+\begin{picture}(300,400)
+\put(-10,-165){\includegraphics[scale=0.7]{FritzExample.pdf}}
+\end{picture}
+
+
+\end{frame}
+
+
+% Here starts the 2nd slide of concluding examples
+
+\begin{frame}
+\frametitle{Examples}
+
+
+\begin{itemize}
+
+
+
+\item  1 min 22 sec, 17517 nodes, Ops: Hyph,WrHyph,LB
+
+
+\end{itemize}
+
+\begin{picture}(300,400)
+\put(-10,-165){\includegraphics[scale=0.7]{FritzExample2.pdf}}
+\end{picture}
+
+
+\end{frame}
+
+%********************END GENERAL EXAMPLE (all Operators included)***************************************************
+
+
+
+
+
 
 %------------------------------------------------
 \section{Conclusion}
