@@ -343,6 +343,7 @@ public class Text {
         return "";
     }
 
+    private static int DEBUG = 0;
     public boolean goalTest(String acrostic) {
         if (acrostic == null)
             throw new IllegalArgumentException("goalTest: Parameter acrostic must not be null");
@@ -355,6 +356,12 @@ public class Text {
         
         for (int i=0; i < acrosticsLength; i++) {
             if (Character.toLowerCase(this.lines.get(i).charAt(0)) != Character.toLowerCase(acrostic.charAt(i))) {
+                // DEBUG
+                if (i > DEBUG) {
+                    DEBUG = i;
+                    System.out.println("\nProgress!!");
+                    System.out.println(this);
+                }
                 return false;
             }
         }
@@ -434,7 +441,7 @@ public class Text {
             return false;
         }
         final Text other = (Text) obj;
-        return Objects.equals(this.lines, other.lines);
+        return this.lines.equals(other.lines);
     }
     
     /**

@@ -1,0 +1,74 @@
+run:
+Text1:
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade
+die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von
+Jena zu den schöpferischen des deutschen Lebens gehören.
+
+
+
+Progress!!
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade
+die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von
+Jena zu den schöpferischen des deutschen Lebens gehören.
+
+
+Progress!!
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur s-
+eine Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade
+die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von
+Jena zu den schöpferischen des deutschen Lebens gehören.
+
+
+Progress!!
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der gerade
+eben seine Oberfläche streift, möchte scheinen, daß die Gegenwart
+unbedeutend vom deutschen Leben, mehr vom deutschen Sterben zu melden hätte.
+Aber der nachdenkliche Betrachter weiß, daß die größten geistigen
+Epochen Deutschlands über seinen politischen Niederlagen wuchsen, daß
+gerade die Zeiten nach dem Dreißigjährigen Krieg, nach dem
+Zusammenbruch von Jena zu den schöpferischen des deutschen Lebens
+gehören.
+
+
+Progress!!
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der gerade
+eben seine Oberfläche streift, möchte scheinen, daß die Gegenwart
+unbedeutend vom deutschen Leben, mehr vom deutschen Sterben zu melden hä-
+tte. Aber der nachdenkliche Betrachter weiß, daß die größten geistigen
+Epochen Deutschlands über seinen politischen Niederlagen wuchsen, daß
+gerade die Zeiten nach dem Dreißigjährigen Krieg, nach dem
+Zusammenbruch von Jena zu den schöpferischen des deutschen Lebens
+gehören.
+
+The Algorithm Result:
+
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der gerade
+eben seine Oberfläche streift, möchte scheinen, daß die Gegenwart
+unbedeutend vom deutschen Leben, mehr vom deutschen Sterben zu melden hätte.
+trotzdem der nachdenkliche Betrachter weiß, daß die größten geistigen
+Epochen Deutschlands über seinen politischen Niederlagen wuchsen, daß
+nachgerade die Zeiten nach dem Dreißigjährigen Krieg, nach dem
+Zusammenbruch von Jena zu den schöpferischen des deutschen Lebens
+gehören.
+
+Print Operator List:
+controller.SynonymOperation@793f92a2
+LineBreakOperation
+controller.SynonymOperation@793f92a2
+controller.SynonymOperation@793f92a2
+controller.SynonymOperation@793f92a2
+
+Number Generated Nodes: 1100964
+BUILD SUCCESSFUL (total time: 3 minutes 53 seconds)
+

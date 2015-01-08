@@ -1,0 +1,51 @@
+run:
+Text1:
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen.
+
+
+
+Progress!!
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen.
+
+
+Progress!!
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur s-
+eine Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen.
+
+
+Progress!!
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der gerade
+eben seine Oberfläche streift, möchte scheinen, daß die Gegenwart
+unbedeutend vom deutschen Leben, mehr vom deutschen Sterben zu melden hätte.
+Aber der nachdenkliche Betrachter weiß, daß die größten geistigen
+Epochen Deutschlands über seinen politischen Niederlagen wuchsen.
+
+The Algorithm Result:
+
+Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur seine
+erscheinungsbild streift, möchte scheinen, daß diese 
+und jene Gegenwart wenig vom deutschen Leben, mehr vom deu-
+tschen Sterben zu melden hätte. Aber der nachdenkliche Betrachter weiß, daß
+die größten geistigen Epochen Deutschlands über seinen politischen
+Niederlagen wuchsen.
+
+Print Operator List:
+controller.SynonymOperation@5c12d49f
+controller.SynonymOperation@5c12d49f
+LineBreakOperation
+controller.WrongHyphenationOperation@339b6660
+
+Number Generated Nodes: 520902
+BUILD SUCCESSFUL (total time: 1 minute 56 seconds)
+

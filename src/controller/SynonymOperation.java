@@ -26,7 +26,7 @@ public class SynonymOperation extends ContextDependentOperation {
 
             List<Text> ret = changeForSynonym(text, words);
             
-            ret.stream().forEach((r) -> System.out.println(r));
+            //ret.stream().forEach((r) -> System.out.println(r));
             
             return ret;
         }else{
@@ -72,7 +72,7 @@ public class SynonymOperation extends ContextDependentOperation {
                 assert posIntoNGram >=0 && posIntoNGram < nGram.size();
                 
                 //Actual change of the word
-                String original = nGram.get(posIntoNGram);
+                String original = nGram.get(posIntoNGram).toLowerCase().trim();
                 Set<String> synonyms = SynonymDAO.getSynonyms(original);
                 
                 for (String synonym : synonyms) {
@@ -81,7 +81,7 @@ public class SynonymOperation extends ContextDependentOperation {
                     nGram.set(posIntoNGram, synonym);
 
                     //Create new version of the text without this word if the nGram without this word is frequent in the language
-                    if (NetSpeakDAO.isFrequent(nGram))
+                    //if (NetSpeakDAO.isFrequent(nGram))
                         newPossibleTexts.add(text.changeWord(textWordPos, synonym));
                 }
             }
