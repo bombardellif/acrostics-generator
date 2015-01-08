@@ -144,40 +144,78 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Last State of Work}
+\begin{itemize}
+\item Line Break and Wrong Hyphenation Working Properly
+\item Search Algorithm Working Properly
+\item Word Insertion Working Partially, but Deletion Not Working
+\end{itemize}
+\end{frame}
+
 %------------------------------------------------
 \section{New Operations}
 %------------------------------------------------
-
+\begin{frame}
+\frametitle{New Developed Operations}
+\begin{itemize}
+	\item Word Insertion Or Deletion (Enhancements)
+	\item Synonym
+	\item Hyphenation
+	\item Spelling
+\end{itemize}
+\end{frame}
 
 %------------------------------------------------
 \section{New Results}
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{First Results $-$ Goethe}
+\frametitle{Results $-$ Deletion Of Words}
 \texttt{\tiny
-Johann Wolfgang von Goethe wurde am 28. August 1749 im heutigen \\
-Goethe-Haus am Frankfurter Großen Hirschgraben geboren. Der Vater \\
-Johann Caspar Goethe (1710–1782), der die ursprüngliche Schreibung des \\
-Familiennamens von Göthe in Goethe änderte, war promovierter Jurist, \\
-übte diesen Beruf jedoch nicht aus, sondern lebte von den Erträgen \\
-seines ererbten Vermögens, das später auch dem Sohn ein Leben ohne \\
-finanzielle Zwänge ermöglichen sollte. Er war vielseitig interessiert \\
-und gebildet, jedoch auch streng und pedantisch, was wiederholt zu \\
-Konflikten in der Familie führte. \\
+In diesen Auflagen könnte denn auch der Hebel liegen, um Griechenland \\
+weiteres Geld zu verweigern. Denn ein Stopp der Zinszahlungen dürfte \\
+als Verstoß gegen das Rettungsprogramm gewertet werden. Denn für alle \\
+Geschäftbanken in der Eurozone gilt: Geld von der EZB gibt es nur \\
+mäßig, wenn die Finanzinstitute eine bestimmte Menge an Wertpapieren, \\
+zum Beispiel Staatsanleihen, als Pfand bei der EZB hinterlegen. In \\
+diesem Fall könnte die EZB ihre Ansprüche an die Sicherheiten wieder \\
+erhöhen. \\
 }
 
 Result Text: \\
 
-\texttt{\scriptsize{J}\tiny ohann Wolfgang von Goethe wurde am 28. August 1749 im he- \hskip 16pt \emph{//Wrong Hyphenation} \\
-\scriptsize{u}\tiny tigen Goethe-Haus am Frankfurter Großen Hirschgraben gebore- \hskip 10pt \emph{//LineBreak + Wrong Hyphenation} \\
-\scriptsize{n}\tiny . Der Vater Johann Caspar Goethe (1710–1782), der die ursprün- \emph{//Wrong Hyphenation} \\
-\scriptsize{g}\tiny liche Schreibung des Familiennamens von Göthe in Goethe änderte, war \\
-promovierter Jurist, übte diesen Beruf jedoch nicht aus, sondern lebte \\
-von den Erträgen seines ererbten Vermögens, das später auch dem Sohn \\
-ein Leben ohne finanzielle Zwänge ermöglichen sollte. Er war \\
-vielseitig interessiert und gebildet, jedoch auch streng und \\
-pedantisch, was wiederholt zu Konflikten in der Familie führte. \\
+\texttt{\scriptsize{I}\tiny n diesen Auflagen könnte denn auch der Hebel liegen, um Grieche-  \hskip 30pt \emph{//Wrong Hyphenation} \\
+\scriptsize{n}\tiny land weiteres Geld zu verweigern. Denn ein Stopp der Zinszahlungen dürf- \emph{//Wrong Hyphenation} \\
+\scriptsize{t}\tiny e als Verstoß gegen das Rettungsprogramm gewertet werden. Denn für alle \\
+\scriptsize{i}\tiny n der Eurozone gilt: Geld von der EZB gibt es nur \hskip 72pt \emph{//Word Deletion} \\
+\scriptsize{m}\tiny äßig, wenn die Finanzinstitute eine bestimmte Menge an Wertpapieren, \\
+zum Beispiel Staatsanleihen, als Pfand bei der EZB hinterlegen. In \\
+diesem Fall könnte die EZB ihre Ansprüche an die Sicherheiten wieder \\
+erhöhen. \\
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Results $-$ Insertion Of New Words}
+\texttt{\tiny
+Im Englischen bedeutet blau sein so etwas wie traurig oder deprimiert \\
+sein, weltbekannt ist die Musikrichtung Blues. Das ist traurig aber. Im \\
+Deutschen hat blau sein allerdings eine ganz andere Bedeutung. Wenn \\
+jemand eine feucht-fröhliche Party feiert (also eine, auf der viel \\
+Alkohol getrunken wird), dann ist er hinterher wahrscheinlich blau. \\
+Blau sein bedeutet im Deutschen nämlich betrunken sein. \\
+}
+
+Result Text: \\
+
+\texttt{\scriptsize{I}\tiny m Englischen bedeutet blau sein so etwas wie traurig oder \hskip 58pt \emph{//Line Break} \\
+\scriptsize{d}\tiny eprimiert sein, weltbekannt ist die Musikrichtung Blues. Das ist \\
+\scriptsize{e}\tiny cht traurig aber. Im Deutschen hat blau sein allerdings \hskip 60pt \emph{//Word Insertion}\\
+\scriptsize{e}\tiny ine ganz andere Bedeutung. Wenn jemand eine feucht-fröhliche Party \hskip 30pt \emph{//+ Line Break}\\
+feiert (also eine, auf der viel Alkohol getrunken wird), dann ist er \\
+hinterher wahrscheinlich blau. Blau sein bedeutet im Deutschen nämlich \\
+betrunken sein. \\
 }
 \end{frame}
 
@@ -188,7 +226,9 @@ pedantisch, was wiederholt zu Konflikten in der Familie führte. \\
 \begin{frame}
 \frametitle{Conclusion}
 \begin{itemize}
-\item bla blah blah
+\item Present operations
+\item Update in the state of the work (what can the algorithm reach, relation with the paper)
+\item ...
 \end{itemize}
 \end{frame}
 
@@ -198,11 +238,17 @@ pedantisch, was wiederholt zu Konflikten in der Familie führte. \\
 
 \begin{frame}
 \frametitle{References}
-\footnotesize
+\scriptsize
 \begin{thebibliography}{1}
 \bibitem{Stein}
 	Benno Stein, Matthias Hagen, and Christof Bräutigam. \emph{Generating Acrostics via Paraphrasing and Heuristic Search}. \\
 	In Junichi Tsujii and Jan Hajic, editors, 25th International Conference on Computational Linguistics (COLING 14), pages 2018-2029, August 2014. Association for Computational Linguistics.
+\bibitem{Spiegel}
+	Spiegel Online. \emph{Griechenland und die Euro-Zone: Der fast unmögliche Rausschmiss}. \\
+	http://www.spiegel.de/wirtschaft/soziales/griechenland-euro-austritt-waere-moeglich-aber-kompliziert-a-1011361.html. Am 07. Januar 2015
+\bibitem{Blau}
+	Hilko. \emph{Blau ist keine traurige Farbe}. \\
+	https://deutschlich.wordpress.com/2013/03/12/blau-ist-keine-traurige-farbe. Am 07. Januar 2015
 \end{thebibliography}
 \end{frame}
 %------------------------------------------------

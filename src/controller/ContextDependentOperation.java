@@ -196,8 +196,9 @@ public abstract class ContextDependentOperation extends Operation {
                 //Create new version of the text without this word if the nGram without this word is frequent in the language
                 if (NetSpeakDAO.isFrequent(nGram)){
                     EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
+                    //@TODO: Include ensure contraint operation
                     newPossibleTexts.add(
-                            ecOp.execute(text.removeWord(textWordPos)).get(0));
+                            /*ecOp.execute(*/text.removeWord(textWordPos)/*).get(0)*/);
                 }
             }
             
