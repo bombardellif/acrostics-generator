@@ -22,7 +22,7 @@ public class SynonymOperation extends ContextDependentOperation {
             //Get all the text in one line
             String textInString = text.toOneLineString();
             
-            ArrayList<String> words = new ArrayList<>( Arrays.asList(textInString.split(REGEX_SPLITINWORDS)) );
+            ArrayList<String> words = new ArrayList<>( Arrays.asList(textInString.split(REGEX_SPLITINWORDS, -1)) );
 
             List<Text> ret = changeForSynonym(text, words);
             

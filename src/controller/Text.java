@@ -13,7 +13,7 @@ public class Text {
     private static final String REGEX_SPLITINWORDS = " ";
     private static final String REGEX_SPACEINBEGINNING = "^\\s+";
     private static final String REGEX_SPACEINEND = "\\s+$";
-    private static final String REGEX_WORDS = "((?!\\s).)+";
+    private static final String REGEX_WORDS = "((?!\\s).)+|((?=\\s\\s)\\s)|\\s$";
     
     private ArrayList<String> lines;
 
@@ -167,7 +167,7 @@ public class Text {
             throw new IllegalArgumentException("addWordInSpace: Invalid space position");
         }
         
-        Text newText = this;
+        Text newText = null;
         int i = 0;
         int remainingPos = spacePosition;
         boolean inserted = false;
@@ -181,7 +181,7 @@ public class Text {
                 line = line.replaceFirst(REGEX_SPACEINEND, "");
             }
             
-            List<String> words = new ArrayList<>( Arrays.asList(line.split(REGEX_SPLITINWORDS)) );
+            List<String> words = new ArrayList<>( Arrays.asList(line.split(REGEX_SPLITINWORDS, -1)) );
             
             assert words != null;
             
@@ -267,7 +267,7 @@ public class Text {
             throw new IllegalArgumentException("changeWord: Invalid word position");
         }
         
-        Text newText = this;
+        Text newText = null;
         int i = 0;
         int remainingPos = wordPosition;
         boolean inserted = false;
@@ -281,7 +281,7 @@ public class Text {
                 line = line.replaceFirst(REGEX_SPACEINEND, "");
             }
             
-            List<String> words = new ArrayList<>( Arrays.asList(line.split(REGEX_SPLITINWORDS)) );
+            List<String> words = new ArrayList<>( Arrays.asList(line.split(REGEX_SPLITINWORDS, -1)) );
             assert words != null;
             
             int wordCountThisLine;
