@@ -7,6 +7,7 @@ import model.NetSpeakDAO;
 public abstract class ContextDependentOperation extends Operation {
     
     protected static final String REGEX_SPLITINWORDS = " ";
+    protected static final String REGEX_SPECIALCHARACTERS = "\\W";
     protected static final char MANYNEWWORDS_SEARCHCHARACTER = '*';
     protected static final int DEFAULTINSERT_NGRAM_SIZE = 4;
     protected static final int DEFAULTDELETE_NGRAM_SIZE = 5;
@@ -62,7 +63,14 @@ public abstract class ContextDependentOperation extends Operation {
             assert end >= 0 && end < words.size();
             assert (end - begin)+1 == n;
             
-            return new ArrayList<>(words.subList(begin, end+1));
+            List<String> returnNGram = new ArrayList<>();
+            words.subList(begin, end+1).stream()
+                    //remove all special characters from all words in the Ngram and lower them 
+                    .map(w -> w.replaceAll(REGEX_SPECIALCHARACTERS, "").toLowerCase())
+                    //add to the return list
+                    .forEach(returnNGram::add);
+            
+            return returnNGram;
         }else{
             return null;
         }
@@ -135,7 +143,8 @@ public abstract class ContextDependentOperation extends Operation {
                 //Create new versions of the text. One new version for each possible word
                 for (String newWord : newPossibleWords){
                     newPossibleTexts.add(
-                            ecOp.execute(text.addWordInSpace(newWord, textSpacePos)).get(0));
+                            //@TODO: Include ensure contraint operation
+                            /*ecOp.execute(*/text.addWordInSpace(newWord, textSpacePos)/*).get(0)*/);
                 }
             }
             

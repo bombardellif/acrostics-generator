@@ -44,16 +44,16 @@ public class Algorithm {
         State S0 = new State(text);
         setGeneratedNodesNo(1);
         
-        LineBreakOperation lbOp = new LineBreakOperation();
+       
         
         //list of all operators that will be applied to a node
         //has to be corrected later!
         ArrayList<Operation> operatorList = new ArrayList<>();
-        operatorList.add(lbOp);
+        operatorList.add(new LineBreakOperation());
         operatorList.add(new WrongHyphenationOperation());
-        operatorList.add(new WordInsertionDeletionOperation());
-        operatorList.add(new SynonymOperation());
-        //operatorList.add(new HyphenationOperation());
+        //operatorList.add(new WordInsertionDeletionOperation());
+        //operatorList.add(new SynonymOperation());
+        operatorList.add(new HyphenationOperation());
         ///operatorList.add(new ) TODO Add new operation by Bruno
         
         

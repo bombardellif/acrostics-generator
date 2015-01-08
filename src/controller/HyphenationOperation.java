@@ -72,10 +72,11 @@ public class HyphenationOperation extends Operation {
            
                 
             //eleminate hyphen after first character
-            if(tokens[i].charAt(1) == SOFT_HYPHEN){
-                tokens[i] = deleteCharAt(tokens[i],1);
+            if(tokens[i].length() >=3){
+                if(tokens[i].charAt(1) == SOFT_HYPHEN){
+                    tokens[i] = deleteCharAt(tokens[i],1);
+                }
             }
-            
             //eleminate hyphen before last character
             if(tokens[i].length() >=3){
             

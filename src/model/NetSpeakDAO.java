@@ -73,7 +73,8 @@ public class NetSpeakDAO {
 
         String query = queryBuilder.toString().trim();
         
-        System.out.println(query);
+        //System.out.println(query);
+        
         // Consult NetSpeak.org webservice on the web (check local cache)
         List<String> result;
         if (cache.containsKey(query)) {
