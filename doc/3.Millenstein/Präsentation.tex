@@ -166,9 +166,19 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \end{itemize}
 \end{frame}
 
-%------------------------------------------------
-\section{New Results}
-%------------------------------------------------
+%************** SYNONYM START *******************
+\begin{frame}
+\frametitle{Synonym}
+\begin{itemize}
+	\item Free dictionary of synonyms is used, namely Open Thesaurus (www.openthesaurus.de)
+	\item We use \textbf{Redis} as database server (NoSQL)
+	\item Redis stores data as key-value pairs
+	\item Our base is structured in a way that, every word in the thesaurus is a key that points a set of synonyms
+	\item The thesaurus text file is imported into the database by a Python script
+	\item The database is then consulted by the appplication during its execution
+\end{itemize}
+\end{frame}
+%************** SYNONYM END *******************
 
 %***********HYPHENATION START *******************************************
 %This is the 1st slide!!
@@ -223,54 +233,24 @@ constraints.
 
 \end{frame}
 
-
-
-
-
-
-
-
 %***********HYPHENATION END ****************************************************
 
 
 
+%------------------------------------------------
+\section{New Results}
+%------------------------------------------------
 
+%************** SYNONYM START *******************
+\begin{frame}
+\frametitle{Results - Synonym}
+\begin{figure}
+\includegraphics[scale=0.35]{beispiel-synonym}
+\end{figure}
+\end{frame}
+%************** SYNONYM END *******************
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+%************** DELETION START *******************
 \begin{frame}
 \frametitle{Results $-$ Deletion Of Words}
 \texttt{\tiny
@@ -320,6 +300,7 @@ betrunken sein. \\
 }
 \end{frame}
 
+%************** DELETION END *******************
 
 %********************START GENERAL EXAMPLE (all Operators included)***************************************************
 
@@ -381,6 +362,7 @@ betrunken sein. \\
 \begin{itemize}
 \item Present operations
 \item Update in the state of the work (what can the algorithm reach, relation with the paper)
+\item Difficulties ??
 \item ...
 \end{itemize}
 \end{frame}
@@ -402,6 +384,10 @@ betrunken sein. \\
 \bibitem{Blau}
 	Hilko. \emph{Blau ist keine traurige Farbe}. \\
 	https://deutschlich.wordpress.com/2013/03/12/blau-ist-keine-traurige-farbe. Am 07. Januar 2015
+\bibitem{Redis}
+	\emph{Redis}. http://redis.io/. Am 07. Januar 2015
+\bibitem{Thesuarus}
+	\emph{Synonym - OpenThesaurus - Deutscher Thesaurus}. https://www.openthesaurus.de/. Am 07. Januar 2015
 \end{thebibliography}
 \end{frame}
 %------------------------------------------------
