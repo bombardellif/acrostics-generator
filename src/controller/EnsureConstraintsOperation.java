@@ -18,16 +18,19 @@ public class EnsureConstraintsOperation extends Operation {
         ArrayList<Text> correctedTextinList = new ArrayList();
         ArrayList<String> lines = text.getLines();
 
-        //Text correctedText = new Text(text);
+        lines.set(0, "iuahdisahbdivgano8rwhneiluchweriu iwb iuwq eib 43 go3ib3g ou3ib diuhaindgaifasdiosahb wigkjvsbdgkuhsdgbavkuhgwaevfwevtwf");
        
-        //correctedTextinList.add(correctedText);
+        //System.out.println(lines);
+        //System.out.println(correctedText);
         
         
         
-        for (int lineNumber = 0; lineNumber < lines.size()-1; lineNumber++)
+        for (int lineNumber = 0; lineNumber < lines.size()-2; lineNumber++)
         {
             int sizeDifference = 0;
             String currentLine = lines.get(lineNumber);
+            
+            
             String nextLine = lines.get(lineNumber + 1);
             String movedPart;
             String remainingPart;
@@ -60,8 +63,13 @@ public class EnsureConstraintsOperation extends Operation {
                 }
             }
             
-            if(currentLine.length() > lmax)
+            /* Check if a new line has to be added */
+            
+            String lastLine = lines.get(lines.size()-1);
+           
+            if(lastLine.length() > lmax)
             {
+                currentLine = lastLine;
                 sizeDifference = currentLine.length() - lmax;
                 movedPart = currentLine.substring(sizeDifference);
                 remainingPart = currentLine.substring(0,sizeDifference);
@@ -86,13 +94,49 @@ public class EnsureConstraintsOperation extends Operation {
                     lines.set(lineNumber, currentLine);
                     lines.set(lineNumber + 1, nextLine);
                 }
+                
+                
+                
+                if((currentLine+1).length() > lmax)
+                {
+                    
+                    currentLine = lines.get(lineNumber+1);
+                    nextLine = "";
+                    lines.add(nextLine);
+                    lineNumber = lineNumber+1;
+                    sizeDifference = currentLine.length() - lmax;
+                    movedPart = currentLine.substring(sizeDifference);
+                    remainingPart = currentLine.substring(0,sizeDifference);
+                        /* See if a word is broken in two */
+                    if(movedPart.startsWith(" "))
+                    {
+                        /* If it is remove the blank space */
+                        nextLine = movedPart.substring(1) + nextLine;
+                        currentLine = remainingPart;
+
+                        lines.set(lineNumber, currentLine);
+                        lines.set(lineNumber + 1, nextLine);
+                    }
+                    else
+                    {
+                        /* Otherwise move one letter more to accomodate the hyphen */
+                        movedPart = currentLine.substring(sizeDifference -1);
+                        nextLine =  movedPart + nextLine;
+                        currentLine = remainingPart + "-";
+
+                        lines.set(lineNumber, currentLine);
+                        lines.set(lineNumber + 1, nextLine);
+                    }
+                }
+                
             }
         }
         
         Text correctedText = new Text(lines);
-       
+        System.out.println("Teste"); 
+        System.out.println(correctedText); 
         correctedTextinList.add(correctedText);
-        
+        System.out.println(correctedText);
         
         return correctedTextinList;
     }

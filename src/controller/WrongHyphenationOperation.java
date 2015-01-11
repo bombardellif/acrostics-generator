@@ -40,15 +40,22 @@ public class WrongHyphenationOperation extends Operation {
                 {
                     /* Create new Text */
                     ArrayList<String> newText = text.getLines();
-
+                    String finishedLine;
+                    
                     /* Determine which parts go where */
                     String startOfWord = lastWord.substring(0,letter);
                     String endOfWord = lastWord.substring(letter);
 
                     /* Current line minus the hyphenated end */
-                    String finishedLine = currentLine.substring(0, currentLine.length()-lastWord.length());
-                    finishedLine = finishedLine + startOfWord + "-";
+                    if(currentLine.endsWith(" "))
+                    {
+                        finishedLine = currentLine.substring(0, currentLine.length()-lastWord.length()-1);
+                    }   
+                    else
+                        finishedLine = currentLine.substring(0, currentLine.length()-lastWord.length());
 
+                    finishedLine = finishedLine + startOfWord + "-";
+                    
                     /* Next line must be altered as well */
                     String nextLine = lines.get(lineNumber + 1);
                     String alteredNextLine = endOfWord + " " + nextLine;
@@ -61,8 +68,10 @@ public class WrongHyphenationOperation extends Operation {
                     Text completeNewText = new Text(newText);
 
                     /* DEBUG */
-                    //System.out.println(completeNewText); 
-
+                //    if(lastWord.equalsIgnoreCase("war"))
+               //     {
+                //    System.out.println(completeNewText); 
+                //    }
                     hyphenationList.add(completeNewText);
                 }
             }
