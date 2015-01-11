@@ -131,9 +131,38 @@ DBPRO – Database Projects (WS 2014/2015) \\
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
-\frametitle{Overview}
+\frametitle{The Problem}
 \begin{itemize}
-\item \textbf{The problem:} Given a text T and an acrostic X, find a paraphrased version of T that encodes X in the first letters of each line.
+\item Given a text T and an acrostic X, find a paraphrased version of T that encodes X in the first letters of each line.
+\end{itemize}
+
+\texttt{\tiny Knuth ist der Sohn eines Lehrers. Er besuchte die Milwaukee Lutheran \\
+High School und begann sein Physikstudium am California Institute of \\
+Technology im September 1956. Aus zweierlei Gründen schlug er \\
+tatsächlich seinem zweiten Studienjahr jedoch den Weg zur Mathematik \\
+ein: Zum einen löste er ein Problem eines seiner \\
+Mathematikprofessoren, was ihm eine 1,0 als Note einbrachte, zum \\
+anderen fand er wenig Gefallen an den physikalischen Praktika. Er \\
+erhielt einen Bachelor- und einen Master-Abschluss 1960 an der Case \\
+Western Reserve University. \\}
+
+Result Text: \\
+
+\texttt{\scriptsize{K}\tiny nuth ist der Sohn eines Lehrers. Er besuchte die Milwaukee Luthera- \hskip 18pt \emph{//Wrong Hyphenation} \\
+\scriptsize{n} \tiny  High School und begann sein Physikstudium am California Instit- \hskip 33pt \emph{//Line Break +} \\
+\scriptsize{u}\tiny te of Technology im September 1956. Aus zweierlei Gründen schlug er \hskip 23pt \emph{//Wrong Hyphenation} \\
+\scriptsize{t}\tiny atsächlich seinem zweiten Studienjahr jedoch den Weg zur Mat- \hskip 39pt \emph{//Wrong Hyphenation} \\
+\scriptsize{h}\tiny ematik ein: Zum einen löste er ein Problem eines seiner \\
+Mathematikprofessoren, was ihm eine 1,0 als Note einbrachte, zum \\
+anderen fand er wenig Gefallen an den physikalischen Praktika. Er \\
+erhielt einen Bachelor- und einen Master-Abschluss 1960 an der Case \\
+Western Reserve University. \\}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{The Project}
+\begin{itemize}
 \item \textbf{Main goal of the project:} Implement the paper for the German language.
 \item \textbf{Main idea of the algorithm:}
 	\begin{itemize}
@@ -241,16 +270,30 @@ constraints.
 \section{New Results}
 %------------------------------------------------
 
-%************** SYNONYM START *******************
-\begin{frame}
-\frametitle{Results $-$ Synonym}
-\begin{figure}
-\includegraphics[scale=0.35]{beispiel-synonym}
-\end{figure}
-\end{frame}
-%************** SYNONYM END *******************
-
 %************** DELETION START *******************
+\begin{frame}
+\frametitle{Results $-$ Insertion Of New Words}
+\texttt{\tiny
+Im Englischen bedeutet blau sein so etwas wie traurig oder deprimiert \\
+sein, weltbekannt ist die Musikrichtung Blues. Das ist traurig aber. Im \\
+Deutschen hat blau sein allerdings eine ganz andere Bedeutung. Wenn \\
+jemand eine feucht-fröhliche Party feiert (also eine, auf der viel \\
+Alkohol getrunken wird), dann ist er hinterher wahrscheinlich blau. \\
+Blau sein bedeutet im Deutschen nämlich betrunken sein. \\
+}
+
+Result Text: \\
+
+\texttt{\scriptsize{I}\tiny m Englischen bedeutet blau sein so etwas wie traurig oder \hskip 58pt \emph{//Line Break} \\
+\scriptsize{d}\tiny eprimiert sein, weltbekannt ist die Musikrichtung Blues. Das ist \\
+\scriptsize{e}\tiny cht traurig aber. Im Deutschen hat blau sein allerdings \hskip 60pt \emph{//Word Insertion}\\
+\scriptsize{e}\tiny ine ganz andere Bedeutung. Wenn jemand eine feucht-fröhliche Party \hskip 30pt \emph{//+ Line Break}\\
+feiert (also eine, auf der viel Alkohol getrunken wird), dann ist er \\
+hinterher wahrscheinlich blau. Blau sein bedeutet im Deutschen nämlich \\
+betrunken sein. \\
+}
+\end{frame}
+
 \begin{frame}
 \frametitle{Results $-$ Deletion Of Words}
 \texttt{\tiny
@@ -277,30 +320,16 @@ erhöhen. \\
 }
 \end{frame}
 
-\begin{frame}
-\frametitle{Results $-$ Insertion Of New Words}
-\texttt{\tiny
-Im Englischen bedeutet blau sein so etwas wie traurig oder deprimiert \\
-sein, weltbekannt ist die Musikrichtung Blues. Das ist traurig aber. Im \\
-Deutschen hat blau sein allerdings eine ganz andere Bedeutung. Wenn \\
-jemand eine feucht-fröhliche Party feiert (also eine, auf der viel \\
-Alkohol getrunken wird), dann ist er hinterher wahrscheinlich blau. \\
-Blau sein bedeutet im Deutschen nämlich betrunken sein. \\
-}
-
-Result Text: \\
-
-\texttt{\scriptsize{I}\tiny m Englischen bedeutet blau sein so etwas wie traurig oder \hskip 58pt \emph{//Line Break} \\
-\scriptsize{d}\tiny eprimiert sein, weltbekannt ist die Musikrichtung Blues. Das ist \\
-\scriptsize{e}\tiny cht traurig aber. Im Deutschen hat blau sein allerdings \hskip 60pt \emph{//Word Insertion}\\
-\scriptsize{e}\tiny ine ganz andere Bedeutung. Wenn jemand eine feucht-fröhliche Party \hskip 30pt \emph{//+ Line Break}\\
-feiert (also eine, auf der viel Alkohol getrunken wird), dann ist er \\
-hinterher wahrscheinlich blau. Blau sein bedeutet im Deutschen nämlich \\
-betrunken sein. \\
-}
-\end{frame}
-
 %************** DELETION END *******************
+
+%************** SYNONYM START *******************
+\begin{frame}
+\frametitle{Results $-$ Synonym}
+\begin{figure}
+\includegraphics[scale=0.35]{beispiel-synonym}
+\end{figure}
+\end{frame}
+%************** SYNONYM END *******************
 
 %********************START GENERAL EXAMPLE (all Operators included)***************************************************
 
@@ -360,13 +389,19 @@ betrunken sein. \\
 \begin{frame}
 \frametitle{Conclusion}
 \begin{itemize}
-\item Present operations
-\item Update in the state of the work (what can the algorithm reach, relation with the paper)
+\item \textbf{Operations: } Line Break, Hyphenation, Wrong Hyphenation, Synonym, Word Insertion or Deletion and Spelling.
+\item What the algorithm does:
+	\begin{itemize}
+	\item Build acrostics with short words (until 6 letters) in reasonable time
+	\item Build acrostics with not so good quality
+	\item The Result although depends highly on certain conditions of the text (e.g. most of the letters of the acrostic shall be in the original text)
+	\end{itemize}Update in the state of the work (what can the algorithm reach, relation with the paper)
 \item Difficulties:
 	\begin{itemize}
-	\item The time consumed by the requests to the web service
+	\item The time consumed by the requests to the NGram web service
+	\item The quality of the NGram database
+	\item The use of NGram is sometimes too restrictive
 	\item The choice of the quality of each operation is decisive in the result
-	\item ...
 	\end{itemize}
 \end{itemize}
 \end{frame}
