@@ -136,6 +136,14 @@ lnmkm
 \section{Cost Measure}
 
 \section{Operators}
+\subsection{Word Insertion or Deletion}
+The idea around this operator is to insert or delete words in the middle in order to insert new letter and accomplish the goal acrostic or to remove words and change the position of words inside the text. \par
+
+//Example here? \par
+
+The Word Insertion or Deletion operator takes as input a text and first tries to insert a new word in each space and second tries also to remove each word of the text. The condition to insert a new word \emph{w} in the \emph{i-th} space of the text is that \emph{w} has to fit the context around the \emph{i-th} space. It means that from the set of all possible words of the language, only a restricted subset can be inserted in this place. More specifically, the algorithm starts by taking for each space in the text \emph{n} words around it as context. This is a so called n-gram, a kind of window to the text with length \emph{n} or an array of words. After this, the n-gram just taken is sent to the context database (which is in this implementation the NetSpeak API \cite{Netspeak}), that returns the possible words that could be inserted in the required space. For each of these ppssible words a new version of the text is created with it inside. Analogously, for each word \emph{w} in text a n-gram with the words around is created, \emph{w} is then taken out of the n-gram, which is tested against the context database to check whether this ngram is frequent enough in the language. If the answer is positive a new version of the text without \emph{w} is created. \par
+The queries to the context database are made in form of HTTP requests to the netspeak web service using the NetSpeak API. \par
+// example here
 
 %----------------------------------------------------------------------------------------
 %	Evaluation of the Results
@@ -146,16 +154,19 @@ lnmkm
 %	Summary of Findings
 %----------------------------------------------------------------------------------------
 \chapter{Summary of Findings}
+to better: size of ngram, other context databas
 
 %----------------------------------------------------------------------------------------
 %	References
 %----------------------------------------------------------------------------------------
 \begin{thebibliography}{1}
-\bibitem{JavaSobre}
-	Oracle.
-	\emph{Obtenha Informações sobre a Tecnologia Java}.
-	Disponível em: $<$http://www.java.com/pt\_BR/about$>$.
-	Acesso em: Junho de 2014.
+\bibitem{Stein}
+	Benno Stein, Matthias Hagen, and Christof Bräutigam. \emph{Generating Acrostics via Paraphrasing and Heuristic Search}. \\
+	In Junichi Tsujii and Jan Hajic, editors, 25th International Conference on Computational Linguistics (COLING 14), pages 2018-2029, August 2014. Association for Computational Linguistics. 
+\bibitem{Netspeak}
+	Martin Potthast, Martin Trenkmann, and Benno Stein.
+	\emph{Netspeak: Assisting Writers in Choosing Words}. \\
+	In Cathal Gurrin et al, editors, Advances in Information Retrieval. 32nd European Conference on Information Retrieval (ECIR 10) volume 5993 of Lecture Notes in Computer Science, pages 672, Berlin Heidelberg New York, March 2010. Springer.
 \bibitem{BENEKE}
 	BENEKE, T.
 	\emph{Java: Explore the Possibilities}.
