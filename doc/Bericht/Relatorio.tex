@@ -1,0 +1,173 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{reportAlternative}
+
+%\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required to insert images
+\usepackage{float}
+\usepackage{listings}
+\usepackage[nottoc]{tocbibind}
+
+\settocbibname{References}
+
+\graphicspath{ {img/} }
+
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in 
+
+\linespread{1.1} % Line spacing
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\includegraphics[scale=0.5]{tub_logo}\\
+\Large{
+Technische Universität Berlin\\
+Fakultät IV - Fakultät Elektrotechnik und Informatik\\
+Fachgebiet Datenbanksysteme und Informationsmanagement
+}\\
+\vspace{3cm}\textbf{Project Report\\
+Generating Acrostics via Paraphrasing and Heuristic Search\\
+DBPRO - Database Projects (WS 2014/2015)
+}\\
+}
+
+\author{
+\vspace{2cm}\\
+Bruno Fillmann () \\
+Fernando Bombardelli da Silva ()\\
+Jürgen Bauer () \\
+\vspace{2.5cm}William Bombardelli da Silva (wbombardellis@mailbox.tu-berlin.de)}
+
+\date{February 2, 2015} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+%\newpage
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+% Examples of elements for the report in latex
+%----------------------------------------------------------------------------------------
+%================
+%Inserting code:
+%\lstinputlisting[frame=single, breaklines=true, language=java, label=lst:Foo, caption=Foo]{foo.java}
+%================
+%Inserting code inline:
+%\begin{lstlisting}[frame=single, breaklines=true, language=java]
+%//CODE HERE
+%\end{lstlisting}
+%================
+%Define a label for furutre referenceing: \label{sec:Foo} 
+%Refecing a label: \ref{sec:Foo}
+%================
+%Citing Bibliography: \cite{NameOfBibItem}
+%================
+%Emphasis on text: \emph{foo}
+%Bold on text: \textbf{Foo}
+%================
+%Table Example: 
+%\begin{table}[h]
+%\centering
+%\begin{tabular}{l | l | l | l | l}
+%	\hline
+%	\textbf{Modificador} & \textbf{Classe} & \textbf{Pacote} & \textbf{Subclasse} & \textbf{Mundo} \\ \hline
+%		\textbf{\textit{public}} &	S &		S &	S &	S \\ \hline
+%		\textbf{\textit{protected}} &	S &		S &	S &	N \\ \hline
+%		\textit{sem modificador} & S &	S &	N &	N \\ \hline
+%		\textbf{\textit{private}} &	S &		N &	N &	N \\
+%	\hline
+%\end{tabular}
+%\caption{Tabela de Modificadores de Acesso de Java}
+%\end{table}
+%================
+%Example of figure
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.5]{img_1_1}
+%\caption{\label{}Imagem -- Diagrama Conceitual de Java}
+%\end{figure}
+%
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Abstract
+%----------------------------------------------------------------------------------------
+\begin{abstract}
+ascasdas
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	Introduction and Motivation
+%----------------------------------------------------------------------------------------
+\chapter{Introduction and Motivation}
+lnmkm
+%----------------------------------------------------------------------------------------
+%	Description of own work
+%----------------------------------------------------------------------------------------
+\chapter{Generating Acrostics via Paraphrasing and Heursitic Search}
+
+\section{Problem Definition}
+
+\section{Modeling as Search Problem}
+
+\section{Cost Measure}
+
+\section{Operators}
+
+%----------------------------------------------------------------------------------------
+%	Evaluation of the Results
+%----------------------------------------------------------------------------------------
+\chapter{Evaluation of the Results}
+
+%----------------------------------------------------------------------------------------
+%	Summary of Findings
+%----------------------------------------------------------------------------------------
+\chapter{Summary of Findings}
+
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+\begin{thebibliography}{1}
+\bibitem{JavaSobre}
+	Oracle.
+	\emph{Obtenha Informações sobre a Tecnologia Java}.
+	Disponível em: $<$http://www.java.com/pt\_BR/about$>$.
+	Acesso em: Junho de 2014.
+\bibitem{BENEKE}
+	BENEKE, T.
+	\emph{Java: Explore the Possibilities}.
+	Disponível em: $<$http://www.oracle.com/technetwork/articles/java/ma14-java-cover-2177777.html$>$.
+	Acesso em: Junho de 2014.
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+%	Appendix
+%----------------------------------------------------------------------------------------
+\appendix
+\chapter{Appendix}
+
+
+\end{document}
