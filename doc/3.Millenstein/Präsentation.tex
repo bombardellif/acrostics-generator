@@ -176,9 +176,9 @@ Western Reserve University. \\}
 \begin{frame}
 \frametitle{Last State of Work}
 \begin{itemize}
-\item Line Break and Wrong Hyphenation Working Properly
-\item Search Algorithm Working Properly
-\item Word Insertion Working Partially, but Deletion Not Working
+\item Line Break and Wrong Hyphenation working properly
+\item Search algorithm working properly
+\item Word Insertion working partially, but Deletion not working
 \end{itemize}
 \end{frame}
 
@@ -202,9 +202,9 @@ Western Reserve University. \\}
 	\item Free dictionary of synonyms is used, namely, Open Thesaurus (www.openthesaurus.de)
 	\item We use \textbf{Redis} as database server (NoSQL)
 	\item Redis stores data as key-value pairs
-	\item Our base is structured in a way that, every word in the thesaurus is a key that points a set of synonyms
+	\item Our base is structured in a way that, every word in the thesaurus is a key that points to a set of synonyms
 	\item The thesaurus text file is imported into the database by a Python script
-	\item The database is then consulted by the appplication during its execution
+	\item The database is then consulted by the application during its execution
 \end{itemize}
 \end{frame}
 %************** SYNONYM END *******************
@@ -264,6 +264,39 @@ constraints.
 
 %***********HYPHENATION END ****************************************************
 
+%***********SPELLING START ****************************************************
+\begin{frame}
+\frametitle{Spelling}
+\begin{itemize}
+	\item This operation adds wrong spellings of words to add letter variety
+	\item To do this it changes letters such as 'ä', 'ö' and 'ü' to respectively ae oe ue.
+	\item The german letter 'ß' can also be changed to 'ss'
+	\item Only one word is changed per new text created by this operation
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Results $-$ Spelling}
+
+Original Text: \\
+
+\texttt{\tiny Die etymologischen Vorformen von "deutsch" bedeuteten ursprünglich \\
+"zum Volk gehörig", wobei das Adjektiv zunächst die Dialekte des \\
+kontinental-westgermanischen Dialektkontinuums bezeichnete. Die \\
+Bezeichnung Deutschland wird seit dem 15. Jahrhundert verwendet, ist \\
+in einzelnen Schriftstücken aber schon früher bezeugt. \\}
+
+Result Text: \\
+
+\texttt{\tiny Die etymologischen Vorformen von "deutsch" bedeuteten urspru- \\
+englich "zum Volk gehörig", wobei das Adjektiv zunächst die Dialekte de- \\
+s kontinental-westgermanischen Dialektkontinuums bezeichnete. Die \\
+Bezeichnung Deutschland wird seit dem 15. Jahrhundert verwendet, ist \\
+in einzelnen Schriftstücken aber schon früher bezeugt. \\}
+\end{frame}
+
+
+%***********SPELLING END ****************************************************
 
 
 %------------------------------------------------
