@@ -9,9 +9,9 @@
 \usepackage{graphicx} % Required to insert images
 \usepackage{float}
 \usepackage{listings}
-\usepackage[nottoc]{tocbibind}
+%\usepackage[nottoc]{tocbibind}
 
-\settocbibname{References}
+%\settocbibname{References}
 
 \graphicspath{ {img/} }
 
@@ -45,8 +45,8 @@ DBPRO - Database Projects (WS 2014/2015)
 
 \author{
 \vspace{2cm}\\
-Bruno Fillmann () \\
-Fernando Bombardelli da Silva ()\\
+Bruno Soares Fillmann () \\
+Fernando Bombardelli da Silva (bombardelli.f@mailbox.tu-berlin.de)\\
 Jürgen Bauer () \\
 \vspace{2.5cm}William Bombardelli da Silva (wbombardellis@mailbox.tu-berlin.de)}
 
@@ -142,8 +142,24 @@ The idea around this operator is to insert or delete words in the middle in orde
 //Example here? \par
 
 The Word Insertion or Deletion operator takes as input a text and first tries to insert a new word in each space and second tries also to remove each word of the text. The condition to insert a new word \emph{w} in the \emph{i-th} space of the text is that \emph{w} has to fit the context around the \emph{i-th} space. It means that from the set of all possible words of the language, only a restricted subset can be inserted in this place. More specifically, the algorithm starts by taking for each space in the text \emph{n} words around it as context. This is a so called n-gram, a kind of window to the text with length \emph{n} or an array of words. After this, the n-gram just taken is sent to the context database (which is in this implementation the NetSpeak API \cite{Netspeak}), that returns the possible words that could be inserted in the required space. For each of these ppssible words a new version of the text is created with it inside. Analogously, for each word \emph{w} in text a n-gram with the words around is created, \emph{w} is then taken out of the n-gram, which is tested against the context database to check whether this ngram is frequent enough in the language. If the answer is positive a new version of the text without \emph{w} is created. \par
+
 The queries to the context database are made in form of HTTP requests to the netspeak web service using the NetSpeak API. \par
 // example here
+
+\subsection{Synonyms}
+The synonym operator has the goal of changing words in the text for other words, which have similar meaning. In general the operator takes a text as input and generates a set of new texts, in which each text has a word replaced by a synonym that may eventually contain more than just one word.
+
+In order to perform the replacements it is required a synonym dictionary, which is know as thesaurus. In our implementation we used Open Thesaurus \cite{OpenThesuarus}, which is available for download for free. This data source is available as a plain text file, but as the dictionary is accessed many times during the execution of the algorithm, it easily becomes intractable to handle a text file as a database.
+
+To solve this problem we decided to use a NoSQL database server \cite{NoSQL}, namely, Redis. Redis is an open source advanced key-value pair cache and store \cite{Redis}. Into the database server we load once the data from the thesaurus in a structured way where, every word is added as a key that points to a set of synonyms. Thus can the application easily and efficiently find similar terms for a given word only by accessing this key.
+
+Naturally it is then required that the Redis server is running and listening to requests when the application runs, and that it has been once loaded by our script with the data from the dictionary.
+
+[EXAMPLE]
+
+PROS
+
+CONS
 
 %----------------------------------------------------------------------------------------
 %	Evaluation of the Results
@@ -167,11 +183,16 @@ to better: size of ngram, other context databas
 	Martin Potthast, Martin Trenkmann, and Benno Stein.
 	\emph{Netspeak: Assisting Writers in Choosing Words}. \\
 	In Cathal Gurrin et al, editors, Advances in Information Retrieval. 32nd European Conference on Information Retrieval (ECIR 10) volume 5993 of Lecture Notes in Computer Science, pages 672, Berlin Heidelberg New York, March 2010. Springer.
-\bibitem{BENEKE}
-	BENEKE, T.
-	\emph{Java: Explore the Possibilities}.
-	Disponível em: $<$http://www.oracle.com/technetwork/articles/java/ma14-java-cover-2177777.html$>$.
-	Acesso em: Junho de 2014.
+\bibitem{OpenThesuarus}
+	\emph{Synonyme - OpenThesaurus - Deutscher Thesaurus}.
+	Available on: $<$https://www.openthesaurus.de/$>$.
+	Accessed in: Januar 2015.
+\bibitem{NoSQL}
+	Jing Han; Haihong, E.; Guan Le; Jian Du. \emph{Survey on NoSQL database}. Pervasive Computing and Applications (ICPCA), 2011 6th International Conference on, pp.363,366, 26-28 October 2011.
+\bibitem{Redis}
+	\emph{Redis}.
+	Available on: $<$http://redis.io/$>$.
+	Accessed in: Januar 2015.
 \end{thebibliography}
 
 %----------------------------------------------------------------------------------------
