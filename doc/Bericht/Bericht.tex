@@ -10,9 +10,11 @@
 \usepackage{float}
 \usepackage{listings}
 \usepackage{url}
-%\usepackage[nottoc]{tocbibind}
+\usepackage{alltt}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[nottoc]{tocbibind}
 
-%\settocbibname{References}
+\settocbibname{References}
 
 \graphicspath{ {img/} }
 \bibliographystyle{plainnat}
@@ -143,14 +145,30 @@ lnmkm
 
 \section{Operators}
 \subsection{Word Insertion or Deletion}
-The idea around this operator is to insert or delete words in the middle in order to insert new letter and accomplish the goal acrostic or to remove words and change the position of words inside the text. \par
+The idea around this operator is to insert words in the text or delete words from it, in order to insert new letters and accomplish the goal acrostic or to remove words and change the position of words inside the text. \par
 
-//Example here? \par
+To ilustrate the execution, consider the following text:
+\begin{alltt}
+Ah ja, ich heisse Frederik Hoske und ich bin 13 Jahre. \textit{Ich kann nicht
+vorstellen}, weil ich kaum Deutsch sprechen kann. Trotzdem versuche ich
+es. Ich habe zwei Geschwister Mein Bruder der 16 Jahre alt ist und
+meine Schweseter ist elf.
+\end{alltt}
 
-The Word Insertion or Deletion operator takes as input a text and first tries to insert a new word in each space and second tries also to remove each word of the text. The condition to insert a new word \emph{w} in the \emph{i-th} space of the text is that \emph{w} has to fit the context around the \emph{i-th} space. It means that from the set of all possible words of the language, only a restricted subset can be inserted in this place. More specifically, the algorithm starts by taking for each space in the text \emph{n} words around it as context. This is a so called n-gram, a kind of window to the text with length \emph{n} or an array of words. After this, the n-gram just taken is sent to the context database (which is in this implementation the NetSpeak API \cite{Netspeak}), that returns the possible words that could be inserted in the required space. For each of these ppssible words a new version of the text is created with it inside. Analogously, for each word \emph{w} in text a n-gram with the words around is created, \emph{w} is then taken out of the n-gram, which is tested against the context database to check whether this ngram is frequent enough in the language. If the answer is positive a new version of the text without \emph{w} is created. \par
+After inserting the word \emph{"mir"} in the sentence \emph{"Ich kann nicht vorstellen"} in the first line and after breaking a line right before \emph{"Trotzdem"} the algorithm can reach the acrostic \emph{amt}. Note that the insertion of \emph{"mir"} was crutial for the result, once that the letter \emph{m} was not there.
+
+\begin{alltt}
+\textcolor{Blue}{A}h ja, ich heisse Frederik Hoske und ich bin 13 Jahre. \textit{Ich kann
+\textcolor{Blue}{m}ir nicht vorstellen}, weil ich kaum Deutsch sprechen kann.
+\textcolor{Blue}{T}rotzdem versuche ich es. Ich habe zwei Geschwister Mein Bruder der
+16 Jahre alt ist und meine Schweseter ist elf.
+\end{alltt}
+
+The Word Insertion or Deletion operator takes as input a text. Then first it tries to insert a new word in each space and second tries to remove each word of the text. The condition to insert a new word \emph{w} in the \emph{i-th} space of the text is that \emph{w} has to fit the context around the \emph{i-th} space. It means that from the set of all possible words of the language, only a restricted subset can be inserted in this place. More specifically, the algorithm starts by taking for each space in the text \emph{n} words around it as context $-$ In our implementation in this context $n = 4$. This is a so called n-gram, an array of words. After this, the n-gram just taken is sent to the context database (which is in this implementation the NetSpeak API \cite{Netspeak}), that returns the possible words that could be inserted in the required space. For each of these possible words a new version of the text is created with the word inside. \par
+
+Analogously, for each word \emph{w} in the text a n-gram including the words around it is created $-$ In our implementation we take two words from each side, so here $n=5$. \emph{w} is then taken out of the n-gram, which is tested against the context database to check whether this n-gram is frequent enough in the language. If the answer is positive a new version of the text without \emph{w} is created. Our implementation allows the adjustment of the minimum frequency cited above, but we set it to zero, so a broader set of deletions is executed. \par
 
 The queries to the context database are made in form of HTTP requests to the netspeak web service using the NetSpeak API. \par
-// example here
 
 \subsection{Synonyms}
 The synonym operator has the goal of changing words in the text for other words, which have similar meaning. In general the operator takes a text as input and generates a set of new texts, in which each text has a word replaced by a synonym that may eventually contain more than just one word.
