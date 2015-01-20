@@ -1,0 +1,268 @@
+Limas: Hauptseite </Limas/> · Inhalt
+</cgi-bin/Limas/contents.pl?biblio=checked&nummer=checked&rubrik=Nur+Nummer&sort=Quellen-Nummer&unterrubrik=Nur+Nummer>
+· Suchen </Limas/suche.htm> · Feedback
+<mailto:bernhard.schroeder@uni-due.de?subject=Limas> · Korpora.org </> ·
+LINSE <http://www.linse.uni-due.de>
+
+------------------------------------------------------------------------
+
+
+  Quelle Nummer 14
+
+Rubrik 11 : LITERATUR   Unterrubrik 11.01 : ZU
+
+SEXUALERZIEHUNG IN DER GESAMTSCHULE
+ELISABETH HAGEMEYER
+BRAUNSCHWEIG 1970, GESAMTSCHULE, HEFT 4, S. 13
+"DER ZAUBERBERG" - EIN ZEITROMAN (ZEIT, GESCHICHTE,
+MYTHOS)
+ULRICH KARTHAUS
+METZLESCH VERLAGSBUCHHANDLUNG STUTTGART
+DEUTSCHE VIERTELJAHRESZEITSCHRIFT FUER LITERATUR-
+WISSENSCHAFT UND GEISTESGESCHICHTE, 44. JAHRGANG,
+HEFT 2, JUNI 1970
+
+------------------------------------------------------------------------
+
+001  " Der Zauberberg " - ein Zeitroman (Zeit,
+002  Geschichte, Mythos). Hofrat Behrens demonstriert seinen
+003  Gästen Hans Castorp und Joachim Ziemßen das Porträt der
+004  Clawdia Chauchat; insbesondere ihr Dekollet‚, " das bei
+005  weitem bemerkenswerteste Stück Malerei " aus seiner Produktion,
+006  erläutert er: " Da sehen Sie nicht bloß die Schleim
+007  schichten und Hornschichten der Oberhaut, sondern darunter ist
+008  das Lederhautgewebe gedacht mit seinen Salbendrüsen und
+009  Schweißdrüsen und Blutgefäßen und Wärzchen, - und darunter
+010  wieder die Fetthaut, die Polsterung, wissen Sie, die Unterlage.
+011  Was aber mitgewußt ist und mitgedacht, das spricht auch mit.
+012  Es fließt Ihnen in die Hand und tut seine Wirkung, ist nicht da
+013  und irgendwie doch da, und das gibt Anschaulichkeit. " Damit ist
+014  ein Produktionsprinzip beschrieben, dessen Realisierung sich im
+015  " Zauberberg " wiedererkennen läßt. Ähnlich wie der Hofrat sein
+016  Werk in mehreren Schichten übereinander denkt, verfährt auch
+017  Thomas Mann: mehrere " Schichten " von Motiven überlagern
+018  sich, kommen in Leitmotiven abwechselnd oder zugleich zum
+019  Vorschein und schaffen so jenen " eigentümlich träumerischen
+020  Doppelsinn " des Wortes, den man als die für das Werk Thomas
+021  Manns typische Ironie erkannt hat. Zugleich ist in diesem
+022  Prinzip jenes Verweilende, bisweilen Weitschweifige und
+023  erläuternd Exakte der Darstellung angelegt, das sich nicht mit
+024  der Nennung einer Sache begnügt, sondern ihre Hintergründe,
+025  Einschränkungen, Bedingungen, geheimen Gegensätze und
+026  Probleme auch dort mit einbezieht, wo Ironie im landläufigen
+027  Sinne schwer nur erkennbar ist. Diese Tiefendimension hat auch
+028  die Zeitdarstellung des " Zauberberg ". Sie bezieht sich in
+029  erster Linie auf Hans Castorp. Zunächst wird eine psychologisch
+030  bedingte Veränderung seines Zeitbewußtseins dargestellt; mit
+031  dem Eintritt in die Welt des Sanatoriums wird ihm deutlich:
+032  " Man ändert hier seine Begriffe ", vor allem hinsichtlich der
+033  Zeit. Diese Zeit der Kranken, die bei stets gleichem Tageslauf
+034  meist mehrere Jahre im Sanatorium leben, unterscheidet sich
+035  weitgehend von der Zeit der Menschen im Flachlande. Gibt es auf
+036  der einen Seite Tätigkeit, Veränderung, Ereignisse, so
+037  stehen dem im Sanatorium Untätigkeit, Gleichmaß, Ruhe
+038  gegenüber. Es ist eine Zeit ohne Inhalt, die den Patienten
+039  vergeht, eine verdünnte, nichtssagende Zeit. Hans Castorp,
+040  gewöhnt an die im Flachlande herrschende Zeitorganisation, paßt
+041  nun sein eigenes Zeitempfinden für die Dauer des Aufenthaltes der
+042  neuen Umwelt an. Schon kurz nach der Ankunft, beim Abendessen
+043  mit Joachim, tut er die ersten tastenden Schritte auf dem Wege
+044  dieser Adaption. Dabei spielt zunächst eine andere Erfahrung in
+045  dieses Erlebnis hinein: eine Auffrischung des Zeitsinnes, wie
+046  sie sich allgemein im Urlaub einstellt. " Man schaltet
+047  dergleichen als Unterbrechung und Zwischenspiel in den
+048  Hauptzusammenhang des Lebens ein, und zwar zum Zwecke der "
+049  Erholung ". " Neue Eindrücke bewirken diese Erneuerung, und
+050  auch Hans Castorp wird sie zu Beginn des Aufenthaltes bei seinem
+051  Vetter zuteil: gegen Abend seines ersten Tages wundert er sich:
+052  " Gott, ist noch immer der erste Tag? Mir ist ganz, als
+053  wäre ich schon lange - lange bei euch hier oben. " Ja er meint
+054  sogar, während dieses einen Tages bereits " älter und klüger "
+055  geworden zu sein. Diese zerdehnende Intensivierung seines
+056  Zeitsinnes kann indes nicht hindern, daß ihm die Zeit allzu
+057  schnell vergeht. Das ist nur scheinbar paradox; der Erzähler
+058  bemerkt: " Leere und Monotonie mögen zwar den Augenblick und
+059  die Stunde dehnen und " langweilig " machen, aber die großen und
+060  größten Zeitmassen verkürzen und verflüchtigen sie sogar bis zur
+061  Nichtigkeit. " So erweist sich die anfangs so bedeutende Dauer
+062  von drei Wochen, noch ehe sie verstrichen ist, als leer und
+063  nichtig. Dies allgemein bekannte Phänomen, das Hans Castorp an
+064  sich wahrnimmt, wird durch eine weitergehende Veränderung seines
+065  Zeitsinnes ergänzt und vertieft. Denn der Gast gewöhnt sich,
+066  beginnend schon am ersten Tage seines Aufenthaltes, an die
+067  ausdrückliche Vernichtung der Zeit in seinem Bewußtsein. Der
+068  Tageslauf des Hauses, obschon neu für ihn, unterstützt ihn
+069  dabei; bereits das erste Mittagessen läßt ihn mit dieser Übung
+070  beginnen: " bald saßen sie alle an den sieben Tischen, als
+071  seien sie nie davon aufgestanden. " Und: " Miß Robinson las
+072  dieselben rundlich geschriebenen Briefe, die sie schon heute morgen
+073  gelesen hatte. " Die Zeit zwischen den Mahlzeiten, diesen
+074  Gliederungen des eintönigen Tageslaufs, scheint Hans Castorp
+075  schon am ersten Tage als " kurz und nichtig ". Hier bereits, an
+076  so früher Stelle, scheint die Zeit getilgt; alle späteren
+077  Erfahrungen der Zeitaufhebung und Zeitvernichtung sind
+078  Variationen dieser Erfahrung des ersten Tages. Voraus
+079  blickend oder zurückblickend übt man im Sanatorium diese
+080  Praxis auch bezüglich größerer Zeiträume: " Solche Etappen
+081  im Jahreslauf, wie das Weihnachtsfest, schienen ihnen eben recht
+082  als Anhaltspunkte und Turngeräte, woran sich über leere
+083  Zwischenzeiten behende hinwegvoltigieren ließ. Sie hatten alle
+084  Fieber, ihr Stoffumsatz war erhöht, ihr Körperleben verstärkt
+085  und beschleunigt, - es mochte am Ende wohl damit zusammenhängen,
+086  daß sie die Zeit so rasch und massenhaft durchtrieben. " Die
+087  physikalisch-psychologische Hypothese: Stoffwechsel (math.Op.)
+088  Zeitverbrauch ist natürlich eine scherzhafte Beschreibung des
+089  leichten und schnellen Lebens im Sanatorium; die Welt bietet
+090  keine neuen Erfahrungen, Perspektiven und Aufgaben, die erst die
+091  Zeit gewichtig machen und dem einzelnen Augenblick Dauer verleihen
+092  können. Auf die sensible Wahrnehmung solcher Erfahrungen ist
+093  Hans Castorp durch Erlebnisse in seiner Kindheit vorbereitet.
+094  In den zwei Abschnitten des zweiten Kapitels (" Von der
+095  Taufschale und vom Großvater in zwiefacher Gestalt ", " Bei
+096  Tienappels. Und von Hans Castorps sittlichem Befinden ")
+097  werden die biographisch-psychologischen Voraussetzungen für
+098  seine Anpassung an die Zauberberg-Zeit und den im Hause
+099  Berghof herrschenden Zeitsinn dargelegt. Er neigt dazu, die
+100  Zeit unausgefüllt verstreichen zu lassen. Für die Arbeit ist er
+101  nicht geschaffen, " weil sie ihm nicht bekam. Sie erschöpfte ihn
+102  bald, und ganz offen gab er zu, daß er eigentlich viel mehr die
+103  freie Zeit liebe, die offen vor einem gelegen hätte, nicht
+104  abgeteilt von zähneknirschend zu überwindenden Hindernissen. "
+105  Die Art von Zeit also, die ihm angemessen ist, ist " frei "
+106  und " offen ", sie ist nicht Gelegenheit zur Aktion und kennt
+107  keine Termine. So ist es denn aber vielleicht gar keine " Zeit "
+108  mehr, die Hans Castorp liebt, sondern vielmehr ihre Tilgung.
+109  Sein Hang zum " Dösen " findet eine tiefsinnigere Deutung beim
+110  Anblick der Taufschale, die er sich bisweilen vom Großvater
+111  zeigen läßt: " ein schon erprobtes Gefühl kam ihn an, die
+112  sonderbare, halb träumerische, halb beängstigende Empfindung
+113  eines zugleich Ziehenden und Stehenden, eines wechselnden
+114  Bleibens, das Wiederkehr und schwindelige Einerleiheit war. Sie
+115  war es zum Teil, um derentwillen ihm die Vorzeigung des stehend
+116  wandernden Erbstücks angelegen gewesen war. " Diese frühe
+117  unbegriffliche Erkenntnis des Knaben kann nur paradox formuliert
+118  werden: ziehend und stehend, wechselnd bleibend, stehend wandernd
+119  - mit diesen Eindrücken zeigt sich ihm das Wesen von Geschichte,
+120  Tradition und Zeit als eine unauflösbar widersprüchliche
+121  Struktur, die sich nur in Oxymora beschreiben läßt. Des
+122  Großvaters Haupt, das sich über die Schale neigt, gleicht dem
+123  des Säuglings bei der Taufe; die Begebnisse um die Schale
+124  werden von ihr zusammengehalten als von einem geschichtlichen
+125  Erbstück, das sich unverändert in der Zeit erhält und damit
+126  Metapher wird für die Identität von Vergangenheit und Gegenwart.
+127  Identität im Wechsel stellt sich her, es scheint, als sei die
+128  geschichtliche Zeit im Augenblick negiert. Menschenleben und
+129  Geschichte kehren zu ihrem Beginn zurück; Hans Castorps
+130  spätere Erfahrung der kreisend wiederkehrenden Zeit wird
+131  präludiert. Was sich dabei dem Knaben als Wesen der Geschichte
+132  zeigt, ist die Tradition; er ist von früher Jugend an
+133  konservativ orientiert. Vorbild wird ihm der Großvater mit seiner
+134  Halskrause, der " streng herkömmlich gesinnt " " und für das
+135  Neue nur schwer zu haben " ist. Geschichte erblickt er als einen
+136  " fromm gewahrten Zusammenhang zwischen der Gegenwart, seinem
+137  eigenen Leben und dem tief Versunkenen ". Seine Frömmigkeit
+138  ist bewahrende Pietät, und sein Blick ist rückwärts gewandt.
+139  In dieser Gemütsstimmung ist später sein Verständnis Naphtas
+140  begründet, seine Ehrfurcht vor dem Tode und seine Krankheit.
+141  Hans Castorps Zeiterfahrung ist mithin ein mehrsinniges Phänomen.
+142  Einmal entspricht sie seiner Trägheit; die Arbeit ist " ein-
+143  fach dem ungetrübten Genuß von Maria Mancini etwas im Wege ".
+144  Sodann enthüllt diese Trägheit aber wiederum " Mängel "
+145  der " Epoche und Zeitgenossenschaft ", die eben darin bestehen,
+146  daß sie " keinen unbedingten Grund " für das Leben und die
+147  Arbeit anbieten, und das heißt: keine Perspektive in die
+148  Zukunft. Und möglicherweise erwächst die Beeinträchtigung
+149  seines " sittlichen Wohlbefindens " für Hans Castorp durch die
+150  von Grund auf konservativ gestimmten Erfahrungen seiner Jugend.
+151  Die Erfahrung der Zeitlosigkeit wird zur Parabel für eine
+152  geschichtliche Situation: die Zukunft fehlt, weil der Blick nur
+153  in die Vergangenheit gerichtet ist. Das ist die Ausgangsposition
+154  des " hermetischen " Erziehungsprozesses, dem sich Hans Castorp
+155  unterzieht. Nach alldem entspricht die Lebensweise im Berghof dem
+156  Ankömmling zutiefst; namentlich behagt ihm die Liegekur. Seine
+157  eingangs getane Äußerung, es sei " überhaupt keine Zeit ",
+158  spricht sein Wesen aus und eröffnet den weiten Horizont einer
+159  ungeheuren Möglichkeit: der junge Adept des Zauberbergs bleibt
+160  schließlich sieben Jahre dort, vergißt gänzlich die Kalender
+161  zeit und Uhrzeit des Flachlandes, ja am Ende sogar die
+162  eigene biographische Zeit. Seine Freiheit ist unumschränkt und
+163  grenzenlos, weil sie unbestimmt ist. Das Gefühl von
+164  " schwindeliger Einerleiheit ", das den Knaben Castorp beim
+165  Anblick der Taufschale stets neu überkommt, hat der Berghof-
+166  Patient später oftmals, indem er immer wieder die vollkommene
+167  Aufhebung der Zeit erfährt: " er saß eigentlich immer dort
+168  (sc. beim Friseur), oder vielmehr, wenn er saß und mit dem
+169  schmeichelnd-gewandten Angestellten plauderte, der sein Werk
+170  an ihm tat, nachdem die Zeit das ihre getan; oder wenn er an
+171  seiner Balkontür stand und sich die Nägel kürzte, - flog
+172  plötzlich mit einer Art von Schrecken, dem neugieriges Ergötzen
+173  beigemischt war, jener Schwindel ihn an: ein Schwindel in des
+174  Wortes schwankender Doppelbedeutung von Taumel und Betrug, das
+175  wirbelige Nicht-mehr-unterscheiden von " Noch " und "
+176  Wieder ", deren Vermischung und Verwischung das zeitlose Immer
+177  und Ewig ergibt. " Man kann dieses Erlebnis als die Erfahrung
+178  einer zyklischen Zeit bezeichnen, einer nicht mehr linear
+179  fortschreitenden Folge unwiederholbarer Augenblicke, einer in sich
+180  kreisenden Wiederkehr von Augenblicken, die einander bis zur
+181  Identität gleichen. Solche zyklische Zeit erlebt Hans Castorp
+182  bereits nach den ersten drei Wochen seines Aufenthaltes, als man
+183  ihm Bettruhe verordnet hat: " Man bringt dir die Mittagssuppe,
+184  wie man sie dir gestern brachte und sie dir morgen bringen wird.
+185  Und in demselben Augenblick weht es dich an - du weißt nicht,
+186  wie und woher; dir schwindelt, indes du die Suppe kommen siehst,
+187  die Zeitformen verschwimmen dir, rinnen ineinander, und was sich
+188  als wahre Form des Seins dir enthüllt, ist eine ausdehnungslose
+189  Gegenwart, in welcher man dir ewig die Suppe bringt. " Das
+190  Wort " Ewigkeit " hat hier noch durchaus erkenntniskritische
+191  Bedeutung; durch die Aequivokation mit der transzendenten,
+192  theologisch-metaphysischen Bedeutung des Wortes, die in
+193  späteren Erfahrungen Hans Castorps relevant wird und im
+194  Zusammenhang mit der Taufschale bereits anklang - durch all dies
+195  gewinnt das Wort einen Assoziationshorizont, der das Erlebnis der
+196  " Ewigkeitssuppe " über den konkreten Anlaß hinaus bedeutsam
+197  macht. Die völlige Gleichheit von Einst und Jetzt und Dann
+198  bewirkt, daß der jeweilige Augenblick seinen Charakter als
+199  individuelles Jetzt verliert und sich unverändert konserviert.
+200  Als Folge zeigt sich der " Schwindel " - Betrug und
+201  Orientierungslosigkeit. Da die gewichtlose, ereignisarme Zeit
+202  immer wieder in gleicher Weise erfahren wird, schrumpft sie endlich
+203  zur " ausdehnungslosen Gegenwart " zusammen - und deshalb kann
+204  nicht mehr von Zeit gesprochen werden, denn das würde voraussetzen,
+205  daß einmalige Inhalte eine Reihe von unwiederholbaren
+206  Augenblicken erfüllen. Zeit bewirkt Wandel und Veränderung und
+207  läßt sich nur durch Wandel und Veränderung wahrnehmen. Mit dem
+208  längeren Verbleiben Hans Castorps im Zauberberg wiederholen sich
+209  ihm diese Erlebnisse immer wieder; nicht nur der Tag kreist in
+210  sich, sondern auch die Woche, von einer Postverteilung bis zur
+211  nächsten, der Monat, von einem Friseurbesuch zum anderen, und
+212  das Jahr kreisen in sich selbst. Hans Castorp unterliegt " einem
+213  kurzen, aber stürmischen Schwindel bei dem Gedanken, daß die
+214  Akelei wieder blühte und das Jahr in sich selber lief. " Seine
+215  astronomischen Studien haben ihn zu dieser Einsicht geführt, und
+216  sie erlauben ihm eine weit großzügigere Zeitbewirtschaftung, als
+217  sie selbst im Sanatorium geübt wird. Dabei gewinnt er Einblick
+218  in das Wesen der Ewigkeit: " es gibt keine Richtungsdauer, und
+219  die Ewigkeit ist nicht " geradeaus, geradeaus ", sondern "
+220  Karussell, Karussell ". " Die kreisende Zeit ist nicht mehr
+221  ein eindimensionales lineares Kontinuum, sondern zyklische
+222  Wiederkehr des Gleichen; sie ist die in immer neuen Augenblicken
+223  erfahrene Ewigkeit. In diesem Zusammenhang ist ein Blick auf
+224  Nietzsches Lehre von der Wiederkehr des Gleichen angeraten, wie
+225  sie namentlich im "Zarathustra " dargestellt ist. Dabei sollen
+226  sachliche Übereinstimmungen und Differenzen zwischen Nietzsches
+227  Philosophem und Strukturelementen des Romans deutlich werden,
+228  nicht so sehr Entlehnungen. Denn zugegebenermaßen stand " Also
+229  sprach Zarathustra " von Nietzsches Werken Thomas Mann offenbar
+230  am fernsten. Die Beziehungen Thomas Manns zu Nietzsche sind
+231  bislang vor allem für die Früzeit und das Spätwerk, namentlich
+232  den " Doktor Faustus " dargestellt worden; indes bestehen auch
+233  zur Zeit des " Zauberberg " Beziehungen, und zwar vermutlich in
+234  erster Linie in der Vermittlung von Ernst Bertrams Buch
+235  " Nietzsche. Versuch einer Mythologie ".
+
+Zum Anfang dieser Seite <#top>
+
+------------------------------------------------------------------------
+
+Korpora.org <http://www.korpora.org>
+

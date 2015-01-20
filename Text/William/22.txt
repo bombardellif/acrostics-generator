@@ -1,0 +1,309 @@
+Limas: Hauptseite </Limas/> · Inhalt
+</cgi-bin/Limas/contents.pl?biblio=checked&nummer=checked&rubrik=Nur+Nummer&sort=Quellen-Nummer&unterrubrik=Nur+Nummer>
+· Suchen </Limas/suche.htm> · Feedback
+<mailto:bernhard.schroeder@uni-due.de?subject=Limas> · Korpora.org </> ·
+LINSE <http://www.linse.uni-due.de>
+
+------------------------------------------------------------------------
+
+
+  Quelle Nummer 22
+
+Rubrik 07 : POLITIK   Unterrubrik 07.02 : TAGESPOLITIK
+
+NORDRHEIN-WESTFALEN-PROGRAMM 1975
+9. REGIERUNG UND VERWALTUNG
+DUESSELDORF 1970, S. 143-148
+
+------------------------------------------------------------------------
+
+001  Regierung und Verwaltung. Regierung und Verwaltung
+002  dienen der Bevölkerung und der Wirtschaft. Organisation und
+003  Arbeitsweise der öffentlichen Verwaltung sowie die Form des
+004  staatlichen Aufbaues beeinflussen die Güte der Leistungen der
+005  Verwaltung. Gebietsreform der Verwaltung. Die
+006  Anpassung der Verwaltung an die heutige und zukünftige
+007  Entwicklung der Bevölkerung, des Verkehrs, der Technik und der
+008  Wirtschaft macht einen Gebietszuschnitt für die
+009  Verwaltungseinheiten notwendig, der sicherstellt, daß die
+010  öffentlichen Aufgaben gut erfüllt werden können. Erstes
+011  Neugliederungsprogramm. Die Landesregierung hat mehrfach zum
+012  Ausdruck gebracht, daß eine Gebietsreform im kommunalen und
+013  staatlichen Bereich " von unten nach oben " durchgeführt werden
+014  muß. Seit Herbst 1967 ist daher zunächst die Neugliederung der
+015  damals 2335 Gemeinden mit dem Ziel in Angriff genommen worden,
+016  die Gebiete der kleinen Gemeinden wesentlich zu vergrößern und
+017  auf die Ämter zu verzichten. Das erste Neugliederungsprogramm
+018  wird bis Mitte 1970 abgeschlossen sein. Es umfaßt insgesamt 1435
+019  kreisangehörige Gemeinden, zwei Kreise und sechs kreisfreie
+020  Städte. Das Schwergewicht der Neugliederung lag zunächst in
+021  solchen Kreisen, in denen die gebietliche Zersplitterung in Klein
+022  gemeinden und Kleinstgemeinden einen besonders hohen Grad
+023  erreicht hatte (Unna, Siegen, Lemgo, Herford, Soest,
+024  Kleve, Geldern, Euskirchen, Detmold). Daneben wurden
+025  Gebiete erfaßt, in denen die Raumnot von Kernstädten und
+026  unorganische Grenzziehungen gesunde kommunale Entwicklungen hemmten
+027  oder verhinderten (Lüdenscheid/Altena, Bonn/Siegkreis,
+028  Oberbergischer Kreis, Olpe, Wiedenbrück). Schließlich
+029  wurden die Gemeinden solcher Kreise neu geordnet, in denen das
+030  Leistungsgefälle gegenüber den großen Städten des Umlandes
+031  besonders augenfällig in Erscheinung trat (Ennepe-Ruhr-
+032  Kreis, Kempen-Krefeld). In drei Fällen (Herford,
+033  Lüdenscheid, Viersen) wurde zugleich das Problem der
+034  Wiedereingliederung bisher kreisfreier Städte in den sie
+035  umgebenden Kreis gelöst. Durch das erste Neugliederungsprogramm
+036  wird die Zahl der Gemeinden um etwa die Hälfte verringert.
+037  Zweites Neugliederungsprogramm. Die Landesregierung
+038  beabsichtigt, in der Legislaturperiode ab 1970 ein zweites
+039  Neugliederungsprogramm durchzuführen. Es soll in einem jeweils
+040  geschlossenen Verfahren die Gemeindeneugliederung und
+041  Kreisneugliederung für abgegrenzte Teilräume des Landes zum
+042  Abschluß gebracht werden. Da die Kreisreform nur in großen
+043  Räumen möglich ist, soll das Land - unabhängig von
+044  Regierungsbezirksgrenzen - in acht Neugliederungsgebiete
+045  eingeteilt werden, die in jeweils einem Verfahren untersucht werden
+046  und für die jeweils ein geschlossener Gesetzentwurf ausgearbeitet
+047  werden soll. Es handelt sich um folgende Neugliederungsgebiete:
+048  Raum Aachen: Kreisfreie Stadt Aachen, Kreise
+049  Aachen, Geilenkirchen-Heinsberg, Erkelenz, Jülich,
+050  Düren, Monschau, Schleiden, Euskirchen. Raum Bielefeld:
+051  Kreisfreie Stadt Bielefeld, Kreise Bielefeld, Herford,
+052  Halle, Minden, Lübbecke, Detmold, Lemgo, Wiedenbrück.
+053  Raum Münster/Hamm: Kreisfreie Städte Münster,
+054  Hamm, Kreise Münster, Warendorf, Steinfurt, Tecklenburg,
+055  Coesfeld, Ahaus, Recklinghausen, Lüdinghausen, Beckum,
+056  Unna, Soest, Lippstadt. Ruhrgebiet: 16 Städte des
+057  Ballungskernes. Raum Niederrhein: Kreisfreie Stadt
+058  Bocholt, Kreise Borken, Rees, Kleve, Geldern, Dinslaken,
+059  Moers. Raum Mönchengladbach/Düsseldorf/Wuppertal:
+060  Kreisfreie städte Düsseldorf, Wuppertal, Solingen,
+061  Remscheid, Neuss, Mönchengladbach, Rheydt, Krefeld,
+062  Kreise Düsseldorf-Mettmann, Grevenbroich, Kempen-
+063  Krefeld. Raum Sauerland/Paderborn: Kreisfreie
+064  Stadt Hagen, Kreise Ennepe-Ruhr, Iserlohn, Lüdenscheid,
+065  Arnsberg, Olpe, Meschede, Brilon, Siegen, Wittgenstein,
+066  Paderborn, Büren, Höxter, Warburg. Raum Köln:
+067  Kreisfreie Städte Köln, Leverkusen, Kreise Rhein-
+068  Wupper-Kreis, Rheinisch-Bergischer Kreis,
+069  Oberbergischer Kreis, Köln, Bergheim. Die Abgrenzung
+070  der Neuordnungsräume zeigt Abbildung 63. Die neuen Kreise
+071  müssen sich in das System der Entwicklungsachsen und
+072  Entwicklungsschwerpunkte des Landesentwicklungsplanes 2 einfügen
+073  und eigenständige, mit dem Großraum abgestimmte
+074  Entwicklungsziele haben. Wie die Kreisreform weitgehend von der
+075  Durchführung der Gemeindereform abhängig ist, so ist eine
+076  Reform der regionalen Verwaltungseinheiten (Landschaftsverbände,
+077  Regierungsbezirke) weitgehend abhängig von der Durchführung
+078  der Kreisreform. Als besonders schwierig wird sich die
+079  Gebietsreform im Ruhrgebiet und im Umland der großen Städte
+080  herausstellen. Hier fallen nämlich örtliche, überörtliche und
+081  regionale Probleme weitgehend zusammen. Das Problem der
+082  kommunalen Neugliederung innerhalb des Ruhrgebietes wird deshalb
+083  gesondert untersucht. Bei der Reform der regionalen
+084  Verwaltungseinheiten darf der Zusammenhang mit der notwendigen
+085  Neugliederung der Länder und mit der weiteren Entwicklung der
+086  bundesstaatlichen Ordnung nicht außer Betracht bleiben. In allen
+087  Bundesländern sollte ein möglichst einheitlicher Typ der
+088  regionalen Verwaltungseinheiten angestrebt werden.
+089  Langfristiges Ziel Rationeller und übersichtlicher Aufbau
+090  der Gesamtverwaltung mit einer wesentlich herabgesetzten Zahl der
+091  Verwaltungseinheiten. Maßnahmen bis 1975 Wegfall der
+092  Ämter; Auflösung von mehr als drei Viertel der Gemeinden,
+093  mehreren Kreisen und sonstigen Verwaltungseinheiten; Rückkehr
+094  kleinerer kreisfreier Städte in die Kreise. Landesausgaben
+095  im Programmzeitraum Keine. Justiz Materielle
+096  Änderungen des Zivilrechts, Strafrechts und
+097  Prozeßrechts gehören nahezu ausschließlich in die Zuständigkeit
+098  des Bundes. Der Wirkungsbereich des Landes auf dem Gebiet des
+099  Rechts ist fast vollständig auf Organisationsfragen und die
+100  Justizverwaltung beschränkt. Im Programmzeitraum wird die
+101  Reform der Gerichtsorganisation und die Reform des Strafvollzugs
+102  von besonderer Bedeutung sein. Gerichtsorganisation
+103  Verwaltungsbezirke und Gerichtsbezirke sollen sich nicht
+104  überschneiden. Mit der Veränderung der Verwaltungsgrenzen
+105  müssen daher auch die Grenzen der Gerichtsbezirke geändert werden.
+106  Amtsgerichte, die wegen ihrer geringen Größe oder aus
+107  sonstigen Gründen nicht den Anforderungen der modernen
+108  Rechtspflege genügen, müssen aufgehoben werden. Eine
+109  leistungsfähige und hinreichend spezialisierte Rechtsprechung ist
+110  auf weite Sicht nur bei solchen Amtsgerichten gewährleistet, die
+111  mit wenigstens drei, möglichst jedoch mit fünf oder mehr Richtern
+112  besetzt sind. Um soviel Richter einsetzen zu können, muß ein
+113  Amtsgerichtsbezirk möglichst mehr als 60000, zumindest nicht
+114  weniger als 40000 Einwohner haben. Nur in weitläufigen, dünn
+115  besiedelten Gebieten (z. B. Eifel, Hochsauerland) ist
+116  die Beibehaltung von Amtsgerichten mit einer geringeren Zahl von
+117  Einwohnern vertretbar. Mit den erforderlichen Maßnahmen ist
+118  bereits begonnen worden. Nachdem bis Ende 1969 17 Amtsgerichte
+119  aufgehoben worden sind, wird künftig noch die Aufhebung weiterer
+120  30 bis 40 Amtsgerichte notwendig sein. Die Bezirke der 29
+121  Arbeitsgerichte sind in Nordrhein-Westfalen verhältnismäßig
+122  klein. Bayern hat nur 11 Arbeitsgerichte, während in Rheinland
+123  -Pfalz vor kurzem die Zahl der Arbeitsgerichte von 18 auf 4
+124  reduziert worden ist. Etwa 10 bis 15 Arbeitsgerichte, die wegen
+125  ihrer geringen Größe eine rationelle Arbeit nicht zulassen,
+126  sollen daher in Nordrhein-Westfalen im Programmzeitraum
+127  aufgehoben und zu größeren Gerichtseinheiten zusammengefaßt
+128  werden. Die neuen Arbeitsgerichtsbezirke sollen dabei an die
+129  veränderten kommunalen Grenzen angepaßt werden. Nach
+130  Möglichkeit ist eine Übereinstimmung mit Kreisgrenzen
+131  herzustellen. Kosten werden nur dadurch entstehen, daß in einer
+132  Reihe von Fällen bauliche Maßnahmen für eine angemessene
+133  Unterbringung der in einem vergrößerten Bezirk beizubehaltenden
+134  Gerichte getroffen werden müssen. Diese Kosten werden für den
+135  Programmzeitraum bei Amtsgerichten auf 11 Mio DM und bei
+136  Arbeitsgerichten auf 5 Mio DM geschätzt. Auf lange Sicht
+137  werden diese Kosten durch die Rationalisierungsvorteile mehr als
+138  Langfristiges Ziel Schaffung funktionstüchtiger
+139  Amtsgerichte und Arbeitsgerichte in Maßnahmen bis 1975
+140  Aufhebung von 30 bis 40 Amtsgerichten und 10 bis 15
+141  Arbeitsgerichten. Landesausgaben im Rogrammzeitraum 16
+142  Mio DM. Wirtschaftskriminalität Zahl und Umfang
+143  der Wirtschaftsdelikte haben in einem bedenklichen Maße zugenommen.
+144  Die Ursachen für diese Entwicklung liegen vor allem darin,
+145  daß die wirtschaftlichen Vorgänge und die Steuergesetze immer
+146  komplizierter werden. Der Gesamtschaden wirtschaftskriminellen
+147  Verhaltens wird für die Bundesrepublik auf auf einige Milliarden
+148  DM geschätzt. In dem hochindustrialisierten Nordrhein-
+149  Westfalen hat die Wirtschaftskriminalität besonderes Gewicht.
+150  Im Interesse einer schnelleren und wirksameren Bekämpfung der
+151  Wirtschaftsdelikte sind seit 1968 bei den Staatsanwaltschaften
+152  Bielefeld, Bochum, Düsseldorf und Köln Schwerpunkte für die
+153  Bearbeitung von Wirtschaftsstrafsachen gebildet worden. Es wird
+154  angestrebt, daß alle bedeutsamen Wirtschaftsdelikte künftig von
+155  diesen vier Schwerpunkt-Staatsanwaltschaften bearbeitet werden.
+156  Die staatsanwaltlichen Sondersachbearbeiter müssen auf den
+157  Gebieten des Buchführungswesens und Bilanzwesens, des
+158  Steuerrechts und der Wirtschaftskriminalität laufend fortgebildet
+159  werden. Den Schwerpunkt-Staatsanwaltschaften sind weitere
+160  Wirtschaftsfachkräfte und Buchhalter zuzuweisen. Es muß ein
+161  ständiger Erfahrungsaustausch der Sondersachbearbeiter gefördert
+162  werden. Diese Maßnahmen werden dazu führen, daß die
+163  Straftaten auf dem Gebiet der Wirtschaftskriminalität wirksam
+164  bekämpft werden können. Langfristiges Ziel Wirksame
+165  Bekämpfung der Wirtschaftskriminalität. Maßnahmen bis 1975
+166  Personelle Verstärkung der Schwerpunkt-
+167  Staatsanwaltschaften und Intensivierung der Fortbildung der
+168  Richter und Staatsanwälte auf diesem Spezialgebiet.
+169  Landesausgaben im Programmzeitraum 3 Mio DM.
+170  Strafvollzug Der Strafvollzug ist reformbedürftig. Die
+171  Reform hat bereits begonnen und wird energisch fortgeführt.
+172  Künftig soll die Einweisung der Gefangenen in einzelne Anstalten
+173  nicht mehr in erster Linie von der Art und Höhe der Strafe und
+174  der Zeit der Verbüßung abhängig sein; vielmehr soll sie sich
+175  nach dem Ergebnis einer sorgfältigen Persönlichkeitsdiagnose
+176  richten. Um die angestrebte differenzierte Unterbringung der
+177  Gefangenen zu erreichen, sind nach ihrer Größe überschaubare
+178  Vollzugsanstalten, insbesondere für den Jugendstrafvollzug, zu
+179  schaffen. Es sollen sozialtherapeutische Anstalten für
+180  Verurteilte eingerichtet werden, deren Resozialisierung durch den
+181  allgemeinen Vollzug nicht erreicht werden kann und die deshalb einer
+182  besonderen Behandlung bedürfen. Da Großanstalten dem
+183  Anstaltszweck nicht entsprechen und auch hier nach Alter,
+184  Ausbildungsbereitschaft und Beeinflußbarkeit der Häftlinge
+185  unterschiedliche Gruppen zu bilden sind, werden im
+186  Programmzeitraum entsprechende Einrichtungen zu schaffen sein. Um
+187  das Personal besser auszubilden, sind insbesondere
+188  Ausbildungslehrgänge einzurichten. Zu diesem Zweck wird das
+189  bisherige Amtsgerichtsgebäude in Wuppertal-Barmen zu einer
+190  zusätzlichen Schulungsstätte umgebaut. Zur medizinischen
+191  Versorgung der Gefangenen bedarf es des Neubaus eines
+192  Zentralkrankenhauses, das den heutigen und zukünftigen
+193  Erfordernissen entspricht. Für Verurteilte, die psychiatrisch
+194  oder psychologisch zu behandeln sind, sind Spezialisten zur
+195  Verfügung zu stellen. Die vorgesehenen Baumaßnahmen werden
+196  Kosten in Höhe von 190 Mio DM verursachen. Für die Aus
+197  bildung und Fortbildung sind 2,5 Mio DM erforderlich.
+198  Die Strafgefangenen und Verwahrten genießen bisher - von
+199  Arbeitsunfällen abgesehen - nicht den Schutz der
+200  Sozialversicherung. Ein Unterausschuß des
+201  Strafvollzugsausschusses der Länder befaßt sich unter dem
+202  Vorsitz von Nordrhein-Westfalen mit der Frage, wie die
+203  Gefangenen in die Sozialversicherung einbezogen werden können.
+204  Dieses Problem muß im Programmzeitraum gelöst werden.
+205  Langfristiges Ziel Bessere Ausbildung der Vollzugsbeamten
+206  und Differenzierung des Strafvollzugs. Maßnahmen bis 1975
+207  Errichtung sozialtherapeutischer Anstalten, eines
+208  Zentralkrankenhauses, weiterer Strafvollzugsanstalten und einer
+209  Schulungsstätte für Strafvollzugspersonal. Landesausgaben
+210  im Programmzeitraum 192,5 Mio DM. Polizei
+211  Die Ziele des Nordrhein-Westfalen-Programms können nur
+212  verwirklicht werden, wenn die öffentliche Sicherheit und Ordnung
+213  gewährleistet bleiben. Die Stabilität der inneren Verhältnisse
+214  ist die Grundvoraussetzung für ein gedeihliches Zusammenarbeiten
+215  aller Kräfte und für eine möglichst weitgehende Ausschaltung von
+216  Reibungsverlusten. Soweit die Erhaltung der inneren Sicherheit
+217  den Einsatz staatlicher Macht erfordert, hängt ihr Erfolg in
+218  erster Linie von dem Wirkungsgrad der Polizei ab. Die Polizei
+219  wird ihre Tätigkeit auch bis 1975 auf drei Aufgaben zu
+220  konzentrieren haben: die Verbrechensbekämpfung. die
+221  Sicherheit und Überwachung des Straßenverkehrs. die
+222  Sicherung der verfassungsmäßigen Ordnung gegen Angriffe extremer
+223  und revolutionärer Gruppen.. Es ist damit zu rechnen, daß
+224  in allen drei Bereichen größere Anforderungen als bisher an die
+225  Polizei gestellt werden. Die Leistungskraft der Polizei ist
+226  demgemäß zu steigern. Dies erfordert verstärkte Bemühungen um
+227  eine bessere personelle und technische Ausstattung der Polizei.
+228  Die Leistungskraft der Polizei hängt entscheidend von ihrer
+229  zahlenmäßigen Stärke und der Qualität ihres Personals ab.
+230  Das Problem der personellen Aufstockung der Polizei liegt nicht
+231  in der Festlegung bestimmter Zuwachsraten, sondern in der
+232  Schwierigkeit, überhaupt Personal für die Polizei zu gewinnen.
+233  Die Schwierigkeiten werden sich in Zukunft verstärken. Dies
+234  ergibt sich nicht nur aus dem zu erwartenden vermehrten
+235  Arbeitsanfall, sondern auch schon auf Grund der Tatsache, daß
+236  mit einer weiteren Arbeitszeitverkürzung gerechnet werden muß.
+237  Allein die Verkürzung der Arbeitszeit um eine Stunde in der
+238  Woche bedeutet für die Polizei den Fortfall der Arbeitskraft von
+239  rund 650 Polizeibeamten. Diese Verluste können durch die
+240  Übertragung polizeilicher Aufgaben auf andere Verwaltungszweige
+241  (wie z. B. die Übertragung der Überwachung des ruhenden
+242  Verkehrs auf Kräfte der Ordnungsbehörden) nicht annähernd
+243  ausgeglichen werden. Bis 1975 wird - jährlich steigend - eine
+244  Personalvermehrung um etwa 10 Prozent gegenüber dem Stand von
+245  1970 angestrebt werden müssen. Die Personalvermehrung wird
+246  zusätzliche Kosten verursachen, und zwar nicht nur wegen der
+247  Unterhaltung eines vergrößerten Personalkörpers, sondern auch
+248  wegen der aus Werbungsgründen möglicherweise erforderlich
+249  werdenden Schaffung erhöhter Anreize im Bereich des Laufbahn
+250  rechts und Besoldungsrechts. Die Kosten der
+251  Personalvermehrung werden mit 233 Mio DM im Programmzeitraum
+252  angesetzt. Die qualitative Verbesserung des Personals hängt von
+253  zwei Faktoren ab: von der Gewinnung eines besser vorgebildeten
+254  Nachwuchses und einer weiter intensivierten Ausbildung
+255  und Fortbildung. Auch die Polizei muß an den Ergebnissen der
+256  verstärkten Bemühungen im allgemeinen Bildungssektor beteiligt
+257  werden. Dies folgt nicht nur aus dem Zwang zur
+258  Leistungssteigerung, sondern auch aus der Notwendigkeit, den
+259  Absolventen weiterbildender Schulen (wie z. B. Realschulen)
+260  eine berufliche Betätigung zu eröffnen, die ihrem
+261  Bildungsstand angemessen ist. Die Eigenart der polizeilichen
+262  Einsatzmethoden und ihrer technischen Mittel erfordert zur
+263  Entfaltung ihrer vollen Wirksamkeit möglichst großräumige
+264  organisatorische Lösungen. Kleine Polizeibezirke stellen nicht
+265  nur den Erfolg der polizeilichen Tätigkeit in Frage, sondern
+266  beeinträchtigen auch die Wirtschaftlichkeit der
+267  Polizeiorganisation. Wie die Erfahrung gezeigt hat, sind
+268  Rationalität und Wirtschaftlichkeit einer Kreispolizeibehörde im
+269  allgemeinen erst dann gewahrt, wenn die Bevölkerungszahl des
+270  Kreispolizeibezirkes 150000 Einwohner übersteigt. Es ist daher
+271  anzustreben, im Rahmen der Gebietsreform der Kreise und
+272  kreisfreien Städte auch der Polizeiorganisation einen größeren
+273  Zuschnitt zu geben. Dabei ist vor allem im Hinblick auf die
+274  kriminologischen Zusammenhänge gerade in den Verdichtungsgebieten
+275  den Kreispolizeibehörden eine Form zu geben, die den
+276  zusammengefaßten Einsatz der Schutzpolizei und
+277  Kriminalpolizei unter einheitlicher Führung und die volle Nutzung
+278  der technischen Mittel der Polizei ermöglicht. Die Ausstattung
+279  der Polizeidienststellen mit technischem Gerät ist weiter zu
+280  modernisieren und zu ergänzen. Nur eine mit den modernsten
+281  technischen Hilfsmitteln ausgerüstete Polizei kann personelle
+282  Engpässe ausgleichen und durch einen besseren Wirkungsgrad die
+283  Sicherheit und Ordnung im Lande gewährleisten.
+
+Zum Anfang dieser Seite <#top>
+
+------------------------------------------------------------------------
+
+Korpora.org <http://www.korpora.org>
+
