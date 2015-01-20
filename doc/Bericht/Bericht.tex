@@ -191,6 +191,57 @@ PROS
 
 CONS
 
+
+\newpage
+
+\subsection{Line break}
+The fastest and most basic operation is the line break. A line break can be applied in two cases:
+
+\begin{itemize}
+	\item After a word when the line length lies in the $[l_{min},l_{max}]$-window, 
+	given by the line length constraints.
+	\item After the end of a sentence.
+\end{itemize} 
+After performing a line break, the lines following the line break have
+to be aligned again to satisfy the line length constraints.\\
+For this task we apply a greedy word wrap algorithm, which works as follows: we split the text into words,
+put the words on the line as long as there is free space, if there is no free space left, we continue with the next line.\\
+When applying the greedy word wrap algorithm we have to ensure that
+there is no word of length $> 20$ in the initial text. Otherwise it might happen, that the minimal line
+length constraint is not fulfilled.\\
+Identifying the end of a sentence in general is a difficult problem. One reason for this is that a period
+might occur in several contexts, e.g. 
+
+\begin{itemize}
+
+	\item abbreviations (Prof., Dr., d.h., z.B., ...)
+	
+	\item ordinal numbers (der 26. April, Joseph II., 2. Auflage, ...)
+	
+	\item numbers (10.1312, 192.11301, ...)
+	
+\end{itemize}
+Another issue is that there is a wide variety of punctuations which could mark the end of a sentence. These punctuations include question marks, exclamation marks, ellipses, semi-cola, cola.\\
+To overcome these problems we make use of a sentence-splitter library, called Sentrick (cf. \cite{Sentrick}).
+
+
+\subsection{Hyphenation}
+ Related to the line break are hyphenations. A hyphenation is applicable if the line after hyphenating (and line breaking) has a length of at least $l_{min}=50$.\\ For hyphenating a word we employ a re-implementation of Knuth's hyphenation algorithm in TEX (cf. \cite{Hyphenation}). \\
+After the hyphenation, the text following the hyphen has to be aligned again to satisfy the line length constraints.\\
+Analog to the line break operation, in order to rearrange the lines we apply a greedy word wrap algorithm.
+
+
+
+
+
+
+
+
+
+
+
+
+
 %----------------------------------------------------------------------------------------
 %	Evaluation of the Results
 %----------------------------------------------------------------------------------------
@@ -223,6 +274,10 @@ to better: size of ngram, other context databas, degenerating into breadth first
 	\emph{Redis}.
 	Available on: $<$\url{http://redis.io}$>$.
 	Accessed in: Januar 2015.
+\bibitem{Sentrick}
+\url{http://sourceforge.net/projects/sentrick/}
+\bibitem{Hyphenation}
+\url{http://sourceforge.net/projects/texhyphj/}
 \end{thebibliography}
 
 %----------------------------------------------------------------------------------------
