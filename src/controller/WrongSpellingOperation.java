@@ -11,7 +11,7 @@ import java.util.List;
 public class WrongSpellingOperation extends Operation {
     
     
-    private static final double localQuality = .9;
+    private static final double localQuality = 0.7;
     private static final Double COST = ((double)1)/localQuality;
     
     public WrongSpellingOperation() {

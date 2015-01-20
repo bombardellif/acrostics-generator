@@ -13,6 +13,7 @@ import controller.SynonymOperation;
 import controller.Text;
 import controller.WordInsertionDeletionOperation;
 import controller.WrongHyphenationOperation;
+import controller.WrongSpellingOperation;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -53,19 +54,14 @@ public class Algorithm {
         operatorList.add(new WrongHyphenationOperation());
         operatorList.add(new WordInsertionDeletionOperation());
         //operatorList.add(new SynonymOperation());
-        operatorList.add(new HyphenationOperation());
-        ///operatorList.add(new ) TODO Add new operation by Bruno
-        
+        //operatorList.add(new HyphenationOperation());
+        //operatorList.add(new WrongSpellingOperation());
         
         Comparator<State> comparator = new StateCostComparator();
         PriorityQueue<State> stateQueue = new PriorityQueue<>(comparator);
         
         HashSet visitedTexts;
         visitedTexts = new HashSet();
-        
-        
-        
-
         
         //not isGoal
         if(!(S0.getText()).goalTest(acrostic)){

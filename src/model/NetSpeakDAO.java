@@ -26,6 +26,8 @@ public class NetSpeakDAO {
     
     private static final List<String> notEmptyList = Arrays.asList("");
     private static final List<String> emptyList = new ArrayList<>();
+    
+    private static Integer QUERY_COUNT = 0;
 
     public static List<Phrase> search(String query) throws IOException, Exception {
         if (query == null) {
@@ -81,6 +83,8 @@ public class NetSpeakDAO {
             result = cache.get(query);
         } else {
 
+            QUERY_COUNT++;
+            System.out.println("NetSpeakApi ("+QUERY_COUNT+"): "+query);
             List<Phrase> phrasesFromNetspeak = NetSpeakDAO.search(query);
 
             result = phrasesFromNetspeak.parallelStream()

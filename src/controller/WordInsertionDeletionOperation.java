@@ -6,7 +6,7 @@ import java.util.List;
 
 public class WordInsertionDeletionOperation extends ContextDependentOperation {
 
-    private static final double localQuality = 0.5;
+    private static final double localQuality = 0.7;
     private static final Double COST = ((double)1)/localQuality;
 
     public WordInsertionDeletionOperation() {
@@ -21,13 +21,21 @@ public class WordInsertionDeletionOperation extends ContextDependentOperation {
             
             ArrayList<String> words = new ArrayList<>( Arrays.asList(textInString.split(REGEX_SPLITINWORDS, -1)) );
         
+            /*if (textInString.contains("hochad ligen")
+            || words.contains("hochad")) {
+                System.out.println(text);
+                System.out.println();
+                System.out.println(textInString);
+            }*/
+                
+            
             List<Text> ret = insertWord(text, words);
             ret.addAll(deleteWord(text, words));
             
-            System.out.println("==========");
+            /*System.out.println("==========");
             ret.stream().forEach(r -> {
                 System.out.println(r);
-            });
+            });*/
             
             return ret;
         }else{
