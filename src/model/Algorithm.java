@@ -38,8 +38,10 @@ public class Algorithm {
     
     */
     private long generatedNodesNo;
+    private long goalChecksNo;
     
     private static final int TIMEOUT_SECONDS = 15*60; // 15 Minutes
+    private long lastExecutionTime = 0;
     
     // Evolve a population
     public State execute(Text text, String acrostic) throws TimeoutException, Exception {
@@ -47,6 +49,7 @@ public class Algorithm {
         
         State S0 = new State(text);
         setGeneratedNodesNo(1);
+        setGoalChecksNo(0);
         
        
         
@@ -56,7 +59,7 @@ public class Algorithm {
         operatorList.add(new LineBreakOperation());
         operatorList.add(new WrongHyphenationOperation());
         operatorList.add(new WordInsertionDeletionOperation());
-        //operatorList.add(new SynonymOperation());
+        operatorList.add(new SynonymOperation());
         //operatorList.add(new HyphenationOperation());
         //operatorList.add(new WrongSpellingOperation());
         
@@ -67,6 +70,7 @@ public class Algorithm {
         visitedTexts = new HashSet();
         
         //not isGoal
+        this.goalChecksNo++;
         if(!(S0.getText()).goalTest(acrostic)){
             
            
@@ -100,6 +104,8 @@ public class Algorithm {
                 /*** Timeout control        ***/
                 LocalDateTime timeCurrent = LocalDateTime.now();
                 if (Duration.between(timeOfStart, timeCurrent).getSeconds() > TIMEOUT_SECONDS) {
+                    setLastExecutionTime(Duration.between(timeOfStart, timeCurrent).getSeconds());
+                    
                     System.out.println("==== END BY TIMEOUT ====");
                     System.out.println("The Algorithm Result:");
                     System.out.println();
@@ -141,9 +147,12 @@ public class Algorithm {
                             newState.setAppliedOperations(appliedOperatorList);
                             
                             boolean isTheGoal = (newState.getText()).goalTest(acrostic);
+                            goalChecksNo++;
                             
                             //isTheGoal
                             if(isTheGoal){
+                                setLastExecutionTime(Duration.between(timeOfStart, LocalDateTime.now()).getSeconds());
+                                
                                 return newState;
                                 
                             }
@@ -196,6 +205,8 @@ public class Algorithm {
                 
                 
             }
+            
+            setLastExecutionTime(Duration.between(timeOfStart, LocalDateTime.now()).getSeconds());
             
             
             
@@ -262,6 +273,36 @@ public class Algorithm {
     public void setGeneratedNodesNo(long generatedNodesNo) {
         this.generatedNodesNo = generatedNodesNo;
     }
+    
+    /**
+     * @return the generatedNodesNo
+     */
+    public long getGoalChecksNo() {
+        return goalChecksNo;
+    }
+    
+    /**
+     * @param goalChecksNo the goalChecksNo to set
+     */
+    private void setGoalChecksNo(long goalChecksNo) {
+        this.goalChecksNo = goalChecksNo;
+    }
+
+    /**
+     * @param seconds Seconds elapsed in the last execution
+     */
+    private void setLastExecutionTime(long seconds) {
+        this.lastExecutionTime = seconds;
+    }
+    
+    /**
+     * @return the getLastExecutionTime
+     */
+    public long getLastExecutionTime() {
+        return lastExecutionTime;
+    }
+    
+    
 
     
     

@@ -35,7 +35,7 @@ public class Text {
         if (lines == null)
             throw new IllegalArgumentException("Text: Parameter lines must not be null");
         
-        List<String> trimmedLines = lines.parallelStream()
+        List<String> trimmedLines = lines.stream()
                 .map(s -> s.trim())
                 .collect(Collectors.toList());
         

@@ -1,14 +1,14 @@
 Der Reisewetterbericht vom 3.Dezember. Wetter
 und Temperaturen von 10 Uhr:. Insel Sylt bedeckt 3 Grad,
-Cuxhaven Regen 5, Schleswig Regen 2, Lübeck Regen 8,
+Cuxhaven Regen 5, Schleswig Regen 2, LÃ¼beck Regen 8,
 Berlin Regen 7, Koblenz wolkig 10, Trier Regen 9, Neustadt
-/Weinstraße Regen., Frankfurt/Flughafen Regen 8,
+/WeinstraÃŸe Regen., Frankfurt/Flughafen Regen 8,
 Feldberg/Taunus Regen 4, Freudenstadt Regen 3, Freiburg
 bedeckt 9, Feldberg/Schwarzwald Schauer 0, Konstanz Regen
 6, Oberstdorf Regen 2, Garmisch bedeckt 1, Berchtesgaden
 bedeckt 2, Zugspitze Nebel (math.Op.) 9 Grad. Ostende bedeckt 11,
 Amsterdam wolkig 9, Kopenhagen Schneeregen 2, Innsbruck bedeckt
-3, Zürich Regen 5, Locarno wolkig 4, Bozen wolkig 0,
+3, ZÃ¼rich Regen 5, Locarno wolkig 4, Bozen wolkig 0,
 Venedig wolkig 5, Rom wolkig 8, Nizza heiter 9, Barcelona
 heiter 6, Mallorca heiter 8, M laga heiter 9, Prag
 bedeckt 6, Belgrad wolkig 4, Athen bedeckt 17, Konstanza

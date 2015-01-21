@@ -76,7 +76,7 @@ public class AlgorithmTester {
         assert acrostic != null;
         assert !acrostic.isEmpty();
         
-        acrostics.add(acrostic);
+        //acrostics.add(acrostic);
         
         Character firstLetter = text.getFirstLetter();
         assert firstLetter != null;
@@ -101,12 +101,12 @@ public class AlgorithmTester {
         }
         sb.append("Applied Operators (In Final Result): ").append(
                 finalState.getAppliedOperations()
-                        .stream().map(o -> o.toString()))
+                        .stream().reduce(new StringBuffer(), (buf, op) -> buf.append(op.toString()).append("\n"),
+                                StringBuffer::append))
                 .append("\n");
         sb.append("Number of Genereted Nodes: ").append(algorithm.getGeneratedNodesNo()).append("\n");
-        //@TODO:
-        //sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
-        //sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
+        sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
+        sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
         
         return sb.toString();
     }
@@ -117,10 +117,12 @@ public class AlgorithmTester {
         sb.append("Acrostic: ").append(acrostic).append("\n");
         sb.append("Result: TIMEOUT").append("\n");
         sb.append("Number of Genereted Nodes: ").append(algorithm.getGeneratedNodesNo()).append("\n");
-        sb.append("Exception Message: ").append(ex.getMessage()).append("\n");
-        //@TODO:
-        //sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
-        //sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
+        sb.append("Exception Message: ").append(ex.getMessage()).append("\n").
+                append("Exception Cause: ").append(ex.getCause()).append("\n").
+                append("Exception Class: ").append(ex.getClass()).append("\n").
+                append("Stack Trace: ").append(ex.getStackTrace()).append("\n");
+        sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
+        sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
         
         return sb.toString();
     }
@@ -131,10 +133,12 @@ public class AlgorithmTester {
         sb.append("Acrostic: ").append(acrostic).append("\n");
         sb.append("Result: EXCEPTION").append("\n");
         sb.append("Number of Genereted Nodes: ").append(algorithm.getGeneratedNodesNo()).append("\n");
-        sb.append("Exception Message: ").append(ex.getMessage()).append("\n");
-        //@TODO:
-        //sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
-        //sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
+        sb.append("Exception Message: ").append(ex.getMessage()).append("\n").
+                append("Exception Cause: ").append(ex.getCause()).append("\n").
+                append("Exception Class: ").append(ex.getClass()).append("\n").
+                append("Stack Trace: ").append(ex.getStackTrace()).append("\n");
+        sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
+        sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
         
         return sb.toString();
     }
