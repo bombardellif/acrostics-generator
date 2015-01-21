@@ -450,5 +450,27 @@ public class Text {
     public ArrayList<String> getLines() {
         return new ArrayList<>(lines);
     }
+
+    public String getFirstWord() {
+        assert lines != null;
+        
+        if (!lines.isEmpty() && lines.get(0).length() > 0){
+            //position of the first space or -1 (in case there is no space - i.e. only one word)
+            int endPos = lines.get(0).indexOf(" ");
+            return endPos <= 0 ? lines.get(0) : lines.get(0).substring(0, endPos);
+        }else{
+            return null;
+        }
+    }
+
+    public Character getFirstLetter() {
+        assert lines != null;
+        
+        if (!lines.isEmpty() && lines.get(0).length() > 0){
+            return lines.get(0).charAt(0);
+        }else{
+            return null;
+        }
+    }
     
 }

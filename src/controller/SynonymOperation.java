@@ -92,4 +92,8 @@ public class SynonymOperation extends ContextDependentOperation {
         }
     }
 
+    @Override
+    public String toString(){
+        return "SynonymOperation";
+    }
 }

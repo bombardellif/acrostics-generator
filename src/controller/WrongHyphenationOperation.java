@@ -79,4 +79,8 @@ public class WrongHyphenationOperation extends Operation {
         return hyphenationList;
     }
 
+    @Override
+    public String toString(){
+        return "WrongHyphenationOperation";
+    }
 }

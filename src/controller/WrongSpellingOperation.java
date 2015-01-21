@@ -100,5 +100,10 @@ public class WrongSpellingOperation extends Operation {
         
         return returnList;
     }
+    
+    @Override
+    public String toString(){
+        return "WrongSpellingOperation";
+    }
 }
     
