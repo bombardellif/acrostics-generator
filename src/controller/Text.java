@@ -459,10 +459,10 @@ public class Text {
     public String getFirstWord() {
         assert lines != null;
         
-        if (!lines.isEmpty() && lines.get(0).length() > 0){
+        if (!lines.isEmpty() && lines.get(0).trim().length() > 0){
             //position of the first space or -1 (in case there is no space - i.e. only one word)
-            int endPos = lines.get(0).indexOf(" ");
-            return endPos <= 0 ? lines.get(0) : lines.get(0).substring(0, endPos);
+            int endPos = lines.get(0).trim().indexOf(" ");
+            return endPos <= 0 ? lines.get(0).trim() : lines.get(0).trim().substring(0, endPos);
         }else{
             return null;
         }
@@ -471,8 +471,8 @@ public class Text {
     public Character getFirstLetter() {
         assert lines != null;
         
-        if (!lines.isEmpty() && lines.get(0).length() > 0){
-            return lines.get(0).charAt(0);
+        if (!lines.isEmpty() && lines.get(0).trim().length() > 0){
+            return lines.get(0).trim().charAt(0);
         }else{
             return null;
         }

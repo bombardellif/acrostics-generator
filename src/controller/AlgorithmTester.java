@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Algorithm;
@@ -79,7 +80,7 @@ public class AlgorithmTester {
         
         Character firstLetter = text.getFirstLetter();
         assert firstLetter != null;
-        acrostic = mostFreqWordsByInitialLetter.get(firstLetter);
+        acrostic = mostFreqWordsByInitialLetter.get(Character.toLowerCase(firstLetter));
         assert acrostic != null;
         assert !acrostic.isEmpty();
         
@@ -110,7 +111,35 @@ public class AlgorithmTester {
         return sb.toString();
     }
     
-    private String runTests(final Text text) throws Exception{
+    private String getTimeoutLog(Text text, String acrostic, Algorithm algorithm, TimeoutException ex) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Input Text: ").append(text).append("\n");
+        sb.append("Acrostic: ").append(acrostic).append("\n");
+        sb.append("Result: TIMEOUT").append("\n");
+        sb.append("Number of Genereted Nodes: ").append(algorithm.getGeneratedNodesNo()).append("\n");
+        sb.append("Exception Message: ").append(ex.getMessage()).append("\n");
+        //@TODO:
+        //sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
+        //sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
+        
+        return sb.toString();
+    }
+    
+    private String getExceptionLog(Text text, String acrostic, Algorithm algorithm, Exception ex) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Input Text: ").append(text).append("\n");
+        sb.append("Acrostic: ").append(acrostic).append("\n");
+        sb.append("Result: EXCEPTION").append("\n");
+        sb.append("Number of Genereted Nodes: ").append(algorithm.getGeneratedNodesNo()).append("\n");
+        sb.append("Exception Message: ").append(ex.getMessage()).append("\n");
+        //@TODO:
+        //sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
+        //sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
+        
+        return sb.toString();
+    }
+    
+    private String runTests(final Text text){
         assert text != null;
         assert !text.toString().isEmpty();
 
@@ -119,21 +148,33 @@ public class AlgorithmTester {
         assert acrostics != null;
         assert !acrostics.toString().isEmpty();
         
-        String log = "\n";
+        StringBuilder log = new StringBuilder(5);
+        log.append("\n");
+        
         //Execute algorithm one time per acrostic
         for(String acrostic : acrostics){
             assert !acrostic.isEmpty();
             
             Algorithm acrosticsAlg = new Algorithm();
-            State state = acrosticsAlg.execute(text, acrostic);
-            
-            log = getResultLog(text, acrostic, acrosticsAlg, state);
+            try{
+                State state = acrosticsAlg.execute(text, acrostic);
+                //Build the actual log
+                log.append(getResultLog(text, acrostic, acrosticsAlg, state)).append("\n");
+                
+            }catch(TimeoutException ex){
+                //Build timeout log
+                log.append(getTimeoutLog(text, acrostic, acrosticsAlg, ex)).append("\n");
+                
+            }catch(Exception ex){
+                //Other logs
+                log.append(getExceptionLog(text, acrostic, acrosticsAlg, ex)).append("\n");
+            }
         }
         
-        return log;
+        return log.append("\n").toString();
     }
 
-    public void execute(final List<String> inputFileNames, final String outputFileName) throws IOException, Exception{
+    public void execute(final List<String> inputFileNames, final String outputFileName) throws IOException{
         
         if (outputFileName == null || outputFileName.isEmpty()){
             throw new IllegalArgumentException("AlgorithmTester::execute: output file name invalid");
@@ -156,37 +197,49 @@ public class AlgorithmTester {
                         input.append(line);
                     }
                     
+                    StringBuilder sbLog = new StringBuilder();
                     if (input.length() > 0){
                         //Important: turns input into an text object
                         Text inputText = hyOp.StringToText(input.toString());
                         
+                        assert inputText != null;
+                        
                         //Execute the actual tests
                         String runLog = runTests(inputText);
-                        
+
                         //Build actual logs
-                        StringBuilder sbLog = new StringBuilder();
                         sbLog.append(HEADERLINE).append(inputFileName).append(HEADERLINE).append("\n");
                         sbLog.append("Current Time: ").append(new Date().toString()).append("\n");
                         sbLog.append("Input String: ").append(input.toString()).append("\n");
                         sbLog.append(runLog);
-                        sbLog.append(FOOTERLINE);
+                        sbLog.append(FOOTERLINE).append("\n");
                         
                     }else{
                         //Log empty input string
-                        StringBuilder sbLog = new StringBuilder();
                         sbLog.append(HEADERLINE).append(inputFileName).append(HEADERLINE).append("\n");
                         sbLog.append("Current Time: ").append(new Date().toString()).append("\n");
                         sbLog.append("ERROR: Empty File").append("\n");
-                        sbLog.append(FOOTERLINE);
+                        sbLog.append(FOOTERLINE).append("\n");
                     }
+                    
+                    //Finally Write to the file the result
+                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName, true))){
+
+                        writer.append("\n").append(sbLog.toString()).append("\n");
+
+                    } catch (IOException ex1) {
+                        //But if occurred an IO error we call the java logger
+                        Logger.getLogger(AlgorithmTester.class.getName()).log(Level.SEVERE, null, ex1);
+                    }
+                    
                 } catch (FileNotFoundException ex) {
                     //FileNotFound is an exception that can de logged in our output file
-                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(new File(outputFileName)))){
+                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName, true))){
 
-                        writer.append(HEADERLINE).append(inputFileName).append(HEADERLINE);
-                        writer.append("Current Time: ").append(new Date().toString());
-                        writer.append("ERROR: File not Found");
-                        writer.append(FOOTERLINE);
+                        writer.append(HEADERLINE).append(inputFileName).append(HEADERLINE).append("\n");
+                        writer.append("Current Time: ").append(new Date().toString()).append("\n");
+                        writer.append("ERROR: File not Found").append("\n");
+                        writer.append(FOOTERLINE).append("\n");
 
                     } catch (IOException ex1) {
                         //But if occurred an IO error we call the java logger
