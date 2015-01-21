@@ -21,6 +21,7 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.PriorityQueue;
+import java.util.concurrent.TimeoutException;
 
 /**
  *
@@ -41,7 +42,7 @@ public class Algorithm {
     private static final int TIMEOUT_SECONDS = 15*60; // 15 Minutes
     
     // Evolve a population
-    public State execute(Text text, String acrostic) throws Exception {
+    public State execute(Text text, String acrostic) throws TimeoutException, Exception {
         
         
         State S0 = new State(text);
@@ -110,7 +111,7 @@ public class Algorithm {
                         System.out.println(operator);
                     }
                     
-                    System.exit(0);
+                    throw new TimeoutException("End by timeout");
                 }
                 /*** END of Timeout control ***/
                 
