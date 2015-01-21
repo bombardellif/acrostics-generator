@@ -58,8 +58,8 @@ public class LineBreakOperation extends Operation {
                     String str1 = line.substring(0,sum);
                     String str2 = line.substring(sum);
 
-
-                    String str3= (str2 + " ");
+                    
+                    String str3 = str2.endsWith("-") ? str2.substring(0, str2.length()-1) : str2 + " ";
                     
                     for(int j=i+1; j< lines.size(); j++){
 
@@ -67,7 +67,8 @@ public class LineBreakOperation extends Operation {
                             str3 += lines.get(j);
                         }                   
                         else{
-                            str3 += lines.get(j) + " ";
+                            String currentLine = lines.get(j);
+                            str3 += currentLine.endsWith("-") ? currentLine.substring(0, currentLine.length()-1) : currentLine + " ";
                         }
 
                     }
@@ -86,7 +87,20 @@ public class LineBreakOperation extends Operation {
 
                     Text textResult = new Text(lines3);
                     
+                    // DEBUG
+                    /*Boolean test = textResult.getLines().parallelStream()
+                        .reduce(false,
+                            (res, li) -> res || li.contains("hochad- "),
+                            (res1, res2) -> res1 || res2);
                     
+                    if (test) {
+                        System.out.println(textResult);
+                        System.out.println(str2);
+                        System.out.println(str3);
+                        System.out.println();
+                        System.out.println(text);
+                        System.exit(0);
+                    }*/
                     
                     if(ecOp.ensureLineLengthConstraints(textResult) )
                         LineBreakList.add(textResult);

@@ -60,8 +60,8 @@ public class Algorithm {
         operatorList.add(new WrongHyphenationOperation());
         operatorList.add(new WordInsertionDeletionOperation());
         operatorList.add(new SynonymOperation());
-        //operatorList.add(new HyphenationOperation());
-        //operatorList.add(new WrongSpellingOperation());
+        operatorList.add(new HyphenationOperation());
+        operatorList.add(new WrongSpellingOperation());
         
         Comparator<State> comparator = new StateCostComparator();
         PriorityQueue<State> stateQueue = new PriorityQueue<>(comparator);

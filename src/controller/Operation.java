@@ -63,7 +63,7 @@ public abstract class Operation {
                         row = row.substring(0, row.length()-1);
                         lines.add(row);
                         row = "";
-                        row += (word + " ");
+                        row += word.endsWith("-") ? word.substring(0, word.length()-1) : word + " ";
 
                         if(!st.hasMoreTokens())
                             lines.add(word);
@@ -82,7 +82,7 @@ public abstract class Operation {
                         
                     }
                     
-                    row += (word+" ");
+                    row += word.endsWith("-") ? word.substring(0, word.length()-1) : word + " ";
                     SpaceLeft-=(word.length()+SpaceWidth);
 		}
 	}//do

@@ -58,7 +58,7 @@ Fernando Bombardelli da Silva (bombardelli.f@mailbox.tu-berlin.de)\\
 Jürgen Bauer () \\
 \vspace{2.5cm}William Bombardelli da Silva (wbombardellis@mailbox.tu-berlin.de)}
 
-\date{February 2, 2015} % Insert date here if you want it to appear below your name
+\date{February 2$^{nd}$, 2015} % Insert date here if you want it to appear below your name
 
 %----------------------------------------------------------------------------------------
 
@@ -154,21 +154,32 @@ lnmkm
 The idea around this operator is to insert words in the text or delete words from it, in order to insert new letters and accomplish the goal acrostic or to remove words and change the position of words inside the text. \par
 
 To ilustrate the execution, consider the following text\footnote{This text was adapted for didactic purposes from \url{http://cornelia.siteware.ch/blog/wordpress/2008/11/03/sich-vorstellen-horverstehen}. Access in January, 2015}:
+
+\begin{figure}[H]
+\begin{quote}
 \begin{alltt}
 Ah ja, ich heisse Frederik Hoske und ich bin 13 Jahre. \textit{Ich kann nicht
 vorstellen}, weil ich kaum Deutsch sprechen kann. Trotzdem versuche ich
 es. Ich habe zwei Geschwister Mein Bruder der 16 Jahre alt ist und
 meine Schweseter ist elf.
 \end{alltt}
+\end{quote}
+\caption{Example of word insertion application $-$ Original Text}
+\end{figure}
 
 After inserting the word \emph{"mir"} in the sentence \emph{"Ich kann nicht vorstellen"} in the first line and after breaking a line right before \emph{"Trotzdem"} the algorithm can reach the acrostic \emph{amt}. Note that the insertion of \emph{"mir"} was crutial for the result, once that the letter \emph{m} was not there.
 
+\begin{figure}[H]
+\begin{quote}
 \begin{alltt}
 \textcolor{Blue}{A}h ja, ich heisse Frederik Hoske und ich bin 13 Jahre. \textit{Ich kann
 \textcolor{Blue}{m}ir nicht vorstellen}, weil ich kaum Deutsch sprechen kann.
 \textcolor{Blue}{T}rotzdem versuche ich es. Ich habe zwei Geschwister Mein Bruder der
 16 Jahre alt ist und meine Schweseter ist elf.
 \end{alltt}
+\end{quote}
+\caption{Example of word insertion application $-$ Paraphrased Text}
+\end{figure}
 
 The Word Insertion or Deletion operator takes as input a text. Then first it tries to insert a new word in each space and second tries to remove each word of the text. The condition to insert a new word \emph{w} in the \emph{i-th} space of the text is that \emph{w} has to fit the context around the \emph{i-th} space. It means that from the set of all possible words of the language, only a restricted subset can be inserted in this place. More specifically, the algorithm starts by taking for each space in the text \emph{n} words around it as context $-$ In our implementation in this context $n = 4$. This is a so called n-gram, an array of words. After this, the n-gram just taken is sent to the context database (which is in this implementation the NetSpeak API \cite{Netspeak}), that returns the possible words that could be inserted in the required space. For each of these possible words a new version of the text is created with the word inside. \par
 
@@ -177,22 +188,35 @@ Analogously, for each word \emph{w} in the text a n-gram including the words aro
 The queries to the context database are made in form of HTTP requests to the netspeak web service using the NetSpeak API. \par
 
 \subsection{Synonyms}
-The synonym operator has the goal of changing words in the text for other words, which have similar meaning. In general the operator takes a text as input and generates a set of new texts, in which each text has a word replaced by a synonym that may eventually contain more than just one word.
+The synonym operator has the goal of changing words in the text for other words, which have similar meaning. In general the operator takes a text as input and generates a set of new texts, in which each text has a word replaced by a synonym.
 
-In order to perform the replacements it is required a synonym dictionary, which is know as thesaurus. In our implementation we used Open Thesaurus \cite{OpenThesuarus}, which is available for download for free. This data source is available as a plain text file, but as the dictionary is accessed many times during the execution of the algorithm, it easily becomes intractable to handle a text file as a database.
+In order to perform the replacements it is required a synonym dictionary, which is know as thesaurus. In our implementation we used Open Thesaurus \cite{OpenThesuarus}, which is available for download for free. This data source is available as a plain text file, but as the dictionary is accessed many times during the execution of the algorithm, it soon becomes intractable to handle a text file as a database.
 
-To solve this problem we decided to use a NoSQL database server \cite{NoSQL}, namely, Redis. Redis is an open source advanced key-value pair cache and store \cite{Redis}. Into the database server we load once the data from the thesaurus in a structured way where, every word is added as a key that points to a set of synonyms. Thus can the application easily and efficiently find similar terms for a given word only by accessing this key.
+To solve this problem we decided to use a NoSQL database server \cite{NoSQL}, namely, Redis. Redis is an open source advanced key-value pair cache and store \cite{Redis}. Into the database server we load once the data from the thesaurus in a structured way where, every word is added as a key that points to a set of synonyms. Thus the application can easily and efficiently find similar terms for a given word only by accessing this key.
 
 Naturally it is then required that the Redis server is running and listening to requests when the application runs, and that it has been once loaded by our script with the data from the dictionary.
 
-[EXAMPLE]
+\begin{figure}[H]
+\begin{quote}
+\begin{alltt}
+[MY EXAMPLE]
+\end{alltt}
+\end{quote}
+\caption{Example of synonym application $-$ Original Text}
+\end{figure}
 
-PROS
+\begin{figure}[H]
+\begin{quote}
+\begin{alltt}
+[MY EXAMPLE]
+\end{alltt}
+\end{quote}
+\caption{Example of synonym application $-$ Paraphrased Text}
+\end{figure}
 
-CONS
+The application of the Synonym Operation brings much more possibilities for new paraphrased versions of the original text. It happens because, when comparing with Word Insertion and Deletion, the probability of changing a word in the text with this operation is higher once it does not check the context around the changed word, therefore allowing many words to be replaced.
 
-
-\newpage
+Consequently, the drawback is the considerable loss of quality in the results, in function of the fact that synonyms are strongly related to context, and some replacements may change substantially the meanings of the resulting texts.
 
 \subsection{Line break}
 The fastest and most basic operation is the line break. A line break can be applied in two cases:
@@ -267,13 +291,13 @@ to better: size of ngram, other context databas, degenerating into breadth first
 \bibitem{OpenThesuarus}
 	\emph{Synonyme - OpenThesaurus - Deutscher Thesaurus}.
 	Available on: $<$\url{https://www.openthesaurus.de}$>$.
-	Accessed in: Januar 2015.
+	Accessed in: January 2015.
 \bibitem{NoSQL}
 	Jing Han; Haihong, E.; Guan Le; Jian Du. \emph{Survey on NoSQL database}. Pervasive Computing and Applications (ICPCA), 2011 6th International Conference on, pp.363,366, 26-28 October 2011.
 \bibitem{Redis}
 	\emph{Redis}.
 	Available on: $<$\url{http://redis.io}$>$.
-	Accessed in: Januar 2015.
+	Accessed in: January 2015.
 \bibitem{Sentrick}
 \url{http://sourceforge.net/projects/sentrick/}
 \bibitem{Hyphenation}
