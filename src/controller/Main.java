@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.logging.Level;
@@ -78,6 +79,10 @@ public class Main {
             System.out.println("Number Generated Nodes: " + bestfit.getGeneratedNodesNo());
 
         }
+        
+        //Example of use of the tester
+        //String testTextsFiles[] = {"Text/William/1.txt","Text/William/2.txt","Text/William/3.txt","Text/William/4.txt","Text/William/6.txt","Text/William/7.txt","Text/William/8.txt","Text/William/9.txt","Text/William/10.txt","Text/William/11.txt","Text/William/12.txt","Text/William/13.txt","Text/William/15.txt","Text/William/16.txt","Text/William/17.txt","Text/William/19.txt","Text/William/20.txt","Text/William/21.txt","Text/William/22.txt","Text/William/23.txt","Text/William/24.txt","Text/William/25.txt","Text/William/26.txt","Text/William/27.txt","Text/William/28.txt"};      
+        //new AlgorithmTester().execute(new ArrayList<>(Arrays.asList(testTextsFiles)), "Text/William/TestResults1.txt");
 
     }
 }
