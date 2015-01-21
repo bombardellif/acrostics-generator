@@ -7,7 +7,7 @@ import java.util.List;
 
 public class HyphenationOperation extends Operation {
 
-    private static final double localQuality = 1.0;
+    private static final double localQuality = 0.8;
     private static final Double COST = ((double)1)/localQuality;
     
     

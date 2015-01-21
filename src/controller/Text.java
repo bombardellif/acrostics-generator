@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import model.LetterFrequency;
 
 public class Text {
@@ -34,7 +35,11 @@ public class Text {
         if (lines == null)
             throw new IllegalArgumentException("Text: Parameter lines must not be null");
         
-        this.lines = new ArrayList<>(lines);
+        List<String> trimmedLines = lines.parallelStream()
+                .map(s -> s.trim())
+                .collect(Collectors.toList());
+        
+        this.lines = new ArrayList<>(trimmedLines);
     }
     
     private String insertWordInLine(final String line, final int insertSpacePosition, final String word){

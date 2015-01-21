@@ -13,6 +13,9 @@ import controller.SynonymOperation;
 import controller.Text;
 import controller.WordInsertionDeletionOperation;
 import controller.WrongHyphenationOperation;
+import controller.WrongSpellingOperation;
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -35,7 +38,7 @@ public class Algorithm {
     */
     private long generatedNodesNo;
     
-    
+    private static final int TIMEOUT_SECONDS = 15*60; // 15 Minutes
     
     // Evolve a population
     public State execute(Text text, String acrostic) throws Exception {
@@ -53,19 +56,14 @@ public class Algorithm {
         operatorList.add(new WrongHyphenationOperation());
         operatorList.add(new WordInsertionDeletionOperation());
         //operatorList.add(new SynonymOperation());
-        operatorList.add(new HyphenationOperation());
-        ///operatorList.add(new ) TODO Add new operation by Bruno
-        
+        //operatorList.add(new HyphenationOperation());
+        //operatorList.add(new WrongSpellingOperation());
         
         Comparator<State> comparator = new StateCostComparator();
         PriorityQueue<State> stateQueue = new PriorityQueue<>(comparator);
         
         HashSet visitedTexts;
         visitedTexts = new HashSet();
-        
-        
-        
-
         
         //not isGoal
         if(!(S0.getText()).goalTest(acrostic)){
@@ -91,13 +89,30 @@ public class Algorithm {
             }
               
             
+            LocalDateTime timeOfStart = LocalDateTime.now();
             while(!stateQueue.isEmpty()){
                 
                 State Si;
                 Si = stateQueue.poll();
                 //System.out.println(Si.getCost()+" , "+Si.getEstimatedCost());
                 
-                
+                /*** Timeout control        ***/
+                LocalDateTime timeCurrent = LocalDateTime.now();
+                if (Duration.between(timeOfStart, timeCurrent).getSeconds() > TIMEOUT_SECONDS) {
+                    System.out.println("==== END BY TIMEOUT ====");
+                    System.out.println("The Algorithm Result:");
+                    System.out.println();
+                    System.out.println(Si.getText());
+
+                    System.out.println("Print Operator List:");
+                    List<Operation> operatorExecutedList = Si.getAppliedOperations();
+                    for (Operation operator : operatorExecutedList) {
+                        System.out.println(operator);
+                    }
+                    
+                    System.exit(0);
+                }
+                /*** END of Timeout control ***/
                 
                 for(Operation operator : operatorList){
                     

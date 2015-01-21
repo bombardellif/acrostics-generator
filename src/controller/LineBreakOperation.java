@@ -14,7 +14,7 @@ import java.util.List;
 
 public class LineBreakOperation extends Operation {
 
-    private static final double localQuality = 1.0;
+    private static final double localQuality = 0.9;
     private static final Double COST = ((double)1)/localQuality;
     //private int lineNo;
 
