@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -28,6 +29,8 @@ public class AlgorithmTester {
     
     static final private int NUMBER_ACROSTICS = 2;
     static final private int NUMBER_LETTER_ALPHABET = 29;
+    
+    static final private String REGEX_INVALLID_ACROSTICLETTERS = "(?![äüöß])\\W";
     
     HashMap<Character, String> mostFreqWordsByInitialLetter;
     
@@ -76,7 +79,7 @@ public class AlgorithmTester {
         assert acrostic != null;
         assert !acrostic.isEmpty();
         
-        //acrostics.add(acrostic);
+        acrostics.add(acrostic.replaceAll(REGEX_INVALLID_ACROSTICLETTERS, ""));
         
         Character firstLetter = text.getFirstLetter();
         assert firstLetter != null;
@@ -102,8 +105,7 @@ public class AlgorithmTester {
         sb.append("Applied Operators (In Final Result): ").append(
                 finalState.getAppliedOperations()
                         .stream().reduce(new StringBuffer(), (buf, op) -> buf.append(op.toString()).append("\n"),
-                                StringBuffer::append))
-                .append("\n");
+                                StringBuffer::append));
         sb.append("Number of Genereted Nodes: ").append(algorithm.getGeneratedNodesNo()).append("\n");
         sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
         sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
@@ -120,7 +122,9 @@ public class AlgorithmTester {
         sb.append("Exception Message: ").append(ex.getMessage()).append("\n").
                 append("Exception Cause: ").append(ex.getCause()).append("\n").
                 append("Exception Class: ").append(ex.getClass()).append("\n").
-                append("Stack Trace: ").append(ex.getStackTrace()).append("\n");
+                append("Stack Trace: ").append(Arrays.asList(ex.getStackTrace())
+                        .stream().reduce(new StringBuffer(), (buf, st) -> buf.append(st.toString()).append("\n"),
+                                StringBuffer::append));
         sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
         sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
         
@@ -136,7 +140,9 @@ public class AlgorithmTester {
         sb.append("Exception Message: ").append(ex.getMessage()).append("\n").
                 append("Exception Cause: ").append(ex.getCause()).append("\n").
                 append("Exception Class: ").append(ex.getClass()).append("\n").
-                append("Stack Trace: ").append(ex.getStackTrace()).append("\n");
+                append("Stack Trace: ").append(Arrays.asList(ex.getStackTrace())
+                        .stream().reduce(new StringBuffer(), (buf, st) -> buf.append(st.toString()).append("\n"),
+                                StringBuffer::append));
         sb.append("Number of Goal Checks: ").append(algorithm.getGoalChecksNo()).append("\n");
         sb.append("Execution Time: ").append(algorithm.getLastExecutionTime()).append("\n");
         
