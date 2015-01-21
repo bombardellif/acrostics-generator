@@ -82,7 +82,7 @@ public abstract class Operation {
                         
                     }
                     
-                    row += word.endsWith("-") ? word.substring(0, word.length()-1) : word + " ";;
+                    row += word.endsWith("-") ? word.substring(0, word.length()-1) : word + " ";
                     SpaceLeft-=(word.length()+SpaceWidth);
 		}
 	}//do
