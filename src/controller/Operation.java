@@ -50,6 +50,15 @@ public abstract class Operation {
         int SpaceLeft= lmax;
 	int SpaceWidth=1;
         
+        if(!st.hasMoreTokens())
+        {
+            lines.add("");
+            return new Text(lines);
+            
+            
+        }
+        
+        
         
 	
         do
