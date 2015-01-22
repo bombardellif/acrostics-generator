@@ -22,6 +22,8 @@ public class NetSpeakDAO {
 
     private static final String TOPK = "10";
     private static final Integer MIN_FREQUENCY = 0;
+    private static final Long TIMEOUT_SLEEP = 5000l; //5s
+    
     private static Map<String, List<String>> cache = new HashMap();
     
     private static final List<String> notEmptyList = Arrays.asList("");
@@ -29,7 +31,7 @@ public class NetSpeakDAO {
     
     private static Integer QUERY_COUNT = 0;
 
-    public static List<Phrase> search(String query) throws IOException, Exception {
+    public static List<Phrase> search(String query) throws Exception {
         if (query == null) {
             throw new IllegalArgumentException("NetSpeakDAO.search: Parameter query must not be null");
         }
@@ -40,8 +42,8 @@ public class NetSpeakDAO {
         request.put(Request.QUERY, query);
         request.put(Request.TOPK, TOPK);
 
-        Response response = netspeak.search(request);
-
+        Response response = executeSearchRequest(netspeak, request);
+        
         ErrorCode errorCode = ErrorCode.cast(response.getErrorCode());
         if (errorCode != ErrorCode.NO_ERROR) {
             throw new Exception("NetSpeakAPI error. Code: " + errorCode + ". Message: " + response.getErrorMessage());
@@ -53,6 +55,18 @@ public class NetSpeakDAO {
         }
         System.out.println("------------");*/
         return response.getPhraseList();
+    }
+    
+    private static Response executeSearchRequest(Netspeak netspeak, Request request) throws IOException, Exception{
+        try{
+            //execute actual request, may throw timeout error
+            return netspeak.search(request);
+            
+        }catch(IOException ex){
+            //Network Timeout, wait some time and try again
+            Thread.sleep(TIMEOUT_SLEEP);
+            return executeSearchRequest(netspeak, request);
+        }
     }
 
     public static List<String> searchNewWords(List<String> splittedNGram, Character operator, Integer position) throws Exception {
