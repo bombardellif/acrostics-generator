@@ -26,7 +26,7 @@
 \oddsidemargin=0in
 \textwidth=6.5in
 \textheight=9.0in
-\headsep=0.25in 
+\headsep=0.25in
 
 \linespread{1.1} % Line spacing
 
@@ -88,7 +88,7 @@ Jürgen Bauer () \\
 %//CODE HERE
 %\end{lstlisting}
 %================
-%Define a label for furutre referenceing: \label{sec:Foo} 
+%Define a label for furutre referenceing: \label{sec:Foo}
 %Refecing a label: \ref{sec:Foo}
 %================
 %Citing Bibliography: \cite{NameOfBibItem}
@@ -96,7 +96,7 @@ Jürgen Bauer () \\
 %Emphasis on text: \emph{foo}
 %Bold on text: \textbf{Foo}
 %================
-%Table Example: 
+%Table Example:
 %\begin{table}[h]
 %\centering
 %\begin{tabular}{l | l | l | l | l}
@@ -228,10 +228,10 @@ Consequently, the drawback is the considerable loss of quality in the results, i
 The fastest and most basic operation is the line break. A line break can be applied in two cases:
 
 \begin{itemize}
-	\item After a word when the line length lies in the $[l_{min},l_{max}]$-window, 
+	\item After a word when the line length lies in the $[l_{min},l_{max}]$-window,
 	given by the line length constraints.
 	\item After the end of a sentence.
-\end{itemize} 
+\end{itemize}
 After performing a line break, the lines following the line break have
 to be aligned again to satisfy the line length constraints.\\
 For this task we apply a greedy word wrap algorithm, which works as follows: we split the text into words,
@@ -240,16 +240,16 @@ When applying the greedy word wrap algorithm we have to ensure that
 there is no word of length $> 20$ in the initial text. Otherwise it might happen, that the minimal line
 length constraint is not fulfilled.\\
 Identifying the end of a sentence in general is a difficult problem. One reason for this is that a period
-might occur in several contexts, e.g. 
+might occur in several contexts, e.g.
 
 \begin{itemize}
 
 	\item abbreviations (Prof., Dr., d.h., z.B., ...)
-	
+
 	\item ordinal numbers (der 26. April, Joseph II., 2. Auflage, ...)
-	
+
 	\item numbers (10.1312, 192.11301, ...)
-	
+
 \end{itemize}
 Another issue is that there is a wide variety of punctuations which could mark the end of a sentence. These punctuations include question marks, exclamation marks, ellipses, semi-cola, cola.\\
 To overcome these problems we make use of a sentence-splitter library, called Sentrick (cf. \cite{Sentrick}).
@@ -314,7 +314,7 @@ The algorithm described in this report is able to build acrostics with short wor
 
 //comment result here??\par
 
-In despite of the reasonable results, we did not develop all the operators described in the reference paper (\cite{Stein}) mainly for project time reasons. A broader experimental discussion with a higher number of tests and a discussion about quality metrics on the text would be interesting as well, although it would be out of the scope of the project. \par
+In despite of these results, we did not develop all the operators described in the reference paper (\cite{Stein}) mainly for project time reasons. A broader experimental discussion with a higher number of tests and a discussion about quality metrics on the text would be interesting as well, although it would be out of the scope of the project. \par
 
 What should be noted in the problem of generating acrostics, is that the success depends highly on certain conditions of the text. When the target acrostic has uncommon letters, it becomes naturally more difficult to accomplish the result. This yields the need for more powerful operators, operators able to change more the structure of the text or insert new elements that aids the generation of the desired letters in the beginning of the lines. In this vein, a grammatical operator that could change swap the position of grammatical elements would be helpful, like illustrated in the example below. \par
 
@@ -330,7 +330,7 @@ Einfacher wird es, wenn Sie wissen, was Sie wollen.
 \caption{Example of possible additional operator}
 \end{figure}
 
-Other possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first, while the desired is a depth-first search if the computing resources are scarce. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implemenentation of a n-gram database locally may smooth the problem. \par
+Other possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first search, while if the computing resources are scarce the desired is a depth-first search. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implemenentation of a n-gram database locally may smooth the problem. \par
 
 The use of the Netspeak API seems to be another issue, once it does not produce many options for inserting or removing words. A solution would be the implementation of the complete Google n-gram database locally. Even though the use of context in form of n-gram are sometimes too restrictive. This could be therefore a discussion for future work.
 
@@ -341,7 +341,7 @@ The use of the Netspeak API seems to be another issue, once it does not produce 
 \begin{thebibliography}{1}
 \bibitem{Stein}
 	Benno Stein, Matthias Hagen, and Christof Bräutigam. \emph{Generating Acrostics via Paraphrasing and Heuristic Search}. \\
-	In Junichi Tsujii and Jan Hajic, editors, 25th International Conference on Computational Linguistics (COLING 14), pages 2018-2029, August 2014. Association for Computational Linguistics. 
+	In Junichi Tsujii and Jan Hajic, editors, 25th International Conference on Computational Linguistics (COLING 14), pages 2018-2029, August 2014. Association for Computational Linguistics.
 \bibitem{Netspeak}
 	Martin Potthast, Martin Trenkmann, and Benno Stein.
 	\emph{Netspeak: Assisting Writers in Choosing Words}. \\
