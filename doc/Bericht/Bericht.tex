@@ -285,9 +285,9 @@ The algorithm described in this report is able to build acrostics with short wor
 
 //comment result here??\par
 
-In despite of the reasonable results, we did not develop all the operators described in the reference paper (\cite{Stein}) mainly for project time reasons. A broader experimental discussion with a higher number of tests and a discussion about quality metrics on the text would be interesting as well, although it would be out of the scope of the project. \par
+In despite of these results, we did not develop all the operators described in the reference paper (\cite{Stein}) mainly for project time reasons. A broader experimental discussion with a higher number of tests and a discussion about quality metrics on the text would be interesting as well, although it would be out of the scope of the project. \par
 
-What should be noted in the problem of generating acrostics, is that the success depends highly on certain conditions of the text. When the target acrostic has uncommon letters, it becomes naturally more difficult to accomplish the result. This yields the need for more powerful operators, operators able to change more the structure of the text or insert new elements that aids the generation of the desired letters in the beginnnig of the lines. In this vein, a gramatical operator that could change swap the position of gramatical elements would be helpful, like ilustrated in the example below. \par
+What should be noted in the problem of generating acrostics, is that the success depends highly on certain conditions of the text. When the target acrostic has uncommon letters, it becomes naturally more difficult to accomplish the result. This yields the need for more powerful operators, operators able to change the structure of the text or insert new elements that aids the generation of the desired letters in the beginning of the lines. In this vein, a gramatical operator that could swap the position of gramatical elements would be helpful, as ilustrated in the example below. \par
 
 \begin{figure}[H]
 \begin{quote}
@@ -301,7 +301,7 @@ Einfacher wird es, wenn Sie wissen, was Sie wollen.
 \caption{Example of possible additional operator}
 \end{figure}
 
-Other possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first, while the desired is a depth-first search if the computing resources are scarce. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implemenentation of a n-gram database locally may smooth the problem. \par
+Other possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first search, while if the computing resources are scarce the desired is a depth-first search. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implemenentation of a n-gram database locally may smooth the problem. \par
 
 The use of the Netspeak API seems to be another issue, once it does not produce many options for inserting or removing words. A solution would be the implementation of the complete Google n-gram database locally. Even though the use of context in form of n-gram are sometimes too restrictive. This could be therefore a discussion for future work.
 
