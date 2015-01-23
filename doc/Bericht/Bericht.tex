@@ -276,18 +276,47 @@ Analog to the line break operation, in order to rearrange the lines we apply a g
 %	Evaluation of the Results
 %----------------------------------------------------------------------------------------
 \chapter{Evaluation of the Results}
+The goal of the evaluation of the developed application is to show that it is able to generate results of acrostics for texts written in the German language. So we analyze the success rate, the operation application rate and the influence of the several variations in the test cases. For that we split the evaluation in four battery of tests, basically it is the combination of two possible configuration: The search algorithm, which can be A* ($f(x) = g(x) + h(x)$) or best first A* ($f(x) = h(x)$); and the chosen acrostic, which can then be self-referential or the most common word that starts with the first letter of the text [\textbf{QUELL}].
+
+The configuration on the search algorithm allows the program to be switched between caring, or not, about the quality of the applied operations. That means, when running it the mode best first A* all operations have maximal quality (minimal cost). That leads to a goal oriented computation, once the choice of the operation does not influence the choice of the solution path in the search space. In the other mode, it is possible to have an optimization oriented computation, which is achieved by running with the regular A* algorithm \cite{AStar}.
+
+In order to vary the input domain, we ran test cases in two different possibilities: the so called, self-referential, where the acrostic is the first word in the input text; and the most common word, in which the acrostic is the word that has the highest occurrence probability and starts with the first letter of the input text. Note that, in every test case the first letter of the text and of the acrostic are equal, this is a crucial decision for the general success of the application, once that by \cite{Stein}, employing the same algorithm, less than 1$%$ of the test cases could generate results, whenever that condition was not held.
+
+\section{Experiment Setup}
+FROM WHERE DO THE TEXTS COME? AND THE MOST COMMON ACROSTICS?
+
+We let the Redis database started in the same system where the tests run. The initialization of data into the key-value store server is realized once by the script that process the thesaurus and it took no more than a couple minutes to be successfully completed. For the consume of the NetSpeakAPI web service is required an internet connection. As advised by \cite{Stein}, we set line length constraints of $l_{min} = 50$ and $l_{max} = 70$ because of the flexibility it brings to operators like line break and hyphenation. As the application may run for a long time, we set a timeout for its execution, for that we chose arbitrarily 15 minutes, but it can eventually be increased or decreased according to the availability of resources and time from the user.
+
+
+\section{Experiment Discussion}
+
+\begin{table}
+\centering
+\begin{tabular}{l | l | l | l | l}
+	\hline
+	\textbf{Configuration} & \textbf{Success Rate} & \textbf{Runtime} & \textbf{Nodes} & \textbf{Timeout Rate} \\ \hline
+		\textbf{A* + Self-reference}	& S	& S	& S	& S \\ \hline
+		\textbf{A* + Most Common}		& S	& S	& S	& S \\ \hline
+		\textbf{Best First A* + Self-reference}	& S & S	& S	& S \\ \hline
+		\textbf{Best First A* + Most Common}	& S & S	& S	& S \\
+	\hline
+\end{tabular}
+\label{tab:results}
+\caption{Experimental results}
+\end{table}
+
 
 %----------------------------------------------------------------------------------------
 %	Summary of Findings
 %----------------------------------------------------------------------------------------
 \chapter{Summary of Findings}
-The algorithm described in this report is able to build acrostics with short words (we have achieved acrostics with 6 letters) in reasonable time. These acrostics have regular quality, in the sense that some paraphrasing operations are easyly perceived by the reader $-$ the wrong hyphenation is one of them. The use of synonyms without checking the context lowers the quality as well. Additionally, the algorithm can generate result in a few minutes for a good number of cases, what makes possible its use in some practical situations, aiding a process that was totally human so far. The review of the result by a human is although necessary. \par
+The algorithm described in this report is able to build acrostics with short words (we have achieved acrostics with 6 letters) in reasonable time. These acrostics have regular quality, in the sense that some paraphrasing operations are easily perceived by the reader $-$ the wrong hyphenation is one of them. The use of synonyms without checking the context lowers the quality as well. Additionally, the algorithm can generate result in a few minutes for a good number of cases, what makes possible its use in some practical situations, aiding a process that was totally human so far. The review of the result by a human is although necessary. \par
 
 //comment result here??\par
 
 In despite of the reasonable results, we did not develop all the operators described in the reference paper (\cite{Stein}) mainly for project time reasons. A broader experimental discussion with a higher number of tests and a discussion about quality metrics on the text would be interesting as well, although it would be out of the scope of the project. \par
 
-What should be noted in the problem of generating acrostics, is that the success depends highly on certain conditions of the text. When the target acrostic has uncommon letters, it becomes naturally more difficult to accomplish the result. This yields the need for more powerful operators, operators able to change more the structure of the text or insert new elements that aids the generation of the desired letters in the beginnnig of the lines. In this vein, a gramatical operator that could change swap the position of gramatical elements would be helpful, like ilustrated in the example below. \par
+What should be noted in the problem of generating acrostics, is that the success depends highly on certain conditions of the text. When the target acrostic has uncommon letters, it becomes naturally more difficult to accomplish the result. This yields the need for more powerful operators, operators able to change more the structure of the text or insert new elements that aids the generation of the desired letters in the beginning of the lines. In this vein, a grammatical operator that could change swap the position of grammatical elements would be helpful, like illustrated in the example below. \par
 
 \begin{figure}[H]
 \begin{quote}
@@ -331,13 +360,15 @@ The use of the Netspeak API seems to be another issue, once it does not produce 
 \url{http://sourceforge.net/projects/sentrick/}
 \bibitem{Hyphenation}
 \url{http://sourceforge.net/projects/texhyphj/}
+\bibitem{AStar}
+	Dechter, Rina; Pearl, Judea. \emph{Generalized best-first search strategies and the optimality of A*}. Journal of the ACM (JACM), Volume 32 Issue 3, Pages 505-536, New York, July 1985.
 \end{thebibliography}
 
 %----------------------------------------------------------------------------------------
 %	Appendix
 %----------------------------------------------------------------------------------------
-\appendix
-\chapter{Appendix}
+%\appendix
+%\chapter{Appendix}
 
 
 \end{document}
