@@ -254,7 +254,8 @@ public class HyphenationOperation extends Operation {
                     
                     
                     //if(ecOp.ensureLineLengthConstraints(textResult) )
-                        resultList.add(textResult);
+                        resultList.add(
+                                ecOp.execute(textResult).get(0));
                     //else
                         //System.out.println("ENSURE CONSTRAINTS FAILED!");
                         

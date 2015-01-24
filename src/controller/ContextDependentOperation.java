@@ -114,6 +114,7 @@ public abstract class ContextDependentOperation extends Operation {
             //@TODO: Assert that words correspond to text
             
             ArrayList<Text> newPossibleTexts = new ArrayList<>();
+            EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
             
             //Iterate over space positions. Zero means position just before first word. words.size() means position after last word
             for (int textSpacePos = 0; textSpacePos <= words.size(); textSpacePos++){
@@ -139,12 +140,10 @@ public abstract class ContextDependentOperation extends Operation {
                 List<String> newPossibleWords = NetSpeakDAO.searchNewWords(nGram, MANYNEWWORDS_SEARCHCHARACTER, posIntoNGram);
                 assert newPossibleWords != null;
                 
-                EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
                 //Create new versions of the text. One new version for each possible word
                 for (String newWord : newPossibleWords){
                     newPossibleTexts.add(
-                            //@TODO: Include ensure contraint operation
-                            /*ecOp.execute(*/text.addWordInSpace(newWord, textSpacePos)/*).get(0)*/);
+                            ecOp.execute(text.addWordInSpace(newWord, textSpacePos)).get(0));
                 }
             }
             
@@ -168,6 +167,7 @@ public abstract class ContextDependentOperation extends Operation {
             //@TODO: Assert that words correspond to text
             
             ArrayList<Text> newPossibleTexts = new ArrayList<>();
+            EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
             
             //Iterate over word positions. Zero means first word. words.size()-1 means position of last word
             for (int textWordPos = 0; textWordPos < words.size(); textWordPos++){
@@ -195,10 +195,8 @@ public abstract class ContextDependentOperation extends Operation {
                 
                 //Create new version of the text without this word if the nGram without this word is frequent in the language
                 if (NetSpeakDAO.isFrequent(nGram)){
-                    EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
-                    //@TODO: Include ensure contraint operation
                     newPossibleTexts.add(
-                            /*ecOp.execute(*/text.removeWord(textWordPos)/*).get(0)*/);
+                            ecOp.execute(text.removeWord(textWordPos)).get(0));
                 }
             }
             

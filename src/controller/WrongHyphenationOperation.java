@@ -35,6 +35,8 @@ public class WrongHyphenationOperation extends Operation {
             }
             else
             {
+                EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
+                
                 /* For every letter separate the word */
                 for(int letter = 1; letter < lastWord.length(); letter++)
                 {
@@ -72,7 +74,8 @@ public class WrongHyphenationOperation extends Operation {
                //     {
                 //    System.out.println(completeNewText); 
                 //    }
-                    hyphenationList.add(completeNewText);
+                    hyphenationList.add(
+                            ecOp.execute(completeNewText).get(0));
                 }
             }
         }

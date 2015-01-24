@@ -19,15 +19,7 @@ public class WordInsertionDeletionOperation extends ContextDependentOperation {
             //Get all the text in one line
             String textInString = text.toOneLineString();
             
-            ArrayList<String> words = new ArrayList<>( Arrays.asList(textInString.split(REGEX_SPLITINWORDS, -1)) );
-        
-            /*if (textInString.contains("hochad ligen")
-            || words.contains("hochad")) {
-                System.out.println(text);
-                System.out.println();
-                System.out.println(textInString);
-            }*/
-                
+            ArrayList<String> words = new ArrayList<>( Arrays.asList(textInString.split(REGEX_SPLITINWORDS, -1)) );    
             
             List<Text> ret = insertWord(text, words);
             ret.addAll(deleteWord(text, words));

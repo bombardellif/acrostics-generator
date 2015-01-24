@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
-import model.NetSpeakDAO;
 import model.SynonymDAO;
 
 public class SynonymOperation extends ContextDependentOperation {
@@ -50,6 +49,8 @@ public class SynonymOperation extends ContextDependentOperation {
             
             ArrayList<Text> newPossibleTexts = new ArrayList<>();
             
+            EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
+            
             //Iterate over word positions. Zero means first word. words.size()-1 means position of last word
             for (int textWordPos = 0; textWordPos < words.size(); textWordPos++){
                 
@@ -82,7 +83,8 @@ public class SynonymOperation extends ContextDependentOperation {
 
                     //Create new version of the text without this word if the nGram without this word is frequent in the language
                     //if (NetSpeakDAO.isFrequent(nGram))
-                        newPossibleTexts.add(text.changeWord(textWordPos, synonym));
+                        newPossibleTexts.add(
+                                ecOp.execute(text.changeWord(textWordPos, synonym)).get(0));
                 }
             }
             

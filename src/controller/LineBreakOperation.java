@@ -102,8 +102,9 @@ public class LineBreakOperation extends Operation {
                         System.exit(0);
                     }*/
                     
-                    if(ecOp.ensureLineLengthConstraints(textResult) )
-                        LineBreakList.add(textResult);
+                    //if(ecOp.ensureLineLengthConstraints(textResult) )
+                        LineBreakList.add(
+                                ecOp.execute(textResult).get(0));
                     
 
                     //System.out.println();

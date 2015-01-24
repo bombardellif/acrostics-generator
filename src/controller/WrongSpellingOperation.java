@@ -33,6 +33,8 @@ public class WrongSpellingOperation extends Operation {
             String afterChar;
             int index;
             
+            EnsureConstraintsOperation ecOp = new EnsureConstraintsOperation();
+            
             for (index=0;index<currentLine.length();index++)
             {
                 ArrayList<String> newText = text.getLines();
@@ -43,7 +45,7 @@ public class WrongSpellingOperation extends Operation {
                     afterChar = currentLine.substring(index+1);
                     newText.set(lineNumber, beforeChar + "ss" + afterChar);
                     Text completeNewText = new Text(newText);
-                    returnList.add(completeNewText);
+                    returnList.add(ecOp.execute(completeNewText).get(0));
                 }
                 else if (currentLine.charAt(index) == 'ü')
                 {
@@ -51,7 +53,7 @@ public class WrongSpellingOperation extends Operation {
                     afterChar = currentLine.substring(index+1);
                     newText.set(lineNumber, beforeChar + "ue" + afterChar);
                     Text completeNewText = new Text(newText);
-                    returnList.add(completeNewText);
+                    returnList.add(ecOp.execute(completeNewText).get(0));
                 }
                 else if (currentLine.charAt(index) == 'Ü')
                 {
@@ -59,7 +61,7 @@ public class WrongSpellingOperation extends Operation {
                     afterChar = currentLine.substring(index+1);
                     newText.set(lineNumber, beforeChar + "ue" + afterChar);  
                     Text completeNewText = new Text(newText);
-                    returnList.add(completeNewText);
+                    returnList.add(ecOp.execute(completeNewText).get(0));
                 }
                 else if (currentLine.charAt(index) == 'ä')
                 {
@@ -67,7 +69,7 @@ public class WrongSpellingOperation extends Operation {
                     afterChar = currentLine.substring(index+1);
                     newText.set(lineNumber, beforeChar + "ae" + afterChar);  
                     Text completeNewText = new Text(newText);
-                    returnList.add(completeNewText);
+                    returnList.add(ecOp.execute(completeNewText).get(0));
                     //System.out.println(completeNewText);
                 }
                 else if (currentLine.charAt(index) == 'Ä')
@@ -76,7 +78,7 @@ public class WrongSpellingOperation extends Operation {
                     afterChar = currentLine.substring(index+1);
                     newText.set(lineNumber, beforeChar + "Ae" + afterChar);  
                     Text completeNewText = new Text(newText);
-                    returnList.add(completeNewText);
+                    returnList.add(ecOp.execute(completeNewText).get(0));
                 }
                 else if (currentLine.charAt(index) == 'ö')
                 {
@@ -84,7 +86,7 @@ public class WrongSpellingOperation extends Operation {
                     afterChar = currentLine.substring(index+1);
                     newText.set(lineNumber, beforeChar + "oe" + afterChar);
                     Text completeNewText = new Text(newText);
-                    returnList.add(completeNewText);
+                    returnList.add(ecOp.execute(completeNewText).get(0));
                 }
                 else if (currentLine.charAt(index) == 'Ö')
                 {
@@ -92,7 +94,7 @@ public class WrongSpellingOperation extends Operation {
                     afterChar = currentLine.substring(index+1);
                     newText.set(lineNumber, beforeChar + "Oe" + afterChar);
                     Text completeNewText = new Text(newText);
-                    returnList.add(completeNewText);
+                    returnList.add(ecOp.execute(completeNewText).get(0));
                 }
                 
             }
