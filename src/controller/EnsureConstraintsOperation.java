@@ -36,7 +36,7 @@ public class EnsureConstraintsOperation extends Operation {
             boolean separateWords = false;
             if(currentLine.length() < lmin)
             {
-                sizeDifference = lmin - currentLine.length();
+                sizeDifference = lmin - currentLine.length() +1;
                 movedPart = nextLine.substring(0,sizeDifference);
                 remainingPart = nextLine.substring(sizeDifference);
       
@@ -46,16 +46,23 @@ public class EnsureConstraintsOperation extends Operation {
                 {
                     currentLine = currentLine.substring(0,currentLine.length()-1);
                 }
+                /*
                 //Test if the current line would begin with a space
                 if(movedPart.startsWith(" ", movedPart.length()))
                 {
                     movedPart = nextLine.substring(0, sizeDifference+1);
                     remainingPart = nextLine.substring(sizeDifference+1);
                 }
+                */
                 //Test if the next line would begin with a space
                 if(remainingPart.startsWith(" "))
                 {
                     remainingPart = remainingPart.substring(1);
+                    separateWords = true;
+                }
+                if(movedPart.charAt(movedPart.length()-1)==' ')
+                {
+                    movedPart = movedPart.substring(0,movedPart.length()-1);
                     separateWords = true;
                 }
                 /* See if a word is broken in two */
@@ -73,8 +80,8 @@ public class EnsureConstraintsOperation extends Operation {
             if(currentLine.length() > lmax)
             {
                 sizeDifference = currentLine.length() - lmax;
-                movedPart = currentLine.substring(lmax);
-                remainingPart = currentLine.substring(0,lmax);
+                movedPart = currentLine.substring(lmax-1);
+                remainingPart = currentLine.substring(0,lmax-1);
 
                 /* See if a word is broken in two */
                 if(movedPart.startsWith(" "))
@@ -88,29 +95,24 @@ public class EnsureConstraintsOperation extends Operation {
                 }
                 else
                 {
-                    /* Otherwise move one letter less to accomodate the hyphen */
-                    if(currentLine.startsWith(" ", lmax-1))
+                    if(remainingPart.charAt(remainingPart.length()-1)==' ')
                     {
-                        movedPart = currentLine.substring(lmax-1);
-                        remainingPart = currentLine.substring(0,lmax-2);
-                        currentLine = remainingPart;
                         nextLine = movedPart + nextLine;
+                        currentLine = remainingPart.substring(0,remainingPart.length()-1);
                     
                         lines.set(lineNumber, currentLine);
                         lines.set(lineNumber+1, nextLine);
-                    }
+                    }   
                     else
                     {
                         movedPart = currentLine.substring(lmax-1);
                         remainingPart = currentLine.substring(0,lmax-1);
                         currentLine = remainingPart + "-";
                         nextLine = movedPart + nextLine;
-                    
                         lines.set(lineNumber, currentLine);
-                        lines.set(lineNumber+1, nextLine);
+                        lines.set(lineNumber+1, nextLine);                        
                     }
                 }
-                
             }
         }
         
