@@ -7,7 +7,7 @@ import model.NetSpeakDAO;
 public abstract class ContextDependentOperation extends Operation {
     
     protected static final String REGEX_SPLITINWORDS = " ";
-    protected static final String REGEX_SPECIALCHARACTERS = "\\W";
+    protected static final String REGEX_SPECIALCHARACTERS = "(?![äüößÄÜÖ])\\W";
     protected static final char MANYNEWWORDS_SEARCHCHARACTER = '*';
     protected static final int DEFAULTINSERT_NGRAM_SIZE = 4;
     protected static final int DEFAULTDELETE_NGRAM_SIZE = 5;

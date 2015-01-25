@@ -30,7 +30,7 @@ public class AlgorithmTester {
     static final private int NUMBER_ACROSTICS = 2;
     static final private int NUMBER_LETTER_ALPHABET = 29;
     
-    static final private String REGEX_INVALLID_ACROSTICLETTERS = "(?![äüöß])\\W|\\d";
+    static final private String REGEX_INVALLID_ACROSTICLETTERS = "(?![äüößÄÜÖ])\\W|\\d";
     
     HashMap<Character, String> mostFreqWordsByInitialLetter;
     
