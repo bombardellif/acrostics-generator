@@ -81,6 +81,10 @@ public class EnsureConstraintsOperation extends Operation {
                 {
                     movedPart = movedPart + "-";
                 }
+                if(!(currentLine.charAt(currentLine.length()-1)=='-'))
+                {
+                    currentLine = currentLine + " ";
+                }
                 //Sets the values
                 currentLine = currentLine + movedPart;
                 nextLine = remainingPart;
@@ -91,36 +95,40 @@ public class EnsureConstraintsOperation extends Operation {
             
             if(currentLine.length() > lmax)
             {
-                sizeDifference = currentLine.length() - lmax;
                 movedPart = currentLine.substring(lmax-1);
                 remainingPart = currentLine.substring(0,lmax-1);
 
                 /* See if a word is broken in two */
+                
+                
                 if(movedPart.startsWith(" "))
                 {
-                    /* If it is remove the blank space */
-                    nextLine = movedPart.substring(1) + nextLine;
+                    /* If it is remove the blank space*/ 
+                    nextLine = movedPart.substring(1) + " " + nextLine;
                     currentLine = remainingPart;
                     
                     lines.set(lineNumber, currentLine);
                     lines.set(lineNumber+1, nextLine);
                 }
+            
                 else
                 {
+                    //if there's a space remaining in the current line after the cut remove the blank space
                     if(remainingPart.charAt(remainingPart.length()-1)==' ')
                     {
-                        nextLine = movedPart + nextLine;
+                        nextLine = movedPart + " " + nextLine;
                         currentLine = remainingPart.substring(0,remainingPart.length()-1);
                     
                         lines.set(lineNumber, currentLine);
                         lines.set(lineNumber+1, nextLine);
-                    }   
+                    } 
+                    
                     else
                     {
                         movedPart = currentLine.substring(lmax-1);
                         remainingPart = currentLine.substring(0,lmax-1);
                         currentLine = remainingPart + "-";
-                        nextLine = movedPart + nextLine;
+                        nextLine = movedPart + " " + nextLine;
                         lines.set(lineNumber, currentLine);
                         lines.set(lineNumber+1, nextLine);                        
                     }
@@ -132,8 +140,7 @@ public class EnsureConstraintsOperation extends Operation {
            
         while(lastLine.length() > lmax)
             {
-                currentLine = lines.get(lines.size()-1);
-                String createLine;
+                currentLine = lines.get(lines.size()-1);                
                 movedPart = currentLine.substring(lmax);
                 remainingPart = currentLine.substring(0,lmax);
 
@@ -153,7 +160,7 @@ public class EnsureConstraintsOperation extends Operation {
                     /* Otherwise move one letter less to accomodate the hyphen */
                     if(currentLine.startsWith("", lmax-1))
                     {
-                        movedPart = currentLine.substring(lmax-1);
+                        movedPart = currentLine.substring(lmax-1) ;
                         remainingPart = currentLine.substring(0,lmax-2);
                         currentLine = remainingPart;
                         nextLine = movedPart;
@@ -174,10 +181,26 @@ public class EnsureConstraintsOperation extends Operation {
                 }
                 lastLine = lines.get(lines.size()-1);
             }
+        /*
+        int i;
+        for(i=0;i<lines.size()-1;i++)
+        {
+            if(lines.get(i).contains("Wennjem"))
+            {
+                System.out.println(text);
+                correctedText = new Text(lines);
+                System.out.println(correctedText);
+            }
+        }
+        */
         
+        
+        
+ 
         correctedText = new Text(lines);
         correctedTextinList.add(correctedText);
-        System.out.println(correctedText);
+        //                System.out.println(correctedText);
+
         return correctedTextinList;
     }
     
