@@ -37,6 +37,16 @@ public class EnsureConstraintsOperation extends Operation {
             if(currentLine.length() < lmin)
             {
                 sizeDifference = lmin - currentLine.length() +1;
+                //System.out.println("Size Difference:"+sizeDifference);
+                //System.out.println("Next Line:"+nextLine.length());
+                
+                if(sizeDifference>nextLine.length())
+                {
+                    lines.set(lineNumber, currentLine+nextLine);
+                    lines.remove(lineNumber+1);
+                }
+                else
+                {
                 movedPart = nextLine.substring(0,sizeDifference);
                 remainingPart = nextLine.substring(sizeDifference);
       
@@ -46,6 +56,7 @@ public class EnsureConstraintsOperation extends Operation {
                 {
                     currentLine = currentLine.substring(0,currentLine.length()-1);
                 }
+                
                 /*
                 //Test if the current line would begin with a space
                 if(movedPart.startsWith(" ", movedPart.length()))
@@ -75,6 +86,7 @@ public class EnsureConstraintsOperation extends Operation {
                 nextLine = remainingPart;
                 lines.set(lineNumber, currentLine);
                 lines.set(lineNumber + 1, nextLine);
+                }
             }
             
             if(currentLine.length() > lmax)
@@ -165,7 +177,7 @@ public class EnsureConstraintsOperation extends Operation {
         
         correctedText = new Text(lines);
         correctedTextinList.add(correctedText);
-        
+        System.out.println(correctedText);
         return correctedTextinList;
     }
     
