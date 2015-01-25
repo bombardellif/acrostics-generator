@@ -66,7 +66,7 @@ public class EnsureConstraintsOperation extends Operation {
                 }
                 */
                 //Test if the next line would begin with a space
-                if(remainingPart.startsWith(" "))
+                if(remainingPart.startsWith(" ") || remainingPart.startsWith("-"))
                 {
                     remainingPart = remainingPart.substring(1);
                     separateWords = true;
@@ -89,7 +89,11 @@ public class EnsureConstraintsOperation extends Operation {
                 currentLine = currentLine + movedPart;
                 nextLine = remainingPart;
                 lines.set(lineNumber, currentLine);
-                lines.set(lineNumber + 1, nextLine);
+                
+                if (nextLine.isEmpty())
+                    lines.remove(lineNumber + 1);
+                else
+                    lines.set(lineNumber + 1, nextLine);
                 }
             }
             
@@ -121,7 +125,16 @@ public class EnsureConstraintsOperation extends Operation {
                     
                         lines.set(lineNumber, currentLine);
                         lines.set(lineNumber+1, nextLine);
-                    } 
+                    }
+                    else if (remainingPart.charAt(remainingPart.length()-1)=='-')
+                    {
+                        movedPart = currentLine.substring(lmax-1);
+                        remainingPart = currentLine.substring(0,lmax-1);
+                        currentLine = remainingPart;
+                        nextLine = movedPart + " " + nextLine;
+                        lines.set(lineNumber, currentLine);
+                        lines.set(lineNumber+1, nextLine);                        
+                    }
                     
                     else
                     {
@@ -196,7 +209,6 @@ public class EnsureConstraintsOperation extends Operation {
         
         
         
- 
         correctedText = new Text(lines);
         correctedTextinList.add(correctedText);
         //                System.out.println(correctedText);
