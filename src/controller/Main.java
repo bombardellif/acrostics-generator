@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import model.Algorithm;
 
@@ -26,9 +28,9 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException, IOException, InterruptedException, Exception {
 
         //Read in the input text as string
-        String input = "";
+        /*String input = "";
         String temp;
-        FileReader fr = new FileReader("Text/FriedrichDerGrosse");
+        FileReader fr = new FileReader("Text/Traurigkeit.txt");
         try (BufferedReader br = new BufferedReader(fr)) {
             while ((temp = br.readLine()) != null) {
                 input += temp;
@@ -43,7 +45,7 @@ public class Main {
             System.out.println();
 
             Algorithm bestfit = new Algorithm();
-            State state = bestfit.execute(text1, "Fritz");
+            State state = bestfit.execute(text1, "Iwh");
             if (state == null) {
                 System.out.println("NO ACROSTIC CONSTRUCTABLE!");
                 return;
@@ -63,11 +65,13 @@ public class Main {
             System.out.println();
             System.out.println("Number Generated Nodes: " + bestfit.getGeneratedNodesNo());
 
-        }
+        }*/
         
         //Example of use of the tester
-        //String testTextsFiles[] = {"Text/William/1.txt","Text/William/2.txt","Text/William/3.txt","Text/William/4.txt","Text/William/6.txt","Text/William/7.txt","Text/William/8.txt","Text/William/9.txt","Text/William/10.txt","Text/William/11.txt","Text/William/12.txt","Text/William/13.txt","Text/William/15.txt","Text/William/16.txt","Text/William/17.txt","Text/William/19.txt","Text/William/20.txt","Text/William/21.txt","Text/William/22.txt","Text/William/23.txt","Text/William/24.txt","Text/William/25.txt","Text/William/26.txt","Text/William/27.txt","Text/William/28.txt"};      
-        //new AlgorithmTester().execute(new ArrayList<>(Arrays.asList(testTextsFiles)), "Text/William/TestResults1.txt");
+        //Here you make the list of file names of the texts
+        String testTextsFiles[] = {"Text/William/1.txt","Text/William/2.txt","Text/William/3.txt","Text/William/4.txt","Text/William/6.txt","Text/William/7.txt","Text/William/8.txt","Text/William/9.txt","Text/William/10.txt","Text/William/11.txt","Text/William/12.txt","Text/William/13.txt","Text/William/15.txt","Text/William/16.txt","Text/William/17.txt","Text/William/19.txt","Text/William/20.txt","Text/William/21.txt","Text/William/22.txt","Text/William/23.txt","Text/William/24.txt","Text/William/25.txt","Text/William/26.txt","Text/William/27.txt","Text/William/28.txt"};
+        //Here is the main call with the output file name
+        new AlgorithmTester().execute(new ArrayList<>(Arrays.asList(testTextsFiles)), "Text/William/TestResults3.txt");
 
     }
 }
