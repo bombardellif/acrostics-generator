@@ -1,0 +1,2029 @@
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 19:30:59 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 0
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: EXCEPTION
+Number of Genereted Nodes: 91
+Exception Message: java.net.ConnectException: Connection refused
+Exception Cause: java.net.ConnectException: Connection refused
+Exception Class: class redis.clients.jedis.exceptions.JedisConnectionException
+Stack Trace: redis.clients.jedis.Connection.connect(Connection.java:142)
+redis.clients.jedis.BinaryClient.connect(BinaryClient.java:75)
+redis.clients.jedis.Connection.sendCommand(Connection.java:83)
+redis.clients.jedis.BinaryClient.smembers(BinaryClient.java:325)
+redis.clients.jedis.Client.smembers(Client.java:249)
+redis.clients.jedis.Jedis.smembers(Jedis.java:1142)
+model.SynonymDAO.getSynonyms(SynonymDAO.java:29)
+controller.SynonymOperation.changeForSynonym(SynonymOperation.java:77)
+controller.SynonymOperation.execute(SynonymOperation.java:26)
+model.Algorithm.execute(Algorithm.java:127)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 91
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 19:52:37 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 0
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertrieben-
+en Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet ve-
+rsperrt werden, schonsündlich verwildert; oft hatte Herzog Michael da-
+rüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerst-
+reuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu z-
+iehen, als sie noch Christen fänden,war gelöst, denn sie waren schon
+aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen
+Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetz-
+en wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 35836
+Number of Goal Checks: 35836
+Execution Time: 17
+
+
+==========================================================
+
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 19:54:14 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 0
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertrieben-
+en Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet ve-
+rsperrt werden, schonsündlich verwildert; oft hatte Herzog Michael da-
+rüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerst-
+reuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu z-
+iehen, als sie noch Christen fänden,war gelöst, denn sie waren schon
+aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen
+Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetz-
+en wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 35836
+Number of Goal Checks: 35836
+Execution Time: 20
+
+
+==========================================================
+
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 19:55:47 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 0
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertrieben-
+en Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet ve-
+rsperrt werden, schonsündlich verwildert; oft hatte Herzog Michael da-
+rüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerst-
+reuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu z-
+iehen, als sie noch Christen fänden,war gelöst, denn sie waren schon
+aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen
+Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetz-
+en wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 35836
+Number of Goal Checks: 35836
+Execution Time: 19
+
+
+==========================================================
+
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 19:59:34 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 1
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertrieben-
+en Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet ve-
+rsperrt werden, schonsündlich verwildert; oft hatte Herzog Michael da-
+rüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerst-
+reuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu z-
+iehen, als sie noch Christen fänden,war gelöst, denn sie waren schon
+aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen
+Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetz-
+en wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 35835
+Number of Goal Checks: 35835
+Execution Time: 48
+
+
+==========================================================
+
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 20:07:59 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 0
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertrieben-
+en Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet ve-
+rsperrt werden, schonsündlich verwildert; oft hatte Herzog Michael da-
+rüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerst-
+reuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu z-
+iehen, als sie noch Christen fänden,war gelöst, denn sie waren schon
+aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen
+Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetz-
+en wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 35835
+Number of Goal Checks: 35835
+Execution Time: 21
+
+
+==========================================================
+
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 20:08:41 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 0
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertrieben-
+en Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet ve-
+rsperrt werden, schonsündlich verwildert; oft hatte Herzog Michael da-
+rüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerst-
+reuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu z-
+iehen, als sie noch Christen fänden,war gelöst, denn sie waren schon
+aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen
+Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetz-
+en wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 35835
+Number of Goal Checks: 35835
+Execution Time: 21
+
+
+==========================================================
+
+
+=============================Text/Juergen/1.txt=============================
+Current Time: Mon Jan 26 20:11:03 CET 2015
+Input String: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu werden, schonsündlich verwildert; oft hatte Herzog Michael darüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde unendlich schwer. 
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertr-
+iebenen Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduld-
+et zu werden, schonsündlich verwildert; oft hatte Herzog Michael darü-
+ber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstre-
+uung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu zie-
+hen, als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 31
+Number of Goal Checks: 31
+Execution Time: 0
+
+Input Text: Die Zigeuner waren damals in der Verfolgung, welche die vertriebenen
+Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet zu
+werden, schonsündlich verwildert; oft hatte Herzog Michael darüber
+geklagt und alle seineKlugheit angewendet, sie aus dieser Zerstreuung
+nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu ziehen,
+als sie noch Christen fänden,war gelöst, denn sie waren schon aus
+Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen Welt
+hielt sie in der alten, die nur Krieger,keine Pilger hinübersetzen
+wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Zigeuner waren damals in der Verfolgung, welche die vertrieben-
+en Judenihnen zuzogen, die sich für Zigeuner ausgaben, um geduldet ve-
+rsperrt werden, schonsündlich verwildert; oft hatte Herzog Michael da-
+rüber geklagt und alle seineKlugheit angewendet, sie aus dieser Zerst-
+reuung nach ihrem Vaterlandezurückzuführen. Ihr Gelübde, so weit zu z-
+iehen, als sie noch Christen fänden,war gelöst, denn sie waren schon
+aus Spanien vom Weltmeere zurückgekehrt;nur der Wunsch nach der neuen
+Welt hielt sie in der alten, die nur Krieger,keine Pilger hinübersetz-
+en wollte. Das Zurückführen nach Ägypten war aberbei der zunehmenden
+Türkenmacht, bei der Verfolgung überall, bei dem Mangelan Gelde
+unendlich schwer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 35835
+Number of Goal Checks: 35835
+Execution Time: 17
+
+
+==========================================================
+
+
+=============================Text/Juergen/2.txt=============================
+Current Time: Mon Jan 26 20:11:54 CET 2015
+Input String: Das mußte voraus berichtet werden, jetzt zu unsrer Geschichte zurück. Ein neuer Haufe,unter denen Happy und Emler, waren vor acht Tagen aus Frankreich ohne alles Geldangekommen, der Herzog entschloß sich, zu ihrem Unterhalt selbst seine Künste wiedereinmal zu zeigen, er ging mit ihnen in ein Wirtshaus, und als er eben zu allerBewunderung acht Männer auf Arm und Schultern trug, kam das Geschrei, der Happy seigefangen, er habe zwei Hähne im Hofe gestohlen, und im Fortgehen habe ihn ihr Krähenverraten, und Michael, der Herzog, sei bloß darum im Zimmer geblieben, um die Leuteheranzulocken. Die Genter Bürger verziehen wegen ihres Reichtums keinen Diebstahl;vergebens stellte sich Herzog Michael, als ob er den Happy im Augenblicke erschießenwollte, er selbst und Emler wurden mit dem Happy verhaftet und als Diebe zum Strangeverurteilt; damals gab es ein strenges Recht gegen die Zigeuner, sie totzuschlagen,wo sie sich finden ließen.
+
+Input Text: Das mußte voraus berichtet werden, jetzt zu unsrer Geschichte zurück.
+Ein neuer Haufe,unter denen Happy und Emler, waren vor acht Tagen aus
+Frankreich ohne alles Geldangekommen, der Herzog entschloß sich, zu
+ihrem Unterhalt selbst seine Künste wiedereinmal zu zeigen, er ging
+mit ihnen in ein Wirtshaus, und als er eben zu allerBewunderung acht
+Männer auf Arm und Schultern trug, kam das Geschrei, der Happy
+seigefangen, er habe zwei Hähne im Hofe gestohlen, und im Fortgehen
+habe ihn ihr Krähenverraten, und Michael, der Herzog, sei bloß darum
+im Zimmer geblieben, um die Leuteheranzulocken. Die Genter Bürger
+verziehen wegen ihres Reichtums keinen Diebstahl;vergebens stellte
+sich Herzog Michael, als ob er den Happy im Augenblicke
+erschießenwollte, er selbst und Emler wurden mit dem Happy verhaftet
+und als Diebe zum Strangeverurteilt; damals gab es ein strenges Recht
+gegen die Zigeuner, sie totzuschlagen,wo sie sich finden ließen.
+
+Acrostic: Das
+Result: SUCCESS
+Result Text: Das mußte voraus berichtet werden, jetzt zu unsrer der vergangenheit
+angehören zurück. Ein neuer Haufe,unter denen Happy zu allem Überflus-
+s Emler, waren vor acht Tagen aus Frankreich ohne alles Geldangekomme-
+n, der Herzog e- ntschloß sich, zu ihrem Unterhalt selbst seine Künst-
+e wiedereinmal zu zeigen, er ging mit ihnen in ein Wirtshaus, und als
+er eben zu allerB- ewunderung acht Männer auf Arm und Schultern trug,
+kam das Geschrei, der Happy seigefangen, er habe zwei Hähne im Hofe g-
+estohlen, und im F- ortgehen habe ihn ihr Krähenverraten, und Michael-
+, der Herzog, sei bl- oß darum im Zimmer geblieben, um die Leuteheran-
+zulocken. Die Genter B- ürger verziehen wegen ihres Reichtums keinen
+Diebstahl;vergebens stel- lte sich Herzog Michael, als ob er den Happ-
+y im Augenblicke erschießenwollte, er selbst und Emler wurden mit dem
+Happy verhaftet und als Diebe zum Strangeverurteilt; damals gab es ei-
+n strenges Recht gegen die Zigeuner, sie totzuschlagen,wo sie sich f
+nden ließen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 114700
+Number of Goal Checks: 114700
+Execution Time: 50
+
+Input Text: Das mußte voraus berichtet werden, jetzt zu unsrer Geschichte zurück.
+Ein neuer Haufe,unter denen Happy und Emler, waren vor acht Tagen aus
+Frankreich ohne alles Geldangekommen, der Herzog entschloß sich, zu
+ihrem Unterhalt selbst seine Künste wiedereinmal zu zeigen, er ging
+mit ihnen in ein Wirtshaus, und als er eben zu allerBewunderung acht
+Männer auf Arm und Schultern trug, kam das Geschrei, der Happy
+seigefangen, er habe zwei Hähne im Hofe gestohlen, und im Fortgehen
+habe ihn ihr Krähenverraten, und Michael, der Herzog, sei bloß darum
+im Zimmer geblieben, um die Leuteheranzulocken. Die Genter Bürger
+verziehen wegen ihres Reichtums keinen Diebstahl;vergebens stellte
+sich Herzog Michael, als ob er den Happy im Augenblicke
+erschießenwollte, er selbst und Emler wurden mit dem Happy verhaftet
+und als Diebe zum Strangeverurteilt; damals gab es ein strenges Recht
+gegen die Zigeuner, sie totzuschlagen,wo sie sich finden ließen.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Das mußte voraus berichtet werden, jetzt zu unsrer Geschichte zurück.
+Ein neuer Haufe,unter denen Happy sowohl ... als auch Emler, waren vo-
+r acht Tagen aus Frankreich ohne alles Geldangekommen, der Herzog ent-
+schloß sich, zu ihrem Unterhalt selbst seine Künste wiedereinmal zu z-
+eigen, er ging mit ihnen in ein Wirtshaus, und als er eben zu allerBe-
+wunderung acht Männer auf Arm und Schultern trug, kam das Geschrei, d-
+er Happy seigefangen, er habe zwei Hähne im Hofe gestohlen, und im Fo-
+rtgehen habe ihn ihr Krähenverraten, und Michael, der Herzog, sei blo-
+ß darum im Zimmer geblieben, um die Leuteheranzulocken. Die Genter Bü-
+rger verziehen wegen ihres Reichtums keinen Diebstahl;vergebens stell-
+te sich Herzog Michael, als ob er den Happy im Augenblicke
+erschießenwollte, er selbst und Emler wurden mit dem Happy verhaftet
+und als Diebe zum Strangeverurteilt; damals gab es ein strenges Recht
+gegen die Zigeuner, sie totzuschlagen,wo sie sich finden ließen.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 267
+Number of Goal Checks: 267
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Juergen/3.txt=============================
+Current Time: Mon Jan 26 20:12:32 CET 2015
+Input String: Mit dem Weinkruge und dem Brote, den schwarzen Hund zur Seite, trat sie in denverwüsteten Garten; das Haus war schon seit zehn Jahren der Gespenster wegenunbewohnt geblieben, denn so lange hatten die Zigeuner sich darin eingenistetund den Besitzer, einen reichen Kaufmann der Stadt, der es sich als Sommersitzeingerichtet hatte, daraus zurückgeschreckt, bis er selbst wegen eines Bankerottseingesteckt und sein Vermögen für die Gläubiger in bekannter Nachlässigkeitverwaltet wurde. Jetzt hatten sie unter dem Schwert der Gerechtigkeit vollkommeneRuhe, dort zu hausen, nur durften sie sich am Tage nicht zeigen, während ihnennachts alle Leute aus dem Wege gingen.
+
+Input Text: Mit dem Weinkruge und dem Brote, den schwarzen Hund zur Seite, trat
+sie in denverwüsteten Garten; das Haus war schon seit zehn Jahren der
+Gespenster wegenunbewohnt geblieben, denn so lange hatten die Zigeuner
+sich darin eingenistetund den Besitzer, einen reichen Kaufmann der
+Stadt, der es sich als Sommersitzeingerichtet hatte, daraus
+zurückgeschreckt, bis er selbst wegen eines Bankerottseingesteckt und
+sein Vermögen für die Gläubiger in bekannter Nachlässigkeitverwaltet
+wurde. Jetzt hatten sie unter dem Schwert der Gerechtigkeit
+vollkommeneRuhe, dort zu hausen, nur durften sie sich am Tage nicht
+zeigen, während ihnennachts alle Leute aus dem Wege gingen.
+
+Acrostic: Mit
+Result: SUCCESS
+Result Text: Mit dem Weinkruge darüber hinaus dem Brote, den schwarzen Hund zur Se-
+ite, trat weibsstück in denverwüsteten Garten; das Haus war schon sei-
+t zehn Jahren der Gespenster wegenunbewohnt geblieben, denn so lange
+hatten die Zigeuner sich darin eingenistetund den Besitzer, einen rei-
+chen Ka- ufmann der Stadt, der es sich als Sommersitzeingerichtet hat-
+te, daraus zurückgeschreckt, bis er selbst wegen eines Bankerottseing-
+esteckt und sein Vermögen für die Gläubiger in bekannter Nachlässigke-
+itverwaltet wurde. Jetzt hatten sie unter dem Schwert der Gerechtigke-
+it vollkommeneRuhe, dort zu hausen, nur durften sie sich am Tage nicht
+zeigen, während ihnennachts alle Leute aus dem Wege gingen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 59809
+Number of Goal Checks: 59809
+Execution Time: 24
+
+Input Text: Mit dem Weinkruge und dem Brote, den schwarzen Hund zur Seite, trat
+sie in denverwüsteten Garten; das Haus war schon seit zehn Jahren der
+Gespenster wegenunbewohnt geblieben, denn so lange hatten die Zigeuner
+sich darin eingenistetund den Besitzer, einen reichen Kaufmann der
+Stadt, der es sich als Sommersitzeingerichtet hatte, daraus
+zurückgeschreckt, bis er selbst wegen eines Bankerottseingesteckt und
+sein Vermögen für die Gläubiger in bekannter Nachlässigkeitverwaltet
+wurde. Jetzt hatten sie unter dem Schwert der Gerechtigkeit
+vollkommeneRuhe, dort zu hausen, nur durften sie sich am Tage nicht
+zeigen, während ihnennachts alle Leute aus dem Wege gingen.
+
+Acrostic: mit
+Result: SUCCESS
+Result Text: Mit dem Weinkruge darüber hinaus dem Brote, den schwarzen Hund zur Se-
+ite, trat weibsstück in denverwüsteten Garten; das Haus war schon sei-
+t zehn Jahren der Gespenster wegenunbewohnt geblieben, denn so lange
+hatten die Zigeuner sich darin eingenistetund den Besitzer, einen rei-
+chen Ka- ufmann der Stadt, der es sich als Sommersitzeingerichtet hat-
+te, daraus zurückgeschreckt, bis er selbst wegen eines Bankerottseing-
+esteckt und sein Vermögen für die Gläubiger in bekannter Nachlässigke-
+itverwaltet wurde. Jetzt hatten sie unter dem Schwert der Gerechtigke-
+it vollkommeneRuhe, dort zu hausen, nur durften sie sich am Tage nicht
+zeigen, während ihnennachts alle Leute aus dem Wege gingen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 59809
+Number of Goal Checks: 59809
+Execution Time: 12
+
+
+==========================================================
+
+
+=============================Text/Juergen/4.txt=============================
+Current Time: Mon Jan 26 20:27:54 CET 2015
+Input String: Vier Wochen des Schmerzes waren vergangen, die Alte konnte ihrer eigenenSicherheit wegen nicht alle Tage kommen, und Bella langeweilte sich mitdem Hunde, dessen Künste sie nicht mehr sehen mochte, der ewig schlief,oder, wenn gegessen wurde, wedelte, sich leckte, kratzte; sie kam endlichdarauf, womit andere Erben anfangen, den Nachlaß der Verstorbenen zudurchsuchen. Sie schloß die geheime Kammer auf, nicht ohne Schrecken undEhrfurcht, aber ihre Erwartung war getäuscht; da waren keine seltene Kleiderund Kostbarkeiten, meist nur Bündel von Kräutern, Säcke mit Wurzeln, einigeSteine, lauter Dinge, von denen sie nichts verstand, weil der Vater ihremkindischen Wesen keine Achtsamkeit für das Geheime zugetraut hatte.
+
+Input Text: Vier Wochen des Schmerzes waren vergangen, die Alte konnte ihrer
+eigenenSicherheit wegen nicht alle Tage kommen, und Bella langeweilte
+sich mitdem Hunde, dessen Künste sie nicht mehr sehen mochte, der ewig
+schlief,oder, wenn gegessen wurde, wedelte, sich leckte, kratzte; sie
+kam endlichdarauf, womit andere Erben anfangen, den Nachlaß der
+Verstorbenen zudurchsuchen. Sie schloß die geheime Kammer auf, nicht
+ohne Schrecken undEhrfurcht, aber ihre Erwartung war getäuscht; da
+waren keine seltene Kleiderund Kostbarkeiten, meist nur Bündel von
+Kräutern, Säcke mit Wurzeln, einigeSteine, lauter Dinge, von denen sie
+nichts verstand, weil der Vater ihremkindischen Wesen keine
+Achtsamkeit für das Geheime zugetraut hatte.
+
+Acrostic: Vier
+Result: SUCCESS
+Result Text: Vier Wochen des Schmerzes waren vergangen, die Alte konnte
+ihrer eigenenSicherheit wegen nicht alle Tage kommen, und B-
+ella langeweilte sich mitdem Hunde, dessen Künste ebendiese nicht meh-
+r sehen mochte, der ewig schlief,oder, wenn gegessen wurde, wedelte,
+sich leckte, kratzte; sie kam endlichdarauf, womit andere Erben anfan-
+gen, den Nachlaß der Verstorbenen zudurchsuchen. Sie schloß die gehei-
+me Kammer auf, nicht ohne Schrecken undEhrfurcht, aber ihre Erwartung
+war getäuscht; da waren keine seltene Kleiderund Kostbarkeiten, meist
+nur Bündel von Kräutern, Säcke mit Wurzeln, einigeSteine, lauter Ding-
+e, von denen sie nichts verstand, weil der Vater ihremkindischen Wesen
+keine Achtsamkeit für das Geheime zugetraut hatte.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 26932
+Number of Goal Checks: 26932
+Execution Time: 16
+
+Input Text: Vier Wochen des Schmerzes waren vergangen, die Alte konnte ihrer
+eigenenSicherheit wegen nicht alle Tage kommen, und Bella langeweilte
+sich mitdem Hunde, dessen Künste sie nicht mehr sehen mochte, der ewig
+schlief,oder, wenn gegessen wurde, wedelte, sich leckte, kratzte; sie
+kam endlichdarauf, womit andere Erben anfangen, den Nachlaß der
+Verstorbenen zudurchsuchen. Sie schloß die geheime Kammer auf, nicht
+ohne Schrecken undEhrfurcht, aber ihre Erwartung war getäuscht; da
+waren keine seltene Kleiderund Kostbarkeiten, meist nur Bündel von
+Kräutern, Säcke mit Wurzeln, einigeSteine, lauter Dinge, von denen sie
+nichts verstand, weil der Vater ihremkindischen Wesen keine
+Achtsamkeit für das Geheime zugetraut hatte.
+
+Acrostic: von
+Result: TIMEOUT
+Number of Genereted Nodes: 1256894
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1256894
+Execution Time: 905
+
+
+==========================================================
+
+
+=============================Text/Juergen/6.txt=============================
+Current Time: Mon Jan 26 20:28:34 CET 2015
+Input String: Die Alte ging mit einer gescheiten Neugierde; an der Türe bat sie Bella,den schwarzen Hund wegzurufen, der immer vor der Kammertür lag und niemandals Bella einzulassen Befehl hatte. Bella rief ihn zu sich, und die Alteging ohne Aufenthalt in die Kammer. Als sie drin war, lachte Bella, wiesden Hund wieder zur Kammertür und versteckte sich, um den Schreck der Altenzu sehen; es war ein Prinzessinnenspaß, aber sie war auch liebenswürdig wieeine Prinzeß und war von je wie eine Prinzeß verehrt worden. Nicht langenachher wollte die Alte mit einem großen Kräuterbündel und mit einem Sackezur Türe hinaustreten, aber der schwarze Hund machte ihr ein Paar feurigeAugen und zeigte die Zähne; sie trat erschrocken zurück und rief nach Bellain großer Angst.
+
+Input Text: Die Alte ging mit einer gescheiten Neugierde; an der Türe bat sie
+Bella,den schwarzen Hund wegzurufen, der immer vor der Kammertür lag
+und niemandals Bella einzulassen Befehl hatte. Bella rief ihn zu sich,
+und die Alteging ohne Aufenthalt in die Kammer. Als sie drin war,
+lachte Bella, wiesden Hund wieder zur Kammertür und versteckte sich,
+um den Schreck der Altenzu sehen; es war ein Prinzessinnenspaß, aber
+sie war auch liebenswürdig wieeine Prinzeß und war von je wie eine
+Prinzeß verehrt worden. Nicht langenachher wollte die Alte mit einem
+großen Kräuterbündel und mit einem Sackezur Türe hinaustreten, aber
+der schwarze Hund machte ihr ein Paar feurigeAugen und zeigte die
+Zähne; sie trat erschrocken zurück und rief nach Bellain großer Angst.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Alte ging mit einer gescheiten Neugierde; an der Türe bat frauenz-
+immer Bella,den schwarzen Hund wegzurufen, der immer vor der Kammertu-
+er lag und niemandals Bella einzulassen Befehl hatte. Bella rief ihn
+zu sich, und die Alteging ohne Aufenthalt in die Kammer. Als sie drin
+war, lachte Bella, wiesden Hund wieder zur Kammertür und versteckte s-
+ich, um den Schreck der Altenzu sehen; es war ein Prinzessinnenspaß,
+aber sie war auch liebenswürdig wieeine Prinzeß und war von je wie ei-
+ne Prinzeß verehrt worden. Nicht langenachher wollte die Alte mit ein-
+em großen Kräuterbündel und mit einem Sackezur Türe hinaustreten, aber
+der schwarze Hund machte ihr ein Paar feurigeAugen und zeigte die
+Zähne; sie trat erschrocken zurück und rief nach Bellain großer Angst.
+
+Applied Operators (In Final Result): WrongSpellingOperation
+SynonymOperation
+Number of Genereted Nodes: 71966
+Number of Goal Checks: 71966
+Execution Time: 39
+
+Input Text: Die Alte ging mit einer gescheiten Neugierde; an der Türe bat sie
+Bella,den schwarzen Hund wegzurufen, der immer vor der Kammertür lag
+und niemandals Bella einzulassen Befehl hatte. Bella rief ihn zu sich,
+und die Alteging ohne Aufenthalt in die Kammer. Als sie drin war,
+lachte Bella, wiesden Hund wieder zur Kammertür und versteckte sich,
+um den Schreck der Altenzu sehen; es war ein Prinzessinnenspaß, aber
+sie war auch liebenswürdig wieeine Prinzeß und war von je wie eine
+Prinzeß verehrt worden. Nicht langenachher wollte die Alte mit einem
+großen Kräuterbündel und mit einem Sackezur Türe hinaustreten, aber
+der schwarze Hund machte ihr ein Paar feurigeAugen und zeigte die
+Zähne; sie trat erschrocken zurück und rief nach Bellain großer Angst.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Alte ging unter zuhilfenahme von einer gescheiten Neugierde; an d-
+er Türe bat sie Bella,den schwarzen Hund wegzurufen, der immer vor de-
+r Kammertür lag und niemandals Bella einzulassen Befehl hatte. Bella
+rief ihn zu sich, und die Alteging ohne Aufenthalt in die Kammer. Als
+sie drin war, lachte Bella, wiesden Hund wieder zur Kammertür und ver-
+steckte sich, um den Schreck der Altenzu sehen; es war ein Prinzessin-
+nenspaß, aber sie war auch liebenswürdig wieeine Prinzeß und war von
+je wie eine Prinzeß verehrt worden. Nicht langenachher wollte die Alt-
+e mit einem großen Kräuterbündel und mit einem Sackezur Türe hinaustr-
+eten, aber der schwarze Hund machte ihr ein Paar feurigeAugen und zei-
+gte die Zähne; sie trat erschrocken zurück und rief nach Bellain gro
+er Angst.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 169
+Number of Goal Checks: 169
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Juergen/7.txt=============================
+Current Time: Mon Jan 26 20:44:25 CET 2015
+Input String: Sein Hochmut entzückte sie, mit dem er Cenrio zurückwies, der die Wettezurücknehmen wollte, weil er behauptete, der Prinz habe durch seine Anwesenheitbewährt, daß er sie wirklich ausführen wolle. Der Prinz warf aber rasch seinschwarzsammetnes Barett auf den Tisch, breitete seinen Regenmantel über dieBettstelle und befahl Cenrio, auf die Umgebung des Hauses zu wachen und ihmein paar brennende Kerzen im Zimmer zurückzulassen, er sei müde. Cenrio empfahlihm, das Zeichen mit der Pistole nicht zu vergessen, wenn er jemand bedürfte;oder im Fall diese versagte, dabei besah er das Schloß, so würde sein Rufenschon genügen, da er einen Soldaten unter dem Fenster ausstellen und selbstin der Nähe wachen würde. Der Prinz meinte, er möchte sich das Wachen undBewachen ersparen, in seinem Panzerhemde, mit gutem Degen bewaffnet sollteihm so leicht niemand gefährlich werden; die Ammenmärchen von Geisternschreckten ihn aber nicht mehr.
+
+Input Text: Sein Hochmut entzückte sie, mit dem er Cenrio zurückwies, der die
+Wettezurücknehmen wollte, weil er behauptete, der Prinz habe durch
+seine Anwesenheitbewährt, daß er sie wirklich ausführen wolle. Der
+Prinz warf aber rasch seinschwarzsammetnes Barett auf den Tisch,
+breitete seinen Regenmantel über dieBettstelle und befahl Cenrio, auf
+die Umgebung des Hauses zu wachen und ihmein paar brennende Kerzen im
+Zimmer zurückzulassen, er sei müde. Cenrio empfahlihm, das Zeichen mit
+der Pistole nicht zu vergessen, wenn er jemand bedürfte;oder im Fall
+diese versagte, dabei besah er das Schloß, so würde sein Rufenschon
+genügen, da er einen Soldaten unter dem Fenster ausstellen und
+selbstin der Nähe wachen würde. Der Prinz meinte, er möchte sich das
+Wachen undBewachen ersparen, in seinem Panzerhemde, mit gutem Degen
+bewaffnet sollteihm so leicht niemand gefährlich werden; die
+Ammenmärchen von Geisternschreckten ihn aber nicht mehr.
+
+Acrostic: Sein
+Result: SUCCESS
+Result Text: Sein Hochmut entzückte sie, unter zuhilfenahme von dem er Cenrio zuru-
+eckwies, der die Wettezurücknehmen wollte, weil er behauptete, der Pr-
+inz habe durch seine Anwesenheitbewährt, daß er sie wirklich ausführe-
+n wolle. Der Prinz warf aber rasch seinschwarzsammetnes Barett auf de-
+n Tisch, breitete seinen Regenmantel über dieBettstelle und befahl Ce-
+nrio, auf die Umgebung des Hauses zu wachen und ihmein paar brennende
+Kerzen im Zimmer zurückzulassen, er sei müde. Cenrio empfahlihm, das
+Zeichen mit der Pistole nicht zu vergessen, wenn er jemand bedürfte;o-
+der im Fall diese versagte, dabei besah er das Schloß, so würde sein
+Rufenschon genügen, da er einen Soldaten unter dem Fenster ausstellen
+und selbstin der Nähe wachen würde. Der Prinz meinte, er möchte sich
+das Wachen undBewachen ersparen, in seinem Panzerhemde, mit gutem Deg-
+en bewaffnet sollteihm so leicht niemand gefährlich werden; die
+Ammenmärchen von Geisternschreckten ihn aber nicht mehr.
+
+Applied Operators (In Final Result): WrongSpellingOperation
+SynonymOperation
+Number of Genereted Nodes: 110167
+Number of Goal Checks: 110167
+Execution Time: 45
+
+Input Text: Sein Hochmut entzückte sie, mit dem er Cenrio zurückwies, der die
+Wettezurücknehmen wollte, weil er behauptete, der Prinz habe durch
+seine Anwesenheitbewährt, daß er sie wirklich ausführen wolle. Der
+Prinz warf aber rasch seinschwarzsammetnes Barett auf den Tisch,
+breitete seinen Regenmantel über dieBettstelle und befahl Cenrio, auf
+die Umgebung des Hauses zu wachen und ihmein paar brennende Kerzen im
+Zimmer zurückzulassen, er sei müde. Cenrio empfahlihm, das Zeichen mit
+der Pistole nicht zu vergessen, wenn er jemand bedürfte;oder im Fall
+diese versagte, dabei besah er das Schloß, so würde sein Rufenschon
+genügen, da er einen Soldaten unter dem Fenster ausstellen und
+selbstin der Nähe wachen würde. Der Prinz meinte, er möchte sich das
+Wachen undBewachen ersparen, in seinem Panzerhemde, mit gutem Degen
+bewaffnet sollteihm so leicht niemand gefährlich werden; die
+Ammenmärchen von Geisternschreckten ihn aber nicht mehr.
+
+Acrostic: sich
+Result: TIMEOUT
+Number of Genereted Nodes: 1251846
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1251846
+Execution Time: 904
+
+
+==========================================================
+
+
+=============================Text/Juergen/8.txt=============================
+Current Time: Mon Jan 26 20:44:33 CET 2015
+Input String: Der Prinz mußte noch in derselben Nacht mit einem Fieberfür sein Wagestück büßen. Der liebliche Kopf der Bellaschwebte ihm darin vor, das Fieber verriet ihn, indem esihm eine falsche Wahrheit zeigte, und er beichtete es mitgroßer Betrübnis am anderen Morgen dem Adrian, wie er inein Gespenst verliebt sei. Das war eine köstliche Gelegenheitfür diesen, dem Kaiser Maximilian die Sorge für das Lateinlernenseines Enkels besonders übertragen hatte, ihm zur Buße eine großeMenge Vokabeln aufzugeben, die auch der Prinz mit einigemErfolge gegen den nächtlichen Eindruck brauchte.
+
+Input Text: Der Prinz mußte noch in derselben Nacht mit einem Fieberfür sein
+Wagestück büßen. Der liebliche Kopf der Bellaschwebte ihm darin vor,
+das Fieber verriet ihn, indem esihm eine falsche Wahrheit zeigte, und
+er beichtete es mitgroßer Betrübnis am anderen Morgen dem Adrian, wie
+er inein Gespenst verliebt sei. Das war eine köstliche Gelegenheitfür
+diesen, dem Kaiser Maximilian die Sorge für das Lateinlernenseines
+Enkels besonders übertragen hatte, ihm zur Buße eine großeMenge
+Vokabeln aufzugeben, die auch der Prinz mit einigemErfolge gegen den
+nächtlichen Eindruck brauchte.
+
+Acrostic: Der
+Result: SUCCESS
+Result Text: Der Prinz mußte noch in derselben Nacht mit einem Fi-
+eberfür auftreten in der rolle Wagestück büßen. Der liebliche Kopf de-
+r Bellaschwebte ihm darin vor, das Fieber verriet ihn, indem esihm ei-
+ne falsche Wahrheit zeigte, und er beichtete es mitgroßer Betrübnis a-
+m anderen Morgen dem Adrian, wie er inein Gespenst verliebt sei. Das
+war eine köstliche Gelegenheitfür diesen, dem Kaiser Maximilian die S-
+orge für das Lateinlernenseines Enkels besonders übertragen hatte, ih-
+m zur Buße eine großeMenge Vokabeln aufzugeben, die auch der Prinz mit
+einigemErfolge gegen den nächtlichen Eindruck brauchte.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 875
+Number of Goal Checks: 875
+Execution Time: 7
+
+Input Text: Der Prinz mußte noch in derselben Nacht mit einem Fieberfür sein
+Wagestück büßen. Der liebliche Kopf der Bellaschwebte ihm darin vor,
+das Fieber verriet ihn, indem esihm eine falsche Wahrheit zeigte, und
+er beichtete es mitgroßer Betrübnis am anderen Morgen dem Adrian, wie
+er inein Gespenst verliebt sei. Das war eine köstliche Gelegenheitfür
+diesen, dem Kaiser Maximilian die Sorge für das Lateinlernenseines
+Enkels besonders übertragen hatte, ihm zur Buße eine großeMenge
+Vokabeln aufzugeben, die auch der Prinz mit einigemErfolge gegen den
+nächtlichen Eindruck brauchte.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Der Prinz mußte noch in derselben Nacht mit einem Fi-
+eberfür auftreten in der rolle Wagestück büßen. Der liebliche Kopf de-
+r Bellaschwebte ihm darin vor, das Fieber verriet ihn, indem esihm ei-
+ne falsche Wahrheit zeigte, und er beichtete es mitgroßer Betrübnis a-
+m anderen Morgen dem Adrian, wie er inein Gespenst verliebt sei. Das
+war eine köstliche Gelegenheitfür diesen, dem Kaiser Maximilian die S-
+orge für das Lateinlernenseines Enkels besonders übertragen hatte, ih-
+m zur Buße eine großeMenge Vokabeln aufzugeben, die auch der Prinz mit
+einigemErfolge gegen den nächtlichen Eindruck brauchte.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 875
+Number of Goal Checks: 875
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Juergen/9.txt=============================
+Current Time: Mon Jan 26 20:53:47 CET 2015
+Input String: Die arme Bella in ihrer Einsamkeit mußte ihre erste Zuneigung härterbüßen. Nachdem es ihr ein paar Tage genügt hatte, statt zu schlafen,an ihn zu denken und nachts von allen Seiten umzuschauen, ob er nichtwieder zum Besuche in ihr Geisterhaus kommen würde, nachdem Braka sieernstlich ausgescholten hatte, daß sie so törichten Gedanken, die sievor der Zeit bleichten, ihre frischen Tage hingebe, nachdem sie sichdiesen und andern Rat gar oft wiederholt hatte und doch immer wiedervergaß und in den beliebten fremden Gedanken abgleitete, fragte sieeinmal Braka, ob es denn kein Mittel gebe, wie man unsichtbar werdenkönne, um in der Stadt herumwandern zu dürfen.
+
+Input Text: Die arme Bella in ihrer Einsamkeit mußte ihre erste Zuneigung
+härterbüßen. Nachdem es ihr ein paar Tage genügt hatte, statt zu
+schlafen,an ihn zu denken und nachts von allen Seiten umzuschauen, ob
+er nichtwieder zum Besuche in ihr Geisterhaus kommen würde, nachdem
+Braka sieernstlich ausgescholten hatte, daß sie so törichten Gedanken,
+die sievor der Zeit bleichten, ihre frischen Tage hingebe, nachdem sie
+sichdiesen und andern Rat gar oft wiederholt hatte und doch immer
+wiedervergaß und in den beliebten fremden Gedanken abgleitete, fragte
+sieeinmal Braka, ob es denn kein Mittel gebe, wie man unsichtbar
+werdenkönne, um in der Stadt herumwandern zu dürfen.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die arme Bella in ihrer Einsamkeit mußte ihre erste Zune-
+igung härterbüßen. Nachdem es ihr ein turteltäubchen Tage genügt hatt-
+e, statt zu schlafen,an ihn zu denken und nachts von allen Seiten umz-
+uschauen, ob er nichtwieder zum Besuche in ihr Geisterhaus kommen wür-
+de, nachdem Braka sieernstlich ausgescholten hatte, daß sie so törich-
+ten Gedanken, die sievor der Zeit bleichten, ihre frischen Tage hinge-
+be, nachdem sie sichdiesen und andern Rat gar oft wiederholt hatte un-
+d doch immer wiedervergaß und in den beliebten fremden Gedanken abgle-
+itete, fragte sieeinmal Braka, ob es denn kein Mittel gebe, wie man u-
+nsichtbar werdenkönne, um in der Stadt herumwandern zu dürfen.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 55626
+Number of Goal Checks: 55626
+Execution Time: 28
+
+Input Text: Die arme Bella in ihrer Einsamkeit mußte ihre erste Zuneigung
+härterbüßen. Nachdem es ihr ein paar Tage genügt hatte, statt zu
+schlafen,an ihn zu denken und nachts von allen Seiten umzuschauen, ob
+er nichtwieder zum Besuche in ihr Geisterhaus kommen würde, nachdem
+Braka sieernstlich ausgescholten hatte, daß sie so törichten Gedanken,
+die sievor der Zeit bleichten, ihre frischen Tage hingebe, nachdem sie
+sichdiesen und andern Rat gar oft wiederholt hatte und doch immer
+wiedervergaß und in den beliebten fremden Gedanken abgleitete, fragte
+sieeinmal Braka, ob es denn kein Mittel gebe, wie man unsichtbar
+werdenkönne, um in der Stadt herumwandern zu dürfen.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die arme Bella dem zeitgeist entsprechend ihrer Einsamkeit mußte ihre
+erste Zuneigung haerterbüßen. Nachdem es ihr ein paa-
+r Tage genügt hatte, statt zu schlafen,an ihn zu den-
+ken und nachts von allen Seiten umzuschauen, ob er nichtwieder
+zum Besuche in ihr Geisterhaus kommen würde, nachdem Braka
+sieernstlich ausgescholten hatte, daß sie so törichten Gedanken, die
+sievor der Zeit bleichten, ihre frischen Tage hingebe, nachdem sie
+sichdiesen und andern Rat gar oft wiederholt hatte und doch immer
+wiedervergaß und in den beliebten fremden Gedanken abgleitete, fragte
+sieeinmal Braka, ob es denn kein Mittel gebe, wie man unsichtbar
+werdenkönne, um in der Stadt herumwandern zu dürfen.
+
+Applied Operators (In Final Result): WrongSpellingOperation
+LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 1175869
+Number of Goal Checks: 1175869
+Execution Time: 526
+
+
+==========================================================
+
+
+=============================Text/Juergen/10.txt=============================
+Current Time: Mon Jan 26 21:09:05 CET 2015
+Input String: Wer in diesem Augenblicke, dem entscheidendsten, seine Ohren nicht wohlverstopft hat, kann von dem Geschrei auf der Stelle unsinnig werden. Bellawar wiederum die einzige seit Jahrtausenden, bei der sich alle dieseErfordernisse vereinigten; wer war unschuldiger, als das teure Hauptihres Vaters Michael, der in rastloser Tat für sein armes Volk, in steterMühe und Not für die Seinen, um das Unbedeutendste einem Reichen zuentfremden, allzu ehrlich und stolz gewesen war. Welches Mädchen hätteMut gehabt, in der Mitternacht einen solchen Weg mit Überlegung zu machen,als Bella, die nun schon seit vier Jahren, wo ihre Mutter gestorben,ein verstecktes, nächtliches Leben geführt hatte und mit dem Laufedes Mondes, mit den Sternen zu vertraulich bekannt war, um in derNacht noch eine besondre Einsamkeit und Traurigkeit wahrzunehmen. 
+
+Input Text: Wer in diesem Augenblicke, dem entscheidendsten, seine Ohren nicht
+wohlverstopft hat, kann von dem Geschrei auf der Stelle unsinnig
+werden. Bellawar wiederum die einzige seit Jahrtausenden, bei der sich
+alle dieseErfordernisse vereinigten; wer war unschuldiger, als das
+teure Hauptihres Vaters Michael, der in rastloser Tat für sein armes
+Volk, in steterMühe und Not für die Seinen, um das Unbedeutendste
+einem Reichen zuentfremden, allzu ehrlich und stolz gewesen war.
+Welches Mädchen hätteMut gehabt, in der Mitternacht einen solchen Weg
+mit Überlegung zu machen,als Bella, die nun schon seit vier Jahren, wo
+ihre Mutter gestorben,ein verstecktes, nächtliches Leben geführt hatte
+und mit dem Laufedes Mondes, mit den Sternen zu vertraulich bekannt
+war, um in derNacht noch eine besondre Einsamkeit und Traurigkeit
+wahrzunehmen.
+
+Acrostic: Wer
+Result: SUCCESS
+Result Text: Wer dem zeitgeist entsprechend diesem Augenblicke, dem entscheidendst-
+en, seine Ohren nicht wohlverstopft hat, kann von dem Geschrei auf de-
+r Stelle unsinnig werden. Bellawar wiederum die einzige seit Jahrtaus-
+enden, bei der sich alle dieseErfordernisse vereinigten; wer war unsc-
+huldiger, als das teure Hauptihres Vaters Michael, der in rastloser T-
+at für sein armes Volk, in steterMühe und Not für die Seinen, um das
+Unbedeutendste einem Reichen zuentfremden, allzu ehrlich und stolz ge-
+wesen war. Welches Mädchen hätteMut gehabt, in der Mitternacht einen
+solchen Weg mit Überlegung zu machen,als Bella, die nun schon seit vi-
+er Jahren, wo ihre Mutter gestorben,ein verstecktes, nächtliches Lebe-
+n geführt hatte und mit dem Laufedes Mondes, mit den Sternen zu vertr-
+aulich bekannt war, um in derNacht noch eine besondre Einsamkeit und
+Traurigkeit wahrzunehmen.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 99
+Number of Goal Checks: 99
+Execution Time: 11
+
+Input Text: Wer in diesem Augenblicke, dem entscheidendsten, seine Ohren nicht
+wohlverstopft hat, kann von dem Geschrei auf der Stelle unsinnig
+werden. Bellawar wiederum die einzige seit Jahrtausenden, bei der sich
+alle dieseErfordernisse vereinigten; wer war unschuldiger, als das
+teure Hauptihres Vaters Michael, der in rastloser Tat für sein armes
+Volk, in steterMühe und Not für die Seinen, um das Unbedeutendste
+einem Reichen zuentfremden, allzu ehrlich und stolz gewesen war.
+Welches Mädchen hätteMut gehabt, in der Mitternacht einen solchen Weg
+mit Überlegung zu machen,als Bella, die nun schon seit vier Jahren, wo
+ihre Mutter gestorben,ein verstecktes, nächtliches Leben geführt hatte
+und mit dem Laufedes Mondes, mit den Sternen zu vertraulich bekannt
+war, um in derNacht noch eine besondre Einsamkeit und Traurigkeit
+wahrzunehmen.
+
+Acrostic: werden
+Result: TIMEOUT
+Number of Genereted Nodes: 1157994
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1157994
+Execution Time: 906
+
+
+==========================================================
+
+
+=============================Text/Juergen/11.txt=============================
+Current Time: Mon Jan 26 21:39:10 CET 2015
+Input String: Etwas Angst hatte Bella doch gespürt; nun die Woche versäumt war, schienes ihr doch besser, daß sie sich noch vorbereiten könne, und der schwarzeHund schien nicht minder diese Frist zu wünschen, um noch recht essen zukönnen; sie gewährte ihm gerne die leckersten Bissen, weil sie wußte, waser für sie tun müsse, ja zuweilen, ungeachtet ihres Widerwillens gegen dasTier, kamen ihr bei seinem Anblicke Tränen in die Augen, doch tröstete siesich immer mit dem Zusatze im Zauberbuche, daß treue Hundeseelen, diein solchem Geschäfte blieben, zur Seele ihrer Herren gelangen, und siewar gewiß, daß sich der Hund beim Vater Michael besser als bei ihrgefallen müsse.
+
+Input Text: Etwas Angst hatte Bella doch gespürt; nun die Woche versäumt war,
+schienes ihr doch besser, daß sie sich noch vorbereiten könne, und der
+schwarzeHund schien nicht minder diese Frist zu wünschen, um noch
+recht essen zukönnen; sie gewährte ihm gerne die leckersten Bissen,
+weil sie wußte, waser für sie tun müsse, ja zuweilen, ungeachtet ihres
+Widerwillens gegen dasTier, kamen ihr bei seinem Anblicke Tränen in
+die Augen, doch tröstete siesich immer mit dem Zusatze im Zauberbuche,
+daß treue Hundeseelen, diein solchem Geschäfte blieben, zur Seele
+ihrer Herren gelangen, und siewar gewiß, daß sich der Hund beim Vater
+Michael besser als bei ihrgefallen müsse.
+
+Acrostic: Etwas
+Result: TIMEOUT
+Number of Genereted Nodes: 1230139
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1230139
+Execution Time: 902
+
+Input Text: Etwas Angst hatte Bella doch gespürt; nun die Woche versäumt war,
+schienes ihr doch besser, daß sie sich noch vorbereiten könne, und der
+schwarzeHund schien nicht minder diese Frist zu wünschen, um noch
+recht essen zukönnen; sie gewährte ihm gerne die leckersten Bissen,
+weil sie wußte, waser für sie tun müsse, ja zuweilen, ungeachtet ihres
+Widerwillens gegen dasTier, kamen ihr bei seinem Anblicke Tränen in
+die Augen, doch tröstete siesich immer mit dem Zusatze im Zauberbuche,
+daß treue Hundeseelen, diein solchem Geschäfte blieben, zur Seele
+ihrer Herren gelangen, und siewar gewiß, daß sich der Hund beim Vater
+Michael besser als bei ihrgefallen müsse.
+
+Acrostic: ein
+Result: TIMEOUT
+Number of Genereted Nodes: 1237546
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1237546
+Execution Time: 903
+
+
+==========================================================
+
+
+=============================Text/Juergen/12.txt=============================
+Current Time: Mon Jan 26 22:09:22 CET 2015
+Input String: Gleiche Angst zeigten ein paar Stachelschweine, die ihre Stacheln voll Äpfelund Birnen, die sie sich in den Gärten angewälzt und angestachelt hatten, querüber den Weg zogen, sich aber bei dem Anblicke des Hundes zusammenkugelten, daßdieser ihnen ihre Beute sehr behaglich abnahm und verzehrte. Bella hattesich dabei ausgeruht, nun war es ihr aber sonderbar, daß, wie sie jetzt aufstandund sich dem Berge näherte, ein anderer immer in ihre Fußtapfen zu schreiten schien,und zwar mit solcher Sorgfalt, daß er mit der Spitze seines Fußes jedesmal die Fersedes ihren anrührte, sie wagte nicht umzusehen und lief immer hastiger zu, bis einSchlag vor den Kopf sie niederstreckte.
+
+Input Text: Gleiche Angst zeigten ein paar Stachelschweine, die ihre Stacheln
+voll Äpfelund Birnen, die sie sich in den Gärten angewälzt und
+angestachelt hatten, querüber den Weg zogen, sich aber bei dem
+Anblicke des Hundes zusammenkugelten, daßdieser ihnen ihre Beute sehr
+behaglich abnahm und verzehrte. Bella hattesich dabei ausgeruht, nun
+war es ihr aber sonderbar, daß, wie sie jetzt aufstandund sich dem
+Berge näherte, ein anderer immer in ihre Fußtapfen zu schreiten
+schien,und zwar mit solcher Sorgfalt, daß er mit der Spitze seines
+Fußes jedesmal die Fersedes ihren anrührte, sie wagte nicht umzusehen
+und lief immer hastiger zu, bis einSchlag vor den Kopf sie
+niederstreckte.
+
+Acrostic: Gleiche
+Result: TIMEOUT
+Number of Genereted Nodes: 1391679
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1391679
+Execution Time: 907
+
+Input Text: Gleiche Angst zeigten ein paar Stachelschweine, die ihre Stacheln
+voll Äpfelund Birnen, die sie sich in den Gärten angewälzt und
+angestachelt hatten, querüber den Weg zogen, sich aber bei dem
+Anblicke des Hundes zusammenkugelten, daßdieser ihnen ihre Beute sehr
+behaglich abnahm und verzehrte. Bella hattesich dabei ausgeruht, nun
+war es ihr aber sonderbar, daß, wie sie jetzt aufstandund sich dem
+Berge näherte, ein anderer immer in ihre Fußtapfen zu schreiten
+schien,und zwar mit solcher Sorgfalt, daß er mit der Spitze seines
+Fußes jedesmal die Fersedes ihren anrührte, sie wagte nicht umzusehen
+und lief immer hastiger zu, bis einSchlag vor den Kopf sie
+niederstreckte.
+
+Acrostic: gegen
+Result: TIMEOUT
+Number of Genereted Nodes: 1392226
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1392226
+Execution Time: 904
+
+
+==========================================================
+
+
+=============================Text/Juergen/13.txt=============================
+Current Time: Mon Jan 26 22:39:29 CET 2015
+Input String: Zärtlicher kann eine Mutter ihr Kind, das sie bei einem Erdbeben verschüttet glaubt,nicht wieder begrüßen, nicht vertrauter, nicht bekannter, als Bella den kleinenAlraun aus dem letzten Erdenstaube an ihre Brust hob und ihn von allem Anflugreinigte. Er schien von dem allen nichts zu wissen, sein Atem strömte aus kaumbemerkbaren Öffnungen des Kopfes, nur als sie ihn eine Zeitlang auf ihren Armengewiegt hatte, bemerkte sie an einem ungeduldigen Stoß seines Armes gegen ihreBrust, daß er diese Bewegung liebe; auch beruhigte er Arme und Beine nicht eher,bis sie ihn wieder mit schaukelnder Bewegung erfreulich einschläferte. So eiltesie mit ihm in ihre Wohnung zurück; sie achtete nicht des Hundegebells, nichteinzelner Marktleute, die sich früh vor den Toren der Stadt sammelten, um dieersten bei der Eröffnung der Tore zu sein; sie sah nur auf den Kleinen, densie sorgsam in ihren Überrock eingeschlagen hatte.
+
+Input Text: Zärtlicher kann eine Mutter ihr Kind, das sie bei einem Erdbeben
+verschüttet glaubt,nicht wieder begrüßen, nicht vertrauter, nicht
+bekannter, als Bella den kleinenAlraun aus dem letzten Erdenstaube an
+ihre Brust hob und ihn von allem Anflugreinigte. Er schien von dem
+allen nichts zu wissen, sein Atem strömte aus kaumbemerkbaren
+Öffnungen des Kopfes, nur als sie ihn eine Zeitlang auf ihren
+Armengewiegt hatte, bemerkte sie an einem ungeduldigen Stoß seines
+Armes gegen ihreBrust, daß er diese Bewegung liebe; auch beruhigte er
+Arme und Beine nicht eher,bis sie ihn wieder mit schaukelnder Bewegung
+erfreulich einschläferte. So eiltesie mit ihm in ihre Wohnung zurück;
+sie achtete nicht des Hundegebells, nichteinzelner Marktleute, die
+sich früh vor den Toren der Stadt sammelten, um dieersten bei der
+Eröffnung der Tore zu sein; sie sah nur auf den Kleinen, densie
+sorgsam in ihren Überrock eingeschlagen hatte.
+
+Acrostic: Zärtlicher
+Result: TIMEOUT
+Number of Genereted Nodes: 1268926
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1268926
+Execution Time: 902
+
+Input Text: Zärtlicher kann eine Mutter ihr Kind, das sie bei einem Erdbeben
+verschüttet glaubt,nicht wieder begrüßen, nicht vertrauter, nicht
+bekannter, als Bella den kleinenAlraun aus dem letzten Erdenstaube an
+ihre Brust hob und ihn von allem Anflugreinigte. Er schien von dem
+allen nichts zu wissen, sein Atem strömte aus kaumbemerkbaren
+Öffnungen des Kopfes, nur als sie ihn eine Zeitlang auf ihren
+Armengewiegt hatte, bemerkte sie an einem ungeduldigen Stoß seines
+Armes gegen ihreBrust, daß er diese Bewegung liebe; auch beruhigte er
+Arme und Beine nicht eher,bis sie ihn wieder mit schaukelnder Bewegung
+erfreulich einschläferte. So eiltesie mit ihm in ihre Wohnung zurück;
+sie achtete nicht des Hundegebells, nichteinzelner Marktleute, die
+sich früh vor den Toren der Stadt sammelten, um dieersten bei der
+Eröffnung der Tore zu sein; sie sah nur auf den Kleinen, densie
+sorgsam in ihren Überrock eingeschlagen hatte.
+
+Acrostic: zu
+Result: TIMEOUT
+Number of Genereted Nodes: 1266128
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1266128
+Execution Time: 904
+
+
+==========================================================
+
+
+=============================Text/Juergen/15.txt=============================
+Current Time: Mon Jan 26 23:09:47 CET 2015
+Input String: Nachdem die Alte ihr Zwiebelgericht, das sie sich bereitet, ausgetunkt hatte, ging sieendlich von dannen. Bella schloß die Türe und eilte zu ihrer heimlichen Wiege; zagenddeckte sie auf und freudig sah sie schon die keimende Hirse auf dem Scheitel desWurzelmännleins, auch die Wacholderkerne hatten sich schon angezogen; es war überhauptein Bewegen innerlich in dem kleinen Wesen, wie frühlings im Acker beim ersten heißenSonnenscheine nach dem Regen, es wächst noch nichts, aber die Erde trennt sich undlockert sich, und wie die Sonnenblicke alles fördernd umgehen, so regte sie küssendalle Kräfte der geheimnisvollen Natur auf. Erst nach später Ermüdung entschloß siesich, neben ihrem Kleinod schlafen zu gehen, ihre Hand aber ließ sie auf der Wiegeruhen, daß es ihr nicht entführt werden könnte.
+
+Input Text: Nachdem die Alte ihr Zwiebelgericht, das sie sich bereitet,
+ausgetunkt hatte, ging sieendlich von dannen. Bella schloß die Türe
+und eilte zu ihrer heimlichen Wiege; zagenddeckte sie auf und freudig
+sah sie schon die keimende Hirse auf dem Scheitel desWurzelmännleins,
+auch die Wacholderkerne hatten sich schon angezogen; es war
+überhauptein Bewegen innerlich in dem kleinen Wesen, wie frühlings im
+Acker beim ersten heißenSonnenscheine nach dem Regen, es wächst noch
+nichts, aber die Erde trennt sich undlockert sich, und wie die
+Sonnenblicke alles fördernd umgehen, so regte sie küssendalle Kräfte
+der geheimnisvollen Natur auf. Erst nach später Ermüdung entschloß
+siesich, neben ihrem Kleinod schlafen zu gehen, ihre Hand aber ließ
+sie auf der Wiegeruhen, daß es ihr nicht entführt werden könnte.
+
+Acrostic: Nachdem
+Result: TIMEOUT
+Number of Genereted Nodes: 1285290
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1285290
+Execution Time: 907
+
+Input Text: Nachdem die Alte ihr Zwiebelgericht, das sie sich bereitet,
+ausgetunkt hatte, ging sieendlich von dannen. Bella schloß die Türe
+und eilte zu ihrer heimlichen Wiege; zagenddeckte sie auf und freudig
+sah sie schon die keimende Hirse auf dem Scheitel desWurzelmännleins,
+auch die Wacholderkerne hatten sich schon angezogen; es war
+überhauptein Bewegen innerlich in dem kleinen Wesen, wie frühlings im
+Acker beim ersten heißenSonnenscheine nach dem Regen, es wächst noch
+nichts, aber die Erde trennt sich undlockert sich, und wie die
+Sonnenblicke alles fördernd umgehen, so regte sie küssendalle Kräfte
+der geheimnisvollen Natur auf. Erst nach später Ermüdung entschloß
+siesich, neben ihrem Kleinod schlafen zu gehen, ihre Hand aber ließ
+sie auf der Wiegeruhen, daß es ihr nicht entführt werden könnte.
+
+Acrostic: nicht
+Result: TIMEOUT
+Number of Genereted Nodes: 1285371
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1285371
+Execution Time: 911
+
+
+==========================================================
+
+
+=============================Text/Juergen/16.txt=============================
+Current Time: Mon Jan 26 23:09:57 CET 2015
+Input String: Er konnte nicht aufhören, ihr das vorzusagen; sie hätte ihn gern gezüchtigt, aberer saß ihr zu hoch. Zuletzt, um ihre Geduld ganz zu erschöpfen, setzte er sich eine alte,verrostete Brille auf und fabelte in leeren, spottenden Einfällen von allerlei Neckerei,die er der Welt antun möchte, um sich zu unterhalten. Da mußte sie laut weinen und konntenicht mehr hinaufsehen, denn das Vertraulichste am Menschen sind die Augen, und es istwohl zum Verzweifeln, wenn die Schwäche der Natur solchen harten, fühllosen Glasglanzzwischen dem geliebten Menschen und uns notwendig macht, und das kann den Scharfsehendenschwindlig machen, wenn er sehen muß, wie der Sinn, der sonst seine Freude nur in Luft undLicht sucht, jetzt die harte Gewalt der Erde zu seiner Hilfe brauchen muß, die ihn notwendigmit sich herabzieht und vernichtet.
+
+Input Text: Er konnte nicht aufhören, ihr das vorzusagen; sie hätte ihn gern
+gezüchtigt, aberer saß ihr zu hoch. Zuletzt, um ihre Geduld ganz zu
+erschöpfen, setzte er sich eine alte,verrostete Brille auf und fabelte
+in leeren, spottenden Einfällen von allerlei Neckerei,die er der Welt
+antun möchte, um sich zu unterhalten. Da mußte sie laut weinen und
+konntenicht mehr hinaufsehen, denn das Vertraulichste am Menschen sind
+die Augen, und es istwohl zum Verzweifeln, wenn die Schwäche der Natur
+solchen harten, fühllosen Glasglanzzwischen dem geliebten Menschen und
+uns notwendig macht, und das kann den Scharfsehendenschwindlig machen,
+wenn er sehen muß, wie der Sinn, der sonst seine Freude nur in Luft
+undLicht sucht, jetzt die harte Gewalt der Erde zu seiner Hilfe
+brauchen muß, die ihn notwendigmit sich herabzieht und vernichtet.
+
+Acrostic: Er
+Result: SUCCESS
+Result Text: Er konnte nicht aufhören, ihr das vorzusagen; sie hätte ihn ge-
+rn gezüchtigt, aberer saß ihr zu hoch. Zuletzt, um ihre Geduld ganz zu
+erschöpfen, setzte er sich eine alte,verrostete Brille auf und fabelte
+in leeren, spottenden Einfällen von allerlei Neckerei,die er der Welt
+antun möchte, um sich zu unterhalten. Da mußte sie laut weinen und
+konntenicht mehr hinaufsehen, denn das Vertraulichste am Menschen sind
+die Augen, und es istwohl zum Verzweifeln, wenn die Schwäche der Natur
+solchen harten, fühllosen Glasglanzzwischen dem geliebten Menschen und
+uns notwendig macht, und das kann den Scharfsehendenschwindlig machen,
+wenn er sehen muß, wie der Sinn, der sonst seine Freude nur in Luft
+undLicht sucht, jetzt die harte Gewalt der Erde zu seiner Hilfe
+brauchen muß, die ihn notwendigmit sich herabzieht und vernichtet.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 36
+Number of Goal Checks: 36
+Execution Time: 0
+
+Input Text: Er konnte nicht aufhören, ihr das vorzusagen; sie hätte ihn gern
+gezüchtigt, aberer saß ihr zu hoch. Zuletzt, um ihre Geduld ganz zu
+erschöpfen, setzte er sich eine alte,verrostete Brille auf und fabelte
+in leeren, spottenden Einfällen von allerlei Neckerei,die er der Welt
+antun möchte, um sich zu unterhalten. Da mußte sie laut weinen und
+konntenicht mehr hinaufsehen, denn das Vertraulichste am Menschen sind
+die Augen, und es istwohl zum Verzweifeln, wenn die Schwäche der Natur
+solchen harten, fühllosen Glasglanzzwischen dem geliebten Menschen und
+uns notwendig macht, und das kann den Scharfsehendenschwindlig machen,
+wenn er sehen muß, wie der Sinn, der sonst seine Freude nur in Luft
+undLicht sucht, jetzt die harte Gewalt der Erde zu seiner Hilfe
+brauchen muß, die ihn notwendigmit sich herabzieht und vernichtet.
+
+Acrostic: ein
+Result: SUCCESS
+Result Text: Er konnte nicht aufhören, ihr das vorzusagen; sie hätte
+ihn gern gezüchtigt, aberer saß ihr zu hoch. Zuletzt, um ihre konnive-
+nz ganz zu erschöpfen, setzte er sich eine alte,verrostete Brille auf
+und fabelte in leeren, spottenden Einfällen von allerlei Neckerei,die
+er der Welt antun möchte, um sich zu unterhalten. Da mußte sie laut
+weinen und konntenicht mehr hinaufsehen, denn das Vertraulichste am
+Menschen sind die Augen, und es istwohl zum Verzweifeln, wenn die
+Schwäche der Natur solchen harten, fühllosen Glasglanzzwischen dem
+geliebten Menschen und uns notwendig macht, und das kann den
+Scharfsehendenschwindlig machen, wenn er sehen muß, wie der Sinn, der
+sonst seine Freude nur in Luft undLicht sucht, jetzt die harte Gewalt
+der Erde zu seiner Hilfe brauchen muß, die ihn notwendigmit sich
+herabzieht und vernichtet.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 2179
+Number of Goal Checks: 2179
+Execution Time: 9
+
+
+==========================================================
+
+
+=============================Text/Juergen/17.txt=============================
+Current Time: Mon Jan 26 23:10:50 CET 2015
+Input String: Eine Woche später, und der Alraun war in seiner Art völlig ausgewachsen, etwadreieinenhalben Fuß hoch; Braka hatte schon etwas von ihm gemerkt, auch hatteer nicht Lust, sich länger einsperren zu lassen, wenn sie kam, vielmehr wollteer sich der Alten recht glänzend zeigen, zog ein silbergesticktes, altesFaltenkleid von Bellas Mutter an, das ihm Bella nach allen Seiten aufnähenmußte: so saß er eines Abends ganz ruhig in der Ecke und schien zu lesen,als Braka eingelassen wurde. Bella sagte, es sei ihre Base, ein sehr reichesMädchen, die sie zu sich nehme, die auch Braka beschenken wolle. Braka, dieihr Kompliment auch zu machen verstand, wo sie es nötig glaubte, griff dervermeinten Base nach der Hand, um sie zu küssen, war aber doch etwas verwundertüber die harte, trockene, haarige Wurzelhand und zögerte mit dem Kusse.
+
+Input Text: Eine Woche später, und der Alraun war in seiner Art völlig
+ausgewachsen, etwadreieinenhalben Fuß hoch; Braka hatte schon etwas
+von ihm gemerkt, auch hatteer nicht Lust, sich länger einsperren zu
+lassen, wenn sie kam, vielmehr wollteer sich der Alten recht glänzend
+zeigen, zog ein silbergesticktes, altesFaltenkleid von Bellas Mutter
+an, das ihm Bella nach allen Seiten aufnähenmußte: so saß er eines
+Abends ganz ruhig in der Ecke und schien zu lesen,als Braka
+eingelassen wurde. Bella sagte, es sei ihre Base, ein sehr
+reichesMädchen, die sie zu sich nehme, die auch Braka beschenken
+wolle. Braka, dieihr Kompliment auch zu machen verstand, wo sie es
+nötig glaubte, griff dervermeinten Base nach der Hand, um sie zu
+küssen, war aber doch etwas verwundertüber die harte, trockene,
+haarige Wurzelhand und zögerte mit dem Kusse.
+
+Acrostic: Eine
+Result: SUCCESS
+Result Text: Eine Woche später, und der Alraun war in seiner Art völl-
+ig ausgewachsen, etwadreieinenhalben Fuß hoch; Braka hatte schon geri-
+nge menge von ihm gemerkt, auch hatteer nicht Lust, sich länger einsp-
+erren zu lassen, wenn sie kam, vielmehr wollteer sich der Alten recht
+glänzend zeigen, zog ein silbergesticktes, altesFaltenkleid von Bella-
+s Mutter an, das ihm Bella nach allen Seiten aufnähenmußte: so saß er
+eines Abends ganz ruhig in der Ecke und schien zu lesen,als Braka
+eingelassen wurde. Bella sagte, es sei ihre Base, ein sehr
+reichesMädchen, die sie zu sich nehme, die auch Braka beschenken
+wolle. Braka, dieihr Kompliment auch zu machen verstand, wo sie es
+nötig glaubte, griff dervermeinten Base nach der Hand, um sie zu
+küssen, war aber doch etwas verwundertüber die harte, trockene,
+haarige Wurzelhand und zögerte mit dem Kusse.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 117311
+Number of Goal Checks: 117311
+Execution Time: 35
+
+Input Text: Eine Woche später, und der Alraun war in seiner Art völlig
+ausgewachsen, etwadreieinenhalben Fuß hoch; Braka hatte schon etwas
+von ihm gemerkt, auch hatteer nicht Lust, sich länger einsperren zu
+lassen, wenn sie kam, vielmehr wollteer sich der Alten recht glänzend
+zeigen, zog ein silbergesticktes, altesFaltenkleid von Bellas Mutter
+an, das ihm Bella nach allen Seiten aufnähenmußte: so saß er eines
+Abends ganz ruhig in der Ecke und schien zu lesen,als Braka
+eingelassen wurde. Bella sagte, es sei ihre Base, ein sehr
+reichesMädchen, die sie zu sich nehme, die auch Braka beschenken
+wolle. Braka, dieihr Kompliment auch zu machen verstand, wo sie es
+nötig glaubte, griff dervermeinten Base nach der Hand, um sie zu
+küssen, war aber doch etwas verwundertüber die harte, trockene,
+haarige Wurzelhand und zögerte mit dem Kusse.
+
+Acrostic: ein
+Result: SUCCESS
+Result Text: Eine Woche später, und der Alraun war in seiner Art völl-
+ig ausgewachsen, etwadreieinenhalben käsemauke hoch; Braka hatte scho-
+n etwas von ihm gemerkt, auch hatteer nicht Lust, sich länger einsper-
+ren zu lassen, wenn sie kam, vielmehr wollteer sich der Alten recht g-
+länzend zeigen, zog ein silbergesticktes, altesFaltenkleid von Bellas
+Mutter an, das ihm Bella nach allen Seiten aufnähenmußte: so saß er e-
+ines Abends ganz ruhig in der Ecke und schien zu lesen,als Braka
+eingelassen wurde. Bella sagte, es sei ihre Base, ein sehr
+reichesMädchen, die sie zu sich nehme, die auch Braka beschenken
+wolle. Braka, dieihr Kompliment auch zu machen verstand, wo sie es
+nötig glaubte, griff dervermeinten Base nach der Hand, um sie zu
+küssen, war aber doch etwas verwundertüber die harte, trockene,
+haarige Wurzelhand und zögerte mit dem Kusse.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 91135
+Number of Goal Checks: 91135
+Execution Time: 17
+
+
+==========================================================
+
+
+=============================Text/Juergen/19.txt=============================
+Current Time: Mon Jan 26 23:12:31 CET 2015
+Input String: Diese war unterdessen in das Aussehen gerückt, was die Gegenwart damals hatte,sie war sehr schön, aber immer traurig, weil sie sich vor ihrem Bräutigam fürchteteund weil sie von den Schwestern, die keinen Mann bekommen, beständig seinetwegengeneckt wurde. Eines Tages rief ein heller Trompetenschall alle drei Schwesternans Fenster; es zog ein schöner, fremder Ritter mit vielen Knechten in die Stadt,den sich die beiden ältesten sogleich zum Mann wünschten, und, o Wunder, der Ritterhielt vor dem Hause still, ließ auch um Erlaubnis bitten, ihnen aufzuwarten. Siebewilligten es gern, und er gab sich für einen entfernten Verwandten von ihnen aus,der eine von ihnen zu heiraten begehre und sich deswegen durch einige Gaben empfehlenwolle. Die beiden ältesten griffen begierig nach den Geschenken, die jüngste aberblieb einsam wie ein Turteltäubchen; die beiden ältesten bemühten sich um seineGunst; sie gefielen ihm aber gar nicht mehr, die Gegenwart sah aus wie damals dieVergangenheit, und die Vergangenheit hatte ein vermischtes Gesicht wie eineAlabasterstatue, die lange unter der Traufe gestanden, die liebe Zukunft aberblühte in höchster Schönheit, ihre Haare glänzten in gleicher heller Farbe. 
+
+Input Text: Diese war unterdessen in das Aussehen gerückt, was die Gegenwart
+damals hatte,sie war sehr schön, aber immer traurig, weil sie sich vor
+ihrem Bräutigam fürchteteund weil sie von den Schwestern, die keinen
+Mann bekommen, beständig seinetwegengeneckt wurde. Eines Tages rief
+ein heller Trompetenschall alle drei Schwesternans Fenster; es zog ein
+schöner, fremder Ritter mit vielen Knechten in die Stadt,den sich die
+beiden ältesten sogleich zum Mann wünschten, und, o Wunder, der
+Ritterhielt vor dem Hause still, ließ auch um Erlaubnis bitten, ihnen
+aufzuwarten. Siebewilligten es gern, und er gab sich für einen
+entfernten Verwandten von ihnen aus,der eine von ihnen zu heiraten
+begehre und sich deswegen durch einige Gaben empfehlenwolle. Die
+beiden ältesten griffen begierig nach den Geschenken, die jüngste
+aberblieb einsam wie ein Turteltäubchen; die beiden ältesten bemühten
+sich um seineGunst; sie gefielen ihm aber gar nicht mehr, die
+Gegenwart sah aus wie damals dieVergangenheit, und die Vergangenheit
+hatte ein vermischtes Gesicht wie eineAlabasterstatue, die lange unter
+der Traufe gestanden, die liebe Zukunft aberblühte in höchster
+Schönheit, ihre Haare glänzten in gleicher heller Farbe.
+
+Acrostic: Diese
+Result: SUCCESS
+Result Text: Diese war unterdessen in das Aussehen gerückt, was die Gegenwart
+in längst vergangenen tagen hatte,sie war sehr schön, aber ohne abzus-
+etzen trau- rig, weil sie sich vor ihrem Bräutigam fürchteteund weil
+sie von den Schwestern, die keinen Mann bekommen, beständig seinetweg-
+engeneckt wu- rde. Eines Tages rief ein heller Trompetenschall alle d-
+rei Schwestern- ans Fenster; es zog ein schöner, fremder Ritter mit v-
+ielen Knechten i- n die Stadt,den sich die beiden ältesten sogleich z-
+um Mann wünschten, und, o Wunder, der Ritterhielt vor dem Hause still-
+, ließ auch um Erla- ubnis bitten, ihnen aufzuwarten. Siebewilligten
+es gern, und er gab s- ich für einen entfernten Verwandten von ihnen
+aus,der eine von ihnen zu heiraten begehre und sich deswegen durch ei-
+nige Gaben empfehlenwol- le. Die beiden ältesten griffen begierig nac-
+h den Geschenken, die jün- gste aberblieb einsam wie ein Turteltäubch-
+en; die beiden ältesten bem- ühten sich um seineGunst; sie gefielen i-
+hm aber gar nicht mehr, die Gegenwart sah aus wie damals dieVergangen-
+heit, und die Vergangenheit hatte ein vermischtes Gesicht wie eineAla-
+basterstatue, die lange unter der Traufe gestanden, die liebe Zukunft
+aberblühte in höchster Schönheit, ihre Haare glänzten in gleicher he
+ler Farbe.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 203165
+Number of Goal Checks: 203165
+Execution Time: 76
+
+Input Text: Diese war unterdessen in das Aussehen gerückt, was die Gegenwart
+damals hatte,sie war sehr schön, aber immer traurig, weil sie sich vor
+ihrem Bräutigam fürchteteund weil sie von den Schwestern, die keinen
+Mann bekommen, beständig seinetwegengeneckt wurde. Eines Tages rief
+ein heller Trompetenschall alle drei Schwesternans Fenster; es zog ein
+schöner, fremder Ritter mit vielen Knechten in die Stadt,den sich die
+beiden ältesten sogleich zum Mann wünschten, und, o Wunder, der
+Ritterhielt vor dem Hause still, ließ auch um Erlaubnis bitten, ihnen
+aufzuwarten. Siebewilligten es gern, und er gab sich für einen
+entfernten Verwandten von ihnen aus,der eine von ihnen zu heiraten
+begehre und sich deswegen durch einige Gaben empfehlenwolle. Die
+beiden ältesten griffen begierig nach den Geschenken, die jüngste
+aberblieb einsam wie ein Turteltäubchen; die beiden ältesten bemühten
+sich um seineGunst; sie gefielen ihm aber gar nicht mehr, die
+Gegenwart sah aus wie damals dieVergangenheit, und die Vergangenheit
+hatte ein vermischtes Gesicht wie eineAlabasterstatue, die lange unter
+der Traufe gestanden, die liebe Zukunft aberblühte in höchster
+Schönheit, ihre Haare glänzten in gleicher heller Farbe.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Diese war unterdessen in das Aussehen gerückt, was die G-
+egenwart damals hatte,sie war in höchstem maße schön, aber immer trau-
+rig, weil si- e sich vor ihrem Bräutigam fürchteteund weil sie von de-
+n Schwestern, die keinen Mann bekommen, beständig seinetwegengeneckt
+wurde. Eines T- ages rief ein heller Trompetenschall alle drei Schwes-
+ternans Fenster; es zog ein schöner, fremder Ritter mit vielen Knecht-
+en in die Stadt,d- en sich die beiden ältesten sogleich zum Mann wüns-
+chten, und, o Wunde- r, der Ritterhielt vor dem Hause still, ließ auc-
+h um Erlaubnis bitten- , ihnen aufzuwarten. Siebewilligten es gern, u-
+nd er gab sich für einen entfernten Verwandten von ihnen aus,der eine
+von ihnen zu heiraten begehre und sich deswegen durch einige Gaben em-
+pfehlenwolle. Die beiden ältesten griffen begierig nach den Geschenke-
+n, die jüngste aberblieb einsam wie ein Turteltäubchen; die beiden äl-
+testen bemühten sich um seineGunst; sie gefielen ihm aber gar nicht m-
+ehr, die Gegenwart sah aus wie damals dieVergangenheit, und die Verga-
+ngenheit hatte ein vermischtes Gesicht wie eineAlabasterstatue, die l-
+ange unter der Traufe gestanden, die liebe Zukunft aberblühte in höch-
+ster Schönheit, ihre Haare glänzten in gleicher heller Farbe.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 95886
+Number of Goal Checks: 95886
+Execution Time: 24
+
+
+==========================================================
+
+
+=============================Text/Juergen/20.txt=============================
+Current Time: Mon Jan 26 23:28:15 CET 2015
+Input String: Dennoch stellte er sich erst den beiden älteren geneigt, um die Sinnesartder jüngeren zu prüfen; als diese aber still und sittig blieb, während jenestolzierten, erklärte er sie für seine Braut, indem er ihr die andre Hälftedes Ringes am Finger anschraubte. Da war große Freude in der Verlassenenangezündet; der Papst erschien und segnete beide ein. Als aber dieBrautleute zu Bette gebracht worden, ergriff die beiden älterenSchwestern eine Verzweifelung, daß sich die eine erhenkte und die andrein den Brunnen stürzte.
+
+Input Text: Dennoch stellte er sich erst den beiden älteren geneigt, um die
+Sinnesartder jüngeren zu prüfen; als diese aber still und sittig
+blieb, während jenestolzierten, erklärte er sie für seine Braut, indem
+er ihr die andre Hälftedes Ringes am Finger anschraubte. Da war große
+Freude in der Verlassenenangezündet; der Papst erschien und segnete
+beide ein. Als aber dieBrautleute zu Bette gebracht worden, ergriff
+die beiden älterenSchwestern eine Verzweifelung, daß sich die eine
+erhenkte und die andrein den Brunnen stürzte.
+
+Acrostic: Dennoch
+Result: TIMEOUT
+Number of Genereted Nodes: 1172009
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1172009
+Execution Time: 904
+
+Input Text: Dennoch stellte er sich erst den beiden älteren geneigt, um die
+Sinnesartder jüngeren zu prüfen; als diese aber still und sittig
+blieb, während jenestolzierten, erklärte er sie für seine Braut, indem
+er ihr die andre Hälftedes Ringes am Finger anschraubte. Da war große
+Freude in der Verlassenenangezündet; der Papst erschien und segnete
+beide ein. Als aber dieBrautleute zu Bette gebracht worden, ergriff
+die beiden älterenSchwestern eine Verzweifelung, daß sich die eine
+erhenkte und die andrein den Brunnen stürzte.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Dennoch stellte er sich erst den beiden älteren g-
+eneigt, vielleicht die Sinnesartder jüngeren zu prüfen; als diese abe-
+r still und sittig blieb, während jenestolzierten, erklärte er sie fü-
+r seine Braut, indem er ihr die andre Hälftedes Ringes am Finger ansc-
+hraubte. Da war große Freude in der Verlassenenangezündet; der Papst
+erschien und segnete beide ein. Als aber dieBrautleute zu Bette gebra-
+cht worden, ergriff die beiden älterenSchwestern eine Verzweifelung,
+daß sich die eine erhenkte und die andrein den Brunnen stürzte.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 151138
+Number of Goal Checks: 151138
+Execution Time: 39
+
+
+==========================================================
+
+
+=============================Text/Juergen/21.txt=============================
+Current Time: Mon Jan 26 23:43:29 CET 2015
+Input String: Unterdessen war der Alraun über allen lächerlichen Kram im Zimmer, wo alteTressen, Lappen, Küchengeschirre, Leinenzeug in abgesonderten Haufen lag,so verwundert, daß er sich nicht satt daran sehen konnte; alles war ihm neu,aber er wußte sich bald alles zu deuten. Frau Nietken, die eine Trödlerinvon sehr ausgebreitetem Handelsverkehr war, versammelte die seltenstenVorräte von Altertümern aller Art; da war im Hause auch das kleinsteHausgerät nicht in der Art zusammenhängend und dem Hause gemäß, wieman es sonst allerorten findet; sondern aus einer sehr natürlichenAuswahl der Leute, die sich immer das Brauchbare aus ihren Ankäufenherausgesucht hatten, war ihr zum Gebrauche nur das Abenteuerlichstegeblieben, was die Laune irgendeiner Zeit oder eines Reichen für einenbesondern Fall geschaffen hatte.
+
+Input Text: Unterdessen war der Alraun über allen lächerlichen Kram im Zimmer, wo
+alteTressen, Lappen, Küchengeschirre, Leinenzeug in abgesonderten
+Haufen lag,so verwundert, daß er sich nicht satt daran sehen konnte;
+alles war ihm neu,aber er wußte sich bald alles zu deuten. Frau
+Nietken, die eine Trödlerinvon sehr ausgebreitetem Handelsverkehr war,
+versammelte die seltenstenVorräte von Altertümern aller Art; da war im
+Hause auch das kleinsteHausgerät nicht in der Art zusammenhängend und
+dem Hause gemäß, wieman es sonst allerorten findet; sondern aus einer
+sehr natürlichenAuswahl der Leute, die sich immer das Brauchbare aus
+ihren Ankäufenherausgesucht hatten, war ihr zum Gebrauche nur das
+Abenteuerlichstegeblieben, was die Laune irgendeiner Zeit oder eines
+Reichen für einenbesondern Fall geschaffen hatte.
+
+Acrostic: Unterdessen
+Result: TIMEOUT
+Number of Genereted Nodes: 1215376
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1215376
+Execution Time: 902
+
+Input Text: Unterdessen war der Alraun über allen lächerlichen Kram im Zimmer, wo
+alteTressen, Lappen, Küchengeschirre, Leinenzeug in abgesonderten
+Haufen lag,so verwundert, daß er sich nicht satt daran sehen konnte;
+alles war ihm neu,aber er wußte sich bald alles zu deuten. Frau
+Nietken, die eine Trödlerinvon sehr ausgebreitetem Handelsverkehr war,
+versammelte die seltenstenVorräte von Altertümern aller Art; da war im
+Hause auch das kleinsteHausgerät nicht in der Art zusammenhängend und
+dem Hause gemäß, wieman es sonst allerorten findet; sondern aus einer
+sehr natürlichenAuswahl der Leute, die sich immer das Brauchbare aus
+ihren Ankäufenherausgesucht hatten, war ihr zum Gebrauche nur das
+Abenteuerlichstegeblieben, was die Laune irgendeiner Zeit oder eines
+Reichen für einenbesondern Fall geschaffen hatte.
+
+Acrostic: und
+Result: SUCCESS
+Result Text: Unterdessen war der Alraun über allen lächerlichen Kram im Zimmer, de-
+nn alteTressen, Lappen, Küchengeschirre, Leinenzeug in abgeson-
+derten Haufen lag,so verwundert, daß er sich nicht satt daran sehen
+konnte; alles war ihm neu,aber er wußte sich bald alles zu deuten.
+Frau Nietken, die eine Trödlerinvon sehr ausgebreitetem Handelsverkehr
+war, versammelte die seltenstenVorräte von Altertümern aller Art; da
+war im Hause auch das kleinsteHausgerät nicht in der Art
+zusammenhängend und dem Hause gemäß, wieman es sonst allerorten
+findet; sondern aus einer sehr natürlichenAuswahl der Leute, die sich
+immer das Brauchbare aus ihren Ankäufenherausgesucht hatten, war ihr
+zum Gebrauche nur das Abenteuerlichstegeblieben, was die Laune
+irgendeiner Zeit oder eines Reichen für einenbesondern Fall geschaffen
+hatte.
+
+Applied Operators (In Final Result): HyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 43369
+Number of Goal Checks: 43369
+Execution Time: 11
+
+
+==========================================================
+
+
+=============================Text/Juergen/22.txt=============================
+Current Time: Mon Jan 26 23:58:42 CET 2015
+Input String: Die Stühle zum Beispiel in der Dachkammer waren von hölzernen Mohrengetragen, über jedem ein bunter Sonnenschirm, sie stammten aus demGarten eines reichen Genter Kaufmanns, der viel Geschäfte in Afrikagemacht hatte. In der Mitte des Zimmers hing eine wunderliche gedrehteMessingkrone, sie hatte sonst die aufgehobene jüdische Synagoge zu Gentbeleuchtet, jetzt steckte ein gewundenes buntes Wachslicht zu Ehren derMutter Gottes darauf. Der Altar war eigentlich ein abgedankter Spieltisch,an welchem die ledernen Geldsäcke ausgerissen und eine gewesene Salzmäste,mit Weihwasser gefüllt, eingesetzt war. An den Wänden hingen gewirkteTapeten, welche alte Turniere darstellten, die Ritter und die eisernenHarnische hingen in Plundern herunter.
+
+Input Text: Die Stühle zum Beispiel in der Dachkammer waren von hölzernen
+Mohrengetragen, über jedem ein bunter Sonnenschirm, sie stammten aus
+demGarten eines reichen Genter Kaufmanns, der viel Geschäfte in
+Afrikagemacht hatte. In der Mitte des Zimmers hing eine wunderliche
+gedrehteMessingkrone, sie hatte sonst die aufgehobene jüdische
+Synagoge zu Gentbeleuchtet, jetzt steckte ein gewundenes buntes
+Wachslicht zu Ehren derMutter Gottes darauf. Der Altar war eigentlich
+ein abgedankter Spieltisch,an welchem die ledernen Geldsäcke
+ausgerissen und eine gewesene Salzmäste,mit Weihwasser gefüllt,
+eingesetzt war. An den Wänden hingen gewirkteTapeten, welche alte
+Turniere darstellten, die Ritter und die eisernenHarnische hingen in
+Plundern herunter.
+
+Acrostic: Die
+Result: TIMEOUT
+Number of Genereted Nodes: 1257333
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1257333
+Execution Time: 905
+
+Input Text: Die Stühle zum Beispiel in der Dachkammer waren von hölzernen
+Mohrengetragen, über jedem ein bunter Sonnenschirm, sie stammten aus
+demGarten eines reichen Genter Kaufmanns, der viel Geschäfte in
+Afrikagemacht hatte. In der Mitte des Zimmers hing eine wunderliche
+gedrehteMessingkrone, sie hatte sonst die aufgehobene jüdische
+Synagoge zu Gentbeleuchtet, jetzt steckte ein gewundenes buntes
+Wachslicht zu Ehren derMutter Gottes darauf. Der Altar war eigentlich
+ein abgedankter Spieltisch,an welchem die ledernen Geldsäcke
+ausgerissen und eine gewesene Salzmäste,mit Weihwasser gefüllt,
+eingesetzt war. An den Wänden hingen gewirkteTapeten, welche alte
+Turniere darstellten, die Ritter und die eisernenHarnische hingen in
+Plundern herunter.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Stühle zum Beispiel in der Dachkammer waren von hölz-
+ernen Mohrengetragen, über jedem ein bunter Sonnenschirm, frauenzimme-
+r stammte- n aus demGarten eines reichen Genter Kaufmanns, der viel G-
+eschäfte in Afrikagemacht hatte. In der Mitte des Zimmers hing eine w-
+underliche gedrehteMessingkrone, sie hatte sonst die aufgehobene jüdi-
+sche Synagoge zu Gentbeleuchtet, jetzt steckte ein gewundenes buntes
+Wachslicht zu Ehren derMutter Gottes darauf. Der Altar war eigentlich
+ein abgedankter Spieltisch,an welchem die ledernen Geldsäcke
+ausgerissen und eine gewesene Salzmäste,mit Weihwasser gefüllt,
+eingesetzt war. An den Wänden hingen gewirkteTapeten, welche alte
+Turniere darstellten, die Ritter und die eisernenHarnische hingen in
+Plundern herunter.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 19035
+Number of Goal Checks: 19035
+Execution Time: 7
+
+
+==========================================================
+
+
+=============================Text/Juergen/23.txt=============================
+Current Time: Mon Jan 26 23:59:05 CET 2015
+Input String: Die treffliche Frau Nietken hatte es gleich weg, daß viel bei diesem Handel zuverdienen sei; also weckte sie im Augenblicke ihre Leute und lief treppauf,treppab, um das Schönste ihnen aufzusuchen. Arme voll Kleider warf sie insZimmer, da wurde ausgesucht und zwei Koffer damit gefüllt, mit Wäsche konntensie nur sparsamer versorgt werden, denn die Niederländer verkaufen lieber ihrKleid als ihr Hemde. Nachdem für den Anzug gesorgt war, sprang Frau Nietkenherbei mit Kohlen und einem Brenneisen, um die Haare nach damaliger Sitte zulocken. Da half es nicht, daß Bella ihr die natürlichen Locken ihrer Haarezeigte, die waren ihrem feinen Geschmacke nicht gut genug; es war dem armenKinde wie eine Teufelsklaue, die sie gepackt, als sie die Haare um das heißeEisen gewickelt ihr heiß an die Stirn drückte.
+
+Input Text: Die treffliche Frau Nietken hatte es gleich weg, daß viel bei diesem
+Handel zuverdienen sei; also weckte sie im Augenblicke ihre Leute und
+lief treppauf,treppab, um das Schönste ihnen aufzusuchen. Arme voll
+Kleider warf sie insZimmer, da wurde ausgesucht und zwei Koffer damit
+gefüllt, mit Wäsche konntensie nur sparsamer versorgt werden, denn die
+Niederländer verkaufen lieber ihrKleid als ihr Hemde. Nachdem für den
+Anzug gesorgt war, sprang Frau Nietkenherbei mit Kohlen und einem
+Brenneisen, um die Haare nach damaliger Sitte zulocken. Da half es
+nicht, daß Bella ihr die natürlichen Locken ihrer Haarezeigte, die
+waren ihrem feinen Geschmacke nicht gut genug; es war dem armenKinde
+wie eine Teufelsklaue, die sie gepackt, als sie die Haare um das
+heißeEisen gewickelt ihr heiß an die Stirn drückte.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die treffliche Frau Nietken hatte es gleich weg, daß viel
+im zusammenhang diesem Handel zuverdienen sei; also weckte sie im Aug-
+enblicke ihre Leute und lief treppauf,treppab, um das Schönste ihnen
+aufzusuchen. Arme voll Kleider warf sie insZimmer, da wurde ausgesucht
+und zwei Koffer damit gefüllt, mit Wäsche konntensie nur sparsamer
+versorgt werden, denn die Niederländer verkaufen lieber ihrKleid als
+ihr Hemde. Nachdem für den Anzug gesorgt war, sprang Frau
+Nietkenherbei mit Kohlen und einem Brenneisen, um die Haare nach
+damaliger Sitte zulocken. Da half es nicht, daß Bella ihr die
+natürlichen Locken ihrer Haarezeigte, die waren ihrem feinen
+Geschmacke nicht gut genug; es war dem armenKinde wie eine
+Teufelsklaue, die sie gepackt, als sie die Haare um das heißeEisen
+gewickelt ihr heiß an die Stirn drückte.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 3827
+Number of Goal Checks: 3827
+Execution Time: 11
+
+Input Text: Die treffliche Frau Nietken hatte es gleich weg, daß viel bei diesem
+Handel zuverdienen sei; also weckte sie im Augenblicke ihre Leute und
+lief treppauf,treppab, um das Schönste ihnen aufzusuchen. Arme voll
+Kleider warf sie insZimmer, da wurde ausgesucht und zwei Koffer damit
+gefüllt, mit Wäsche konntensie nur sparsamer versorgt werden, denn die
+Niederländer verkaufen lieber ihrKleid als ihr Hemde. Nachdem für den
+Anzug gesorgt war, sprang Frau Nietkenherbei mit Kohlen und einem
+Brenneisen, um die Haare nach damaliger Sitte zulocken. Da half es
+nicht, daß Bella ihr die natürlichen Locken ihrer Haarezeigte, die
+waren ihrem feinen Geschmacke nicht gut genug; es war dem armenKinde
+wie eine Teufelsklaue, die sie gepackt, als sie die Haare um das
+heißeEisen gewickelt ihr heiß an die Stirn drückte.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die treffliche bessere hälfte Nietken hatte es gleich weg, daß viel b-
+ei di- esem Handel zuverdienen sei; also weckte sie im Augenblicke ih-
+re Leut- e und lief treppauf,treppab, um das Schönste ihnen aufzusuch-
+en. Arme voll Kleider warf sie insZimmer, da wurde ausgesucht und zwe-
+i Koffer damit gefüllt, mit Wäsche konntensie nur sparsamer versorgt
+werden, d- enn die Niederländer verkaufen lieber ihrKleid als ihr Hem-
+de. Nachdem für den Anzug gesorgt war, sprang Frau Nietkenherbei mit
+Kohlen und e- inem Brenneisen, um die Haare nach damaliger Sitte zulo-
+cken. Da half es nicht, daß Bella ihr die natürlichen Locken ihrer Ha-
+arezeigte, die waren ihrem feinen Geschmacke nicht gut genug; es war
+dem armenKinde wie eine Teufelsklaue, die sie gepackt, als sie die Ha-
+are um das heißeEisen gewickelt ihr heiß an die Stirn drückte.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 48069
+Number of Goal Checks: 48069
+Execution Time: 12
+
+
+==========================================================
+
+
+=============================Text/Juergen/24.txt=============================
+Current Time: Tue Jan 27 00:14:25 CET 2015
+Input String: Die ersten beiden Monate wurden darauf verwendet, ein vornehmes Wesen zuerlernen; es wurden Lehrer und Lehrerinnen angenommen, und was sich imBetragen der alten gnädigen Frau nicht schickte, wurde immer dem LandeHadeln zur Last gelegt, wo das Adeln noch nicht recht tief eingedrungensei. Bella erschien bald in allen ihren Sitten der feinsten Gesellschaftgleich; sie sprach spanisch mit Fertigkeit. So verborgen sie sich hielt,war sie doch schon das Gespräch der jungen Leute, die alle Tage vor demHause vorüberritten, um sie zu sehen und ihre Aufmerksamkeit auf sich zuziehen. Der Herr Cornelius befand sich am schlechtesten bei seinem neuenStande, die enge Kleidung wollte ihm gar nicht behagen, und dasFechtenlernen machte ihn zum Umsinken müde. 
+
+Input Text: Die ersten beiden Monate wurden darauf verwendet, ein vornehmes Wesen
+zuerlernen; es wurden Lehrer und Lehrerinnen angenommen, und was sich
+imBetragen der alten gnädigen Frau nicht schickte, wurde immer dem
+LandeHadeln zur Last gelegt, wo das Adeln noch nicht recht tief
+eingedrungensei. Bella erschien bald in allen ihren Sitten der
+feinsten Gesellschaftgleich; sie sprach spanisch mit Fertigkeit. So
+verborgen sie sich hielt,war sie doch schon das Gespräch der jungen
+Leute, die alle Tage vor demHause vorüberritten, um sie zu sehen und
+ihre Aufmerksamkeit auf sich zuziehen. Der Herr Cornelius befand sich
+am schlechtesten bei seinem neuenStande, die enge Kleidung wollte ihm
+gar nicht behagen, und dasFechtenlernen machte ihn zum Umsinken müde.
+
+Acrostic: Die
+Result: TIMEOUT
+Number of Genereted Nodes: 1236027
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1236027
+Execution Time: 908
+
+Input Text: Die ersten beiden Monate wurden darauf verwendet, ein vornehmes Wesen
+zuerlernen; es wurden Lehrer und Lehrerinnen angenommen, und was sich
+imBetragen der alten gnädigen Frau nicht schickte, wurde immer dem
+LandeHadeln zur Last gelegt, wo das Adeln noch nicht recht tief
+eingedrungensei. Bella erschien bald in allen ihren Sitten der
+feinsten Gesellschaftgleich; sie sprach spanisch mit Fertigkeit. So
+verborgen sie sich hielt,war sie doch schon das Gespräch der jungen
+Leute, die alle Tage vor demHause vorüberritten, um sie zu sehen und
+ihre Aufmerksamkeit auf sich zuziehen. Der Herr Cornelius befand sich
+am schlechtesten bei seinem neuenStande, die enge Kleidung wollte ihm
+gar nicht behagen, und dasFechtenlernen machte ihn zum Umsinken müde.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die ersten beiden Monate wurden darauf verwendet, ein vornehmes W-
+esen zuerlernen; es wurden Lehrer und Lehrerinnen angenommen, zum Übe-
+rfluss was sich imBetragen der alten gnädigen Frau nicht schickte, wu-
+rde immer d- em LandeHadeln zur Last gelegt, wo das Adeln noch nicht
+recht tief eingedrungensei. Bella erschien bald in allen ihren Sitten
+der feinsten Gesellschaftgleich; sie sprach spanisch mit Fertigkeit.
+So verborgen sie sich hielt,war sie doch schon das Gespräch der jungen
+Leute, die alle Tage vor demHause vorüberritten, um sie zu sehen und
+ihre Aufmerksamkeit auf sich zuziehen. Der Herr Cornelius befand sich
+am schlechtesten bei seinem neuenStande, die enge Kleidung wollte ihm
+gar nicht behagen, und dasFechtenlernen machte ihn zum Umsinken müde.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 44103
+Number of Goal Checks: 44103
+Execution Time: 11
+
+
+==========================================================
+
+
+=============================Text/Juergen/25.txt=============================
+Current Time: Tue Jan 27 00:24:18 CET 2015
+Input String: Der Erzherzog hatte die Nachricht bekommen, daß er wegen eines im Briefe anseinen Großvater Ferdinand ausgelassenen Titels von demselben enterbt wordensei, als er eben ärgerlich nach Hause kam, weil er ein tragendes Reh, das erfür einen Rehbock angesehen, geschossen hatte. Beide Ereignisse hatte derkleine Cornelius gleich in Verbindung gesetzt und bat einen Pagen, er möchtedem Erzherzog raten, statt beim Großvater lieber im Walde einen Bock zu schießen.
+
+Input Text: Der Erzherzog hatte die Nachricht bekommen, daß er wegen eines im
+Briefe anseinen Großvater Ferdinand ausgelassenen Titels von demselben
+enterbt wordensei, als er eben ärgerlich nach Hause kam, weil er ein
+tragendes Reh, das erfür einen Rehbock angesehen, geschossen hatte.
+Beide Ereignisse hatte derkleine Cornelius gleich in Verbindung
+gesetzt und bat einen Pagen, er möchtedem Erzherzog raten, statt beim
+Großvater lieber im Walde einen Bock zu schießen.
+
+Acrostic: Der
+Result: SUCCESS
+Result Text: Der Erzherzog hatte die informationsaustausch bekommen, daß
+er wegen eines inoffizieller mitarbeiter Briefe anseinen Großvater Fe-
+rdinand ausgelassenen Titels von demselben enterbt wordensei, als er
+eben ärgerlich nach Hause kam, weil er ein tragendes Reh, das erfür e-
+inen Rehbock angesehen, geschossen hatte. Beide Ereignisse hatte derk-
+leine Cornelius gleich in Verbindung gesetzt und bat einen Pagen, er
+möchtedem Erzherzog raten, statt beim Großvater lieber im Walde einen
+Bock zu schießen.
+
+Applied Operators (In Final Result): SynonymOperation
+LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 772184
+Number of Goal Checks: 772184
+Execution Time: 339
+
+Input Text: Der Erzherzog hatte die Nachricht bekommen, daß er wegen eines im
+Briefe anseinen Großvater Ferdinand ausgelassenen Titels von demselben
+enterbt wordensei, als er eben ärgerlich nach Hause kam, weil er ein
+tragendes Reh, das erfür einen Rehbock angesehen, geschossen hatte.
+Beide Ereignisse hatte derkleine Cornelius gleich in Verbindung
+gesetzt und bat einen Pagen, er möchtedem Erzherzog raten, statt beim
+Großvater lieber im Walde einen Bock zu schießen.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Der Erzherzog hatte die informationsaustausch bekommen, daß
+er wegen eines inoffizieller mitarbeiter Briefe anseinen Großvater Fe-
+rdinand ausgelassenen Titels von demselben enterbt wordensei, als er
+eben ärgerlich nach Hause kam, weil er ein tragendes Reh, das erfür e-
+inen Rehbock angesehen, geschossen hatte. Beide Ereignisse hatte derk-
+leine Cornelius gleich in Verbindung gesetzt und bat einen Pagen, er
+möchtedem Erzherzog raten, statt beim Großvater lieber im Walde einen
+Bock zu schießen.
+
+Applied Operators (In Final Result): SynonymOperation
+LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 772184
+Number of Goal Checks: 772184
+Execution Time: 253
+
+
+==========================================================
+
