@@ -1,0 +1,2043 @@
+
+=============================Text/Fernando/25.txt=============================
+Current Time: Tue Jan 27 15:18:10 CET 2015
+Input String: Dagegen hoffe ich, als wichtigsten Zuwachs dieser zweiten Auflage, wofern nicht zu große Schwierigkeiten sich einstellen, zum Schluß ein alle fünf Bände zusammenfassendes Sachregister zu bringen. Die dem Bande vorangestellte kleine Karte beabsichtigt nichts, als eine summarische Orientierung zu geben. Sie beschränkt sich auf Verzeichnung der Kreisstädte, durch die im Text die Lage eines Ortes bestimmt wird. Weiterzugehen, sämtliche in dem Bande beschriebenen Orte — es sind mehr als 2000 — aufzunehmen, wäre ein Ding der Unmöglichkeit gewesen.
+
+Input Text: Dagegen hoffe ich, als wichtigsten Zuwachs dieser zweiten Auflage,
+wofern nicht zu große Schwierigkeiten sich einstellen, zum Schluß ein
+alle fünf Bände zusammenfassendes Sachregister zu bringen. Die dem
+Bande vorangestellte kleine Karte beabsichtigt nichts, als eine
+summarische Orientierung zu geben. Sie beschränkt sich auf
+Verzeichnung der Kreisstädte, durch die im Text die Lage eines Ortes
+bestimmt wird. Weiterzugehen, sämtliche in dem Bande beschriebenen
+Orte — es sind mehr als 2000 — aufzunehmen, wäre ein Ding der
+Unmöglichkeit gewesen.
+
+Acrostic: Dagegen
+Result: SUCCESS
+Result Text: Dagegen hoffe ich, als wichtigsten Zuwachs dieser zweiten
+Auflage, wofern nicht zu große Schwierigkeiten sich einstellen, zum
+genug davon ein alle fuenf Baende zusammenfassendes Sachregister hack-
+e b- ring- e- n. Die dem Bande vorangestellte kleine Karte beabsichti-
+gt ni- chts, denn eine summarische Orientierung zu geben. die beschra-
+e- nkt sic- h auf Verzeichnung der Kreisstaedte, durch die geheimer i-
+nformator Text di- e L- age eines Ortes bestimmt wird. Weiterzugehen,
+saemtliche in dem Bande beschrieb- enen Orte — es sind mehr als 2000
+— aufzunehmen, wae- re ein Ding der Unmoeglichkeit gewesen.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 97491
+Number of Goal Checks: 97491
+Execution Time: 38
+
+Input Text: Dagegen hoffe ich, als wichtigsten Zuwachs dieser zweiten Auflage,
+wofern nicht zu große Schwierigkeiten sich einstellen, zum Schluß ein
+alle fünf Bände zusammenfassendes Sachregister zu bringen. Die dem
+Bande vorangestellte kleine Karte beabsichtigt nichts, als eine
+summarische Orientierung zu geben. Sie beschränkt sich auf
+Verzeichnung der Kreisstädte, durch die im Text die Lage eines Ortes
+bestimmt wird. Weiterzugehen, sämtliche in dem Bande beschriebenen
+Orte — es sind mehr als 2000 — aufzunehmen, wäre ein Ding der
+Unmöglichkeit gewesen.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Dagegen hoffe ich, als wichtigsten Zuwachs dieser zw-
+eiten Auflage, wofern nicht zu große Schwierigkeiten sich
+resultieren zum Schluß ein alle fünf Bände zusammenfassendes
+Sachregister zu bringen. Die dem Bande vorangestellte kleine Karte
+beabsichtigt nichts, als eine summarische Orientierung zu geben. Sie
+beschränkt sich auf Verzeichnung der Kreisstädte, durch die im Text
+die Lage eines Ortes bestimmt wird. Weiterzugehen, sämtliche in dem
+Bande beschriebenen Orte — es sind mehr als 2000 — aufzunehmen, wäre
+ein Ding der Unmöglichkeit gewesen.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 1530
+Number of Goal Checks: 1530
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/24.txt=============================
+Current Time: Tue Jan 27 15:18:25 CET 2015
+Input String: Eine Veränderung, an deren beifälliger Aufnahme ich nicht zweifle, besteht in der Einschränkung der Abkürzungen. Ganz zu entbehren waren sie nicht, wenn anders eine noch weitergehende Erhöhung der Seitenzahl vermieden werden sollte. Strittiger wird das Urteil über eine zweite Veränderung sein: die Weglassung der Literaturangaben. Ich habe mich dazu erst nach langer Überlegung entschlossen. Die Gründe sind folgende: 1. Vollständigkeit ist von vornherein ausgeschlossen; soll aber nur eine Auswahl gegeben werden, so fehlt dafür jede konsequent anwendbare Begrenzung. 2. Es kommt nicht selten vor, daß der wichtigste Beitrag zur Beurteilung eines Denkmals nicht in den von ihm handelnden Sonderschriften, sondern in einem allgemeinen Werke enthalten ist; die Nachweise so weit auszudehnen, würde aber in der Summe viel zu viel Raum in Anspruch nehmen. 3. Bei der Benutzung als Reisehandbuch besteht an den Literaturangaben kaum ein Interesse; tritt es bei der Arbeit im Hause ein, so wird ein Zurückgreifen auf die Inventare nicht zu entbehren sein, und dort findet man ja regelmäßig auch die Literatur bereits verzeichnet. Die Bibliographie der deutschen Kunstgeschichte ist eine Aufgabe für sich, und zwar eine sehr umfassende; ihre Lösung kann nicht nebenher auch von diesem Handbuch verlangt werden.
+
+Input Text: Eine Veränderung, an deren beifälliger Aufnahme ich nicht zweifle,
+besteht in der Einschränkung der Abkürzungen. Ganz zu entbehren waren
+sie nicht, wenn anders eine noch weitergehende Erhöhung der Seitenzahl
+vermieden werden sollte. Strittiger wird das Urteil über eine zweite
+Veränderung sein: die Weglassung der Literaturangaben. Ich habe mich
+dazu erst nach langer Überlegung entschlossen. Die Gründe sind
+folgende: 1. Vollständigkeit ist von vornherein ausgeschlossen; soll
+aber nur eine Auswahl gegeben werden, so fehlt dafür jede konsequent
+anwendbare Begrenzung. 2. Es kommt nicht selten vor, daß der
+wichtigste Beitrag zur Beurteilung eines Denkmals nicht in den von ihm
+handelnden Sonderschriften, sondern in einem allgemeinen Werke
+enthalten ist; die Nachweise so weit auszudehnen, würde aber in der
+Summe viel zu viel Raum in Anspruch nehmen. 3. Bei der Benutzung als
+Reisehandbuch besteht an den Literaturangaben kaum ein Interesse;
+tritt es bei der Arbeit im Hause ein, so wird ein Zurückgreifen auf
+die Inventare nicht zu entbehren sein, und dort findet man ja
+regelmäßig auch die Literatur bereits verzeichnet. Die Bibliographie
+der deutschen Kunstgeschichte ist eine Aufgabe für sich, und zwar eine
+sehr umfassende; ihre Lösung kann nicht nebenher auch von diesem
+Handbuch verlangt werden.
+
+Acrostic: Eine
+Result: SUCCESS
+Result Text: Eine Veränderung, an deren beifälliger Aufnahme was mich anbetrifft n-
+icht zweifle, besteht in der Einschränkung der Abkürzungen. Ganz zu e-
+ntbehren waren sie nicht, wenn anders eine noch weitergehende
+Erhöhung der Seitenzahl vermieden werden sollte. Strittiger wird das
+Urteil über eine zweite Veränderung sein: die Weglassung der
+Literaturangaben. Ich habe mich dazu erst nach langer Überlegung
+entschlossen. Die Gründe sind folgende: 1. Vollständigkeit ist von
+vornherein ausgeschlossen; soll aber nur eine Auswahl gegeben werden,
+so fehlt dafür jede konsequent anwendbare Begrenzung. 2. Es kommt
+nicht selten vor, daß der wichtigste Beitrag zur Beurteilung eines
+Denkmals nicht in den von ihm handelnden Sonderschriften, sondern in
+einem allgemeinen Werke enthalten ist; die Nachweise so weit
+auszudehnen, würde aber in der Summe viel zu viel Raum in Anspruch
+nehmen. 3. Bei der Benutzung als Reisehandbuch besteht an den
+Literaturangaben kaum ein Interesse; tritt es bei der Arbeit im Hause
+ein, so wird ein Zurückgreifen auf die Inventare nicht zu entbehren
+sein, und dort findet man ja regelmäßig auch die Literatur bereits
+verzeichnet. Die Bibliographie der deutschen Kunstgeschichte ist eine
+Aufgabe für sich, und zwar eine sehr umfassende; ihre Lösung kann
+nicht nebenher auch von diesem Handbuch verlangt werden.
+
+Applied Operators (In Final Result): SynonymOperation
+LineBreakOperation
+Number of Genereted Nodes: 3053
+Number of Goal Checks: 3053
+Execution Time: 14
+
+Input Text: Eine Veränderung, an deren beifälliger Aufnahme ich nicht zweifle,
+besteht in der Einschränkung der Abkürzungen. Ganz zu entbehren waren
+sie nicht, wenn anders eine noch weitergehende Erhöhung der Seitenzahl
+vermieden werden sollte. Strittiger wird das Urteil über eine zweite
+Veränderung sein: die Weglassung der Literaturangaben. Ich habe mich
+dazu erst nach langer Überlegung entschlossen. Die Gründe sind
+folgende: 1. Vollständigkeit ist von vornherein ausgeschlossen; soll
+aber nur eine Auswahl gegeben werden, so fehlt dafür jede konsequent
+anwendbare Begrenzung. 2. Es kommt nicht selten vor, daß der
+wichtigste Beitrag zur Beurteilung eines Denkmals nicht in den von ihm
+handelnden Sonderschriften, sondern in einem allgemeinen Werke
+enthalten ist; die Nachweise so weit auszudehnen, würde aber in der
+Summe viel zu viel Raum in Anspruch nehmen. 3. Bei der Benutzung als
+Reisehandbuch besteht an den Literaturangaben kaum ein Interesse;
+tritt es bei der Arbeit im Hause ein, so wird ein Zurückgreifen auf
+die Inventare nicht zu entbehren sein, und dort findet man ja
+regelmäßig auch die Literatur bereits verzeichnet. Die Bibliographie
+der deutschen Kunstgeschichte ist eine Aufgabe für sich, und zwar eine
+sehr umfassende; ihre Lösung kann nicht nebenher auch von diesem
+Handbuch verlangt werden.
+
+Acrostic: ein
+Result: SUCCESS
+Result Text: Eine Veränderung, an deren beifälliger Aufnahme was mich anbetrifft n-
+icht zweifle, besteht in der Einschränkung der Abkürzungen. Ganz zu e-
+ntbehren waren sie nicht, wenn anders eine noch weitergehende Erhöhun-
+g der Seitenzahl vermieden werden sollte. Strittiger wird das Urteil
+über eine zweite Veränderung sein: die Weglassung der Literaturangabe-
+n. Ich habe mich dazu erst nach langer Überlegung entschlossen. Die G-
+ründe sind folgende: 1. Vollständigkeit ist von vornherein ausgeschlo-
+ssen; soll aber nur eine Auswahl gegeben werden, so fehlt dafür jede
+konsequent anwendbare Begrenzung. 2. Es kommt nicht selten vor, daß d-
+er wichtigste Beitrag zur Beurteilung eines Denkmals nicht in den von
+ihm handelnden Sonderschriften, sondern in einem allgemeinen Werke
+enthalten ist; die Nachweise so weit auszudehnen, würde aber in der
+Summe viel zu viel Raum in Anspruch nehmen. 3. Bei der Benutzung als
+Reisehandbuch besteht an den Literaturangaben kaum ein Interesse;
+tritt es bei der Arbeit im Hause ein, so wird ein Zurückgreifen auf
+die Inventare nicht zu entbehren sein, und dort findet man ja
+regelmäßig auch die Literatur bereits verzeichnet. Die Bibliographie
+der deutschen Kunstgeschichte ist eine Aufgabe für sich, und zwar eine
+sehr umfassende; ihre Lösung kann nicht nebenher auch von diesem
+Handbuch verlangt werden.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 218
+Number of Goal Checks: 218
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/23.txt=============================
+Current Time: Tue Jan 27 15:18:33 CET 2015
+Input String: Wenn dieses bei dem vorliegenden ersten Bande einigermaßen dennoch  eingetreten ist, so ist es eine Folge des gerade hier sehr starken  Nachschubs der Inventare. Zur Zeit der ersten Auflage waren etwa zwei  Fünftel des Gebietes noch nicht inventarisiert, jetzt fehlen nur noch der  bayrische Bezirk Oberfranken und wenige Ämter in Unterfranken und dem  Königreich Sachsen.
+
+Input Text: Wenn dieses bei dem vorliegenden ersten Bande einigermaßen dennoch
+eingetreten ist, so ist es eine Folge des gerade hier sehr starken
+Nachschubs der Inventare. Zur Zeit der ersten Auflage waren etwa zwei
+Fünftel des Gebietes noch nicht inventarisiert, jetzt fehlen nur noch
+der bayrische Bezirk Oberfranken und wenige Ämter in Unterfranken und
+dem Königreich Sachsen.
+
+Acrostic: Wenn
+Result: SUCCESS
+Result Text: Wenn dieses bei dem vorliegenden ersten Bande einigermaßen dennoch
+eingetreten ist, so ist es eine Folge des gerade hier sehr starken
+Nachschubs der Inventare. Zur Zeit der ersten Auflage ware-
+n etwa zwei Fünftel des Gebietes noch nicht inventarisiert, jetzt
+fehlen nur noch der bayrische Bezirk Oberfranken und wenige Ämter in
+Unterfranken und dem Königreich Sachsen.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 5906
+Number of Goal Checks: 5906
+Execution Time: 5
+
+Input Text: Wenn dieses bei dem vorliegenden ersten Bande einigermaßen dennoch
+eingetreten ist, so ist es eine Folge des gerade hier sehr starken
+Nachschubs der Inventare. Zur Zeit der ersten Auflage waren etwa zwei
+Fünftel des Gebietes noch nicht inventarisiert, jetzt fehlen nur noch
+der bayrische Bezirk Oberfranken und wenige Ämter in Unterfranken und
+dem Königreich Sachsen.
+
+Acrostic: werden
+Result: SUCCESS
+Result Text: Wenn dieses bei dem vorliegenden ersten Bande einigermaßen d-
+ennoch eingetreten ist, so ist es eine Folge des gerade hier sehr sta-
+rken Nachschubs der Inventare. Zur Zeit der ersten Auflage waren über
+den daumen zwei Fünftel des Gebietes noch nicht inventarisiert, j-
+etzt fehlen im gegenteil noch der bayrische Bezirk Oberfranken und we-
+nige Ämte- r in Unterfranke- n und dem Königreich Sachsen.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 3098
+Number of Goal Checks: 3098
+Execution Time: 1
+
+
+==========================================================
+
+
+=============================Text/Fernando/22.txt=============================
+Current Time: Tue Jan 27 15:49:22 CET 2015
+Input String: Aus den zahlreichen im Laufe der Jahre mir mündlich oder schriftlich  zugegangenen Beurteilungen entnehme ich, daß die Einrichtung des Buches  sich bewährt hat, sie konnte somit ohne wesentliche Veränderungen in die  neue Auflage herübergenommen werden. Vor allem hat es Zustimmung gefunden,  daß das Handbuch unter Verzicht auf Vollständigkeit, die ein Vorrecht der  amtlichen Inventare bleiben muß, nur Sichtung und Auswahl gibt. Welche  Gegenstände aufzunehmen, welche auszuschließen seien, das wird immer  erneuter Überlegung bedürfen, und ich bitte, auch in dieser Hinsicht mir  mit Ratschlägen fernerhin zu Hilfe zu kommen. Keinesfalls sollte der  bisher erreichte Umfang der einzelnen Bände in Zukunft wesentlich  anschwellen dürfen.
+
+Input Text: Aus den zahlreichen im Laufe der Jahre mir mündlich oder schriftlich
+zugegangenen Beurteilungen entnehme ich, daß die Einrichtung des
+Buches sich bewährt hat, sie konnte somit ohne wesentliche
+Veränderungen in die neue Auflage herübergenommen werden. Vor allem
+hat es Zustimmung gefunden, daß das Handbuch unter Verzicht auf
+Vollständigkeit, die ein Vorrecht der amtlichen Inventare bleiben muß,
+nur Sichtung und Auswahl gibt. Welche Gegenstände aufzunehmen, welche
+auszuschließen seien, das wird immer erneuter Überlegung bedürfen, und
+ich bitte, auch in dieser Hinsicht mir mit Ratschlägen fernerhin zu
+Hilfe zu kommen. Keinesfalls sollte der bisher erreichte Umfang der
+einzelnen Bände in Zukunft wesentlich anschwellen dürfen.
+
+Acrostic: Aus
+Result: TIMEOUT
+Number of Genereted Nodes: 846216
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:72)
+Number of Goal Checks: 846216
+Execution Time: 929
+
+Input Text: Aus den zahlreichen im Laufe der Jahre mir mündlich oder schriftlich
+zugegangenen Beurteilungen entnehme ich, daß die Einrichtung des
+Buches sich bewährt hat, sie konnte somit ohne wesentliche
+Veränderungen in die neue Auflage herübergenommen werden. Vor allem
+hat es Zustimmung gefunden, daß das Handbuch unter Verzicht auf
+Vollständigkeit, die ein Vorrecht der amtlichen Inventare bleiben muß,
+nur Sichtung und Auswahl gibt. Welche Gegenstände aufzunehmen, welche
+auszuschließen seien, das wird immer erneuter Überlegung bedürfen, und
+ich bitte, auch in dieser Hinsicht mir mit Ratschlägen fernerhin zu
+Hilfe zu kommen. Keinesfalls sollte der bisher erreichte Umfang der
+einzelnen Bände in Zukunft wesentlich anschwellen dürfen.
+
+Acrostic: auf
+Result: TIMEOUT
+Number of Genereted Nodes: 828985
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:72)
+Number of Goal Checks: 828985
+Execution Time: 919
+
+
+==========================================================
+
+
+=============================Text/Fernando/21.txt=============================
+Current Time: Tue Jan 27 16:10:39 CET 2015
+Input String: Jetzt mit der zweiten Auflage tritt das Handbuch unter die Fürsorge des  Deutschen Vereins für Kunstwissenschaft. Die grundlegende erste  Bearbeitung hatte notwendig das Werk eines einzelnen sein müssen; die nun  folgende nachprüfende und ergänzende Kleinarbeit ist nur denkbar in der  Verteilung auf viele. Das Einfachste und Wirksamste wäre, wenn die Herren  Konservatoren es sich zur Gewohnheit machen könnten, bei ihren amtlichen  Denkmälerbesichtigungen und bei ihrer Kenntnisnahme von der lokalen  Forschung stets einen Blick auf das Handbuch zu werfen und die ihnen nötig  erscheinenden Berichtigungen und Nachträge gleichlaufend einzuzeichnen.  Auf diese Weise würde ohne besondere Mühewaltung, fast automatisch, die  Sammlung des Materials sich bewerkstelligen lassen. Außerdem wiederhole  ich meine an alle Benutzer gerichtete alte Bitte, mich auf etwaige  Irrtümer oder Lücken, mögen sie auch noch so geringfügig sein, aufmerksam  zu machen. Sie werden damit den Dank aller anderen Mitbenutzer sich  verdienen.
+
+Input Text: Jetzt mit der zweiten Auflage tritt das Handbuch unter die Fürsorge
+des Deutschen Vereins für Kunstwissenschaft. Die grundlegende erste
+Bearbeitung hatte notwendig das Werk eines einzelnen sein müssen; die
+nun folgende nachprüfende und ergänzende Kleinarbeit ist nur denkbar
+in der Verteilung auf viele. Das Einfachste und Wirksamste wäre, wenn
+die Herren Konservatoren es sich zur Gewohnheit machen könnten, bei
+ihren amtlichen Denkmälerbesichtigungen und bei ihrer Kenntnisnahme
+von der lokalen Forschung stets einen Blick auf das Handbuch zu werfen
+und die ihnen nötig erscheinenden Berichtigungen und Nachträge
+gleichlaufend einzuzeichnen. Auf diese Weise würde ohne besondere
+Mühewaltung, fast automatisch, die Sammlung des Materials sich
+bewerkstelligen lassen. Außerdem wiederhole ich meine an alle Benutzer
+gerichtete alte Bitte, mich auf etwaige Irrtümer oder Lücken, mögen
+sie auch noch so geringfügig sein, aufmerksam zu machen. Sie werden
+damit den Dank aller anderen Mitbenutzer sich verdienen.
+
+Acrostic: Jetzt
+Result: SUCCESS
+Result Text: Jetzt mit der zweiten Auflage tritt das Handbuch unter die Fürsorg-
+e des Deutschen Vereins für Kunstwissenschaft. Die grundlegende ers-
+te Bearbeitung hatte notwendig das wissenschaftliche arbeit eines ein-
+zelnen sein müssen; die gegenwärtig folgende nachprüfende ein übriges
+tun ergänze- nde Klei- narbeit ist nur denk- bar in der Verteilung au-
+f viele. Das Einfachste und Wirksamste wäre, wenn die Herren Konserva-
+toren es sich zur Gewohn- heit machen könnten, bei ihren amtlichen De-
+nkmälerbesicht- igungen und bei ihrer Kenntnisnah- me von der lokalen
+Forschung stets einen Blick auf das Handbuch zu we- rfen und die ihne-
+n nötig erschein- enden Berich- tigungen und Nachträge gleichlaufend
+einzuzeichnen. Auf diese Weise w- ürde ohne besondere Mühewaltung, fa-
+st automatisch, sie Sammlung des M- aterials sich bewerkstelligen las-
+sen. Außerdem wieder- hole ich meine a- n alle Benutzer gerichtete al-
+te Bitte, mich auf etw- aige Irrtümer oder Luecken, mögen sie zumal n-
+och so geringfuegig sein- , aufmerksam zu mac- h- e- n- . Sie werden
+damit den Dank aller ander- en Mitbenutzer sich v- erd- ie en.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+SynonymOperation
+SynonymOperation
+WrongSpellingOperation
+SynonymOperation
+WrongSpellingOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 418780
+Number of Goal Checks: 418780
+Execution Time: 286
+
+Input Text: Jetzt mit der zweiten Auflage tritt das Handbuch unter die Fürsorge
+des Deutschen Vereins für Kunstwissenschaft. Die grundlegende erste
+Bearbeitung hatte notwendig das Werk eines einzelnen sein müssen; die
+nun folgende nachprüfende und ergänzende Kleinarbeit ist nur denkbar
+in der Verteilung auf viele. Das Einfachste und Wirksamste wäre, wenn
+die Herren Konservatoren es sich zur Gewohnheit machen könnten, bei
+ihren amtlichen Denkmälerbesichtigungen und bei ihrer Kenntnisnahme
+von der lokalen Forschung stets einen Blick auf das Handbuch zu werfen
+und die ihnen nötig erscheinenden Berichtigungen und Nachträge
+gleichlaufend einzuzeichnen. Auf diese Weise würde ohne besondere
+Mühewaltung, fast automatisch, die Sammlung des Materials sich
+bewerkstelligen lassen. Außerdem wiederhole ich meine an alle Benutzer
+gerichtete alte Bitte, mich auf etwaige Irrtümer oder Lücken, mögen
+sie auch noch so geringfügig sein, aufmerksam zu machen. Sie werden
+damit den Dank aller anderen Mitbenutzer sich verdienen.
+
+Acrostic: Jahr
+Result: TIMEOUT
+Number of Genereted Nodes: 688768
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:72)
+Number of Goal Checks: 688768
+Execution Time: 991
+
+
+==========================================================
+
+
+=============================Text/Fernando/20.txt=============================
+Current Time: Tue Jan 27 19:10:30 CET 2015
+Input String: Die erste Auflage dieses Werkes erschien in fünf Bänden in den Jahren  1905-1912. Ich beginne die zweite mit dem Ausdruck des Dankes an alle, die  mich bei der Ausführung der ersten unterstützt haben. Ihre Zahl ist so  groß, daß ich sie nicht einzeln nennen kann. An der Spitze steht die  Dankespflicht gegen Seine Majestät den Deutschen Kaiser, der auf Antrag  des Tages für Denkmalpflege durch Allerhöchsten Erlaß vom 27. März 1904  die finanzielle Grundlage des Unternehmens sichergestellt hatte. Die erste  Anregung war von dem Unterzeichneten auf der im Jahre 1899 in Straßburg  tagenden Generalversammlung der Deutschen Geschichtsvereine gegeben  worden. Der erste Tag für Denkmalpflege, Dresden 1900, setzte die  Erörterung fort und erklärte sich hinsichtlich der Wünschbarkeit lebhaft  zustimmend, die Ausführbarkeit allerdings wurde mehrfach angezweifelt.  Unter diesen Umständen mußte ich selbst die Arbeit übernehmen, wohl  wissend, daß sie mich auf eine längere Reihe von Jahren vollständig in  Anspruch nehmen werde. Sie zu einem ersprießlichen Ende zu führen wäre mir  auch nicht möglich gewesen ohne die treue und unermüdliche Unterstützung  der mir beigegebenen Kommission. Sie bestand aus Hugo Lörsch, Cornelius  Gurlitt und Adolf von Oechelhäuser. Für Lörsch, dessen Tod wir im Jahre  1907 zu beklagen hatten, trat Paul Clemen ein. Die Jahre des  Zusammenarbeitens mit ihnen werden mir stets in dankbarer Erinnerung  bleiben.
+
+Input Text: Die erste Auflage dieses Werkes erschien in fünf Bänden in den Jahren
+1905-1912. Ich beginne die zweite mit dem Ausdruck des Dankes an alle,
+die mich bei der Ausführung der ersten unterstützt haben. Ihre Zahl
+ist so groß, daß ich sie nicht einzeln nennen kann. An der Spitze
+steht die Dankespflicht gegen Seine Majestät den Deutschen Kaiser, der
+auf Antrag des Tages für Denkmalpflege durch Allerhöchsten Erlaß vom
+27. März 1904 die finanzielle Grundlage des Unternehmens
+sichergestellt hatte. Die erste Anregung war von dem Unterzeichneten
+auf der im Jahre 1899 in Straßburg tagenden Generalversammlung der
+Deutschen Geschichtsvereine gegeben worden. Der erste Tag für
+Denkmalpflege, Dresden 1900, setzte die Erörterung fort und erklärte
+sich hinsichtlich der Wünschbarkeit lebhaft zustimmend, die
+Ausführbarkeit allerdings wurde mehrfach angezweifelt. Unter diesen
+Umständen mußte ich selbst die Arbeit übernehmen, wohl wissend, daß
+sie mich auf eine längere Reihe von Jahren vollständig in Anspruch
+nehmen werde. Sie zu einem ersprießlichen Ende zu führen wäre mir auch
+nicht möglich gewesen ohne die treue und unermüdliche Unterstützung
+der mir beigegebenen Kommission. Sie bestand aus Hugo Lörsch,
+Cornelius Gurlitt und Adolf von Oechelhäuser. Für Lörsch, dessen Tod
+wir im Jahre 1907 zu beklagen hatten, trat Paul Clemen ein. Die Jahre
+des Zusammenarbeitens mit ihnen werden mir stets in dankbarer
+Erinnerung bleiben.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die erste Auflage dieses Werkes erschien in fünf Bänden
+in den Jahren 1905-1912. Ich beginne die zweite mit dem Ausdruck d-
+es Dankes an alle, die mich bei der Ausführung der ersten unterstützt
+haben. Ihre Zahl ist so groß, daß ich sie nicht einzeln nennen kann.
+An der Spitze steht die Dankespflicht gegen Seine Majestät den
+Deutschen Kaiser, der auf Antrag des Tages für Denkmalpflege durch
+Allerhöchsten Erlaß vom 27. März 1904 die finanzielle Grundlage des
+Unternehmens sichergestellt hatte. Die erste Anregung war von dem
+Unterzeichneten auf der im Jahre 1899 in Straßburg tagenden
+Generalversammlung der Deutschen Geschichtsvereine gegeben worden. Der
+erste Tag für Denkmalpflege, Dresden 1900, setzte die Erörterung fort
+und erklärte sich hinsichtlich der Wünschbarkeit lebhaft zustimmend,
+die Ausführbarkeit allerdings wurde mehrfach angezweifelt. Unter
+diesen Umständen mußte ich selbst die Arbeit übernehmen, wohl wissend,
+daß sie mich auf eine längere Reihe von Jahren vollständig in Anspruch
+nehmen werde. Sie zu einem ersprießlichen Ende zu führen wäre mir auch
+nicht möglich gewesen ohne die treue und unermüdliche Unterstützung
+der mir beigegebenen Kommission. Sie bestand aus Hugo Lörsch,
+Cornelius Gurlitt und Adolf von Oechelhäuser. Für Lörsch, dessen Tod
+wir im Jahre 1907 zu beklagen hatten, trat Paul Clemen ein. Die Jahre
+des Zusammenarbeitens mit ihnen werden mir stets in dankbarer
+Erinnerung bleiben.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 2896
+Number of Goal Checks: 2896
+Execution Time: 168
+
+Input Text: Die erste Auflage dieses Werkes erschien in fünf Bänden in den Jahren
+1905-1912. Ich beginne die zweite mit dem Ausdruck des Dankes an alle,
+die mich bei der Ausführung der ersten unterstützt haben. Ihre Zahl
+ist so groß, daß ich sie nicht einzeln nennen kann. An der Spitze
+steht die Dankespflicht gegen Seine Majestät den Deutschen Kaiser, der
+auf Antrag des Tages für Denkmalpflege durch Allerhöchsten Erlaß vom
+27. März 1904 die finanzielle Grundlage des Unternehmens
+sichergestellt hatte. Die erste Anregung war von dem Unterzeichneten
+auf der im Jahre 1899 in Straßburg tagenden Generalversammlung der
+Deutschen Geschichtsvereine gegeben worden. Der erste Tag für
+Denkmalpflege, Dresden 1900, setzte die Erörterung fort und erklärte
+sich hinsichtlich der Wünschbarkeit lebhaft zustimmend, die
+Ausführbarkeit allerdings wurde mehrfach angezweifelt. Unter diesen
+Umständen mußte ich selbst die Arbeit übernehmen, wohl wissend, daß
+sie mich auf eine längere Reihe von Jahren vollständig in Anspruch
+nehmen werde. Sie zu einem ersprießlichen Ende zu führen wäre mir auch
+nicht möglich gewesen ohne die treue und unermüdliche Unterstützung
+der mir beigegebenen Kommission. Sie bestand aus Hugo Lörsch,
+Cornelius Gurlitt und Adolf von Oechelhäuser. Für Lörsch, dessen Tod
+wir im Jahre 1907 zu beklagen hatten, trat Paul Clemen ein. Die Jahre
+des Zusammenarbeitens mit ihnen werden mir stets in dankbarer
+Erinnerung bleiben.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die erste Auflage dieses Werkes erschien in fünf Bänden in den Jahr-
+en 1905-1912. soweit es mich betrifft beginne die zweite mit dem Ausd-
+ruck des Dankes an a- lle, die mich bei der Ausführung der ersten unt-
+erstützt haben. Ihre Z- ahl ist so groß, daß ich sie nicht einzeln ne-
+nnen kann. An der Spitze steht die Dankespflicht gegen Seine Majestät
+den Deutschen Kaiser, der auf Antrag des Tages für Denkmalpflege durc-
+h Allerhöchsten Erlaß vom 27. März 1904 die finanzielle Grundlage des
+Unternehmens sichergestellt hatte. Die erste Anregung war von dem Unt-
+erzeichneten auf der im Jahre 1899 in Straßburg tagenden Generalversa-
+mmlung der Deutschen Geschichtsvereine gegeben worden. Der erste Tag
+für Denkmalpflege, Dresden 1900, setzte die Erörterung fort und erklä-
+rte sich hinsichtlich der Wünschbarkeit lebhaft zustimmend, die
+Ausführbarkeit allerdings wurde mehrfach angezweifelt. Unter diesen
+Umständen mußte ich selbst die Arbeit übernehmen, wohl wissend, daß
+sie mich auf eine längere Reihe von Jahren vollständig in Anspruch
+nehmen werde. Sie zu einem ersprießlichen Ende zu führen wäre mir auch
+nicht möglich gewesen ohne die treue und unermüdliche Unterstützung
+der mir beigegebenen Kommission. Sie bestand aus Hugo Lörsch,
+Cornelius Gurlitt und Adolf von Oechelhäuser. Für Lörsch, dessen Tod
+wir im Jahre 1907 zu beklagen hatten, trat Paul Clemen ein. Die Jahre
+des Zusammenarbeitens mit ihnen werden mir stets in dankbarer
+Erinnerung bleiben.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 3076
+Number of Goal Checks: 3076
+Execution Time: 1
+
+
+==========================================================
+
+
+=============================Text/Fernando/19.txt=============================
+Current Time: Tue Jan 27 19:10:53 CET 2015
+Input String: Im runden Ausschnitt der Tanne hing eine Spiegelung, wie aus Silber eine metallene Platte. Nächte voll Schwärmerei und Lichtern hoben sich über dem Park, zogen rasch vorüber. Zuckende Frauenleiber sträubten sich vor ihm auf. Ein großer Ritt, der ihn mit Ruhm behängte, glitt durch die Luft, sein Bein hing blutend in der Bügelung. Ehrgeizige Spiele, sehr erleuchtete gläserne Säle . . . Teile des Gartens dampften, brachen auf, Nischen entlaubten sich, Gänge warden ohne Dunkel. Gab es nicht eine Frau? Eine Frau, ohne Geheimnis am Körper, verlogenen reizlosen Hirnes, ohne Leidenschaft der Erfindung, gut für Lakaien. Dennoch schlug er sich heut um ihre roten Haare. Dies ist das Dasein. Er lächelte, als ob er die weiße Zofe in den Flieder herunterpfiff oder die Pikardin berührte, die bleich durch eine Laube in der Parkecke auf ihn wartete.
+
+Input Text: Im runden Ausschnitt der Tanne hing eine Spiegelung, wie aus Silber
+eine metallene Platte. Nächte voll Schwärmerei und Lichtern hoben sich
+über dem Park, zogen rasch vorüber. Zuckende Frauenleiber sträubten
+sich vor ihm auf. Ein großer Ritt, der ihn mit Ruhm behängte, glitt
+durch die Luft, sein Bein hing blutend in der Bügelung. Ehrgeizige
+Spiele, sehr erleuchtete gläserne Säle . . . Teile des Gartens
+dampften, brachen auf, Nischen entlaubten sich, Gänge warden ohne
+Dunkel. Gab es nicht eine Frau? Eine Frau, ohne Geheimnis am Körper,
+verlogenen reizlosen Hirnes, ohne Leidenschaft der Erfindung, gut für
+Lakaien. Dennoch schlug er sich heut um ihre roten Haare. Dies ist das
+Dasein. Er lächelte, als ob er die weiße Zofe in den Flieder
+herunterpfiff oder die Pikardin berührte, die bleich durch eine Laube
+in der Parkecke auf ihn wartete.
+
+Acrostic: Im
+Result: SUCCESS
+Result Text: Im runden Ausschnitt der Tanne hing eine Spiegelung, wie es gibt kein
+mehr Silber eine metallene Platte. Nächte voll Schwärmerei und Lichte-
+rn hoben sich über dem Park, zogen rasch vorüber. Zuckende Frauenleib-
+er sträubten sich vor ihm auf. Ein großer Ritt, der ihn mit Ruhm behä-
+ngte, glitt durch die Luft, sein Bein hing blutend in der Bügelung. E-
+hrgeizige Spiele, sehr erleuchtete gläserne Säle . . . Teile des Gart-
+ens dampften, brachen auf, Nischen entlaubten sich, Gänge warden ohne
+Dunkel. Gab es nicht eine Frau? Eine Frau, ohne Geheimnis am Körper,
+verlogenen reizlosen Hirnes, ohne Leidenschaft der Erfindung, gut für
+Lakaien. Dennoch schlug er sich heut um ihre roten Haare. Dies ist das
+Dasein. Er lächelte, als ob er die weiße Zofe in den Flieder
+herunterpfiff oder die Pikardin berührte, die bleich durch eine Laube
+in der Parkecke auf ihn wartete.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 187
+Number of Goal Checks: 187
+Execution Time: 22
+
+Input Text: Im runden Ausschnitt der Tanne hing eine Spiegelung, wie aus Silber
+eine metallene Platte. Nächte voll Schwärmerei und Lichtern hoben sich
+über dem Park, zogen rasch vorüber. Zuckende Frauenleiber sträubten
+sich vor ihm auf. Ein großer Ritt, der ihn mit Ruhm behängte, glitt
+durch die Luft, sein Bein hing blutend in der Bügelung. Ehrgeizige
+Spiele, sehr erleuchtete gläserne Säle . . . Teile des Gartens
+dampften, brachen auf, Nischen entlaubten sich, Gänge warden ohne
+Dunkel. Gab es nicht eine Frau? Eine Frau, ohne Geheimnis am Körper,
+verlogenen reizlosen Hirnes, ohne Leidenschaft der Erfindung, gut für
+Lakaien. Dennoch schlug er sich heut um ihre roten Haare. Dies ist das
+Dasein. Er lächelte, als ob er die weiße Zofe in den Flieder
+herunterpfiff oder die Pikardin berührte, die bleich durch eine Laube
+in der Parkecke auf ihn wartete.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: Im runden Ausschnitt der Tanne hing eine Spiegelung, wie zu ende gega-
+ngen Silber eine metallene Platte. Nächte voll Schwärmerei und Lichte-
+rn hoben sich über dem Park, zogen rasch vorüber. Zuckende Frauenleib-
+er sträubten sich vor ihm auf. Ein großer Ritt, der ihn mit Ruhm behä-
+ngte, glitt durch die Luft, sein Bein hing blutend in der Bügelung. E-
+hrgeizige Spiele, sehr erleuchtete gläserne Säle . . . Teile des Gart-
+ens dampften, brachen auf, Nischen entlaubten sich, Gänge warden ohne
+Dunkel. Gab es nicht eine Frau? Eine Frau, ohne Geheimnis am Körper,
+verlogenen reizlosen Hirnes, ohne Leidenschaft der Erfindung, gut für
+Lakaien. Dennoch schlug er sich heut um ihre roten Haare. Dies ist das
+Dasein. Er lächelte, als ob er die weiße Zofe in den Flieder
+herunterpfiff oder die Pikardin berührte, die bleich durch eine Laube
+in der Parkecke auf ihn wartete.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 196
+Number of Goal Checks: 196
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/18.txt=============================
+Current Time: Tue Jan 27 19:25:56 CET 2015
+Input String: Zaudern Sie nicht -- flüsterte der Sekundant, »sofort zu begreifen, daß Sie im königlichen Garten sind. Jetzt noch zu leben, heißt nur bedingt und halb ein Lebender zu sein.« Vaudreuil trat mit einer Verbeugung zurück. Ein spöttisches Lächeln kniff in seinen abwesenden Mund. Dann kam der Laubengang. Das Dunkel der Nacht saß darin, unaufgescheucht vom Licht. Die weißen Hermen glommen aus der blauen Dämmerung. Nun paradierte ihn die Wache. Die Rondells mit den Fontänen waren beinahe rot, und die Tritone schäumten vor sich hin. Auf den Seiten verschwammen die Alleen flaumiger Dämmerung. Eine quecksilberne Säule stand das Schloß aufgerichtet neben ihm. Zwischen dem Schwung von zwei Koniferenästen zog sich der ganze Garten noch einmal zusammen. Dicht über dem tiefen Wasserspiegel am Ende der gesenkten Terrassen hing riesenhaft der Mond.
+
+Input Text: Zaudern Sie nicht -flüsterte der Sekundant, »sofort zu begreifen,
+daß Sie im königlichen Garten sind. Jetzt noch zu leben, heißt nur
+bedingt und halb ein Lebender zu sein.« Vaudreuil trat mit einer
+Verbeugung zurück. Ein spöttisches Lächeln kniff in seinen abwesenden
+Mund. Dann kam der Laubengang. Das Dunkel der Nacht saß darin,
+unaufgescheucht vom Licht. Die weißen Hermen glommen aus der blauen
+Dämmerung. Nun paradierte ihn die Wache. Die Rondells mit den Fontänen
+waren beinahe rot, und die Tritone schäumten vor sich hin. Auf den
+Seiten verschwammen die Alleen flaumiger Dämmerung. Eine quecksilberne
+Säule stand das Schloß aufgerichtet neben ihm. Zwischen dem Schwung
+von zwei Koniferenästen zog sich der ganze Garten noch einmal
+zusammen. Dicht über dem tiefen Wasserspiegel am Ende der gesenkten
+Terrassen hing riesenhaft der Mond.
+
+Acrostic: Zaudern
+Result: TIMEOUT
+Number of Genereted Nodes: 775115
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:72)
+Number of Goal Checks: 775115
+Execution Time: 902
+
+Input Text: Zaudern Sie nicht -flüsterte der Sekundant, »sofort zu begreifen,
+daß Sie im königlichen Garten sind. Jetzt noch zu leben, heißt nur
+bedingt und halb ein Lebender zu sein.« Vaudreuil trat mit einer
+Verbeugung zurück. Ein spöttisches Lächeln kniff in seinen abwesenden
+Mund. Dann kam der Laubengang. Das Dunkel der Nacht saß darin,
+unaufgescheucht vom Licht. Die weißen Hermen glommen aus der blauen
+Dämmerung. Nun paradierte ihn die Wache. Die Rondells mit den Fontänen
+waren beinahe rot, und die Tritone schäumten vor sich hin. Auf den
+Seiten verschwammen die Alleen flaumiger Dämmerung. Eine quecksilberne
+Säule stand das Schloß aufgerichtet neben ihm. Zwischen dem Schwung
+von zwei Koniferenästen zog sich der ganze Garten noch einmal
+zusammen. Dicht über dem tiefen Wasserspiegel am Ende der gesenkten
+Terrassen hing riesenhaft der Mond.
+
+Acrostic: zu
+Result: SUCCESS
+Result Text: Zaudern Sie völlig ausgeschlossen -flüsterte der Sekundant, »sofort z-
+u begreifen, daß Sie im königlichen Garten sind. Jetzt noch zu leben,
+heißt nur bedingt und halb ein Lebender zu sein.« Vaudreuil trat mit
+einer Verbeugung zurück. Ein spöttisches Lächeln kniff in seinen abwe-
+senden Mund. Dann kam der Laubengang. Das Dunkel der Nacht saß darin,
+unaufgescheucht vom Licht. Die weißen Hermen glommen aus der blauen
+Dämmerung. Nun paradierte ihn die Wache. Die Rondells mit den Fontänen
+waren beinahe rot, und die Tritone schäumten vor sich hin. Auf den
+Seiten verschwammen die Alleen flaumiger Dämmerung. Eine quecksilberne
+Säule stand das Schloß aufgerichtet neben ihm. Zwischen dem Schwung
+von zwei Koniferenästen zog sich der ganze Garten noch einmal
+zusammen. Dicht über dem tiefen Wasserspiegel am Ende der gesenkten
+Terrassen hing riesenhaft der Mond.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 148
+Number of Goal Checks: 148
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/17.txt=============================
+Current Time: Tue Jan 27 19:26:16 CET 2015
+Input String: Der andere warf sich aufs Knie. Schob mit dem Daumen die Lider des Liegenden probend herunter, sie schnellten wieder über die gläserne Pupille zurück und hefteten sich auf den Knauf des Degens, der ihn durch die Kehle auf das Rasenbeet kreuzigte. Da stand der andere auf, schüttelte die Haare. Das war vorbei. Er sah sich um, empfand atmend die helle Nacht, die mächtig gewölbt war. Mein Herr, sagte der Sekundant des Gegners. Er deutete mit lockerem Handgelenk auf den Toten. Der Marquis neigte den Kopf nach ihm. Was ihn erfüllte, verschwand. Die steife Gebärde des Todes löschte die Wut des Abenteuers. Er sah auf, die Seele nicht mehr zusammengezogen. Wie schien der Mond feurig und entflammte purpurrot die Zweige.
+
+Input Text: Der andere warf sich aufs Knie. Schob mit dem Daumen die Lider des
+Liegenden probend herunter, sie schnellten wieder über die gläserne
+Pupille zurück und hefteten sich auf den Knauf des Degens, der ihn
+durch die Kehle auf das Rasenbeet kreuzigte. Da stand der andere auf,
+schüttelte die Haare. Das war vorbei. Er sah sich um, empfand atmend
+die helle Nacht, die mächtig gewölbt war. Mein Herr, sagte der
+Sekundant des Gegners. Er deutete mit lockerem Handgelenk auf den
+Toten. Der Marquis neigte den Kopf nach ihm. Was ihn erfüllte,
+verschwand. Die steife Gebärde des Todes löschte die Wut des
+Abenteuers. Er sah auf, die Seele nicht mehr zusammengezogen. Wie
+schien der Mond feurig und entflammte purpurrot die Zweige.
+
+Acrostic: Der
+Result: SUCCESS
+Result Text: Der andere warf sich aufs Knie. Schob mit dem Daumen die Lider d-
+es Liegenden probend herunter, sie schnellten wieder über die gläse-
+rne Pupille zurück und hefteten sich auf den Knauf des Degens, der ihn
+durch die Kehle auf das Rasenbeet kreuzigte. Da stand der andere auf,
+schüttelte die Haare. Das war vorbei. Er sah sich um, empfand atmend
+die helle Nacht, die mächtig gewölbt war. Mein Herr, sagte der
+Sekundant des Gegners. Er deutete mit lockerem Handgelenk auf den
+Toten. Der Marquis neigte den Kopf nach ihm. Was ihn erfüllte,
+verschwand. Die steife Gebärde des Todes löschte die Wut des
+Abenteuers. Er sah auf, die Seele nicht mehr zusammengezogen. Wie
+schien der Mond feurig und entflammte purpurrot die Zweige.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 1129
+Number of Goal Checks: 1129
+Execution Time: 19
+
+Input Text: Der andere warf sich aufs Knie. Schob mit dem Daumen die Lider des
+Liegenden probend herunter, sie schnellten wieder über die gläserne
+Pupille zurück und hefteten sich auf den Knauf des Degens, der ihn
+durch die Kehle auf das Rasenbeet kreuzigte. Da stand der andere auf,
+schüttelte die Haare. Das war vorbei. Er sah sich um, empfand atmend
+die helle Nacht, die mächtig gewölbt war. Mein Herr, sagte der
+Sekundant des Gegners. Er deutete mit lockerem Handgelenk auf den
+Toten. Der Marquis neigte den Kopf nach ihm. Was ihn erfüllte,
+verschwand. Die steife Gebärde des Todes löschte die Wut des
+Abenteuers. Er sah auf, die Seele nicht mehr zusammengezogen. Wie
+schien der Mond feurig und entflammte purpurrot die Zweige.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Der andere warf sich aufs Knie. Schob mit dem Daumen die Lider d-
+es Liegenden probend herunter, sie schnellten wieder über die gläse-
+rne Pupille zurück und hefteten sich auf den Knauf des Degens, der ihn
+durch die Kehle auf das Rasenbeet kreuzigte. Da stand der andere auf,
+schüttelte die Haare. Das war vorbei. Er sah sich um, empfand atmend
+die helle Nacht, die mächtig gewölbt war. Mein Herr, sagte der
+Sekundant des Gegners. Er deutete mit lockerem Handgelenk auf den
+Toten. Der Marquis neigte den Kopf nach ihm. Was ihn erfüllte,
+verschwand. Die steife Gebärde des Todes löschte die Wut des
+Abenteuers. Er sah auf, die Seele nicht mehr zusammengezogen. Wie
+schien der Mond feurig und entflammte purpurrot die Zweige.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 1129
+Number of Goal Checks: 1129
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/16.txt=============================
+Current Time: Tue Jan 27 19:29:41 CET 2015
+Input String: Nun stiegen sie schon die zweite Stufenreihe hinunter. Immer sahen sie auf der anderen Seite die schwarzen Schatten, die sich wie sie selbst bewegten. Die Wasser rauschten langsam. Als sie die dritte Terrasse erreichten, kehrten sie um nach der anderen Seite, die schwarzen Schatten schwenkten und traten auf sie zu. Da kam aus dem See unten ein silberner Strahl, er glühte auf, Licht strömte die Neigung der Rasenterrasse herauf. Das Schloß über ihnen schlug eine Mondflamme in den Himmel. Zwei Herren traten zur Seite, die anderen bogen Halbkreise um die Gegner, die die Mäntel abwarfen und in weißen Samthosen, die Brust offen unter dem Hemd, sich gegenüberstanden. Ein flüsterndes Signal überklirrte das Metall. Aus dem dunklen Laubgang stöhnte ein Vogel. Ein Mann fiel um, den Säbel in der Gurgel, die Augen nach oben gebrochen.
+
+Input Text: Nun stiegen sie schon die zweite Stufenreihe hinunter. Immer sahen
+sie auf der anderen Seite die schwarzen Schatten, die sich wie sie
+selbst bewegten. Die Wasser rauschten langsam. Als sie die dritte
+Terrasse erreichten, kehrten sie um nach der anderen Seite, die
+schwarzen Schatten schwenkten und traten auf sie zu. Da kam aus dem
+See unten ein silberner Strahl, er glühte auf, Licht strömte die
+Neigung der Rasenterrasse herauf. Das Schloß über ihnen schlug eine
+Mondflamme in den Himmel. Zwei Herren traten zur Seite, die anderen
+bogen Halbkreise um die Gegner, die die Mäntel abwarfen und in weißen
+Samthosen, die Brust offen unter dem Hemd, sich gegenüberstanden. Ein
+flüsterndes Signal überklirrte das Metall. Aus dem dunklen Laubgang
+stöhnte ein Vogel. Ein Mann fiel um, den Säbel in der Gurgel, die
+Augen nach oben gebrochen.
+
+Acrostic: Nun
+Result: SUCCESS
+Result Text: Nun stiegen sie schon die zweite Stufenreihe hinunter.
+unablässig sahen weiblicher mensch auf der anderen Seite die schwarze-
+n Schatten, die sich wie sie selbst bewegten. Die Wasser rauschten la-
+ngsam. Als sie die dritte Terrasse erreichten, kehrten sie um nach de-
+r anderen Seite, die schwarzen Schatten schwenkten und traten auf sie
+zu. Da kam aus dem See unten ein silberner Strahl, er glühte auf, Lic-
+ht strömte die Neigung der Rasenterrasse herauf. Das Schloß über ihne-
+n schlug eine Mondflamme in den Himmel. Zwei Herren traten zur Seite,
+die anderen bogen Halbkreise um die Gegner, die die Mäntel abwarfen u-
+nd in weißen Samthosen, die Brust offen unter dem Hemd, sich gegenübe-
+rstanden. Ein flüsterndes Signal überklirrte das Metall. Aus dem dunk-
+len Laubgang stöhnte ein Vogel. Ein Mann fiel um, den Säbel in der Gu-
+rgel, die Augen nach oben gebrochen.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 3174
+Number of Goal Checks: 3174
+Execution Time: 22
+
+Input Text: Nun stiegen sie schon die zweite Stufenreihe hinunter. Immer sahen
+sie auf der anderen Seite die schwarzen Schatten, die sich wie sie
+selbst bewegten. Die Wasser rauschten langsam. Als sie die dritte
+Terrasse erreichten, kehrten sie um nach der anderen Seite, die
+schwarzen Schatten schwenkten und traten auf sie zu. Da kam aus dem
+See unten ein silberner Strahl, er glühte auf, Licht strömte die
+Neigung der Rasenterrasse herauf. Das Schloß über ihnen schlug eine
+Mondflamme in den Himmel. Zwei Herren traten zur Seite, die anderen
+bogen Halbkreise um die Gegner, die die Mäntel abwarfen und in weißen
+Samthosen, die Brust offen unter dem Hemd, sich gegenüberstanden. Ein
+flüsterndes Signal überklirrte das Metall. Aus dem dunklen Laubgang
+stöhnte ein Vogel. Ein Mann fiel um, den Säbel in der Gurgel, die
+Augen nach oben gebrochen.
+
+Acrostic: nicht
+Result: SUCCESS
+Result Text: Nun stiegen sie schon die zweite Stufenreihe hinunter. in zeit und ew-
+igkeit sahen sie auf der anderen Seite die schwarzen Schatten, die si-
+ch wie sie selbst bewegten. Die Wasser rauschten langsam. Als weiblic-
+he persönlichkeit die dritte Terrasse erreichten, kehr-
+ten sie um nach der anderen Seite, die schwarzen Schatten
+schwenkten und traten auf sie zu. Da kam aus dem See unten ein
+silberner Strahl, er glühte auf, Licht strömte die Neigung der
+Rasenterrasse herauf. Das Schloß ueber ihnen schlug eine
+Mondflamme in den Himmel. Zwei Herren traten zur Seite, die anderen
+bogen Halbkreise um die Gegner, die die Maentel abwarfen auch in
+weissen Samthosen, die Brust offen unter dem Hemd, sich gegenue
+erstanden. Ein fluesterndes Signal ueberklirrte das Metall.
+Aus dem dunklen Laubgang stoehnte ein Vogel. Ein Mann fiel
+um, den Saebel in der Gurgel, die Augen n ch oben gebrochen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+SynonymOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+HyphenationOperation
+Number of Genereted Nodes: 202258
+Number of Goal Checks: 202258
+Execution Time: 182
+
+
+==========================================================
+
+
+=============================Text/Fernando/15.txt=============================
+Current Time: Tue Jan 27 19:30:02 CET 2015
+Input String: Den Größten von Allen ruft eine Schar französischer Soldaten wach, drei  Tage vor der Schlacht, die sie voraussehen, in der mehrere verschwinden  sollten. Sie sind in der Tiefe einer unterirdischen Kasematte: »Dort  erwartet man in völliger Dunkelheit die Nacht zum Aufbruch. Plötzlich haben  wir, meine Kameraden, die Unteroffiziere und ich, die Schauer der neun  Symphonien von Beethoven erweckt! Eine unaussprechliche Begeisterung  beseelte uns.« Dieser fast heilige Gesang, diese heroische Begeisterung in  einem solchen Augenblick, wie widerlegen sie die immer wiederholten  Theorien der Deutschen über die Grenzen des französischen Gefühls! Welcher  Dichter eines andern Volkes hat die Natur mit einem brüderlicheren Auge,  mit einem tiefern Widerhall im Herzen betrachtet, als der dessen Innerstes  sich hier ausspricht?
+
+Input Text: Den Größten von Allen ruft eine Schar französischer Soldaten wach,
+drei Tage vor der Schlacht, die sie voraussehen, in der mehrere
+verschwinden sollten. Sie sind in der Tiefe einer unterirdischen
+Kasematte: »Dort erwartet man in völliger Dunkelheit die Nacht zum
+Aufbruch. Plötzlich haben wir, meine Kameraden, die Unteroffiziere und
+ich, die Schauer der neun Symphonien von Beethoven erweckt! Eine
+unaussprechliche Begeisterung beseelte uns.« Dieser fast heilige
+Gesang, diese heroische Begeisterung in einem solchen Augenblick, wie
+widerlegen sie die immer wiederholten Theorien der Deutschen über die
+Grenzen des französischen Gefühls! Welcher Dichter eines andern Volkes
+hat die Natur mit einem brüderlicheren Auge, mit einem tiefern
+Widerhall im Herzen betrachtet, als der dessen Innerstes sich hier
+ausspricht?
+
+Acrostic: Den
+Result: SUCCESS
+Result Text: Den Größten von Allen ruft eine Schar französischer Soldaten munter h-
+erausbildung erden drei Tage vor der Schlacht, die sie voraussehen, i-
+n der mehrere verschwinden sollten. Sie sind in der Tiefe einer unter-
+irdischen Kasematte: »Dort erwartet man in völliger Dunkelheit die Na-
+cht zum Aufbruch. Plötzlich haben wir, meine Kameraden, die Unteroffi-
+ziere und ich, die Schauer der neun Symphonien von Beethoven erweckt!
+Eine unaussprechliche Begeisterung beseelte uns.« Dieser fast heilige
+Gesang, diese heroische Begeisterung in einem solchen Augenblick, wie
+widerlegen sie die immer wiederholten Theorien der Deutschen über die
+Grenzen des französischen Gefühls! Welcher Dichter eines andern Volkes
+hat die Natur mit einem brüderlicheren Auge, mit einem tiefern
+Widerhall im Herzen betrachtet, als der dessen Innerstes sich hier
+ausspricht?
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 1390
+Number of Goal Checks: 1390
+Execution Time: 20
+
+Input Text: Den Größten von Allen ruft eine Schar französischer Soldaten wach,
+drei Tage vor der Schlacht, die sie voraussehen, in der mehrere
+verschwinden sollten. Sie sind in der Tiefe einer unterirdischen
+Kasematte: »Dort erwartet man in völliger Dunkelheit die Nacht zum
+Aufbruch. Plötzlich haben wir, meine Kameraden, die Unteroffiziere und
+ich, die Schauer der neun Symphonien von Beethoven erweckt! Eine
+unaussprechliche Begeisterung beseelte uns.« Dieser fast heilige
+Gesang, diese heroische Begeisterung in einem solchen Augenblick, wie
+widerlegen sie die immer wiederholten Theorien der Deutschen über die
+Grenzen des französischen Gefühls! Welcher Dichter eines andern Volkes
+hat die Natur mit einem brüderlicheren Auge, mit einem tiefern
+Widerhall im Herzen betrachtet, als der dessen Innerstes sich hier
+ausspricht?
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Den Größten von Allen ruft eine Schar französischer Soldaten munter w-
+erden drei Tage vor der Schlacht, die sie voraussehen, in der meh-
+rere verschwinden sollten. Sie sind in der Tiefe einer unterirdischen
+Kasematte: »Dort erwartet man in völliger Dunkelheit die Nacht zum
+Aufbruch. Plötzlich haben wir, meine Kameraden, die Unteroffiziere und
+ich, die Schauer der neun Symphonien von Beethoven erweckt! Eine
+unaussprechliche Begeisterung beseelte uns.« Dieser fast heilige
+Gesang, diese heroische Begeisterung in einem solchen Augenblick, wie
+widerlegen sie die immer wiederholten Theorien der Deutschen über die
+Grenzen des französischen Gefühls! Welcher Dichter eines andern Volkes
+hat die Natur mit einem brüderlicheren Auge, mit einem tiefern
+Widerhall im Herzen betrachtet, als der dessen Innerstes sich hier
+ausspricht?
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 1190
+Number of Goal Checks: 1190
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/14.txt=============================
+Current Time: Tue Jan 27 19:30:55 CET 2015
+Input String: Durch diese der innerlichen, geistigen Bedeutung der Dinge zugewandte  Aufmerksamkeit, erscheint uns dieser Maler in seinen Briefen besonders als  ein Dichter, -- ein religiöser Dichter, der in der Welt das Wesen der Dinge  erfaßt, alle unaussprechlichen Arten des Seins; auch als ein Musiker, der  in den Schützengräben mit Beethoven, Händel, Schumann, Berlioz  zusammenlebt, deren Melodien und Gedanken er in sich trägt -- den »die  schönsten Symphonien mit ihrer Orchesterbegleitung« berauschen. Innere  Reichtümer, geheime Mächte des Trostes und der Freude, die in den trübsten  Stunden, in der Nacht und dem Schlamm der langen winterlichen Wachen, so  nahe zu der Seele zu reden vermögen oder sie mit einem Male in solche Höhen  und solche Fernen forttragen. Schumann, Beethoven: zwischen diesen  unsterblichen Geistern, die nur für alle Menschen zu singen wußten, und den  unmenschlichen Pedanten, welche die Schönheit des Krieges und das starre  Recht der Gewalt predigten, was bleibt noch Gemeinsames übrig? Haben wir  sie nicht uns zu eigen gemacht, diese Genien, dadurch, daß wir sie immer  tiefer verstanden und in uns eindringen ließen? Sind sie nicht unsere  Freunde geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten,  in denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle  wieder fließt?
+
+Input Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge zugewandte
+Aufmerksamkeit, erscheint uns dieser Maler in seinen Briefen besonders
+als ein Dichter, -ein religiöser Dichter, der in der Welt das Wesen
+der Dinge erfaßt, alle unaussprechlichen Arten des Seins; auch als ein
+Musiker, der in den Schützengräben mit Beethoven, Händel, Schumann,
+Berlioz zusammenlebt, deren Melodien und Gedanken er in sich trägt
+den »die schönsten Symphonien mit ihrer Orchesterbegleitung«
+berauschen. Innere Reichtümer, geheime Mächte des Trostes und der
+Freude, die in den trübsten Stunden, in der Nacht und dem Schlamm der
+langen winterlichen Wachen, so nahe zu der Seele zu reden vermögen
+oder sie mit einem Male in solche Höhen und solche Fernen forttragen.
+Schumann, Beethoven: zwischen diesen unsterblichen Geistern, die nur
+für alle Menschen zu singen wußten, und den unmenschlichen Pedanten,
+welche die Schönheit des Krieges und das starre Recht der Gewalt
+predigten, was bleibt noch Gemeinsames übrig? Haben wir sie nicht uns
+zu eigen gemacht, diese Genien, dadurch, daß wir sie immer tiefer
+verstanden und in uns eindringen ließen? Sind sie nicht unsere Freunde
+geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten, in
+denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle
+wieder fließt?
+
+Acrostic: Durch
+Result: SUCCESS
+Result Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge z-
+ugewandte Aufmerksamkeit, erscheint uns niemand anderer als weißbinde-
+r in seinen B- riefe- n besonders als ein Dichter, -ein religiöser Di-
+chter, der hip d- er Welt das Wesen der Dinge erfaßt, alle unaussprec-
+h- lichen Arten des Seins; a- uch als ein Musiker, der in den Schütze-
+ngr- äben mit Beethove- n, Händel, Schumann, Berlioz zusammenlebt, de-
+ren M- elodien und Gedanke- n er in sic- h trägt den »die schönsten S-
+ymphoni- en mit ihrer Orcheste- rbegleitung« berauschen. Innere Reich-
+tümer, ge- heime Mächte des Troste- s und der Freude, die in den trüb-
+sten Stunde- n, in der Nacht und dem S- chlamm der langen winterliche-
+n Wachen, so nahe zu der Seele zu reden vermögen oder sie mit einem M-
+ale in solche Höhen und solche Fernen fo- rttragen. Schumann, Beethov-
+en: zwischen d- iesen unsterblichen Geistern- , die nur für alle Mens-
+chen zu singen w- ußten, und den unmenschlichen Pedanten, welche die
+Schönheit des Krie- ges und das starre Recht der G- ewalt predigten,
+was bleibt noch Geme- insames übrig? Haben wir sie nic- ht uns zu eig-
+en gemacht, diese Geni- en, dadurch, daß wir sie immer tie- fer verst-
+anden und in uns eindrin- gen ließen? Sind sie nicht unsere Fr- eunde
+geworden? Begleiten sie u- ns nicht in alle gesegneten Einsamkeit- en-
+, in denen unser wahres Ich wieder zu leben beginnt, unsere innere Q
+elle wieder fließt?
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 8326
+Number of Goal Checks: 8326
+Execution Time: 52
+
+Input Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge zugewandte
+Aufmerksamkeit, erscheint uns dieser Maler in seinen Briefen besonders
+als ein Dichter, -ein religiöser Dichter, der in der Welt das Wesen
+der Dinge erfaßt, alle unaussprechlichen Arten des Seins; auch als ein
+Musiker, der in den Schützengräben mit Beethoven, Händel, Schumann,
+Berlioz zusammenlebt, deren Melodien und Gedanken er in sich trägt
+den »die schönsten Symphonien mit ihrer Orchesterbegleitung«
+berauschen. Innere Reichtümer, geheime Mächte des Trostes und der
+Freude, die in den trübsten Stunden, in der Nacht und dem Schlamm der
+langen winterlichen Wachen, so nahe zu der Seele zu reden vermögen
+oder sie mit einem Male in solche Höhen und solche Fernen forttragen.
+Schumann, Beethoven: zwischen diesen unsterblichen Geistern, die nur
+für alle Menschen zu singen wußten, und den unmenschlichen Pedanten,
+welche die Schönheit des Krieges und das starre Recht der Gewalt
+predigten, was bleibt noch Gemeinsames übrig? Haben wir sie nicht uns
+zu eigen gemacht, diese Genien, dadurch, daß wir sie immer tiefer
+verstanden und in uns eindringen ließen? Sind sie nicht unsere Freunde
+geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten, in
+denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle
+wieder fließt?
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge zug-
+ewandte Aufmerksamkeit, erscheint uns dieser Maler in seinen B-
+riefen besonders als ein Dichter, -ein religiöser Dichter, der in der
+Welt d- as Wesen der Dinge erfaßt, alle unaussprechlichen Arten des S-
+eins; au- ch als ein Musiker, der in den Schützengräben mit Beethoven-
+, Händel, Schumann, Berlioz zusammenlebt, deren Melodien und Gedanken
+er in sic- h trägt den »die schönsten Symphonien mit ihrer Orchesterb-
+egleitung« berauschen. Innere Reichtümer, geheime Mächte des Trostes
+und der Freude, die in den trübsten Stunden, in der Nacht und dem Sch-
+lamm der langen winterlichen Wachen, so nahe zu der Seele zu reden ve-
+rmögen oder sie mit einem Male in solche Höhen und solche Fernen fort-
+tragen. Schumann, Beethoven: zwischen diesen unsterblichen Geistern,
+die nur für alle Menschen zu singen wußten, und den unmenschlichen Pe-
+danten, welche die Schönheit des Krieges und das starre Recht der Gew-
+alt predigten, was bleibt noch Gemeinsames übrig? Haben wir sie nicht
+uns zu eigen gemacht, diese Genien, dadurch, daß wir sie immer tiefer
+verstanden und in uns eindringen ließen? Sind sie nicht unsere Freunde
+geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten, in
+denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle
+wieder fließt?
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 2741
+Number of Goal Checks: 2741
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/13.txt=============================
+Current Time: Tue Jan 27 19:30:58 CET 2015
+Input String: Durch diese der innerlichen, geistigen Bedeutung der Dinge zugewandte  Aufmerksamkeit, erscheint uns dieser Maler in seinen Briefen besonders als  ein Dichter, -- ein religiöser Dichter, der in der Welt das Wesen der Dinge  erfaßt, alle unaussprechlichen Arten des Seins; auch als ein Musiker, der  in den Schützengräben mit Beethoven, Händel, Schumann, Berlioz  zusammenlebt, deren Melodien und Gedanken er in sich trägt -- den »die  schönsten Symphonien mit ihrer Orchesterbegleitung« berauschen. Innere  Reichtümer, geheime Mächte des Trostes und der Freude, die in den trübsten  Stunden, in der Nacht und dem Schlamm der langen winterlichen Wachen, so  nahe zu der Seele zu reden vermögen oder sie mit einem Male in solche Höhen  und solche Fernen forttragen. Schumann, Beethoven: zwischen diesen  unsterblichen Geistern, die nur für alle Menschen zu singen wußten, und den  unmenschlichen Pedanten, welche die Schönheit des Krieges und das starre  Recht der Gewalt predigten, was bleibt noch Gemeinsames übrig? Haben wir  sie nicht uns zu eigen gemacht, diese Genien, dadurch, daß wir sie immer  tiefer verstanden und in uns eindringen ließen? Sind sie nicht unsere  Freunde geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten,  in denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle  wieder fließt?
+
+Input Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge zugewandte
+Aufmerksamkeit, erscheint uns dieser Maler in seinen Briefen besonders
+als ein Dichter, -ein religiöser Dichter, der in der Welt das Wesen
+der Dinge erfaßt, alle unaussprechlichen Arten des Seins; auch als ein
+Musiker, der in den Schützengräben mit Beethoven, Händel, Schumann,
+Berlioz zusammenlebt, deren Melodien und Gedanken er in sich trägt
+den »die schönsten Symphonien mit ihrer Orchesterbegleitung«
+berauschen. Innere Reichtümer, geheime Mächte des Trostes und der
+Freude, die in den trübsten Stunden, in der Nacht und dem Schlamm der
+langen winterlichen Wachen, so nahe zu der Seele zu reden vermögen
+oder sie mit einem Male in solche Höhen und solche Fernen forttragen.
+Schumann, Beethoven: zwischen diesen unsterblichen Geistern, die nur
+für alle Menschen zu singen wußten, und den unmenschlichen Pedanten,
+welche die Schönheit des Krieges und das starre Recht der Gewalt
+predigten, was bleibt noch Gemeinsames übrig? Haben wir sie nicht uns
+zu eigen gemacht, diese Genien, dadurch, daß wir sie immer tiefer
+verstanden und in uns eindringen ließen? Sind sie nicht unsere Freunde
+geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten, in
+denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle
+wieder fließt?
+
+Acrostic: Durch
+Result: SUCCESS
+Result Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge z-
+ugewandte Aufmerksamkeit, erscheint uns niemand anderer als weißbinde-
+r in seinen B- riefe- n besonders als ein Dichter, -ein religiöser Di-
+chter, der hip d- er Welt das Wesen der Dinge erfaßt, alle unaussprec-
+h- lichen Arten des Seins; a- uch als ein Musiker, der in den Schütze-
+ngr- äben mit Beethove- n, Händel, Schumann, Berlioz zusammenlebt, de-
+ren M- elodien und Gedanke- n er in sic- h trägt den »die schönsten S-
+ymphoni- en mit ihrer Orcheste- rbegleitung« berauschen. Innere Reich-
+tümer, ge- heime Mächte des Troste- s und der Freude, die in den trüb-
+sten Stunde- n, in der Nacht und dem S- chlamm der langen winterliche-
+n Wachen, so nahe zu der Seele zu reden vermögen oder sie mit einem M-
+ale in solche Höhen und solche Fernen fo- rttragen. Schumann, Beethov-
+en: zwischen d- iesen unsterblichen Geistern- , die nur für alle Mens-
+chen zu singen w- ußten, und den unmenschlichen Pedanten, welche die
+Schönheit des Krie- ges und das starre Recht der G- ewalt predigten,
+was bleibt noch Geme- insames übrig? Haben wir sie nic- ht uns zu eig-
+en gemacht, diese Geni- en, dadurch, daß wir sie immer tie- fer verst-
+anden und in uns eindrin- gen ließen? Sind sie nicht unsere Fr- eunde
+geworden? Begleiten sie u- ns nicht in alle gesegneten Einsamkeit- en-
+, in denen unser wahres Ich wieder zu leben beginnt, unsere innere Q
+elle wieder fließt?
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 8326
+Number of Goal Checks: 8326
+Execution Time: 2
+
+Input Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge zugewandte
+Aufmerksamkeit, erscheint uns dieser Maler in seinen Briefen besonders
+als ein Dichter, -ein religiöser Dichter, der in der Welt das Wesen
+der Dinge erfaßt, alle unaussprechlichen Arten des Seins; auch als ein
+Musiker, der in den Schützengräben mit Beethoven, Händel, Schumann,
+Berlioz zusammenlebt, deren Melodien und Gedanken er in sich trägt
+den »die schönsten Symphonien mit ihrer Orchesterbegleitung«
+berauschen. Innere Reichtümer, geheime Mächte des Trostes und der
+Freude, die in den trübsten Stunden, in der Nacht und dem Schlamm der
+langen winterlichen Wachen, so nahe zu der Seele zu reden vermögen
+oder sie mit einem Male in solche Höhen und solche Fernen forttragen.
+Schumann, Beethoven: zwischen diesen unsterblichen Geistern, die nur
+für alle Menschen zu singen wußten, und den unmenschlichen Pedanten,
+welche die Schönheit des Krieges und das starre Recht der Gewalt
+predigten, was bleibt noch Gemeinsames übrig? Haben wir sie nicht uns
+zu eigen gemacht, diese Genien, dadurch, daß wir sie immer tiefer
+verstanden und in uns eindringen ließen? Sind sie nicht unsere Freunde
+geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten, in
+denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle
+wieder fließt?
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Durch diese der innerlichen, geistigen Bedeutung der Dinge zug-
+ewandte Aufmerksamkeit, erscheint uns dieser Maler in seinen B-
+riefen besonders als ein Dichter, -ein religiöser Dichter, der in der
+Welt d- as Wesen der Dinge erfaßt, alle unaussprechlichen Arten des S-
+eins; au- ch als ein Musiker, der in den Schützengräben mit Beethoven-
+, Händel, Schumann, Berlioz zusammenlebt, deren Melodien und Gedanken
+er in sic- h trägt den »die schönsten Symphonien mit ihrer Orchesterb-
+egleitung« berauschen. Innere Reichtümer, geheime Mächte des Trostes
+und der Freude, die in den trübsten Stunden, in der Nacht und dem Sch-
+lamm der langen winterlichen Wachen, so nahe zu der Seele zu reden ve-
+rmögen oder sie mit einem Male in solche Höhen und solche Fernen fort-
+tragen. Schumann, Beethoven: zwischen diesen unsterblichen Geistern,
+die nur für alle Menschen zu singen wußten, und den unmenschlichen Pe-
+danten, welche die Schönheit des Krieges und das starre Recht der Gew-
+alt predigten, was bleibt noch Gemeinsames übrig? Haben wir sie nicht
+uns zu eigen gemacht, diese Genien, dadurch, daß wir sie immer tiefer
+verstanden und in uns eindringen ließen? Sind sie nicht unsere Freunde
+geworden? Begleiten sie uns nicht in alle gesegneten Einsamkeiten, in
+denen unser wahres Ich wieder zu leben beginnt, unsere innere Quelle
+wieder fließt?
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 2741
+Number of Goal Checks: 2741
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/11.txt=============================
+Current Time: Tue Jan 27 14:16:43 CET 2015
+Input String: Ich möchte nicht länger bei diesem Vergleiche verweilen. Vielleicht hat er durch einige Auszüge aus dem Ramayana den erhabenen Gedanken des uralten Asiens vermuten können. Und doch zeigt in der ganz modernen Färbung, in den bestimmten Formen und dem so französischen Fluß der Sprache die Seele, die sich in diesen Briefen offenbart, wie die Amiels, Michelets, Tolstois, Shelleys, eine tiefinnerliche Verwandtschaft mit dem zarten und mystischen Genius Indiens. Seltsame Verwandtschaft, die sich nicht allein in dem tiefen Gefühl und Verlangen nach dem Allgemeinen und Ewigen offenbart, sondern auch in dem unmittelbaren Mitempfinden mit allem, was Leben ist, in den Ergüssen der Liebe zu der großen mütterlichen Seele der Natur und allen ihren Erscheinungen.
+
+Input Text: Ich möchte nicht länger bei diesem Vergleiche verweilen. Vielleicht
+hat er durch einige Auszüge aus dem Ramayana den erhabenen Gedanken
+des uralten Asiens vermuten können. Und doch zeigt in der ganz
+modernen Färbung, in den bestimmten Formen und dem so französischen
+Fluß der Sprache die Seele, die sich in diesen Briefen offenbart, wie
+die Amiels, Michelets, Tolstois, Shelleys, eine tiefinnerliche
+Verwandtschaft mit dem zarten und mystischen Genius Indiens. Seltsame
+Verwandtschaft, die sich nicht allein in dem tiefen Gefühl und
+Verlangen nach dem Allgemeinen und Ewigen offenbart, sondern auch in
+dem unmittelbaren Mitempfinden mit allem, was Leben ist, in den
+Ergüssen der Liebe zu der großen mütterlichen Seele der Natur und
+allen ihren Erscheinungen.
+
+Acrostic: Ich
+Result: SUCCESS
+Result Text: Ich möchte nicht länger bei diesem Vergleiche verweilen. Viellei-
+cht hat er unter dach und fach einige Auszüge aus dem Ramayana den er-
+habenen Gedank- en des uralten Asiens vermuten können. Und doch zeigt
+in der ganz modernen Färbung, in den bestimmten Formen und dem so fra-
+nzösischen Fluß der Sprache die Seele, die sich in diesen Briefen off-
+enbart, wie die Amiels, Michelets, Tolstois, Shelleys, eine tiefinner-
+liche Verwandtschaft mit dem zarten und mystischen Genius Indiens. Se-
+ltsame Verwandtschaft, die sich nicht allein in dem tiefen Gefühl und
+Verlangen nach dem Allgemeinen und Ewigen offenbart, sondern auch in
+dem unmittelbaren Mitempfinden mit allem, was Leben ist, in den
+Ergüssen der Liebe zu der großen mütterlichen Seele der Natur und
+allen ihren Erscheinungen.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 1798
+Number of Goal Checks: 1798
+Execution Time: 9
+
+Input Text: Ich möchte nicht länger bei diesem Vergleiche verweilen. Vielleicht
+hat er durch einige Auszüge aus dem Ramayana den erhabenen Gedanken
+des uralten Asiens vermuten können. Und doch zeigt in der ganz
+modernen Färbung, in den bestimmten Formen und dem so französischen
+Fluß der Sprache die Seele, die sich in diesen Briefen offenbart, wie
+die Amiels, Michelets, Tolstois, Shelleys, eine tiefinnerliche
+Verwandtschaft mit dem zarten und mystischen Genius Indiens. Seltsame
+Verwandtschaft, die sich nicht allein in dem tiefen Gefühl und
+Verlangen nach dem Allgemeinen und Ewigen offenbart, sondern auch in
+dem unmittelbaren Mitempfinden mit allem, was Leben ist, in den
+Ergüssen der Liebe zu der großen mütterlichen Seele der Natur und
+allen ihren Erscheinungen.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: Ich möchte wie auch immer nicht länger bei diesem Vergleiche verweile-
+n. Vielleicht hat er durch einige Auszüge aus dem Ramayana den erhabe-
+nen Gedanken des uralten Asiens vermuten können. Und doch zeigt in de-
+r ganz modernen Färbung, in den bestimmten Formen und dem so französi-
+schen Fluß der Sprache die Seele, die sich in diesen Briefen offenbar-
+t, wie die Amiels, Michelets, Tolstois, Shelleys, eine tiefinnerliche
+Verwandtschaft mit dem zarten und mystischen Genius Indiens. Seltsame
+Verwandtschaft, die sich nicht allein in dem tiefen Gefühl und
+Verlangen nach dem Allgemeinen und Ewigen offenbart, sondern auch in
+dem unmittelbaren Mitempfinden mit allem, was Leben ist, in den
+Ergüssen der Liebe zu der großen mütterlichen Seele der Natur und
+allen ihren Erscheinungen.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 109
+Number of Goal Checks: 109
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/10.txt=============================
+Current Time: Tue Jan 27 14:16:58 CET 2015
+Input String: Der schlichte, gewöhnliche Gehorsam der gegenwärtigen Verpflichtung, das ist auch der praktische Abschluß der höchsten Weisheit der Indier, nachdem sie den Wahn des Scheins entschleiert hat. Sich nicht in die Einsamkeit und Untätigkeit zurückziehen, weil man den Wahn erkannt hat, mit seinen Brüdern kämpfen, an seinem Platze und Range, mit offenen Augen, ohne Hoffnung auf Ruhm und Gewinn, einfach weil das Gesetz es so will, das ist der Befehl, den der Gott dem Krieger Arjuna gibt, als dieser zweifelt, ob er von der Betrachtung des Ewigen dem menschlichen Schreckbild der Schlacht sich zuwenden solle. »Für jedes Wesen ist Gesetz, das Werk zu vollführen, das seine eigene Form ihm vorschreibt. Jeder unterziehe sich dem Handeln, da er ein Teil ist dieser Natur, deren Beschaffenheit ihn zum handeln zwingt!« Arjuna spanne einfach seinen Bogen mit den andern Kshettryas! Der junge Franzose hatte keinen Augenblick gezweifelt. Aber in seinen Briefen sehen wir, wie er mitten in den Schrecken des Gemetzels und in den geduldigen und langweiligen Arbeiten des Minenganges oder des Schützengrabens seine Blicke »auf das Ewige« stets zu richten wußte.
+
+Input Text: Der schlichte, gewöhnliche Gehorsam der gegenwärtigen Verpflichtung,
+das ist auch der praktische Abschluß der höchsten Weisheit der Indier,
+nachdem sie den Wahn des Scheins entschleiert hat. Sich nicht in die
+Einsamkeit und Untätigkeit zurückziehen, weil man den Wahn erkannt
+hat, mit seinen Brüdern kämpfen, an seinem Platze und Range, mit
+offenen Augen, ohne Hoffnung auf Ruhm und Gewinn, einfach weil das
+Gesetz es so will, das ist der Befehl, den der Gott dem Krieger Arjuna
+gibt, als dieser zweifelt, ob er von der Betrachtung des Ewigen dem
+menschlichen Schreckbild der Schlacht sich zuwenden solle. »Für jedes
+Wesen ist Gesetz, das Werk zu vollführen, das seine eigene Form ihm
+vorschreibt. Jeder unterziehe sich dem Handeln, da er ein Teil ist
+dieser Natur, deren Beschaffenheit ihn zum handeln zwingt!« Arjuna
+spanne einfach seinen Bogen mit den andern Kshettryas! Der junge
+Franzose hatte keinen Augenblick gezweifelt. Aber in seinen Briefen
+sehen wir, wie er mitten in den Schrecken des Gemetzels und in den
+geduldigen und langweiligen Arbeiten des Minenganges oder des
+Schützengrabens seine Blicke »auf das Ewige« stets zu richten wußte.
+
+Acrostic: Der
+Result: SUCCESS
+Result Text: Der schlichte, gewöhnliche Gehorsam der gegenwärtigen V-
+erpflichtung, das ist auch der praktische Abschluß der höchsten geleh-
+rtheit eit der Indier, nachdem sie den Wahn des Scheins entschleiert
+hat. Si- ch nicht in die Einsamkeit und Untätigkeit zurückziehen, wei-
+l man den Wahn erkannt hat, mit seinen Brüdern kämpfen, an seinem Pla-
+tze und Ra- nge, mit offenen Augen, ohne Hoffnung auf Ruhm und Gewinn-
+, einfach we- il das Gesetz es so will, das ist der Befehl, den der G-
+ott dem Kriege- r Arjuna gibt, als dieser zweifelt, ob er von der Bet-
+rachtung des Ewi- gen dem menschlichen Schreckbild der Schlacht sich
+zuwenden solle. »F- ür jedes Wesen ist Gesetz, das Werk zu vollführen-
+, das seine eigene F- orm ihm vorschreibt. Jeder unterziehe sich dem
+Handeln, da er ein Tei- l ist dieser Natur, deren Beschaffenheit ihn
+zum handeln zwingt!« Arj- una spanne einfach seinen Bogen mit den and-
+ern Kshettryas! Der junge Franzose hatte keinen Augenblick gezweifelt-
+. Aber in seinen Briefen sehen wir, wie er mitten in den Schrecken de-
+s Gemetzels und in den geduldigen und langweiligen Arbeiten des Minen-
+ganges oder des Schützengrabens seine Blicke »auf das Ewige« stets z
+richten wußte.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 2519
+Number of Goal Checks: 2519
+Execution Time: 14
+
+Input Text: Der schlichte, gewöhnliche Gehorsam der gegenwärtigen Verpflichtung,
+das ist auch der praktische Abschluß der höchsten Weisheit der Indier,
+nachdem sie den Wahn des Scheins entschleiert hat. Sich nicht in die
+Einsamkeit und Untätigkeit zurückziehen, weil man den Wahn erkannt
+hat, mit seinen Brüdern kämpfen, an seinem Platze und Range, mit
+offenen Augen, ohne Hoffnung auf Ruhm und Gewinn, einfach weil das
+Gesetz es so will, das ist der Befehl, den der Gott dem Krieger Arjuna
+gibt, als dieser zweifelt, ob er von der Betrachtung des Ewigen dem
+menschlichen Schreckbild der Schlacht sich zuwenden solle. »Für jedes
+Wesen ist Gesetz, das Werk zu vollführen, das seine eigene Form ihm
+vorschreibt. Jeder unterziehe sich dem Handeln, da er ein Teil ist
+dieser Natur, deren Beschaffenheit ihn zum handeln zwingt!« Arjuna
+spanne einfach seinen Bogen mit den andern Kshettryas! Der junge
+Franzose hatte keinen Augenblick gezweifelt. Aber in seinen Briefen
+sehen wir, wie er mitten in den Schrecken des Gemetzels und in den
+geduldigen und langweiligen Arbeiten des Minenganges oder des
+Schützengrabens seine Blicke »auf das Ewige« stets zu richten wußte.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Der schlichte, gewöhnliche Gehorsam der gegenwärtigen V-
+erpflichtung, das ist auch der praktische Abschluß der höchsten geleh-
+rtheit eit der Indier, nachdem sie den Wahn des Scheins entschleiert
+hat. Si- ch nicht in die Einsamkeit und Untätigkeit zurückziehen, wei-
+l man den Wahn erkannt hat, mit seinen Brüdern kämpfen, an seinem Pla-
+tze und Ra- nge, mit offenen Augen, ohne Hoffnung auf Ruhm und Gewinn-
+, einfach we- il das Gesetz es so will, das ist der Befehl, den der G-
+ott dem Kriege- r Arjuna gibt, als dieser zweifelt, ob er von der Bet-
+rachtung des Ewi- gen dem menschlichen Schreckbild der Schlacht sich
+zuwenden solle. »F- ür jedes Wesen ist Gesetz, das Werk zu vollführen-
+, das seine eigene F- orm ihm vorschreibt. Jeder unterziehe sich dem
+Handeln, da er ein Tei- l ist dieser Natur, deren Beschaffenheit ihn
+zum handeln zwingt!« Arj- una spanne einfach seinen Bogen mit den and-
+ern Kshettryas! Der junge Franzose hatte keinen Augenblick gezweifelt-
+. Aber in seinen Briefen sehen wir, wie er mitten in den Schrecken de-
+s Gemetzels und in den geduldigen und langweiligen Arbeiten des Minen-
+ganges oder des Schützengrabens seine Blicke »auf das Ewige« stets z
+richten wußte.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 2519
+Number of Goal Checks: 2519
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/9.txt=============================
+Current Time: Tue Jan 27 14:32:05 CET 2015
+Input String: Bald werden das Geknatter der Maschinengewehre, der Donner der Sprengstoffe, das Geheul des Ansturms wieder anheben; man beginnt wieder zu morden und zu sterben. Welcher Gegensatz der menschlichen Wut und der ewigen heitern Ruhe! Mehr oder weniger dunkel, während eines kurzen Augenblickes, wird eine tiefsinnige Beziehung zwischen den einfachen Erscheinungen am Himmel und auf Erden, deren langsame Entwicklung sich begreifen läßt, und dem Beschauer hergestellt. Fühlt dann der Mensch, daß alles, was er sieht, er selbst ist, daß sein kleines Dasein und das Leben des Baumes, der dort im Schauer des Morgengrauens erbebt und dem Menschen zuzuwinken scheint, sich miteinander verbinden im Flusse des ewigen Lebens?
+
+Input Text: Bald werden das Geknatter der Maschinengewehre, der Donner der
+Sprengstoffe, das Geheul des Ansturms wieder anheben; man beginnt
+wieder zu morden und zu sterben. Welcher Gegensatz der menschlichen
+Wut und der ewigen heitern Ruhe! Mehr oder weniger dunkel, während
+eines kurzen Augenblickes, wird eine tiefsinnige Beziehung zwischen
+den einfachen Erscheinungen am Himmel und auf Erden, deren langsame
+Entwicklung sich begreifen läßt, und dem Beschauer hergestellt. Fühlt
+dann der Mensch, daß alles, was er sieht, er selbst ist, daß sein
+kleines Dasein und das Leben des Baumes, der dort im Schauer des
+Morgengrauens erbebt und dem Menschen zuzuwinken scheint, sich
+miteinander verbinden im Flusse des ewigen Lebens?
+
+Acrostic: Bald
+Result: TIMEOUT
+Number of Genereted Nodes: 1087410
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:72)
+Number of Goal Checks: 1087410
+Execution Time: 907
+
+Input Text: Bald werden das Geknatter der Maschinengewehre, der Donner der
+Sprengstoffe, das Geheul des Ansturms wieder anheben; man beginnt
+wieder zu morden und zu sterben. Welcher Gegensatz der menschlichen
+Wut und der ewigen heitern Ruhe! Mehr oder weniger dunkel, während
+eines kurzen Augenblickes, wird eine tiefsinnige Beziehung zwischen
+den einfachen Erscheinungen am Himmel und auf Erden, deren langsame
+Entwicklung sich begreifen läßt, und dem Beschauer hergestellt. Fühlt
+dann der Mensch, daß alles, was er sieht, er selbst ist, daß sein
+kleines Dasein und das Leben des Baumes, der dort im Schauer des
+Morgengrauens erbebt und dem Menschen zuzuwinken scheint, sich
+miteinander verbinden im Flusse des ewigen Lebens?
+
+Acrostic: bei
+Result: SUCCESS
+Result Text: Bald werden das Geknatter der Maschinengewehre, der Donner d-
+er Sprengstoffe, das Geheul des Ansturms wieder anheben; man beg-
+innt wieder zu morden und zu sterben. Welcher Gegensatz der menschlic-
+hen Wut und der ewigen heitern Ruhe! Mehr oder weniger dunkel, während
+eines kurzen Augenblickes, wird eine tiefsinnige Beziehung zwischen
+den einfachen Erscheinungen am Himmel und auf Erden, deren langsame
+Entwicklung sich begreifen läßt, und dem Beschauer hergestellt. Fühlt
+dann der Mensch, daß alles, was er sieht, er selbst ist, daß sein
+kleines Dasein und das Leben des Baumes, der dort im Schauer des
+Morgengrauens erbebt und dem Menschen zuzuwinken scheint, sich
+miteinander verbinden im Flusse des ewigen Lebens?
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 1461
+Number of Goal Checks: 1461
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/8.txt=============================
+Current Time: Tue Jan 27 14:32:06 CET 2015
+Input String: In wievielen französischen Briefen haben wir diese tiefe Erleuchtung getroffen! Sie ist sich immer gleich auf allen Stufen des Ausdrucks: bei jenem Bauern von Seine-et-Marne, den ich mit Namen nennen könnte, der vielleicht zum ersten Male in seinem Leben für die Glut des Sonnenunterganges ein Auge hat, -- bei jenem jungen Pariser, der bis dahin nur in Ausdrücken des Skepticismus und der Ironie schien reden zu können, und bei dem jungen Künstler, der dieses Gefühl in ergreifende Verse umsetzt und es bis zur erhabenen Vorstellung steigert, an der die ganze stoische Philosophie hängt. Durch soviele Unterschiede hindurch, bei allen, dem deutschen Schullehrer, dem Bauern, dem Städter, dem französischen Maler, offenbart sich eine gemeinsame Grundlage und der vergängliche Lebende, im Vorgefühl der ewigen Nacht, sieht den Sinn und die Schönheit der Welt in ihm sich erweitern. O Wunder der Welt! göttlicher Friede dieser Ebene, dieser Bäume, dieser fernen Hügel, -- wie man dieser unendlichen Stille lauscht! Oder es ist die nächtliche Unermeßlichkeit, in der nichts als Feuersbrünste und ein Leuchten verbleibt. Unten ferne Glut von Bränden, oben die Sterne, ihre unwandelbaren Bilder, das Flimmern, die Harmonie und erhabene Ordnung des Weltalls.
+
+Input Text: In wievielen französischen Briefen haben wir diese tiefe Erleuchtung
+getroffen! Sie ist sich immer gleich auf allen Stufen des Ausdrucks:
+bei jenem Bauern von Seine-et-Marne, den ich mit Namen nennen könnte,
+der vielleicht zum ersten Male in seinem Leben für die Glut des
+Sonnenunterganges ein Auge hat, -bei jenem jungen Pariser, der bis
+dahin nur in Ausdrücken des Skepticismus und der Ironie schien reden
+zu können, und bei dem jungen Künstler, der dieses Gefühl in
+ergreifende Verse umsetzt und es bis zur erhabenen Vorstellung
+steigert, an der die ganze stoische Philosophie hängt. Durch soviele
+Unterschiede hindurch, bei allen, dem deutschen Schullehrer, dem
+Bauern, dem Städter, dem französischen Maler, offenbart sich eine
+gemeinsame Grundlage und der vergängliche Lebende, im Vorgefühl der
+ewigen Nacht, sieht den Sinn und die Schönheit der Welt in ihm sich
+erweitern. O Wunder der Welt! göttlicher Friede dieser Ebene, dieser
+Bäume, dieser fernen Hügel, -wie man dieser unendlichen Stille
+lauscht! Oder es ist die nächtliche Unermeßlichkeit, in der nichts als
+Feuersbrünste und ein Leuchten verbleibt. Unten ferne Glut von
+Bränden, oben die Sterne, ihre unwandelbaren Bilder, das Flimmern, die
+Harmonie und erhabene Ordnung des Weltalls.
+
+Acrostic: In
+Result: SUCCESS
+Result Text: In wievielen französischen Briefen haben wir diese tiefe Erleuchtu-
+ng getroffen! Sie ist sich immer gleich auf allen Stufen des Ausdruck-
+s: bei jenem Bauern von Seine-et-Marne, den ich mit Namen nennen könn-
+te, der vielleicht zum ersten Male in seinem Leben für die Glut des
+Sonnenunterganges ein Auge hat, -bei jenem jungen Pariser, der bis
+dahin nur in Ausdrücken des Skepticismus und der Ironie schien reden
+zu können, und bei dem jungen Künstler, der dieses Gefühl in
+ergreifende Verse umsetzt und es bis zur erhabenen Vorstellung
+steigert, an der die ganze stoische Philosophie hängt. Durch soviele
+Unterschiede hindurch, bei allen, dem deutschen Schullehrer, dem
+Bauern, dem Städter, dem französischen Maler, offenbart sich eine
+gemeinsame Grundlage und der vergängliche Lebende, im Vorgefühl der
+ewigen Nacht, sieht den Sinn und die Schönheit der Welt in ihm sich
+erweitern. O Wunder der Welt! göttlicher Friede dieser Ebene, dieser
+Bäume, dieser fernen Hügel, -wie man dieser unendlichen Stille
+lauscht! Oder es ist die nächtliche Unermeßlichkeit, in der nichts als
+Feuersbrünste und ein Leuchten verbleibt. Unten ferne Glut von
+Bränden, oben die Sterne, ihre unwandelbaren Bilder, das Flimmern, die
+Harmonie und erhabene Ordnung des Weltalls.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 56
+Number of Goal Checks: 56
+Execution Time: 0
+
+Input Text: In wievielen französischen Briefen haben wir diese tiefe Erleuchtung
+getroffen! Sie ist sich immer gleich auf allen Stufen des Ausdrucks:
+bei jenem Bauern von Seine-et-Marne, den ich mit Namen nennen könnte,
+der vielleicht zum ersten Male in seinem Leben für die Glut des
+Sonnenunterganges ein Auge hat, -bei jenem jungen Pariser, der bis
+dahin nur in Ausdrücken des Skepticismus und der Ironie schien reden
+zu können, und bei dem jungen Künstler, der dieses Gefühl in
+ergreifende Verse umsetzt und es bis zur erhabenen Vorstellung
+steigert, an der die ganze stoische Philosophie hängt. Durch soviele
+Unterschiede hindurch, bei allen, dem deutschen Schullehrer, dem
+Bauern, dem Städter, dem französischen Maler, offenbart sich eine
+gemeinsame Grundlage und der vergängliche Lebende, im Vorgefühl der
+ewigen Nacht, sieht den Sinn und die Schönheit der Welt in ihm sich
+erweitern. O Wunder der Welt! göttlicher Friede dieser Ebene, dieser
+Bäume, dieser fernen Hügel, -wie man dieser unendlichen Stille
+lauscht! Oder es ist die nächtliche Unermeßlichkeit, in der nichts als
+Feuersbrünste und ein Leuchten verbleibt. Unten ferne Glut von
+Bränden, oben die Sterne, ihre unwandelbaren Bilder, das Flimmern, die
+Harmonie und erhabene Ordnung des Weltalls.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: In wievielen französischen Briefen haben wir diese tiefe Erleuchtu-
+ng getroffen! Sie ist sich immer gleich auf allen Stufen des Ausdruck-
+s: bei jenem Bauern von Seine-et-Marne, den ich mit Namen nennen könn-
+te, der vielleicht zum ersten Male in seinem Leben für die Glut des
+Sonnenunterganges ein Auge hat, -bei jenem jungen Pariser, der bis
+dahin nur in Ausdrücken des Skepticismus und der Ironie schien reden
+zu können, und bei dem jungen Künstler, der dieses Gefühl in
+ergreifende Verse umsetzt und es bis zur erhabenen Vorstellung
+steigert, an der die ganze stoische Philosophie hängt. Durch soviele
+Unterschiede hindurch, bei allen, dem deutschen Schullehrer, dem
+Bauern, dem Städter, dem französischen Maler, offenbart sich eine
+gemeinsame Grundlage und der vergängliche Lebende, im Vorgefühl der
+ewigen Nacht, sieht den Sinn und die Schönheit der Welt in ihm sich
+erweitern. O Wunder der Welt! göttlicher Friede dieser Ebene, dieser
+Bäume, dieser fernen Hügel, -wie man dieser unendlichen Stille
+lauscht! Oder es ist die nächtliche Unermeßlichkeit, in der nichts als
+Feuersbrünste und ein Leuchten verbleibt. Unten ferne Glut von
+Bränden, oben die Sterne, ihre unwandelbaren Bilder, das Flimmern, die
+Harmonie und erhabene Ordnung des Weltalls.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 56
+Number of Goal Checks: 56
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/7.txt=============================
+Current Time: Tue Jan 27 14:35:03 CET 2015
+Input String: Feierliche Stimmung des Menschen, der eben eine lange Nachtwache verbracht hat, irgendwo auf Vorposten, und der hinter der grauen, schweigenden, nordischen Ebene dort, wo der unsichtbare Feind in der Erde vergraben ist, die rote Sonne noch einmal über diese Welt aufgehen sieht. »O herrliche Sonne, ich möchte dich noch einmal sehen!« schrieb am Abend des Tages, wo er in Frankreich einzog, ein junger schlesischer Soldat, der auf den Gefilden der Marne fiel und dessen Tagebuch veröffentlicht worden ist. Plötzlich entquillt dieser geheimnisvolle Herzenserguß, mitten unter pünktlichen deutschen Aufzeichnungen über Essen und Trinken, Tagemärsche, Fußleiden und der Aufzählung der verbrannten Dörfer.
+
+Input Text: Feierliche Stimmung des Menschen, der eben eine lange Nachtwache
+verbracht hat, irgendwo auf Vorposten, und der hinter der grauen,
+schweigenden, nordischen Ebene dort, wo der unsichtbare Feind in der
+Erde vergraben ist, die rote Sonne noch einmal über diese Welt
+aufgehen sieht. »O herrliche Sonne, ich möchte dich noch einmal
+sehen!« schrieb am Abend des Tages, wo er in Frankreich einzog, ein
+junger schlesischer Soldat, der auf den Gefilden der Marne fiel und
+dessen Tagebuch veröffentlicht worden ist. Plötzlich entquillt dieser
+geheimnisvolle Herzenserguß, mitten unter pünktlichen deutschen
+Aufzeichnungen über Essen und Trinken, Tagemärsche, Fußleiden und der
+Aufzählung der verbrannten Dörfer.
+
+Acrostic: Feierliche
+Result: SUCCESS
+Result Text: Feierliche Stimmung des Menschen, der ja nun mal eine lange Nachtwach-
+e verbracht hat, irgendwo nicht zugeschlossen Vorposten, und der h-
+inter der grauen, schweigenden, nordischen Ebene dort, da neben d-
+er unsicht- bare Feind in der Erde vergraben ist, die
+rote Sonne noch einmal reichlich diese Welt aufgehen sieht. »O herr-
+liche Sonne, was mich anbetrifft möchte dich noch ehedem sehen!« schr-
+ieb am Abend des Tages, nachdem er in Frankreich einzog, ein junger s-
+chles- ischer Soldat, solcher auf den Gefilden der Marne fiel zugleic-
+h des- sen Tagebuc- h veroeffentlicht worden ist. Ploetzlich
+entquillt dieser geheimnisvolle Herzenserguss, mitten unter
+puenktlichen deutschen Aufzeichnungen ueber Essen und
+Trinken, Tagemaersche, Fussleiden und der Auf aehlun-
+g der verbrannten D erfer.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+LineBreakOperation
+WrongHyphenationOperation
+SynonymOperation
+LineBreakOperation
+WrongHyphenationOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+SynonymOperation
+LineBreakOperation
+Number of Genereted Nodes: 346940
+Number of Goal Checks: 346940
+Execution Time: 176
+
+Input Text: Feierliche Stimmung des Menschen, der eben eine lange Nachtwache
+verbracht hat, irgendwo auf Vorposten, und der hinter der grauen,
+schweigenden, nordischen Ebene dort, wo der unsichtbare Feind in der
+Erde vergraben ist, die rote Sonne noch einmal über diese Welt
+aufgehen sieht. »O herrliche Sonne, ich möchte dich noch einmal
+sehen!« schrieb am Abend des Tages, wo er in Frankreich einzog, ein
+junger schlesischer Soldat, der auf den Gefilden der Marne fiel und
+dessen Tagebuch veröffentlicht worden ist. Plötzlich entquillt dieser
+geheimnisvolle Herzenserguß, mitten unter pünktlichen deutschen
+Aufzeichnungen über Essen und Trinken, Tagemärsche, Fußleiden und der
+Aufzählung der verbrannten Dörfer.
+
+Acrostic: für
+Result: SUCCESS
+Result Text: Feierliche Stimmung des Menschen, der eben eine dann kam eine lange d-
+ürre Nachtwache verbracht hat, irgendwo auf Vorposten, und der hinte-
+r der grauen, schweigenden, nordischen Ebene dort, wo der unsichtbare
+F- eind in der Erde vergraben ist, die rote Sonne noch einmal über di-
+ese Welt aufgehen sieht. »O herrliche Sonne, ich möchte dich noch ein-
+mal sehen!« schrieb am Abend des Tages, wo er in Frankreich einzog, e-
+in junger schlesischer Soldat, der auf den Gefilden der Marne fiel und
+dessen Tagebuch veröffentlicht worden ist. Plötzlich entquillt dieser
+geheimnisvolle Herzenserguß, mitten unter pünktlichen deutschen
+Aufzeichnungen über Essen und Trinken, Tagemärsche, Fußleiden und der
+Aufzählung der verbrannten Dörfer.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 1016
+Number of Goal Checks: 1016
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/6.txt=============================
+Current Time: Tue Jan 27 14:35:20 CET 2015
+Input String: Das Rührendste dabei ist vielleicht, daß wir in dem seelischen, so ernsten, so religiösen Empfinden, das sich hier ausspricht, Züge wiedererkennen, die uns in manchen Briefen von der Front auffielen. In diesen Wochen, diesen endlosen Wintermonaten, die sie im Schlamm oder im Schnee der Schützengräben verbracht, beim täglichen Anblick des Todes, beim Gedanken an den Tod, der vielleicht in demselben Augenblick naht, um ihnen für immer die Augen zu schließen, scheinen diese Kinder angefangen zu haben mit eindringlicherem, empfänglicherem Auge die ewigen Dinge zu betrachten, wie wenn sie alle, in der Fülle ihrer Kraft und ihrer Jugend, glaubten sie zum letzten Male zu betrachten:
+
+Input Text: Das Rührendste dabei ist vielleicht, daß wir in dem seelischen, so
+ernsten, so religiösen Empfinden, das sich hier ausspricht, Züge
+wiedererkennen, die uns in manchen Briefen von der Front auffielen. In
+diesen Wochen, diesen endlosen Wintermonaten, die sie im Schlamm oder
+im Schnee der Schützengräben verbracht, beim täglichen Anblick des
+Todes, beim Gedanken an den Tod, der vielleicht in demselben
+Augenblick naht, um ihnen für immer die Augen zu schließen, scheinen
+diese Kinder angefangen zu haben mit eindringlicherem, empfänglicherem
+Auge die ewigen Dinge zu betrachten, wie wenn sie alle, in der Fülle
+ihrer Kraft und ihrer Jugend, glaubten sie zum letzten Male zu
+betrachten:
+
+Acrostic: Das
+Result: SUCCESS
+Result Text: Das Rührendste dabei ist vielleicht, dass wir in dem seelischen, derm-
+aßen ernsten, auf diese weise religioesen Empfinden, das sich hier au-
+sspricht, Zue- ge wiedererkennen, die uns in manchen Briefen von der
+Front auffielen- . In diesen Wochen, diesen endlosen Wintermonaten, d-
+ie sie im Schlamm oder im Schnee der Schuetzengraeben verbracht, beim
+taeglichen Anblic- k des Todes, beim Gedanken an den Tod, der viellei-
+cht in demselben Augenblick naht, um ihnen fuer immer die Augen zu sc-
+hliessen, scheinen diese Kinder angefangen zu haben mit eindringliche-
+rem, empfaenglicher- em Auge die ewigen Dinge zu betrachten, wie wenn
+sie alle, in der Fue- lle ihrer Kraft und ihrer Jugend, glaubten sie
+zum letzten Male zu betrachten:
+
+Applied Operators (In Final Result): WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 28076
+Number of Goal Checks: 28076
+Execution Time: 17
+
+Input Text: Das Rührendste dabei ist vielleicht, daß wir in dem seelischen, so
+ernsten, so religiösen Empfinden, das sich hier ausspricht, Züge
+wiedererkennen, die uns in manchen Briefen von der Front auffielen. In
+diesen Wochen, diesen endlosen Wintermonaten, die sie im Schlamm oder
+im Schnee der Schützengräben verbracht, beim täglichen Anblick des
+Todes, beim Gedanken an den Tod, der vielleicht in demselben
+Augenblick naht, um ihnen für immer die Augen zu schließen, scheinen
+diese Kinder angefangen zu haben mit eindringlicherem, empfänglicherem
+Auge die ewigen Dinge zu betrachten, wie wenn sie alle, in der Fülle
+ihrer Kraft und ihrer Jugend, glaubten sie zum letzten Male zu
+betrachten:
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Das Rührendste dabei ist vielleicht, daß wir in dem seelischen, so
+ernsten, für den fall, dass religiösen Empfinden, das sich hier aussp-
+richt, Züge wiedererkennen, die uns in manchen Briefen von der Front
+auffielen. In diesen Wochen, diesen endlosen Wintermonaten, die sie i-
+m Schlamm oder im Schnee der Schützengräben verbracht, beim täglichen
+Anblick des Todes, beim Gedanken an den Tod, der vielleicht in demsel-
+ben Augenblick naht, um ihnen für immer die Augen zu schließen, schei-
+nen diese Kinder angefangen zu haben mit eindringlicherem, empfänglic-
+herem Auge die ewigen Dinge zu betrachten, wie wenn sie alle, in der
+Fülle ihrer Kraft und ihrer Jugend, glaubten sie zum letzten Male zu
+betrachten:
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 258
+Number of Goal Checks: 258
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/5.txt=============================
+Current Time: Tue Jan 27 14:35:21 CET 2015
+Input String: In dem Atelier, unter den Bildern, in denen der junge Mann seine Träume, seine Künstlervisionen festgelegt hatte, habe ich, liebevoll auf einem Tische geordnet, alle die weißen Kärtchen gesehen, aus denen dieser Briefwechsel besteht. Schwelgende Gegenwart. . . . Ich wußte damals noch nicht, welche Seele sich hier in ihrer Fülle ausgedrückt hat, um auf diesem Wege an den häuslichen Herd zurückzukehren: eine Seele, die dazu bestimmt war, dessen bin ich überzeugt, sich weit über den kleinen Kreis der Verwandten hinaus zu ergießen und weithin auf die Menschen zu strahlen. Die Seele eines fertigen Künstlers, aber auch eines Dichters, mit der Schüchternheit eines Jünglings, der schon mit dreizehn Jahren die Schule für das Atelier verlassen hat und ganz allein gelernt hat das, was ihn bewegt, in Tönen auszudrücken, deren Schönheit der Leser wird zu würdigen wissen. Herzensgüte, inbrünstige Verehrung der Natur, mystisches Verstehen ihrer Erscheinungsformen und ihrer ewigen Sprache, das ist es, was die Deutschen, die sich die Erben Göthes und Beethovens nennen, allein zu besitzen glauben und was uns in diesen, von einem jungen Franzosen für seine Teuersten und für sich geschriebenen Briefen ergreift.
+
+Input Text: In dem Atelier, unter den Bildern, in denen der junge Mann seine
+Träume, seine Künstlervisionen festgelegt hatte, habe ich, liebevoll
+auf einem Tische geordnet, alle die weißen Kärtchen gesehen, aus denen
+dieser Briefwechsel besteht. Schwelgende Gegenwart. . . . Ich wußte
+damals noch nicht, welche Seele sich hier in ihrer Fülle ausgedrückt
+hat, um auf diesem Wege an den häuslichen Herd zurückzukehren: eine
+Seele, die dazu bestimmt war, dessen bin ich überzeugt, sich weit über
+den kleinen Kreis der Verwandten hinaus zu ergießen und weithin auf
+die Menschen zu strahlen. Die Seele eines fertigen Künstlers, aber
+auch eines Dichters, mit der Schüchternheit eines Jünglings, der schon
+mit dreizehn Jahren die Schule für das Atelier verlassen hat und ganz
+allein gelernt hat das, was ihn bewegt, in Tönen auszudrücken, deren
+Schönheit der Leser wird zu würdigen wissen. Herzensgüte, inbrünstige
+Verehrung der Natur, mystisches Verstehen ihrer Erscheinungsformen und
+ihrer ewigen Sprache, das ist es, was die Deutschen, die sich die
+Erben Göthes und Beethovens nennen, allein zu besitzen glauben und was
+uns in diesen, von einem jungen Franzosen für seine Teuersten und für
+sich geschriebenen Briefen ergreift.
+
+Acrostic: In
+Result: SUCCESS
+Result Text: In dem Atelier, unter den Bildern, in denen der junge Mann sei-
+ne Träume, seine Künstlervisionen festgelegt hatte, habe ich, liebevo-
+ll auf einem Tische geordnet, alle die weißen Kärtchen gesehen, aus d-
+enen dieser Briefwechsel besteht. Schwelgende Gegenwart. . . . Ich wu-
+ßte damals noch nicht, welche Seele sich hier in ihrer Fülle ausgedrü-
+ckt hat, um auf diesem Wege an den häuslichen Herd zurückzukehren: ei-
+ne Seele, die dazu bestimmt war, dessen bin ich überzeugt, sich weit
+über den kleinen Kreis der Verwandten hinaus zu ergießen und weithin
+auf die Menschen zu strahlen. Die Seele eines fertigen Künstlers, aber
+auch eines Dichters, mit der Schüchternheit eines Jünglings, der schon
+mit dreizehn Jahren die Schule für das Atelier verlassen hat und ganz
+allein gelernt hat das, was ihn bewegt, in Tönen auszudrücken, deren
+Schönheit der Leser wird zu würdigen wissen. Herzensgüte, inbrünstige
+Verehrung der Natur, mystisches Verstehen ihrer Erscheinungsformen und
+ihrer ewigen Sprache, das ist es, was die Deutschen, die sich die
+Erben Göthes und Beethovens nennen, allein zu besitzen glauben und was
+uns in diesen, von einem jungen Franzosen für seine Teuersten und für
+sich geschriebenen Briefen ergreift.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 48
+Number of Goal Checks: 48
+Execution Time: 0
+
+Input Text: In dem Atelier, unter den Bildern, in denen der junge Mann seine
+Träume, seine Künstlervisionen festgelegt hatte, habe ich, liebevoll
+auf einem Tische geordnet, alle die weißen Kärtchen gesehen, aus denen
+dieser Briefwechsel besteht. Schwelgende Gegenwart. . . . Ich wußte
+damals noch nicht, welche Seele sich hier in ihrer Fülle ausgedrückt
+hat, um auf diesem Wege an den häuslichen Herd zurückzukehren: eine
+Seele, die dazu bestimmt war, dessen bin ich überzeugt, sich weit über
+den kleinen Kreis der Verwandten hinaus zu ergießen und weithin auf
+die Menschen zu strahlen. Die Seele eines fertigen Künstlers, aber
+auch eines Dichters, mit der Schüchternheit eines Jünglings, der schon
+mit dreizehn Jahren die Schule für das Atelier verlassen hat und ganz
+allein gelernt hat das, was ihn bewegt, in Tönen auszudrücken, deren
+Schönheit der Leser wird zu würdigen wissen. Herzensgüte, inbrünstige
+Verehrung der Natur, mystisches Verstehen ihrer Erscheinungsformen und
+ihrer ewigen Sprache, das ist es, was die Deutschen, die sich die
+Erben Göthes und Beethovens nennen, allein zu besitzen glauben und was
+uns in diesen, von einem jungen Franzosen für seine Teuersten und für
+sich geschriebenen Briefen ergreift.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: In dem Atelier, unter den Bildern, in denen der junge Mann sei-
+ne Träume, seine Künstlervisionen festgelegt hatte, habe ich, liebevo-
+ll auf einem Tische geordnet, alle die weißen Kärtchen gesehen, aus d-
+enen dieser Briefwechsel besteht. Schwelgende Gegenwart. . . . Ich wu-
+ßte damals noch nicht, welche Seele sich hier in ihrer Fülle ausgedrü-
+ckt hat, um auf diesem Wege an den häuslichen Herd zurückzukehren: ei-
+ne Seele, die dazu bestimmt war, dessen bin ich überzeugt, sich weit
+über den kleinen Kreis der Verwandten hinaus zu ergießen und weithin
+auf die Menschen zu strahlen. Die Seele eines fertigen Künstlers, aber
+auch eines Dichters, mit der Schüchternheit eines Jünglings, der schon
+mit dreizehn Jahren die Schule für das Atelier verlassen hat und ganz
+allein gelernt hat das, was ihn bewegt, in Tönen auszudrücken, deren
+Schönheit der Leser wird zu würdigen wissen. Herzensgüte, inbrünstige
+Verehrung der Natur, mystisches Verstehen ihrer Erscheinungsformen und
+ihrer ewigen Sprache, das ist es, was die Deutschen, die sich die
+Erben Göthes und Beethovens nennen, allein zu besitzen glauben und was
+uns in diesen, von einem jungen Franzosen für seine Teuersten und für
+sich geschriebenen Briefen ergreift.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 48
+Number of Goal Checks: 48
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/4.txt=============================
+Current Time: Tue Jan 27 14:35:29 CET 2015
+Input String: Die folgenden Briefe sind von einem jungen Maler geschrieben, der an der Front war von September bis Anfang April, wo er in einem der Kämpfe im Argonnerwald verschwunden ist. Soll man von ihm in der Vergangenheit oder in der Gegenwart sprechen? Wir wissen es nicht: seit dem Tage, wo sie die letzte von Schmutz befleckte Karte erreichte, welche den Angriff meldete, in dem er verschwinden sollte, -- welche quälende Stille für diese Frauen, die während acht Monaten nur von den fast täglichen Briefen lebten! Doch für wieviele Mütter und Frauen ist eine solche Qual heute das tägliche Los?
+
+Input Text: Die folgenden Briefe sind von einem jungen Maler geschrieben, der an
+der Front war von September bis Anfang April, wo er in einem der
+Kämpfe im Argonnerwald verschwunden ist. Soll man von ihm in der
+Vergangenheit oder in der Gegenwart sprechen? Wir wissen es nicht:
+seit dem Tage, wo sie die letzte von Schmutz befleckte Karte
+erreichte, welche den Angriff meldete, in dem er verschwinden sollte,
+-welche quälende Stille für diese Frauen, die während acht Monaten
+nur von den fast täglichen Briefen lebten! Doch für wieviele Mütter
+und Frauen ist eine solche Qual heute das tägliche Los?
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die folgenden Briefe sind von einem auf die welt bringen Maler geschr-
+ieben, der an der Front war von September bis Anfang April, wo er in
+einem der Kämpfe im Argonnerwald verschwunden ist. Soll man von ihm i-
+n der Vergangenheit oder in der Gegenwart sprechen? Wir wissen es nic-
+ht: seit dem Tage, wo sie die letzte von Schmutz befleckte Karte
+erreichte, welche den Angriff meldete, in dem er verschwinden sollte,
+-welche quälende Stille für diese Frauen, die während acht Monaten
+nur von den fast täglichen Briefen lebten! Doch für wieviele Mütter
+und Frauen ist eine solche Qual heute das tägliche Los?
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 70
+Number of Goal Checks: 70
+Execution Time: 8
+
+Input Text: Die folgenden Briefe sind von einem jungen Maler geschrieben, der an
+der Front war von September bis Anfang April, wo er in einem der
+Kämpfe im Argonnerwald verschwunden ist. Soll man von ihm in der
+Vergangenheit oder in der Gegenwart sprechen? Wir wissen es nicht:
+seit dem Tage, wo sie die letzte von Schmutz befleckte Karte
+erreichte, welche den Angriff meldete, in dem er verschwinden sollte,
+-welche quälende Stille für diese Frauen, die während acht Monaten
+nur von den fast täglichen Briefen lebten! Doch für wieviele Mütter
+und Frauen ist eine solche Qual heute das tägliche Los?
+
+Acrostic: der
+Result: SUCCESS
+Result Text: diese und jene folgenden Briefe sind von einem jungen Maler geschrieb-
+en, der an der Front war von September bis Anfang Ap-
+ril, wo er in einem der Kämpfe im Argonnerwald verschwunden ist.
+Soll man von ihm in der Vergangenheit oder in der Gegenwart sprechen?
+Wir wissen es nicht: seit dem Tage, wo sie die letzte von Schmutz
+befleckte Karte erreichte, welche den Angriff meldete, in dem er
+verschwinden sollte, -welche quälende Stille für diese Frauen, die
+während acht Monaten nur von den fast täglichen Briefen lebten! Doch
+für wieviele Mütter und Frauen ist eine solche Qual heute das tägliche
+Los?
+
+Applied Operators (In Final Result): SynonymOperation
+LineBreakOperation
+Number of Genereted Nodes: 993
+Number of Goal Checks: 993
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/3.txt=============================
+Current Time: Tue Jan 27 14:35:56 CET 2015
+Input String: Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur seine Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der nachdenkliche Betrachter weiß, daß die größten geistigen Epochen Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von Jena zu den schöpferischen des deutschen Lebens gehören. Und so wird seinem geschärften Auge nicht entgehen, wie auch heute hinter der zerstörten und zersetzten deutschen Außenwelt seelische und geistige Kräfte keimen -- in heiligem Trotz dem Elend und Leid der Gegenwart entkeimen -- die eine Verjüngung und Vertiefung, eine Erneuerung Deutschlands verheißen.
+
+Input Text: Deutsches Leben der Gegenwart -dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade
+die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von
+Jena zu den schöpferischen des deutschen Lebens gehören. Und so wird
+seinem geschärften Auge nicht entgehen, wie auch heute hinter der
+zerstörten und zersetzten deutschen Außenwelt seelische und geistige
+Kräfte keimen -in heiligem Trotz dem Elend und Leid der Gegenwart
+entkeimen -die eine Verjüngung und Vertiefung, eine Erneuerung
+Deutschlands verheißen.
+
+Acrostic: Deutsches
+Result: SUCCESS
+Result Text: Deutsches Leben der Gegenwart -dem feindlichen Blick, der währenddess-
+en seine Oberfläche streift, möchte scheinen, daß die Gegenwart nur a-
+usnahmsweise vom deutschen jemandes zuhause sein mehr vom deutschen S-
+terben zu melde- n hätte. Aber der nachdenkliche Betrachter weiß, daß
+selbige größten geis- tigen Epochen Deutschlands extra seinen politis-
+c- hen Niederlagen wuchse- n, daß vor wenigen momenten die Zeiten nac-
+h dem Dreißigj- ähr- igen Krieg, nach dem Zus- ammenbruch vonseiten J-
+ena zu den schöpferisc- hen d- es de- utschen Lebens gehöre- n. Und
+so wird seinem geschärften Auge nicht entgehen, wie auch heute
+hinter der zerstörten und zersetzten deutschen Außenwelt seelische
+und geistige Kräfte keimen -in heiligem Trotz dem Elend und Leid
+der Gegenwart entkeimen -die eine Verjüngung und Vertiefung,
+eine Erneuerung Deutschlands ver eißen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+LineBreakOperation
+Number of Genereted Nodes: 19080
+Number of Goal Checks: 19080
+Execution Time: 24
+
+Input Text: Deutsches Leben der Gegenwart -dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade
+die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von
+Jena zu den schöpferischen des deutschen Lebens gehören. Und so wird
+seinem geschärften Auge nicht entgehen, wie auch heute hinter der
+zerstörten und zersetzten deutschen Außenwelt seelische und geistige
+Kräfte keimen -in heiligem Trotz dem Elend und Leid der Gegenwart
+entkeimen -die eine Verjüngung und Vertiefung, eine Erneuerung
+Deutschlands verheißen.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Deutsches Leben der Gegenwart -dem feindlichen Blick, der währenddess-
+en seine äußere erscheinung streift, möchte scheinen, daß die Gegenwa-
+rt wenig vom deutschen Leben, mehr vom deutschen Sterben zu melden hä-
+tte. Aber der nachdenkliche Betrachter weiß, daß die größten geistige-
+n Epochen Deutschlands über seinen politischen Niederlagen wuchsen, d-
+aß gerade die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusamme-
+nbruch von Jena zu den schöpferischen des deutschen Lebens gehören. U-
+nd so wird seinem geschärften Auge nicht entgehen, wie auch heute hin-
+ter der zerstörten und zersetzten deutschen Außenwelt seelische und g-
+eistige Kräfte keimen -in heiligem Trotz dem Elend und Leid der Gegen-
+wart entkeimen -die eine Verjüngung und Vertiefung, eine Erneuerung
+Deutschlands verheißen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 11713
+Number of Goal Checks: 11713
+Execution Time: 2
+
+
+==========================================================
+
+
+=============================Text/Fernando/2.txt=============================
+Current Time: Tue Jan 27 14:35:56 CET 2015
+Input String: In der Dichtung, Musik, Philosophie, der Naturwissenschaft und  Wirtschaft drängen junge, schicksalstiefere Kräfte vor. Und so wenig  die Autoren dieses Buches einem bestimmten anderen Punkte sieht und  schafft, so leben und schaffen doch alle nicht im Gefühl eines Ausgangs  und Untergangs, sondern eines Anfangs und Übergangs, einer Zeitenwende,  in der dem deutschen Volke vielleicht gerade um seiner größeren Leiden  willen die größere, schwerere Aufgabe zugewiesen ist. 
+
+Input Text: In der Dichtung, Musik, Philosophie, der Naturwissenschaft und
+Wirtschaft drängen junge, schicksalstiefere Kräfte vor. Und so wenig
+die Autoren dieses Buches einem bestimmten anderen Punkte sieht und
+schafft, so leben und schaffen doch alle nicht im Gefühl eines
+Ausgangs und Untergangs, sondern eines Anfangs und Übergangs, einer
+Zeitenwende, in der dem deutschen Volke vielleicht gerade um seiner
+größeren Leiden willen die größere, schwerere Aufgabe zugewiesen ist.
+
+Acrostic: In
+Result: SUCCESS
+Result Text: In der Dichtung, Musik, Philosophie, der Naturwissenschaft u-
+nd Wirtschaft drängen junge, schicksalstiefere Kräfte vor. Und so wen-
+ig die Autoren dieses Buches einem bestimmten anderen Punkte sieht und
+schafft, so leben und schaffen doch alle nicht im Gefühl eines
+Ausgangs und Untergangs, sondern eines Anfangs und Übergangs, einer
+Zeitenwende, in der dem deutschen Volke vielleicht gerade um seiner
+größeren Leiden willen die größere, schwerere Aufgabe zugewiesen ist.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 19
+Number of Goal Checks: 19
+Execution Time: 0
+
+Input Text: In der Dichtung, Musik, Philosophie, der Naturwissenschaft und
+Wirtschaft drängen junge, schicksalstiefere Kräfte vor. Und so wenig
+die Autoren dieses Buches einem bestimmten anderen Punkte sieht und
+schafft, so leben und schaffen doch alle nicht im Gefühl eines
+Ausgangs und Untergangs, sondern eines Anfangs und Übergangs, einer
+Zeitenwende, in der dem deutschen Volke vielleicht gerade um seiner
+größeren Leiden willen die größere, schwerere Aufgabe zugewiesen ist.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: In der Dichtung, Musik, Philosophie, der Naturwissenschaft u-
+nd Wirtschaft drängen junge, schicksalstiefere Kräfte vor. Und so wen-
+ig die Autoren dieses Buches einem bestimmten anderen Punkte sieht und
+schafft, so leben und schaffen doch alle nicht im Gefühl eines
+Ausgangs und Untergangs, sondern eines Anfangs und Übergangs, einer
+Zeitenwende, in der dem deutschen Volke vielleicht gerade um seiner
+größeren Leiden willen die größere, schwerere Aufgabe zugewiesen ist.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 19
+Number of Goal Checks: 19
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/1.txt=============================
+Current Time: Tue Jan 27 14:36:03 CET 2015
+Input String: Von solchen Kräften will dies Buch uns Kunde geben, auf daß wir der inneren deutschen Welt gewiß und froh werden, wenn auch die äußere noch darniederliegt. Und es ist bedeutsam, zu sehen, daß diese Mächte durch den Krieg zwar erst ganz befreit und gefördert, aber nicht erst durch den Krieg geweckt sind. Schon seit der Jahrhundertwende regen sich Kräfte in Deutschland, die es aus der europäischen Epoche des Materialismus und Rationalismus, des Technizismus und Kapitalismus hinausführen wollen zu geistigem und seelischem Urgrund. 
+
+Input Text: Von solchen Kräften will dies Buch uns Kunde geben, auf daß wir der
+inneren deutschen Welt gewiß und froh werden, wenn auch die äußere
+noch darniederliegt. Und es ist bedeutsam, zu sehen, daß diese Mächte
+durch den Krieg zwar erst ganz befreit und gefördert, aber nicht erst
+durch den Krieg geweckt sind. Schon seit der Jahrhundertwende regen
+sich Kräfte in Deutschland, die es aus der europäischen Epoche des
+Materialismus und Rationalismus, des Technizismus und Kapitalismus
+hinausführen wollen zu geistigem und seelischem Urgrund.
+
+Acrostic: Von
+Result: SUCCESS
+Result Text: Von solchen Kräften will dies Buch uns Kunde geben,
+offen stehend daß wir der inneren deutschen Welt gewiß und froh werde-
+n, wenn auch die äußere noch darniederliegt. Und es ist bedeutsam, zu
+sehen, daß diese Mächte durch den Krieg zwar erst ganz befreit und ge-
+fördert, aber nicht erst durch den Krieg geweckt sind. Schon seit der
+Jahrhundertwende regen sich Kräfte in Deutschland, die es aus der
+europäischen Epoche des Materialismus und Rationalismus, des
+Technizismus und Kapitalismus hinausführen wollen zu geistigem und
+seelischem Urgrund.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 1415
+Number of Goal Checks: 1415
+Execution Time: 6
+
+Input Text: Von solchen Kräften will dies Buch uns Kunde geben, auf daß wir der
+inneren deutschen Welt gewiß und froh werden, wenn auch die äußere
+noch darniederliegt. Und es ist bedeutsam, zu sehen, daß diese Mächte
+durch den Krieg zwar erst ganz befreit und gefördert, aber nicht erst
+durch den Krieg geweckt sind. Schon seit der Jahrhundertwende regen
+sich Kräfte in Deutschland, die es aus der europäischen Epoche des
+Materialismus und Rationalismus, des Technizismus und Kapitalismus
+hinausführen wollen zu geistigem und seelischem Urgrund.
+
+Acrostic: von
+Result: SUCCESS
+Result Text: Von solchen Kräften will dies Buch uns Kunde geben,
+offen stehend daß wir der inneren deutschen Welt gewiß und froh werde-
+n, wenn auch die äußere noch darniederliegt. Und es ist bedeutsam, zu
+sehen, daß diese Mächte durch den Krieg zwar erst ganz befreit und ge-
+fördert, aber nicht erst durch den Krieg geweckt sind. Schon seit der
+Jahrhundertwende regen sich Kräfte in Deutschland, die es aus der
+europäischen Epoche des Materialismus und Rationalismus, des
+Technizismus und Kapitalismus hinausführen wollen zu geistigem und
+seelischem Urgrund.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 1415
+Number of Goal Checks: 1415
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Fernando/0.txt=============================
+Current Time: Tue Jan 27 14:51:05 CET 2015
+Input String: Deutsches Leben der Gegenwart -- dem feindlichen Blick, der nur seine Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der nachdenkliche Betrachter weiß, daß die größten geistigen Epochen Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von Jena zu den schöpferischen des deutschen Lebens gehören.
+
+Input Text: Deutsches Leben der Gegenwart -dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade
+die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von
+Jena zu den schöpferischen des deutschen Lebens gehören.
+
+Acrostic: Deutsches
+Result: TIMEOUT
+Number of Genereted Nodes: 962069
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:72)
+Number of Goal Checks: 962069
+Execution Time: 902
+
+Input Text: Deutsches Leben der Gegenwart -dem feindlichen Blick, der nur seine
+Oberfläche streift, möchte scheinen, daß die Gegenwart wenig vom
+deutschen Leben, mehr vom deutschen Sterben zu melden hätte. Aber der
+nachdenkliche Betrachter weiß, daß die größten geistigen Epochen
+Deutschlands über seinen politischen Niederlagen wuchsen, daß gerade
+die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusammenbruch von
+Jena zu den schöpferischen des deutschen Lebens gehören.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Deutsches Leben der Gegenwart -dem feindlichen Blick, der in keiner w-
+eise mal s- eine Oberfläche streift, möchte scheinen, daß die Gegenwa-
+rt wenig vom deutschen Leben, mehr vom deutschen Sterben zu melden hä-
+tte. Aber der nachdenkliche Betrachter weiß, daß die größten geistige-
+n Epochen Deutschlands über seinen politischen Niederlagen wuchsen, d-
+aß gerade die Zeiten nach dem Dreißigjährigen Krieg, nach dem Zusamme-
+nbruch von Jena zu den schöpferischen des deutschen Lebens gehören.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 2387
+Number of Goal Checks: 2387
+Execution Time: 0
+
+
+==========================================================
+
