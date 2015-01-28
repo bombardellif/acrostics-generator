@@ -2,7 +2,9 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{reportAlternative}
+\documentclass[11pt]{reportAlternative}
+
+\setlength{\parindent}{0em} 
 
 %\usepackage[german]{babel}
 \usepackage[utf8]{inputenc}
@@ -13,6 +15,11 @@
 \usepackage{alltt}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[nottoc]{tocbibind}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+\usepackage{caption}
+\usepackage{amsmath}
 
 \settocbibname{References}
 
@@ -55,7 +62,7 @@ Johannes Kirschnick \\
 Authors:\\
 Bruno Soares Fillmann () \\
 Fernando Bombardelli da Silva (bombardelli.f@mailbox.tu-berlin.de)\\
-Jürgen Bauer () \\
+Jürgen Bauer (jbauer@mailbox.tu-berlin.de) \\
 \vspace{2.5cm}William Bombardelli da Silva (wbombardellis@mailbox.tu-berlin.de)}
 
 \date{February 2$^{nd}$, 2015} % Insert date here if you want it to appear below your name
@@ -141,7 +148,6 @@ ascasdas
 %	Introduction and Motivation
 %----------------------------------------------------------------------------------------
 \chapter{Introduction and Motivation}
-lnmkm
 %----------------------------------------------------------------------------------------
 %	Description of own work
 %----------------------------------------------------------------------------------------
@@ -149,9 +155,199 @@ lnmkm
 
 \section{Problem Definition}
 
+
+
+
 \section{Modeling as Search Problem}
+In this section we show how to model ACROSTIC GENERATION as a search problem. Let $s$ be a text (for which we intend to generate an acrostic) and let $\mathcal{T}$ be the universe of all paraphrased versions of $s$. The idea is to represent the elements of $\mathcal{T}$ as states or equivalently as nodes of a tree, where the tree is constructed as follows:
+\begin{itemize}
+\item $s$ represents the root node
+
+\item if $n\in\mathcal{T}$ is a node, then its successor nodes are given by all nodes, which
+are produced by applying an paraphrasing operator $\phi$ to $n$.
+
+\end{itemize}
+
+A node $\gamma\in\mathcal{T}$ that already encodes the acrostic is called a goal node. The set of all goal nodes is denoted by $\Gamma$.\\
+Solving an instance of ACROSTIC GENERATION under the so-called state-space representation then means to find a path from $s$ to some goal node $\gamma\in\Gamma$. According to the 
+ACROSTIC GENERATION problem several question might arise, such as:
+
+\begin{itemize}
+
+\item  how to control the exploration of the search space?
+
+\item which solution candidate should be chosen?
+
+\item can we avoid that states are revisited?
+
+\end{itemize}
+
+To overcome these issues our strategy is to employ an $A^*$-algorithm. This algorithm performs a best-first search leading to a result with the best possible quality.  
+
+
 
 \section{Cost Measure}
+
+In order to apply the $A^*$-algorithm it is essential to define cost measures for the paraphrasing operators. These measures enable us to quantify the cost of each path and to define the heuristic. To define the cost measures, we first assign a constant value $q\in [0,1]$, named local quality, to each paraphrasing operation. The local quality values are on the one hand defined based on our experiences and on the other hand are inspired by the values given in \cite{Stein}. The local qualities are summarized in the following table:
+
+
+\begin{center}
+
+\begin{tabular}{|c|c|}\hline
+   Operator           & Local quality $q$ \\ \hline
+   LineBreak          & 0.9 \\ \hline
+   Hyphenation        & 0.8 \\ \hline
+   WordInsertionDeletion    & 0.7 \\ \hline
+   Synonym            & 0.3 \\ \hline
+   WrongHyphenation   & 0.4 \\ \hline
+   WrongSpelling      & 0.7 \\ \hline
+\end{tabular}
+
+\end{center}
+
+The cost of an operator $\phi$ is then defined as $1/q$ where $q$ denotes the local quality of $\phi$. In the following we will write $q(n_0,n_1)$ for the local quality of the operator, which transforms node $n_0$ into $n_1$.\\
+In order to apply the $A^*$-algorithm we need to define a cost estimation heuristic $f(n)=g(n)+h(n)$. Here, the function $g$ calculates the true cost from the start node $s$ to
+the node $n$, while $h$ underestimates the cost of the path from node $n$ to a goal node $\gamma\in\Gamma$. It is known that the $A^*$-algorithm finds an optimal (least cost) solution. If moreover, the function $h$ is monotonic, no node needs to be processed more than once (cf. \cite{AstarAlgorithm}). In this case the algorithm can be described as follows:\\
+
+First, we insert the start node into a priority queue. (The lower $f(n)$ for a given node $n$, the higher its priority.) As long as the queue is not empty we dequeue the element $n$ with the highest priority. If this element already encodes the acrostic, we are done! Otherwise we put $n$ in the
+visitedSet and generate its neighbors. For each neighbor of $n$ we check that it was not already visited. When this is true, and the neighbor node is not contained in the priority queue, we add it to the priority queue; if the neighbor node it contained in the priority queue, we update the f(n) value if necessary.\\
+
+A more precise formulation of the $A^*$-algorithm is given in the following pseudocode:\\
+
+\newpage
+
+\begin{algorithm}
+\caption{$A^*$-algorithm}\label{Astar}
+\begin{algorithmic}[1]
+\Function{$A^*$}{$start$, $acrostic$}
+
+
+
+
+\State $stateQueue\gets \{start\}$\Comment{Priority queue of nodes preferring nodes with lower cost}
+\State $visitedSet\gets \emptyset$\Comment{Hash Set of nodes already visited}
+
+\While{$stateQueue$ is not empty}     
+\State $current\gets stateQueue.pop()$\Comment{get first element and remove it}
+\If{$current$ encodes the $acrostic$}
+\State \Return $current$ 
+\EndIf
+
+\State add $current$ to $visitedSet$
+
+
+
+\ForAll{$successor$ in successor\_nodes($current$)} 
+
+		\If{$successor$ in $visitedSet$}
+			 \State continue
+		\EndIf
+			
+		\State
+		\State $\textrm{tentative\_g\_value} \gets g(current) + 1/q(current,successor)$		
+		\State
+
+
+
+		\If{$successor$ not in $stateQueue$ or $\mathrm{tentative\_g\_value} < g(successor)$}
+			\State $g(successor)\gets \mathrm{tentative\_g\_value}$
+			\State $f(successor)\gets g(successor) + h(successor)$
+			\If{$successor$ not in $stateQueue$}
+				\State add $successor$ to $stateQueue$
+			\EndIf
+		\EndIf
+
+			
+
+		
+
+
+	\EndFor
+
+
+			
+			
+	
+	
+	
+	
+	
+				
+			
+\EndWhile			 
+	
+
+
+
+
+\Return failure
+ 
+
+
+
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+
+After we have explained how the $A^*$-algorithm functions, we proceed with describing the semantics of the cost estimation function $f(n)=g(n) + h(n)$.\\
+Here, the function $g$ accumulates the true cost for the partial acrostic via a concrete path $s=n_0,n_1,\dots,n_k=n$, while $h(n)$ gives an underestimation of the cost for the remaining part of the acrostic. The function $f$ can be stated as:
+  
+\begin{displaymath}
+f(n)= \underbrace{\sum_{i=1}^k 1/q(n_{i-1},n_i)}_{g(n)} + 
+\underbrace{log_K(E(\tau(n)))\cdot \frac{1}{q_{\mathrm{max}}}}_{h(n)},
+\end{displaymath} 
+
+where $\tau(n)$ denotes the remaining acrostic $y$ that is associated with $n\in\mathcal{T}$. (If $x^{\prime}$ is the part of the acrostic $x$ that has already been constructed, then the remaining acrostic $y$ is given by $x=x^{\prime}y$.)\\
+The mapping $E$ is a measure for the difficulty or \emph{effort} for generating the acrostic $y$. It is defined by $E(y) = e(y_1)\cdots e(y_n)$, where $e(u)$, for a letter $u$, denotes the multiplicative inverse of the occurrence probability for $u$ as a first letter. The first letter probabilities can be found in \cite{FirstLetterFrequencies}.\\
+The logarithm base $K$ serves for normalization purposes. We define $K$ as the multiplicative inverse of the occurrence probability of the least frequent first letter in the remaining acrostic $y=\tau(n)$. In our example, we have $E(y)=K^{l_1}\cdots K^{l_n}$ with $0<l_i\leq 1$, this yields $log_K(E(y))=\sum_{i=1}^n l_i \leq n =|y|$, where $|y|$ means the number of letters in $y$.\\
+Finally, $q_{\mathrm{max}}$ is the maximum of the local operator qualities. \\
+
+
+Our choice of $h(n)$ entails two properties:
+
+\begin{enumerate}
+
+\item[(1)] it underestimates the length of the remaining acrostic and therefore ensures the admissibility characteristic. Here, we assume that the remaining acrostic $y$ could be solved in the best case within a number of $n$ steps. In each step an operator with a cost of at least $1/q_{\mathrm{max}}$ is applied.
+
+
+\item[(2)] it is monotonic, i.e. for each two nodes $n_1,n_2\in\mathcal{T}$, such that $n_2$ is a successor of $n_1$, we have $h(n_1)-h(n_2)\le 1/q(n_1,n_2)$.
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+To show the monotonicity of $h$ we consider two cases:\\
+1. If $h(n_1)-h(n_2)=0$ then the inequality $h(n_1)-h(n_2)\le 1/q(n_1,n_2)$ is obviously satisfied.\\
+2. If $h(n_1)-h(n_2)>0$ then one letter more, say $u$, of the acrostic has been generated. We can therefore write $\tau(n_1)=u\tau(n_2)$. Let $K_1$ and $K_2$ be the logarithm bases for computing $h(n_1)$ and $h(n_2)$, respectively. Then we have $K_1\ge K_2$, which yields the inequality
+\begin{align*}
+h(n_1)-h(n_2) &= log_{K_1}(\tau(n_1))-log_{K_2}(\tau(n_2))\\
+			  &= log_{K_1}(u\tau(n_2))-log_{K_2}(\tau(n_2))\\
+			  & \le log_{K_1}(u\tau(n_2))-log_{K_1}(\tau(n_2))\\
+			  &= (log_{K_1}(u)+log_{K_1}(\tau(n_2))-log_{K_1}(\tau(n_2))\\
+			  &= log_{K_1}(u) \\
+			  & \le 1 \le 1/q(n_1,n_2).
+\end{align*}
+Hence we have verified that $h$ is indeed monotonic.\\
+
+
+\textbf{Remark:} From the implementational point of view it might be possible that one operator generates more than one letter of the acrostic at a time. The reason for this is that an adjustment of the whole text is conducted after each operation, which could lead to formal difficulties with both admissibility as well as monotonicity. As an easy way out we suggest to modify the operator cost by adding it one up for each additional letter the operator generates.\\
+
+
+
+
+
+
+
+The above two properties guarantee that the $A^*$-algorithm finds an optimal (least cost) solution without processing any node twice (cf.\cite{AstarAlgorithm}).\\
+But the guarantee of optimality during best-first search might not be the ultimate goal.
+When running the algorithm we observed that often, say the first 2-3 letters of the acrostic were generated one after the other, but then the algorithm proceeds with a node in higher layers. The reason for this is that the heuristic $h$ underestimate the cost too rigorously. As a consequence, the best-first search degenerates to a breadth-first search. Hence, especially when computing power is a scarce resource one should better be off with a depth-preferring strategy.
+
 
 \section{Operators}
 most common according to the author
@@ -159,7 +355,7 @@ most common according to the author
 \subsection{Word Insertion or Deletion}
 The idea around this operator is to insert words in the text or delete words from it, in order to insert new letters and accomplish the goal acrostic or to remove words and change the position of words inside the text. \par
 
-To ilustrate the execution, consider the following text\footnote{This text was adapted for didactic purposes from \url{http://cornelia.siteware.ch/blog/wordpress/2008/11/03/sich-vorstellen-horverstehen}. Access in January, 2015}:
+To illustrate the execution, consider the following text\footnote{This text was adapted for didactic purposes from \url{http://cornelia.siteware.ch/blog/wordpress/2008/11/03/sich-vorstellen-horverstehen}. Access in January, 2015}:
 
 \begin{figure}[H]
 \begin{quote}
@@ -173,7 +369,7 @@ meine Schweseter ist elf.
 \caption{Example of word insertion application $-$ Original Text}
 \end{figure}
 
-After inserting the word \emph{"mir"} in the sentence \emph{"Ich kann nicht vorstellen"} in the first line and after breaking a line right before \emph{"Trotzdem"} the algorithm can reach the acrostic \emph{amt}. Note that the insertion of \emph{"mir"} was crutial for the result, once that the letter \emph{m} was not there.
+After inserting the word \emph{"mir"} in the sentence \emph{"Ich kann nicht vorstellen"} in the first line and after breaking a line right before \emph{"Trotzdem"} the algorithm can reach the acrostic \emph{amt}. Note that the insertion of \emph{"mir"} was crucial for the result, once that the letter \emph{m} was not there.
 
 \begin{figure}[H]
 \begin{quote}
@@ -269,16 +465,14 @@ Analog to the line break operation, in order to rearrange the lines we apply a g
 %	Evaluation of the Results
 %----------------------------------------------------------------------------------------
 \chapter{Evaluation of the Results}
-The goal of the evaluation of the developed application is to show that it is able to generate results of acrostics for texts written in the German language. So we analyze the success rate, the operation application rate and the influence of the several variations in the test cases. For that we split the evaluation in four battery of tests, basically it is the combination of two possible configuration: The search algorithm, which can be A* ($f(x) = g(x) + h(x)$) or best first A* ($f(x) = h(x)$); and the chosen acrostic, which can then be self-referential or the most common word that starts with the first letter of the text. This list of words was obtained from Wortschatz Universität Leipzig\footnote{\url{http://wortschatz.uni-leipzig.de/html/wliste.html}}.
+The goal of the evaluation of the developed application is to show that it is able to generate results of acrostics for texts written in the German language. So we analyze the success rate, the operation application rate and the influence of the several variations in the test cases. For that we split the evaluation in four battery of tests, basically it is the combination of two possible configuration: The search algorithm, which can be A* ($f(x) = g(x) + h(x)$) or greedy A* ($f(x) = h(x)$); and the chosen acrostic, which can then be self-referential or the most common word that starts with the first letter of the text. This list of words was obtained from Wortschatz Universität Leipzig\footnote{\url{http://wortschatz.uni-leipzig.de/html/wliste.html}}.
 
-The configuration on the search algorithm allows the program to be switched between caring, or not, about the quality of the applied operations. That means, when running it the mode best first A* all operations have maximal quality (minimal cost). That leads to a goal oriented computation, once the choice of the operation does not influence the choice of the solution path in the search space. In the other mode, it is possible to have an optimization oriented computation, which is achieved by running with the regular A* algorithm \cite{AStar}.
+The configuration on the search algorithm allows the program to be switched between caring, or not, about the quality of the applied operations. That means, when running it the mode greedy A* all operations have maximal quality (minimal cost). That leads to a goal oriented computation, once the choice of the operation does not influence the choice of the solution path in the search space. In the other mode, it is possible to have an optimization oriented computation, which is achieved by running with the regular A* algorithm \cite{AStar}.
 
 In order to vary the input domain, we ran test cases in two different possibilities: the so called, self-referential, where the acrostic is the first word in the input text; and the most common word, in which the acrostic is the word that has the highest occurrence probability and starts with the first letter of the input text. Note that, in every test case the first letter of the text and of the acrostic are equal, this is a crucial decision for the general success of the application, once that by \cite{Stein}, employing the same algorithm, less than 1\% of the test cases could generate results, whenever that condition was not held.
 
 \section{Experiment Setup}
-FROM WHERE DO THE TEXTS COME? AND THE MOST COMMON ACROSTICS?
-Limas-Korpus\footnote{\url{http://www.korpora.org/Limas/}}
-Gutenberg Project\footnote{\url{http://www.gutenberg.org/browse/languages/de}}
+First of all we selected a set of input examples for the application. For that two data sources were used: Limas-Korpus\footnote{\url{http://www.korpora.org/Limas/}} and the public domain books repository of the Gutenberg Project\footnote{\url{http://www.gutenberg.org/browse/languages/de}}. On the whole we ran the tests with a base of  100 test cases. As we have two possible acrostics for each text we were able to run a total of 200 different executions.
 
 We let the Redis database started in the same system where the tests run. The initialization of data into the key-value store server is realized once by the script that process the thesaurus and it took no more than a couple minutes to be successfully completed. For the consume of the NetSpeak API web service is required an internet connection. As advised by \cite{Stein}, we set line length constraints of $l_{min} = 50$ and $l_{max} = 70$ because of the flexibility it brings to operators like line break and hyphenation. As the application may run for a long time, we set a timeout for its execution, for that we chose arbitrarily 15 minutes, but it can eventually be increased or decreased according to the availability of resources and time from the user.
 
@@ -292,8 +486,8 @@ We let the Redis database started in the same system where the tests run. The in
 	\textbf{Configuration} & \textbf{Success Rate} & \textbf{Runtime} & \textbf{Nodes} & \textbf{Timeout Rate} \\ \hline
 		\textbf{A* + Self-reference}	& S	& S	& S	& S \\ \hline
 		\textbf{A* + Most Common}		& S	& S	& S	& S \\ \hline
-		\textbf{Best First A* + Self-reference}	& S & S	& S	& S \\ \hline
-		\textbf{Best First A* + Most Common}	& S & S	& S	& S \\
+		\textbf{Greedy A* + Self-reference}	& S & S	& S	& S \\ \hline
+		\textbf{Greedy A* + Most Common}	& S & S	& S	& S \\
 	\hline
 \end{tabular}
 \label{tab:results}
@@ -325,7 +519,7 @@ Einfacher wird es, wenn Sie wissen, was Sie wollen.
 \caption{Example of possible additional operator}
 \end{figure}
 
-Other possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first search, while if the computing resources are scarce the desired is a depth-first search. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implemenentation of a n-gram database locally may smooth the problem. \par
+Other possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first search, while if the computing resources are scarce the desired is a depth-first search. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implementation of a n-gram database locally may smooth the problem. \par
 
 The use of the Netspeak API seems to be another issue, once it does not produce many options for inserting or removing words. A solution would be the implementation of the complete Google n-gram database locally. Even though the use of context in form of n-gram are sometimes too restrictive. This could be therefore a discussion for future work.
 
@@ -352,9 +546,36 @@ The use of the Netspeak API seems to be another issue, once it does not produce 
 	Available on: $<$\url{http://redis.io}$>$.
 	Accessed in: January 2015.
 \bibitem{Sentrick}
-\url{http://sourceforge.net/projects/sentrick/}
+\emph{Sentrick}.
+Available on: \url{http://sourceforge.net/projects/sentrick/}
+Accessed in: January 2015.
+
+
 \bibitem{Hyphenation}
-\url{http://sourceforge.net/projects/texhyphj/}
+\emph{TexHyphJ}.
+Availabe on: \url{http://sourceforge.net/projects/texhyphj/}
+Accessed in: January 2015.
+
+\bibitem{FirstLetterFrequencies}
+\emph{Private Communication} with Rainer Perkuhn,
+Institut für Deutsche Sprache Programmbereich Korpuslinguistik, via Email, in Dezember 2014. He send us two files of an old study of Cyril Belica, including the first letter frequencies.  
+
+\bibitem{AstarAlgorithm}
+\url{http://de.wikipedia.org/wiki/A*-Algorithmus}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \bibitem{AStar}
 	Quasthoff, U.; M. Richter; C. Biemann. \emph{Corpus Portal for Search in Monolingual Corpora}. Proceedings of the fifth international conference on Language Resources and Evaluation, LREC 2006, Genoa, pp. 1799-1802.
 \bibitem{AStar}
