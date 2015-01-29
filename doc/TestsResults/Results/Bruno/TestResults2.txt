@@ -1,0 +1,1254 @@
+
+=============================Text/Bruno/1.txt=============================
+Current Time: Thu Jan 29 16:47:51 CET 2015
+Input String: Ich wollte mir heute den ganzen Tagnicht  sagen, daß ich sie erwartete.  Nun kann ich Fabricen geradebezahlen und  mißbrauche seine Gutheit nicht weiter.  Gestern sagte ermir: Morgen komm'  ich zu dir!  Es war mir nicht recht.  Ich wußte,daß er mich nicht mahnen  würde, und so mahnt mich seine Gegenwartjust doppelt.
+
+Input Text: Ich wollte mir heute den ganzen Tagnicht sagen, daß ich sie
+erwartete. Nun kann ich Fabricen geradebezahlen und mißbrauche seine
+Gutheit nicht weiter. Gestern sagte ermir: Morgen komm' ich zu dir! Es
+war mir nicht recht. Ich wußte,daß er mich nicht mahnen würde, und so
+mahnt mich seine Gegenwartjust doppelt.
+
+Acrostic: Ich
+Result: SUCCESS
+Result Text: ich für meinen teil wollte mir heute den ganzen Tagnicht sagen, daß i-
+ch sie erwartete. Nun kann ich Fabricen geradebezahlen und mißbrauc-
+he seine Gutheit nicht weiter. Gestern sagte ermir: Morgen komm' ich
+zu dir! Es war mir nicht recht. Ich wußte,daß er mich nicht mahnen wü-
+rde- , und so mahnt mich seine Gegenwartjust doppelt.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 544
+Number of Goal Checks: 544
+Execution Time: 8
+
+Input Text: Ich wollte mir heute den ganzen Tagnicht sagen, daß ich sie
+erwartete. Nun kann ich Fabricen geradebezahlen und mißbrauche seine
+Gutheit nicht weiter. Gestern sagte ermir: Morgen komm' ich zu dir! Es
+war mir nicht recht. Ich wußte,daß er mich nicht mahnen würde, und so
+mahnt mich seine Gegenwartjust doppelt.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: Ich wollte mir heute den ganzen Tagnicht sagen, daß ich weiblicher me-
+nsch erwartete. Nun kann ich Fabricen geradebezahlen und mißbrauche s-
+eine Gutheit nicht weiter. Gestern sagte ermir: Morgen komm' ich zu d-
+ir! Es war mir nicht recht. Ich wußte,daß er mich nicht mahnen würde,
+und so mahnt mich seine Gegenwartjust doppelt.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 85
+Number of Goal Checks: 85
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/2.txt=============================
+Current Time: Thu Jan 29 17:02:53 CET 2015
+Input String: Ungefähr eine Stunde von der Stadt liegt ein Ort, den sie Wahlheimnennen. Die Lage an einem Hügel ist sehr interessant, und wenn manoben auf dem Fußpfade zum Dorf herausgeht, übersieht man auf einmaldas ganze Tal. Eine gute Wirtin, die gefällig und munter in ihremAlter ist, schenkt Wein, Bier, Kaffee; und was über alles geht, sindzwei Linden, die mit ihren ausgebreiteten Ästen den kleinen Platz vorder Kirche bedecken, der ringsum mit Bauerhäusern, Scheunen und Höfeneingeschlossen ist.
+
+Input Text: Ungefähr eine Stunde von der Stadt liegt ein Ort, den sie
+Wahlheimnennen. Die Lage an einem Hügel ist sehr interessant, und wenn
+manoben auf dem Fußpfade zum Dorf herausgeht, übersieht man auf
+einmaldas ganze Tal. Eine gute Wirtin, die gefällig und munter in
+ihremAlter ist, schenkt Wein, Bier, Kaffee; und was über alles geht,
+sindzwei Linden, die mit ihren ausgebreiteten Ästen den kleinen Platz
+vorder Kirche bedecken, der ringsum mit Bauerhäusern, Scheunen und
+Höfeneingeschlossen ist.
+
+Acrostic: Ungefähr
+Result: TIMEOUT
+Number of Genereted Nodes: 799781
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 799781
+Execution Time: 902
+
+Input Text: Ungefähr eine Stunde von der Stadt liegt ein Ort, den sie
+Wahlheimnennen. Die Lage an einem Hügel ist sehr interessant, und wenn
+manoben auf dem Fußpfade zum Dorf herausgeht, übersieht man auf
+einmaldas ganze Tal. Eine gute Wirtin, die gefällig und munter in
+ihremAlter ist, schenkt Wein, Bier, Kaffee; und was über alles geht,
+sindzwei Linden, die mit ihren ausgebreiteten Ästen den kleinen Platz
+vorder Kirche bedecken, der ringsum mit Bauerhäusern, Scheunen und
+Höfeneingeschlossen ist.
+
+Acrostic: und
+Result: SUCCESS
+Result Text: Ungefähr eine Stunde von der Stadt liegt ein Ort, de-
+n sie Wahlheimnennen. Die Lage an einem Hügel ist sehr interessant,
+darüber hinaus wenn manoben auf dem Fußpfade zum Dorf herausgeht, übe-
+rsieht man auf einmaldas ganze Tal. Eine gute Wirtin, die gefällig un-
+d munter in ihremAlter ist, schenkt Wein, Bier, Kaffee; und was über
+alles geht, sindzwei Linden, die mit ihren ausgebreiteten Ästen den k-
+leinen Platz vorder Kirche bedecken, der ringsum mit Bauerhäusern, Sc-
+heunen und Höfeneingeschlossen ist.
+
+Applied Operators (In Final Result): LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 1230
+Number of Goal Checks: 1230
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/3.txt=============================
+Current Time: Thu Jan 29 17:03:21 CET 2015
+Input String: Seit der Zeit bin ich oft draußen. Die Kinder sind ganz an michgewöhnt, sie kriegen Zucker, wenn ich Kaffee trinke, und teilen dasButterbrot und die saure Milch mit mir des Abends. Sonntags fehltihnen der Kreuzer nie, und wenn ich nicht nach der Betstunde da bin,so hat die Wirtin Ordre, ihn auszuzahlen.
+
+Input Text: Seit der Zeit bin ich oft draußen. Die Kinder sind ganz an
+michgewöhnt, sie kriegen Zucker, wenn ich Kaffee trinke, und teilen
+dasButterbrot und die saure Milch mit mir des Abends. Sonntags
+fehltihnen der Kreuzer nie, und wenn ich nicht nach der Betstunde da
+bin,so hat die Wirtin Ordre, ihn auszuzahlen.
+
+Acrostic: Seit
+Result: SUCCESS
+Result Text: Seit der Zeit bin ich oft draußen. Die Kinder sind bis zum i-tüpfelch-
+en an michgewöhnt, sie kriegen Zucker, wenn ich Kaffee trinke, und te-
+ilen dasButterbrot und die saure Milch mit mir des Abends. Sonn-
+tags fehltihnen der Kreuzer nie, und wenn ich nicht nach der Betstund-
+e da bin,so hat die Wirtin Ordre, ihn auszuzahlen.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 701
+Number of Goal Checks: 701
+Execution Time: 8
+
+Input Text: Seit der Zeit bin ich oft draußen. Die Kinder sind ganz an
+michgewöhnt, sie kriegen Zucker, wenn ich Kaffee trinke, und teilen
+dasButterbrot und die saure Milch mit mir des Abends. Sonntags
+fehltihnen der Kreuzer nie, und wenn ich nicht nach der Betstunde da
+bin,so hat die Wirtin Ordre, ihn auszuzahlen.
+
+Acrostic: sich
+Result: SUCCESS
+Result Text: Seit der Zeit bin ich oft draußen. Die Kinder sind zu der ganzen lin-
+ie an michgewöhnt, sie kriegen Zucker, wenn ich Kaffee trinke, wie au-
+ch te- ilen dasButterbrot und die saure Milch unter zuhilfenahme von
+hilfe mir des Abend- s. Son- ntags fehltihnen der Kreuzer nie, und we-
+nn ich nicht nach der Betstun- de da bin,so hat die Wirtin Ordre, ih
+auszuzahlen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 14920
+Number of Goal Checks: 14920
+Execution Time: 19
+
+
+==========================================================
+
+
+=============================Text/Bruno/4.txt=============================
+Current Time: Thu Jan 29 17:03:40 CET 2015
+Input String: Vier Träger kamen und warfen den schweren Kadaver vor uns hin. Kaum lager da, erhoben die Schakale ihre Stimmen. Wie von Strickenunwiderstehlich jeder einzelne gezogen, kamen sie, stockend, mit demLeib den Boden streifend, heran. Sie hatten die Araber vergessen, denHaß vergessen, die alles auslöschende Gegenwart des stark ausdunstendenLeichnams bezauberte sie. Schon hing einer am Hals und fand mit demersten Biß die Schlagader. Wie eine kleine rasende Pumpe, die ebensounbedingt wie aussichtslos einen übermächtigen Brand löschen will,zerrte und zuckte jede Muskel seines Körpers an ihrem Platz. Und schonlagen in gleicher Arbeit alle auf dem Leichnam hoch zu Berg.
+
+Input Text: Vier Träger kamen und warfen den schweren Kadaver vor uns hin. Kaum
+lager da, erhoben die Schakale ihre Stimmen. Wie von
+Strickenunwiderstehlich jeder einzelne gezogen, kamen sie, stockend,
+mit demLeib den Boden streifend, heran. Sie hatten die Araber
+vergessen, denHaß vergessen, die alles auslöschende Gegenwart des
+stark ausdunstendenLeichnams bezauberte sie. Schon hing einer am Hals
+und fand mit demersten Biß die Schlagader. Wie eine kleine rasende
+Pumpe, die ebensounbedingt wie aussichtslos einen übermächtigen Brand
+löschen will,zerrte und zuckte jede Muskel seines Körpers an ihrem
+Platz. Und schonlagen in gleicher Arbeit alle auf dem Leichnam hoch zu
+Berg.
+
+Acrostic: Vier
+Result: SUCCESS
+Result Text: Vier Träger kamen zum überfluss warfen den schweren Kadaver vor uns h-
+in. nur ausnahmsweise lager da, erhoben die Schakale ihre Stimmen. Wi-
+e von Strickenunwiderstehlich jeder einzelne gezogen, kamen weibliche-
+r mensch stoc- kend, mit demLeib den Boden streifend, heran. Sie hatt-
+en die Araber vergessen, denHaß vergessen, die alles auslöschende Geg-
+enwart des stark ausdunstendenLeichnams bezauberte sie. Schon hing ei-
+ner am Hals und fand mit demersten Biß die Schlagader. Wie eine klein-
+e rasende Pumpe, die ebensounbedingt wie aussichtslos einen übermächt-
+igen Brand löschen will,zerrte und zuckte jede Muskel seines Körpers
+an ihrem Platz. Und schonlagen in gleicher Arbeit alle auf dem Leichn-
+am hoch zu Berg.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 3476
+Number of Goal Checks: 3476
+Execution Time: 18
+
+Input Text: Vier Träger kamen und warfen den schweren Kadaver vor uns hin. Kaum
+lager da, erhoben die Schakale ihre Stimmen. Wie von
+Strickenunwiderstehlich jeder einzelne gezogen, kamen sie, stockend,
+mit demLeib den Boden streifend, heran. Sie hatten die Araber
+vergessen, denHaß vergessen, die alles auslöschende Gegenwart des
+stark ausdunstendenLeichnams bezauberte sie. Schon hing einer am Hals
+und fand mit demersten Biß die Schlagader. Wie eine kleine rasende
+Pumpe, die ebensounbedingt wie aussichtslos einen übermächtigen Brand
+löschen will,zerrte und zuckte jede Muskel seines Körpers an ihrem
+Platz. Und schonlagen in gleicher Arbeit alle auf dem Leichnam hoch zu
+Berg.
+
+Acrostic: von
+Result: SUCCESS
+Result Text: Vier Träger kamen und warfen den schweren Kadaver vor uns hin. kurz v-
+or knapp lager da, erhoben die Schakale ihre Stimmen. Wie vo-
+n Strickenunwiderstehlich jeder einzelne gezogen, kamen sie, stockend,
+mit demLeib den Boden streifend, heran. Sie hatten die Araber
+vergessen, denHaß vergessen, die alles auslöschende Gegenwart des
+stark ausdunstendenLeichnams bezauberte sie. Schon hing einer am Hals
+und fand mit demersten Biß die Schlagader. Wie eine kleine rasende
+Pumpe, die ebensounbedingt wie aussichtslos einen übermächtigen Brand
+löschen will,zerrte und zuckte jede Muskel seines Körpers an ihrem
+Platz. Und schonlagen in gleicher Arbeit alle auf dem Leichnam hoch zu
+Berg.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 1583
+Number of Goal Checks: 1583
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/5.txt=============================
+Current Time: Thu Jan 29 17:03:54 CET 2015
+Input String: Herr Samuel wollte anfänglich von solchen Schlichen nichts hören, aberda der Verwalter erklärte, er getraue sich wohl, die Sache zu einemguten Ende zu bringen, und da Frau und Kinder zu dem Abenteuer, mittelsdessen zugleich denen von Jeddam ein Streich gespielt wurde, voll Lustund Ungeduld waren, willigte er schließlich ein, es ins Werk zu setzen.Kaum war er wieder einigermaßen hergestellt, als er nächtlicherweileJeddam verließ; es glückte ihm, unbemerkt zu dem nächsten größeren, amMeere gelegenen Ort zu gelangen, wo er sich einschiffte.
+
+Input Text: Herr Samuel wollte anfänglich von solchen Schlichen nichts hören,
+aberda der Verwalter erklärte, er getraue sich wohl, die Sache zu
+einemguten Ende zu bringen, und da Frau und Kinder zu dem Abenteuer,
+mittelsdessen zugleich denen von Jeddam ein Streich gespielt wurde,
+voll Lustund Ungeduld waren, willigte er schließlich ein, es ins Werk
+zu setzen.Kaum war er wieder einigermaßen hergestellt, als er
+nächtlicherweileJeddam verließ; es glückte ihm, unbemerkt zu dem
+nächsten größeren, amMeere gelegenen Ort zu gelangen, wo er sich
+einschiffte.
+
+Acrostic: Herr
+Result: SUCCESS
+Result Text: Herr Samuel wollte anfänglich von solchen Schlichen nichts hör-
+en, aberda der Verwalter erklärte, er getraue sich wohl, die Sache ve-
+rsperrt einemguten jetzt ist sense! zu bringen, und da Frau und Kinde-
+r zu dem Abe- nteuer, mittelsdessen zugleich denen von Jeddam ein Str-
+eich gespielt wurde, voll Lustund Ungeduld waren, willigte er schließ-
+lich ein, es i- ns Werk zu setzen.Kaum war er wieder einigermaßen her-
+gestellt, als er nächtlicherweileJeddam verließ; es glückte ihm, unbe-
+merkt zu dem nächsten größeren, amMeere gelegenen Ort zu gelangen, wo
+er sich einschiffte.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 2460
+Number of Goal Checks: 2460
+Execution Time: 14
+
+Input Text: Herr Samuel wollte anfänglich von solchen Schlichen nichts hören,
+aberda der Verwalter erklärte, er getraue sich wohl, die Sache zu
+einemguten Ende zu bringen, und da Frau und Kinder zu dem Abenteuer,
+mittelsdessen zugleich denen von Jeddam ein Streich gespielt wurde,
+voll Lustund Ungeduld waren, willigte er schließlich ein, es ins Werk
+zu setzen.Kaum war er wieder einigermaßen hergestellt, als er
+nächtlicherweileJeddam verließ; es glückte ihm, unbemerkt zu dem
+nächsten größeren, amMeere gelegenen Ort zu gelangen, wo er sich
+einschiffte.
+
+Acrostic: hat
+Result: SUCCESS
+Result Text: Herr Samuel wollte anfänglich von solchen Schlichen nichts hören,
+aberda der Verwalter erklärte, er getraue sich als wahrscheinlich gel-
+tend die Sache zu einemguten Ende zu bringen, und da Frau und Kinder
+zu dem Abenteuer, mittelsdessen zugleich denen von Jeddam ein Streich
+gespielt wurde, voll Lustund Ungeduld waren, willigte er schließlich
+ein, es ins Werk zu setzen.Kaum war er wieder einigermaßen hergestell-
+t, als er nächtlicherweileJeddam verließ; es glückte ihm, unbemerkt z-
+u dem nächsten größeren, amMeere gelegenen Ort zu gelangen, wo er sich
+einschiffte.
+
+Applied Operators (In Final Result): SynonymOperation
+Number of Genereted Nodes: 185
+Number of Goal Checks: 185
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/6.txt=============================
+Current Time: Thu Jan 29 17:04:02 CET 2015
+Input String: Der Herr Pfarrer wüßte wohl, sagte Herr Ive, daß es in Jeddam wederPharisäer noch Sadduzäer gäbe, noch weniger einen jüdischen Kirchhof,weswegen der Wunsch des Herrn Pfarrers nicht könnte ausgeführt werden;es müßte der verstorbene Samuel wohl oder übel neben den übrigen BürgernJeddams bestattet werden.
+
+Input Text: Der Herr Pfarrer wüßte wohl, sagte Herr Ive, daß es in Jeddam
+wederPharisäer noch Sadduzäer gäbe, noch weniger einen jüdischen
+Kirchhof,weswegen der Wunsch des Herrn Pfarrers nicht könnte
+ausgeführt werden;es müßte der verstorbene Samuel wohl oder übel neben
+den übrigen BürgernJeddams bestattet werden.
+
+Acrostic: Der
+Result: SUCCESS
+Result Text: Der allah [islamisch] Pfarrer wüßte wohl, sagte y-chromosom-träger Iv-
+e, daß es in J- eddam wederPharisäer noch Sadduzäer gäbe, noch wenige-
+r einen jüdischen Kirchhof,weswegen der Wunsch des Herrn Pfarrers nic-
+ht könnte ausgeführt werden;es müßte der verstorbene Samuel wohl oder
+übel neben den übrigen BürgernJeddams bestattet werden.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 1014
+Number of Goal Checks: 1014
+Execution Time: 8
+
+Input Text: Der Herr Pfarrer wüßte wohl, sagte Herr Ive, daß es in Jeddam
+wederPharisäer noch Sadduzäer gäbe, noch weniger einen jüdischen
+Kirchhof,weswegen der Wunsch des Herrn Pfarrers nicht könnte
+ausgeführt werden;es müßte der verstorbene Samuel wohl oder übel neben
+den übrigen BürgernJeddams bestattet werden.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Der allah [islamisch] Pfarrer wüßte wohl, sagte y-chromosom-träger Iv-
+e, daß es in J- eddam wederPharisäer noch Sadduzäer gäbe, noch wenige-
+r einen jüdischen Kirchhof,weswegen der Wunsch des Herrn Pfarrers nic-
+ht könnte ausgeführt werden;es müßte der verstorbene Samuel wohl oder
+übel neben den übrigen BürgernJeddams bestattet werden.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 1014
+Number of Goal Checks: 1014
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/7.txt=============================
+Current Time: Thu Jan 29 17:04:13 CET 2015
+Input String: Ein Bauerbursch kam aus einem benachbarten Hause und beschäftigte sich,an dem Pfluge, den ich neulich gezeichnet hatte, etwas zurecht zumachen. Da mir sein Wesen gefiel, redete ich ihn an, fragte nachseinen Umständen, wir waren bald bekannt und, wie mir's gewöhnlich mitdieser Art Leuten geht, bald vertraut. Er erzählte mir, daß er beieiner Witwe in Diensten sei und von ihr gar wohl gehalten werde.
+
+Input Text: Ein Bauerbursch kam aus einem benachbarten Hause und beschäftigte
+sich,an dem Pfluge, den ich neulich gezeichnet hatte, etwas zurecht
+zumachen. Da mir sein Wesen gefiel, redete ich ihn an, fragte
+nachseinen Umständen, wir waren bald bekannt und, wie mir's gewöhnlich
+mitdieser Art Leuten geht, bald vertraut. Er erzählte mir, daß er
+beieiner Witwe in Diensten sei und von ihr gar wohl gehalten werde.
+
+Acrostic: Ein
+Result: SUCCESS
+Result Text: Ein Bauerbursch kam aus einem benachbarten Hause und beschäft-
+igte sich,an dem Pfluge, den ich neulich gezeichnet hatte, geringe me-
+nge zure- cht zumachen. Da mir sein Wesen gefiel, redete ich ihn an,
+fragte nachseinen Umständen, wir waren bald bekannt und, wie mir's ge-
+wöhnlich mitdieser Art Leuten geht, bald vertraut. Er erzählte mir, d-
+aß er beieiner Witwe in Diensten sei und von ihr gar wohl gehalten w
+rde.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 962
+Number of Goal Checks: 962
+Execution Time: 10
+
+Input Text: Ein Bauerbursch kam aus einem benachbarten Hause und beschäftigte
+sich,an dem Pfluge, den ich neulich gezeichnet hatte, etwas zurecht
+zumachen. Da mir sein Wesen gefiel, redete ich ihn an, fragte
+nachseinen Umständen, wir waren bald bekannt und, wie mir's gewöhnlich
+mitdieser Art Leuten geht, bald vertraut. Er erzählte mir, daß er
+beieiner Witwe in Diensten sei und von ihr gar wohl gehalten werde.
+
+Acrostic: ein
+Result: SUCCESS
+Result Text: Ein Bauerbursch kam aus einem benachbarten Hause und beschäft-
+igte sich,an dem Pfluge, den ich neulich gezeichnet hatte, geringe me-
+nge zure- cht zumachen. Da mir sein Wesen gefiel, redete ich ihn an,
+fragte nachseinen Umständen, wir waren bald bekannt und, wie mir's ge-
+wöhnlich mitdieser Art Leuten geht, bald vertraut. Er erzählte mir, d-
+aß er beieiner Witwe in Diensten sei und von ihr gar wohl gehalten w
+rde.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 962
+Number of Goal Checks: 962
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/8.txt=============================
+Current Time: Thu Jan 29 17:04:42 CET 2015
+Input String: Unsere jungen Leute hatten einen Ball auf dem Lande angestellt, zu demich mich denn auch willig finden ließ. Ich bot einem hiesigen guten,schönen, übrigens unbedeutenden Mädchen die Hand, und es wurdeausgemacht, daß ich eine Kutsche nehmen, mit meiner Tänzerin und ihrerBase nach dem Orte der Lustbarkeit hinausfahren und auf dem WegeCharlotten S. mitnehmen sollte.
+
+Input Text: Unsere jungen Leute hatten einen Ball auf dem Lande angestellt, zu
+demich mich denn auch willig finden ließ. Ich bot einem hiesigen
+guten,schönen, übrigens unbedeutenden Mädchen die Hand, und es
+wurdeausgemacht, daß ich eine Kutsche nehmen, mit meiner Tänzerin und
+ihrerBase nach dem Orte der Lustbarkeit hinausfahren und auf dem
+WegeCharlotten S. mitnehmen sollte.
+
+Acrostic: Unsere
+Result: SUCCESS
+Result Text: Unsere jungen Leute hatten einen Ball auf dem Lande angestellt, zugek-
+nallt demich mich denn auch willig finden ließ. Ich bot einem hie-
+sigen guten,schönen, übrigens unbedeutenden Mädchen die Hand, und
+es wurdeausgemacht, daß ich eine Kutsche nehmen, mit meiner Tänze-
+rin darüber hinaus ihrerBase nach dem Orte der Lustbarkeit hinausfahr-
+en und auf dem WegeCharlotten S. mitnehmen sollte.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+LineBreakOperation
+WrongHyphenationOperation
+SynonymOperation
+Number of Genereted Nodes: 3673
+Number of Goal Checks: 3673
+Execution Time: 11
+
+Input Text: Unsere jungen Leute hatten einen Ball auf dem Lande angestellt, zu
+demich mich denn auch willig finden ließ. Ich bot einem hiesigen
+guten,schönen, übrigens unbedeutenden Mädchen die Hand, und es
+wurdeausgemacht, daß ich eine Kutsche nehmen, mit meiner Tänzerin und
+ihrerBase nach dem Orte der Lustbarkeit hinausfahren und auf dem
+WegeCharlotten S. mitnehmen sollte.
+
+Acrostic: und
+Result: SUCCESS
+Result Text: Unsere jungen Leute hatten einen Ball nicht zugeschlossen dem Lande a-
+ngestellt, zu demich mich denn auch willig finden ließ. wie kommt es,
+dass... mich betr- ifft bot einem hiesigen guten,schönen, übrigens un-
+bedeutenden Mädchen die Hand, und es wurdeausgemacht, daß ich eine Ku-
+tsche nehmen, mit me- iner Tänzerin und ihrerBase nach dem Orte der L-
+ustbarkeit hinausfahre- n und auf dem WegeCharlotten S. mitnehmen so
+lte.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 16393
+Number of Goal Checks: 16393
+Execution Time: 17
+
+
+==========================================================
+
+
+=============================Text/Bruno/9.txt=============================
+Current Time: Thu Jan 29 17:21:53 CET 2015
+Input String: Nun ging's an, und wir ergetzten uns eine Weile an manigfaltigenSchlingungen der Arme. Mit welchem Reize, mit welcher Flüchtigkeitbewegte sie sich! Und da wir nun gar ans Walzen kamen und wie dieSphären um einander herumrollten, ging's freilich anfangs, weil's diewenigsten können, ein bißchen bunt durcheinander. Wir waren klug undließen sie austoben, und als die Ungeschicktesten den Plan geräumthatten, fielen wir ein und hielten mit noch einem Paare, mit Audranund seiner Tänzerin, wacker aus. Nie ist mir's so leicht vom Fleckegegangen.
+
+Input Text: Nun ging's an, und wir ergetzten uns eine Weile an
+manigfaltigenSchlingungen der Arme. Mit welchem Reize, mit welcher
+Flüchtigkeitbewegte sie sich! Und da wir nun gar ans Walzen kamen und
+wie dieSphären um einander herumrollten, ging's freilich anfangs,
+weil's diewenigsten können, ein bißchen bunt durcheinander. Wir waren
+klug undließen sie austoben, und als die Ungeschicktesten den Plan
+geräumthatten, fielen wir ein und hielten mit noch einem Paare, mit
+Audranund seiner Tänzerin, wacker aus. Nie ist mir's so leicht vom
+Fleckegegangen.
+
+Acrostic: Nun
+Result: TIMEOUT
+Number of Genereted Nodes: 1074004
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 1074004
+Execution Time: 904
+
+Input Text: Nun ging's an, und wir ergetzten uns eine Weile an
+manigfaltigenSchlingungen der Arme. Mit welchem Reize, mit welcher
+Flüchtigkeitbewegte sie sich! Und da wir nun gar ans Walzen kamen und
+wie dieSphären um einander herumrollten, ging's freilich anfangs,
+weil's diewenigsten können, ein bißchen bunt durcheinander. Wir waren
+klug undließen sie austoben, und als die Ungeschicktesten den Plan
+geräumthatten, fielen wir ein und hielten mit noch einem Paare, mit
+Audranund seiner Tänzerin, wacker aus. Nie ist mir's so leicht vom
+Fleckegegangen.
+
+Acrostic: nicht
+Result: SUCCESS
+Result Text: Nun ging's eingeschaltet zu allem überfluss wir ergetzten uns eine We-
+ile an manigfaltigenSchlingungen der Arme. unter zuhilfenahme von wel-
+chem Reize, inbegriffen wel- cher Fluechtigkeitbewegte person weiblic-
+hen gesc- hlechts sich! Und da wir n- un gar ans Walzen kamen des wei-
+teren wie dieSphaer- en um einander herumrollten, ging's freilich anf-
+angs, weil- 's diewenig- sten koennen, ein bisschen bu- nt durcheinan-
+der. Wir war- en klug undli- essen sie austoben, und als die Ungeschi-
+cktes- ten den Plan geraeumth- atten, fielen wir ein und hielte- n mi-
+t noch e nem Pa- are, mit Audranu- nd seiner Taenzerin, wacker aus. N-
+- ie ist mir's so leicht vom Fleck gegangen.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+HyphenationOperation
+WrongSpellingOperation
+HyphenationOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 522150
+Number of Goal Checks: 522150
+Execution Time: 127
+
+
+==========================================================
+
+
+=============================Text/Bruno/10.txt=============================
+Current Time: Thu Jan 29 17:37:05 CET 2015
+Input String: Ich war ausgestiegen, und eine Magd, die ans Tor kam, bat uns, einenAugenblick zu verziehen, Mamsell Lottchen würde gleich kommen. Ichging durch den Hof nach dem wohlgebauten Hause, und da ich dievorliegenden Treppen hinaufgestiegen war und in die Tür trat, fiel mirdas reizendste Schauspiel in die Augen, das ich je gesehen habe. indem Vorsaale wimmelten sechs Kinder von eilf zu zwei Jahren um einMädchen von schöner Gestalt, mittlerer Größe, die ein simples weißesKleid, mit blaßroten Schleifen an Arm und Brust, anhatte.
+
+Input Text: Ich war ausgestiegen, und eine Magd, die ans Tor kam, bat uns,
+einenAugenblick zu verziehen, Mamsell Lottchen würde gleich kommen.
+Ichging durch den Hof nach dem wohlgebauten Hause, und da ich
+dievorliegenden Treppen hinaufgestiegen war und in die Tür trat, fiel
+mirdas reizendste Schauspiel in die Augen, das ich je gesehen habe.
+indem Vorsaale wimmelten sechs Kinder von eilf zu zwei Jahren um
+einMädchen von schöner Gestalt, mittlerer Größe, die ein simples
+weißesKleid, mit blaßroten Schleifen an Arm und Brust, anhatte.
+
+Acrostic: Ich
+Result: TIMEOUT
+Number of Genereted Nodes: 952313
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 952313
+Execution Time: 911
+
+Input Text: Ich war ausgestiegen, und eine Magd, die ans Tor kam, bat uns,
+einenAugenblick zu verziehen, Mamsell Lottchen würde gleich kommen.
+Ichging durch den Hof nach dem wohlgebauten Hause, und da ich
+dievorliegenden Treppen hinaufgestiegen war und in die Tür trat, fiel
+mirdas reizendste Schauspiel in die Augen, das ich je gesehen habe.
+indem Vorsaale wimmelten sechs Kinder von eilf zu zwei Jahren um
+einMädchen von schöner Gestalt, mittlerer Größe, die ein simples
+weißesKleid, mit blaßroten Schleifen an Arm und Brust, anhatte.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: Ich war ausgestiegen, und eine Magd, die ans Tor kam, bat u-
+ns, einenAugenblick zu verziehen, Mamsell Lottchen würde gleich komme-
+n. Ichging durch den Hof nach dem wohlgebauten Hause, und da ich
+dievorliegenden Treppen hinaufgestiegen war und in die Tür trat, fiel
+mirdas reizendste Schauspiel in die Augen, das ich je gesehen habe.
+indem Vorsaale wimmelten sechs Kinder von eilf zu zwei Jahren um
+einMädchen von schöner Gestalt, mittlerer Größe, die ein simples
+weißesKleid, mit blaßroten Schleifen an Arm und Brust, anhatte.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 22
+Number of Goal Checks: 22
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/11.txt=============================
+Current Time: Thu Jan 29 17:37:25 CET 2015
+Input String: Wenn ich des Morgens mit Sonnenaufgange hinausgehe nach meinemWahlheim und dort im Wirtsgarten mir meine Zuckererbsen selbst pflücke,mich hinsetze, sie abfädne und dazwischen in meinem Homer lese; wennich in der kleinen Küche mir einen Topf wähle, mir Butter aussteche,Schoten ans Feuer stelle, zudecke und mich dazusetze, sie manchmalumzuschütteln: da fühl' ich so lebhaft, wie die übermütigen Freier derPenelope Ochsen und Schweine schlachten, zerlegen und braten. Es istnichts, das mich so mit einer stillen, wahren Empfindung ausfüllte alsdie Züge patriarchalischen Lebens, die ich, Gott sei Dank, ohneAffektation in meine Lebensart verweben kann.
+
+Input Text: Wenn ich des Morgens mit Sonnenaufgange hinausgehe nach
+meinemWahlheim und dort im Wirtsgarten mir meine Zuckererbsen selbst
+pflücke,mich hinsetze, sie abfädne und dazwischen in meinem Homer
+lese; wennich in der kleinen Küche mir einen Topf wähle, mir Butter
+aussteche,Schoten ans Feuer stelle, zudecke und mich dazusetze, sie
+manchmalumzuschütteln: da fühl' ich so lebhaft, wie die übermütigen
+Freier derPenelope Ochsen und Schweine schlachten, zerlegen und
+braten. Es istnichts, das mich so mit einer stillen, wahren Empfindung
+ausfüllte alsdie Züge patriarchalischen Lebens, die ich, Gott sei
+Dank, ohneAffektation in meine Lebensart verweben kann.
+
+Acrostic: Wenn
+Result: SUCCESS
+Result Text: Wenn soweit es mich betrifft des Morgens mit Sonnenaufgange hinausgeh-
+e nach meinemWahlheim und dort im Wirtsgarten mir meine Zuckererbse-
+n selbst pflücke,mich hinsetze, sie abfädne und dazwischen in mei-
+nem Ho- mer lese; wennich in der kleinen Küche mir einen Topf wähle,
+mir Butt- er aussteche,Schoten ans Feuer stelle, zudecke und mich daz-
+uset- ze, sie manchmalumzuschütteln: da fühl' ich so lebhaft, wie die
+überm- ütigen Freier derPenelope Ochsen und Schweine schlachten, zerl-
+egen und braten. Es istnichts, das mich so mit einer stillen, wahren
+Empfindung ausfüllte alsdie Züge patriarchalischen Lebens, die ich, G-
+ott sei Dank, ohneAffektation in meine Lebensart verweben kann.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 2038
+Number of Goal Checks: 2038
+Execution Time: 16
+
+Input Text: Wenn ich des Morgens mit Sonnenaufgange hinausgehe nach
+meinemWahlheim und dort im Wirtsgarten mir meine Zuckererbsen selbst
+pflücke,mich hinsetze, sie abfädne und dazwischen in meinem Homer
+lese; wennich in der kleinen Küche mir einen Topf wähle, mir Butter
+aussteche,Schoten ans Feuer stelle, zudecke und mich dazusetze, sie
+manchmalumzuschütteln: da fühl' ich so lebhaft, wie die übermütigen
+Freier derPenelope Ochsen und Schweine schlachten, zerlegen und
+braten. Es istnichts, das mich so mit einer stillen, wahren Empfindung
+ausfüllte alsdie Züge patriarchalischen Lebens, die ich, Gott sei
+Dank, ohneAffektation in meine Lebensart verweben kann.
+
+Acrostic: werden
+Result: SUCCESS
+Result Text: Wenn soweit es mich betrifft des Morgens mit Sonnenaufgange hinausgeh-
+e nach meinemWahlheim und dort im Wirtsgarten mir meine Zucke-
+rerbsen selbst pflücke,mich hinsetze, sie abfädne und
+dazwischen dem zeitgeist entsprechend meinem Homer lese; wennich in d-
+er kleinen Küche mir einen Topf wähle, mir Butter aussteche,Schoten a-
+ns Feuer stelle, zudecke und mich dazusetze, sie manchmalumzuschüttel-
+n: da fühl' ich so lebhaft, wie die übermütigen Freier derPenelope Oc-
+hsen und Schweine schlachten, zerlegen und braten. Es istnichts, das
+mich so mit einer stillen, wahren Empfindung ausfüllte alsdie Züge pa-
+triarchalischen Lebens, die ich, Gott sei Dank, ohneAffektation in me-
+ine Lebensart verweben kann.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 3281
+Number of Goal Checks: 3281
+Execution Time: 2
+
+
+==========================================================
+
+
+=============================Text/Bruno/12.txt=============================
+Current Time: Thu Jan 29 17:37:35 CET 2015
+Input String: Indes kann ich Alberten meine Achtung nicht versagen. Seine gelasseneAußenseite sticht gegen die Unruhe meines Charakters sehr lebhaft ab,die sich nicht verbergen läßt. Er hat viel Gefühl und weiß, was er anLotten hat. Erscheint wenig üble Laune zu haben, und du weißt, dasist die Sünde, die ich ärger hasse am Menschen als alle andre.
+
+Input Text: Indes kann ich Alberten meine Achtung nicht versagen. Seine
+gelasseneAußenseite sticht gegen die Unruhe meines Charakters sehr
+lebhaft ab,die sich nicht verbergen läßt. Er hat viel Gefühl und weiß,
+was er anLotten hat. Erscheint wenig üble Laune zu haben, und du
+weißt, dasist die Sünde, die ich ärger hasse am Menschen als alle
+andre.
+
+Acrostic: Indes
+Result: SUCCESS
+Result Text: Indes kann ich Alberten meine Achtung nicht versagen. Sei-
+ne gelasseneAußenseite sticht gegen die Unruhe meines Charakters was
+das zeug hält lebhaft ab,die sich jetzt nicht und überhaupt niemals v-
+erbergen läßt. Er hat viel G- efühl und weiß, was er anLotten hat. Er-
+scheint wenig üble Laune zu ha- ben, und du weißt, dasist die Sünde,
+die ich ärger hasse am Menschen als alle andre.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 2196
+Number of Goal Checks: 2196
+Execution Time: 10
+
+Input Text: Indes kann ich Alberten meine Achtung nicht versagen. Seine
+gelasseneAußenseite sticht gegen die Unruhe meines Charakters sehr
+lebhaft ab,die sich nicht verbergen läßt. Er hat viel Gefühl und weiß,
+was er anLotten hat. Erscheint wenig üble Laune zu haben, und du
+weißt, dasist die Sünde, die ich ärger hasse am Menschen als alle
+andre.
+
+Acrostic: in
+Result: SUCCESS
+Result Text: Indes kann ich Alberten meine Achtung nicht versagen. Sei-
+ne gelasseneAußenseite sticht gegen die Unruhe meines Charakters sehr
+lebhaft ab,die sich nicht verbergen läßt. Er hat viel Gefühl und weiß,
+was er anLotten hat. Erscheint wenig üble Laune zu haben, und du
+weißt, dasist die Sünde, die ich ärger hasse am Menschen als alle
+andre.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 17
+Number of Goal Checks: 17
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/13.txt=============================
+Current Time: Thu Jan 29 18:07:57 CET 2015
+Input String: Und kannst du von dem Unglücklichen, dessen Leben unter einerschleichenden Krankheit unaufhaltsam allmählich abstirbt, kannst duvon ihm verlangen, er solle durch einen Dolchstoß der Qual auf einmalein Ende machen? Und raubt das Übel, das ihm die Kräfte verzehrt, ihmnicht auch zugleich den Mut, sich davon zu befreien?
+
+Input Text: Und kannst du von dem Unglücklichen, dessen Leben unter
+einerschleichenden Krankheit unaufhaltsam allmählich abstirbt, kannst
+duvon ihm verlangen, er solle durch einen Dolchstoß der Qual auf
+einmalein Ende machen? Und raubt das Übel, das ihm die Kräfte
+verzehrt, ihmnicht auch zugleich den Mut, sich davon zu befreien?
+
+Acrostic: Und
+Result: TIMEOUT
+Number of Genereted Nodes: 938618
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 938618
+Execution Time: 905
+
+Input Text: Und kannst du von dem Unglücklichen, dessen Leben unter
+einerschleichenden Krankheit unaufhaltsam allmählich abstirbt, kannst
+duvon ihm verlangen, er solle durch einen Dolchstoß der Qual auf
+einmalein Ende machen? Und raubt das Übel, das ihm die Kräfte
+verzehrt, ihmnicht auch zugleich den Mut, sich davon zu befreien?
+
+Acrostic: und
+Result: TIMEOUT
+Number of Genereted Nodes: 945979
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 945979
+Execution Time: 916
+
+
+==========================================================
+
+
+=============================Text/Bruno/14.txt=============================
+Current Time: Thu Jan 29 18:23:36 CET 2015
+Input String: Zuerst wollte er mit dem unteren Teil seines Körpers aus dem Betthinauskommen, aber dieser untere Teil, den er übrigens noch nichtgesehen hatte und von dem er sich auch keine rechte Vorstellung machenkonnte, erwies sich als zu schwer beweglich; es ging so langsam; und alser schließlich, fast wild geworden, mit gesammelter Kraft, ohneRücksicht sich vorwärtsstieß, hatte er die Richtung falsch gewählt,schlug an den unteren Bettpfosten heftig an, und der brennende Schmerz,den er empfand, belehrte ihn, daß gerade der untere Teil seines Körpersaugenblicklich vielleicht der empfindlichste war.
+
+Input Text: Zuerst wollte er mit dem unteren Teil seines Körpers aus dem
+Betthinauskommen, aber dieser untere Teil, den er übrigens noch
+nichtgesehen hatte und von dem er sich auch keine rechte Vorstellung
+machenkonnte, erwies sich als zu schwer beweglich; es ging so langsam;
+und alser schließlich, fast wild geworden, mit gesammelter Kraft,
+ohneRücksicht sich vorwärtsstieß, hatte er die Richtung falsch
+gewählt,schlug an den unteren Bettpfosten heftig an, und der brennende
+Schmerz,den er empfand, belehrte ihn, daß gerade der untere Teil
+seines Körpersaugenblicklich vielleicht der empfindlichste war.
+
+Acrostic: Zuerst
+Result: TIMEOUT
+Number of Genereted Nodes: 877294
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 877294
+Execution Time: 933
+
+Input Text: Zuerst wollte er mit dem unteren Teil seines Körpers aus dem
+Betthinauskommen, aber dieser untere Teil, den er übrigens noch
+nichtgesehen hatte und von dem er sich auch keine rechte Vorstellung
+machenkonnte, erwies sich als zu schwer beweglich; es ging so langsam;
+und alser schließlich, fast wild geworden, mit gesammelter Kraft,
+ohneRücksicht sich vorwärtsstieß, hatte er die Richtung falsch
+gewählt,schlug an den unteren Bettpfosten heftig an, und der brennende
+Schmerz,den er empfand, belehrte ihn, daß gerade der untere Teil
+seines Körpersaugenblicklich vielleicht der empfindlichste war.
+
+Acrostic: zu
+Result: SUCCESS
+Result Text: Zuerst wollte er unter einsatz von dem unteren Teil seines Koerpers a-
+us dem Betthinauskommen, aber dieser untere Teil, den er uebrigens no-
+ch nichtgesehen hatte und von dem er sich auch keine rechte Vorstellu-
+ng machenkonnte, erwies sich als zu schwer beweglich; es ging so lang-
+sam; und alser schliesslich, fast wild geworden, mit gesammelter Kraf-
+t, ohneRuecksicht sich vorwaertsstiess, hatte er die Richtung falsch
+gewaehlt,schlug an den unteren Bettpfosten heftig an, und der brennen-
+de Schmerz,den er empfand, belehrte ihn, dass gerade der untere Teil
+seines Koerpersaugenblicklich vielleicht der empfindlichste war.
+
+Applied Operators (In Final Result): WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+Number of Genereted Nodes: 22641
+Number of Goal Checks: 22641
+Execution Time: 5
+
+
+==========================================================
+
+
+=============================Text/Bruno/15.txt=============================
+Current Time: Thu Jan 29 18:24:23 CET 2015
+Input String: Aber als er wieder nach gleicher Mühe aufseufzend so dalag wie früher,und wieder seine Beinchen womöglich noch ärger gegeneinander kämpfen sahund keine Möglichkeit fand, in diese Willkür Ruhe und Ordnung zubringen, sagte er sich wieder, daß er unmöglich im Bett bleiben könneund daß es das Vernünftigste sei, alles zu opfern, wenn auch nur diekleinste Hoffnung bestünde, sich dadurch vom Bett zu befreien.
+
+Input Text: Aber als er wieder nach gleicher Mühe aufseufzend so dalag wie
+früher,und wieder seine Beinchen womöglich noch ärger gegeneinander
+kämpfen sahund keine Möglichkeit fand, in diese Willkür Ruhe und
+Ordnung zubringen, sagte er sich wieder, daß er unmöglich im Bett
+bleiben könneund daß es das Vernünftigste sei, alles zu opfern, wenn
+auch nur diekleinste Hoffnung bestünde, sich dadurch vom Bett zu
+befreien.
+
+Acrostic: Aber
+Result: SUCCESS
+Result Text: Aber als er wieder nach gleicher Mühe aufseufzend so dalag
+beispielsweise frueher,und wieder seine Beinchen womoeglich noch aerg-
+er gegeneinander kaempfen sahund keine Moeglichkeit fand,
+rein diese Willkuer Ruhe und Ordnung zubringen, sagte er sich
+wieder, dass er unmoeglich im Bett bleiben koenneund dass es das
+Vernuenftigste sei, alles zu opfern, wenn auch nur diekleinste
+Hoffnung bestuende, sich dadurch vom Bett zu befreien.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 25308
+Number of Goal Checks: 25308
+Execution Time: 31
+
+Input Text: Aber als er wieder nach gleicher Mühe aufseufzend so dalag wie
+früher,und wieder seine Beinchen womöglich noch ärger gegeneinander
+kämpfen sahund keine Möglichkeit fand, in diese Willkür Ruhe und
+Ordnung zubringen, sagte er sich wieder, daß er unmöglich im Bett
+bleiben könneund daß es das Vernünftigste sei, alles zu opfern, wenn
+auch nur diekleinste Hoffnung bestünde, sich dadurch vom Bett zu
+befreien.
+
+Acrostic: auf
+Result: SUCCESS
+Result Text: Aber als er wieder nach gleicher Mühe aufseufzend so dalag in bezug a-
+uf früher,und wieder seine Beinchen womöglich noch streit-
+frage gegeneinander kämpfen sahund keine Möglichkeit fand, in diese
+Willkür Ruhe und Ordnung zubringen, sagte er sich wieder, daß er
+unmöglich im Bett bleiben könneund daß es das Vernünftigste sei, alles
+zu opfern, wenn auch nur diekleinste Hoffnung bestuende, sich dadurch
+vom Bett zu befreien.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongSpellingOperation
+SynonymOperation
+HyphenationOperation
+Number of Genereted Nodes: 31086
+Number of Goal Checks: 31086
+Execution Time: 14
+
+
+==========================================================
+
+
+=============================Text/Bruno/16.txt=============================
+Current Time: Thu Jan 29 18:24:39 CET 2015
+Input String: Warum ging denn die Schwester nicht zu den anderen? Sie war wohl erstjetzt aus dem Bett aufgestanden und hatte noch gar nicht angefangen sichanzuziehen. Und warum weinte sie denn? Weil er nicht aufstand und denProkuristen nicht hereinließ, weil er in Gefahr war, den Posten zuverlieren und weil dann der Chef die Eltern mit den alten Forderungenwieder verfolgen würde? Das waren doch vorläufig wohl unnötige Sorgen.
+
+Input Text: Warum ging denn die Schwester nicht zu den anderen? Sie war wohl
+erstjetzt aus dem Bett aufgestanden und hatte noch gar nicht
+angefangen sichanzuziehen. Und warum weinte sie denn? Weil er nicht
+aufstand und denProkuristen nicht hereinließ, weil er in Gefahr war,
+den Posten zuverlieren und weil dann der Chef die Eltern mit den alten
+Forderungenwieder verfolgen würde? Das waren doch vorläufig wohl
+unnötige Sorgen.
+
+Acrostic: Warum
+Result: SUCCESS
+Result Text: Warum ging umso weniger als die Schwester nicht zu den anderen? Sie w-
+ar wohlbefinden erstjetzt aus dem Bett aufgestanden und hatte noch ga-
+r nicht angefangen sichanzuziehen. Und warum weinte sie denn? Weil er
+unter keinen umständen aufstand und denProkuristen nicht hereinließ,
+mithin er in Gefahr war, den Posten zuverlieren und weil dann der Chef
+die Eltern mit den alten Forderungenwieder verfolgen würde? Das waren
+doch vorläufig wohl unnötige Sorgen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 4556
+Number of Goal Checks: 4556
+Execution Time: 14
+
+Input Text: Warum ging denn die Schwester nicht zu den anderen? Sie war wohl
+erstjetzt aus dem Bett aufgestanden und hatte noch gar nicht
+angefangen sichanzuziehen. Und warum weinte sie denn? Weil er nicht
+aufstand und denProkuristen nicht hereinließ, weil er in Gefahr war,
+den Posten zuverlieren und weil dann der Chef die Eltern mit den alten
+Forderungenwieder verfolgen würde? Das waren doch vorläufig wohl
+unnötige Sorgen.
+
+Acrostic: werden
+Result: SUCCESS
+Result Text: Warum ging denn die Schwester nicht zu den anderen? Sie war wohl
+erstjetzt aus dem Bett aufgestanden sowohl ... als auch hatte noch ga-
+r nicht angefangen sichanzuziehen. Und warum weinte sie denn? aufgrun-
+d dessen er nicht aufstand und denProkuristen nicht hereinließ, weil
+er in Gefahr war, den Posten zuverlieren und weil da-
+nn der Chef die Eltern mit den alten Forderungenwieder verfolgen
+würde? Das waren doch vorläufig wohl unnötige Sorgen.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+LineBreakOperation
+Number of Genereted Nodes: 2140
+Number of Goal Checks: 2140
+Execution Time: 1
+
+
+==========================================================
+
+
+=============================Text/Bruno/17.txt=============================
+Current Time: Thu Jan 29 18:25:07 CET 2015
+Input String: Und während Gregor dies alles hastig ausstieß und kaum wußte, was ersprach, hatte er sich leicht, wohl infolge der im Bett bereits erlangtenÜbung, dem Kasten genähert und versuchte nun, an ihm sich aufzurichten.Er wollte tatsächlich die Tür aufmachen, tatsächlich sich sehen lassenund mit dem Prokuristen sprechen; er war begierig zu erfahren, was dieanderen, die jetzt so nach ihm verlangten, bei seinem Anblick sagenwürden. Würden sie erschrecken, dann hatte Gregor keine Verantwortungmehr und konnte ruhig sein.
+
+Input Text: Und während Gregor dies alles hastig ausstieß und kaum wußte, was
+ersprach, hatte er sich leicht, wohl infolge der im Bett bereits
+erlangtenÜbung, dem Kasten genähert und versuchte nun, an ihm sich
+aufzurichten.Er wollte tatsächlich die Tür aufmachen, tatsächlich sich
+sehen lassenund mit dem Prokuristen sprechen; er war begierig zu
+erfahren, was dieanderen, die jetzt so nach ihm verlangten, bei seinem
+Anblick sagenwürden. Würden sie erschrecken, dann hatte Gregor keine
+Verantwortungmehr und konnte ruhig sein.
+
+Acrostic: Und
+Result: SUCCESS
+Result Text: Und waehrend Gregor dies alles hastig ausstiess und allerhöchste eise-
+nbahn wusste, was ersprach, hatte er sich leicht, wohl infolge
+der im Bett bereits erlangtenuebung, dem Kasten genaehert und
+versuchte nun, an ihm sich aufzurichten.Er wollte tatsaechlich die
+Tuer aufmachen, tatsaechlich sich sehen lassenund mit dem
+Prokuristen sprechen; er war begierig zu erfahren, was dieanderen,
+die jetzt so nach ihm verlangten, bei seinem Anblick sagenwuerden.
+Wuerden sie erschrecken, dann hatte Gregor keine Verantwortungmehr
+und konnte ruhig sein.
+
+Applied Operators (In Final Result): WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+LineBreakOperation
+Number of Genereted Nodes: 23851
+Number of Goal Checks: 23851
+Execution Time: 24
+
+Input Text: Und während Gregor dies alles hastig ausstieß und kaum wußte, was
+ersprach, hatte er sich leicht, wohl infolge der im Bett bereits
+erlangtenÜbung, dem Kasten genähert und versuchte nun, an ihm sich
+aufzurichten.Er wollte tatsächlich die Tür aufmachen, tatsächlich sich
+sehen lassenund mit dem Prokuristen sprechen; er war begierig zu
+erfahren, was dieanderen, die jetzt so nach ihm verlangten, bei seinem
+Anblick sagenwürden. Würden sie erschrecken, dann hatte Gregor keine
+Verantwortungmehr und konnte ruhig sein.
+
+Acrostic: und
+Result: SUCCESS
+Result Text: Und waehrend Gregor dies alles hastig ausstiess und allerhöchste eise-
+nbahn wusste, was ersprach, hatte er sich leicht, wohl infolge
+der im Bett bereits erlangtenuebung, dem Kasten genaehert und
+versuchte nun, an ihm sich aufzurichten.Er wollte tatsaechlich die
+Tuer aufmachen, tatsaechlich sich sehen lassenund mit dem
+Prokuristen sprechen; er war begierig zu erfahren, was dieanderen,
+die jetzt so nach ihm verlangten, bei seinem Anblick sagenwuerden.
+Wuerden sie erschrecken, dann hatte Gregor keine Verantwortungmehr
+und konnte ruhig sein.
+
+Applied Operators (In Final Result): WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+SynonymOperation
+LineBreakOperation
+Number of Genereted Nodes: 23851
+Number of Goal Checks: 23851
+Execution Time: 3
+
+
+==========================================================
+
+
+=============================Text/Bruno/20.txt=============================
+Current Time: Thu Jan 29 19:24:06 CET 2015
+Input String: Einmal, Mitte Juni, stand er in der Pineta über Settignano, auf einembraunen Wege aus Steinen und Nadeln, und schaute in ein Tal, worauf ausraschen Wolken Lichter schossen. Nun blitzte ein Fluß auf am Randeschwarzer Äcker. Nun schlug an die steile Wand eines Waldes eine jähe,grüne Flamme. Nun brach aus der Schattenmasse von Zypressen weiß loderndein Haus. Mario Malvolto genoß das Glück, das alles ansehen zu dürfen, ohnees malen zu müssen.
+
+Input Text: Einmal, Mitte Juni, stand er in der Pineta über Settignano, auf
+einembraunen Wege aus Steinen und Nadeln, und schaute in ein Tal,
+worauf ausraschen Wolken Lichter schossen. Nun blitzte ein Fluß auf am
+Randeschwarzer Äcker. Nun schlug an die steile Wand eines Waldes eine
+jähe,grüne Flamme. Nun brach aus der Schattenmasse von Zypressen weiß
+loderndein Haus. Mario Malvolto genoß das Glück, das alles ansehen zu
+dürfen, ohnees malen zu müssen.
+
+Acrostic: Einmal
+Result: SUCCESS
+Result Text: Einmal, Mitte Juni, stand er hoch im kurs stehen der Pineta über Sett-
+ignano, auf einembraunen Wege aus Steinen und Nadeln, und schaute i-
+n ein Tal, worauf ausraschen Wolken Lichter schossen. in diesem zusam-
+menhang blitzte ein F- luß auf am Randeschwarzer Äcker. Nun schlug
+an die steile Wand eines Waldes eine jähe,grüne Flamme. in diesem fal-
+l brach aus der Schattenmasse von Zypressen weiß loderndein Haus. Mar-
+io Malvolto genoß das Glück, das alles ansehen zu dürfen, ohnees malen
+zu mü sen.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+SynonymOperation
+LineBreakOperation
+SynonymOperation
+Number of Genereted Nodes: 4406
+Number of Goal Checks: 4406
+Execution Time: 20
+
+Input Text: Einmal, Mitte Juni, stand er in der Pineta über Settignano, auf
+einembraunen Wege aus Steinen und Nadeln, und schaute in ein Tal,
+worauf ausraschen Wolken Lichter schossen. Nun blitzte ein Fluß auf am
+Randeschwarzer Äcker. Nun schlug an die steile Wand eines Waldes eine
+jähe,grüne Flamme. Nun brach aus der Schattenmasse von Zypressen weiß
+loderndein Haus. Mario Malvolto genoß das Glück, das alles ansehen zu
+dürfen, ohnees malen zu müssen.
+
+Acrostic: ein
+Result: SUCCESS
+Result Text: Einmal, Mitte Juni, stand er hoch im kurs stehen der Pineta über Sett-
+ignano, auf einembraunen Wege aus Steinen und Nadeln, und schaute i-
+n ein Tal, worauf ausraschen Wolken Lichter schossen. Nun blitzte ein
+F- luß auf am Randeschwarzer Äcker. Nun schlug an die steile Wand ein-
+es Waldes eine jähe,grüne Flamme. Nun brach aus der Schattenmasse von
+Zy- pressen weiß loderndein Haus. Mario Malvolto genoß das Glück, das
+all- es ansehen zu dürfen, ohnees malen zu müssen.
+
+Applied Operators (In Final Result): SynonymOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 891
+Number of Goal Checks: 891
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/21.txt=============================
+Current Time: Thu Jan 29 19:39:18 CET 2015
+Input String: Erst in der Abenddämmerung erwachte Gregor aus seinem schwerenohnmachtähnlichen Schlaf. Er wäre gewiß nicht viel später auch ohneStörung erwacht, denn er fühlte sich genügend ausgeruht undausgeschlafen, doch schien es ihm, als hätte ihn ein flüchtiger Schrittund ein vorsichtiges Schließen der zum Vorzimmer führenden Tür geweckt.Der Schein der elektrischen Straßenbahn lag bleich hier und da auf derZimmerdecke und auf den höheren Teilen der Möbel, aber unten bei Gregorwar es finster.
+
+Input Text: Erst in der Abenddämmerung erwachte Gregor aus seinem
+schwerenohnmachtähnlichen Schlaf. Er wäre gewiß nicht viel später auch
+ohneStörung erwacht, denn er fühlte sich genügend ausgeruht
+undausgeschlafen, doch schien es ihm, als hätte ihn ein flüchtiger
+Schrittund ein vorsichtiges Schließen der zum Vorzimmer führenden Tür
+geweckt.Der Schein der elektrischen Straßenbahn lag bleich hier und da
+auf derZimmerdecke und auf den höheren Teilen der Möbel, aber unten
+bei Gregorwar es finster.
+
+Acrostic: Erst
+Result: TIMEOUT
+Number of Genereted Nodes: 700721
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 700721
+Execution Time: 911
+
+Input Text: Erst in der Abenddämmerung erwachte Gregor aus seinem
+schwerenohnmachtähnlichen Schlaf. Er wäre gewiß nicht viel später auch
+ohneStörung erwacht, denn er fühlte sich genügend ausgeruht
+undausgeschlafen, doch schien es ihm, als hätte ihn ein flüchtiger
+Schrittund ein vorsichtiges Schließen der zum Vorzimmer führenden Tür
+geweckt.Der Schein der elektrischen Straßenbahn lag bleich hier und da
+auf derZimmerdecke und auf den höheren Teilen der Möbel, aber unten
+bei Gregorwar es finster.
+
+Acrostic: ein
+Result: SUCCESS
+Result Text: Erst in der Abenddämmerung erwachte Gregor aus se-
+inem schwerenohnmachtähnlichen Schlaf. Er wäre gewiß
+nicht viel später auch ohneStörung erwacht, denn er fühlte sich
+genügend ausgeruht undausgeschlafen, doch schien es ihm, als hätte ihn
+ein flüchtiger Schrittund ein vorsichtiges Schließen der zum Vorzimmer
+führenden Tür geweckt.Der Schein der elektrischen Straßenbahn lag
+bleich hier und da auf derZimmerdecke und auf den höheren Teilen der
+Möbel, aber unten bei Gregorwar es finster.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+LineBreakOperation
+Number of Genereted Nodes: 883
+Number of Goal Checks: 883
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/23.txt=============================
+Current Time: Thu Jan 29 20:00:08 CET 2015
+Input String: Mit welchen Ausreden man an jenem ersten Vormittag den Arzt und denSchlosser wieder aus der Wohnung geschafft hatte, konnte Gregor garnicht erfahren, denn da er nicht verstanden wurde, dachte niemand daran,auch die Schwester nicht, daß er die anderen verstehen könne, und somußte er sich, wenn die Schwester in seinem Zimmer war, damit begnügen,nur hier und da ihre Seufzer und Anrufe der Heiligen zu hören.
+
+Input Text: Mit welchen Ausreden man an jenem ersten Vormittag den Arzt und
+denSchlosser wieder aus der Wohnung geschafft hatte, konnte Gregor
+garnicht erfahren, denn da er nicht verstanden wurde, dachte niemand
+daran,auch die Schwester nicht, daß er die anderen verstehen könne,
+und somußte er sich, wenn die Schwester in seinem Zimmer war, damit
+begnügen,nur hier und da ihre Seufzer und Anrufe der Heiligen zu
+hören.
+
+Acrostic: Mit
+Result: SUCCESS
+Result Text: Mit welchen Ausreden man an jenem ersten Vormittag den halbgott voll
+im trend we- iß und denSchlosser wieder aus der Wohnung geschafft hat-
+te, konnte Gr- egor garnicht erfahren, denn da er nicht verstanden wu-
+rde, dachte nie- mand daran,auch die Schwester nicht, daß er die ande-
+ren verstehen kön- ne, und somußte er sich, wenn die Schwester in sei-
+nem Zimmer war, dam- it begnügen,nur hier und da ihre Seufzer und Anr-
+ufe der Heiligen zu hören.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 1007
+Number of Goal Checks: 1007
+Execution Time: 12
+
+Input Text: Mit welchen Ausreden man an jenem ersten Vormittag den Arzt und
+denSchlosser wieder aus der Wohnung geschafft hatte, konnte Gregor
+garnicht erfahren, denn da er nicht verstanden wurde, dachte niemand
+daran,auch die Schwester nicht, daß er die anderen verstehen könne,
+und somußte er sich, wenn die Schwester in seinem Zimmer war, damit
+begnügen,nur hier und da ihre Seufzer und Anrufe der Heiligen zu
+hören.
+
+Acrostic: mit
+Result: SUCCESS
+Result Text: Mit welchen Ausreden man an jenem ersten Vormittag den halbgott voll
+im trend we- iß und denSchlosser wieder aus der Wohnung geschafft hat-
+te, konnte Gr- egor garnicht erfahren, denn da er nicht verstanden wu-
+rde, dachte nie- mand daran,auch die Schwester nicht, daß er die ande-
+ren verstehen kön- ne, und somußte er sich, wenn die Schwester in sei-
+nem Zimmer war, dam- it begnügen,nur hier und da ihre Seufzer und Anr-
+ufe der Heiligen zu hören.
+
+Applied Operators (In Final Result): SynonymOperation
+SynonymOperation
+Number of Genereted Nodes: 1007
+Number of Goal Checks: 1007
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/Bruno/25.txt=============================
+Current Time: Thu Jan 29 20:12:46 CET 2015
+Input String: Beim Anhören dieser Worte der Mutter erkannte Gregor, daß der Mangeljeder unmittelbaren menschlichen Ansprache, verbunden mit demeinförmigen Leben inmitten der Familie, im Laufe dieser zwei Monateseinen Verstand hatte verwirren müssen, denn anders konnte er es sichnicht erklären, daß er ernsthaft darnach hatte verlangen können, daßsein Zimmer ausgeleert würde.
+
+Input Text: Beim Anhören dieser Worte der Mutter erkannte Gregor, daß der
+Mangeljeder unmittelbaren menschlichen Ansprache, verbunden mit
+demeinförmigen Leben inmitten der Familie, im Laufe dieser zwei
+Monateseinen Verstand hatte verwirren müssen, denn anders konnte er es
+sichnicht erklären, daß er ernsthaft darnach hatte verlangen können,
+daßsein Zimmer ausgeleert würde.
+
+Acrostic: Beim
+Result: SUCCESS
+Result Text: Beim Anhören dieser Worte der Mutter erkannte Gregor, daß d-
+er Mangeljeder unmittelbaren menschlichen Ansprache, verbunden m-
+it demeinförmigen Leben inmitten der Familie, im Laufe dieser zwei
+Monateseinen Verstand hatte verwirren müssen, denn anders konnte er es
+sichnicht erklären, daß er ernsthaft darnach hatte verlangen können,
+daßsein Zimmer ausgeleert würde.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 649
+Number of Goal Checks: 649
+Execution Time: 8
+
+Input Text: Beim Anhören dieser Worte der Mutter erkannte Gregor, daß der
+Mangeljeder unmittelbaren menschlichen Ansprache, verbunden mit
+demeinförmigen Leben inmitten der Familie, im Laufe dieser zwei
+Monateseinen Verstand hatte verwirren müssen, denn anders konnte er es
+sichnicht erklären, daß er ernsthaft darnach hatte verlangen können,
+daßsein Zimmer ausgeleert würde.
+
+Acrostic: bei
+Result: SUCCESS
+Result Text: Beim Anhören dieser Worte der Mutter erkannte Gregor, daß d-
+er Mangeljeder unmittelbaren menschlichen Ansprache, verbunden m-
+it demeinförmigen Leben inmitten der Familie, im Laufe dieser zwei
+Monateseinen Verstand hatte verwirren müssen, denn anders konnte er es
+sichnicht erklären, daß er ernsthaft darnach hatte verlangen können,
+daßsein Zimmer ausgeleert würde.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 649
+Number of Goal Checks: 649
+Execution Time: 0
+
+
+==========================================================
+
