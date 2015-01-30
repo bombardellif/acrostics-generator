@@ -1,0 +1,1574 @@
+
+=============================Text/William/1.txt=============================
+Current Time: Thu Jan 29 20:08:37 CET 2015
+Input String: Als es zu schneien aufgehört hatte, verließ Johanna von Rotenhoff, ohne ein rechtes Ziel zu haben, das Gutshaus. Mechanisch einen Fuß vor den anderen setzend, schlug sie den Weg zum verschneiten Park ein. Johanna von Rotenhoff schritt wie eine Marionette, die keinen eigenen Willen hat. Ihr Gesicht war ungewöhnlich bleich, und ihre Augen waren vom Weinen gerötet. So war es in letzter Zeit öfter. Ihre bisher glückliche Ehe war ins Wanken geraten. Niemals hätte Johanna an der Treue Viktors zu zweifeln gewagt. Und jetzt? Seitdem die Schauspielerin Melanie Nowara in der nahe gelegenen Kreisstadt am Stadttheater verpflichtet war, gab es kaum einen Abend, an dem Viktor zu Hause war.
+
+Input Text: Als es zu schneien aufgehört hatte, verließ Johanna von Rotenhoff,
+ohne ein rechtes Ziel zu haben, das Gutshaus. Mechanisch einen Fuß vor
+den anderen setzend, schlug sie den Weg zum verschneiten Park ein.
+Johanna von Rotenhoff schritt wie eine Marionette, die keinen eigenen
+Willen hat. Ihr Gesicht war ungewöhnlich bleich, und ihre Augen waren
+vom Weinen gerötet. So war es in letzter Zeit öfter. Ihre bisher
+glückliche Ehe war ins Wanken geraten. Niemals hätte Johanna an der
+Treue Viktors zu zweifeln gewagt. Und jetzt? Seitdem die
+Schauspielerin Melanie Nowara in der nahe gelegenen Kreisstadt am
+Stadttheater verpflichtet war, gab es kaum einen Abend, an dem Viktor
+zu Hause war.
+
+Acrostic: Als
+Result: TIMEOUT
+Number of Genereted Nodes: 159379
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 159379
+Execution Time: 901
+
+Input Text: Als es zu schneien aufgehört hatte, verließ Johanna von Rotenhoff,
+ohne ein rechtes Ziel zu haben, das Gutshaus. Mechanisch einen Fuß vor
+den anderen setzend, schlug sie den Weg zum verschneiten Park ein.
+Johanna von Rotenhoff schritt wie eine Marionette, die keinen eigenen
+Willen hat. Ihr Gesicht war ungewöhnlich bleich, und ihre Augen waren
+vom Weinen gerötet. So war es in letzter Zeit öfter. Ihre bisher
+glückliche Ehe war ins Wanken geraten. Niemals hätte Johanna an der
+Treue Viktors zu zweifeln gewagt. Und jetzt? Seitdem die
+Schauspielerin Melanie Nowara in der nahe gelegenen Kreisstadt am
+Stadttheater verpflichtet war, gab es kaum einen Abend, an dem Viktor
+zu Hause war.
+
+Acrostic: auf
+Result: TIMEOUT
+Number of Genereted Nodes: 172493
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 172493
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/2.txt=============================
+Current Time: Thu Jan 29 20:09:39 CET 2015
+Input String: Sein Leben hing von dem Palomino ab, und jetzt bedauerte er es nicht mehr, dieses auffällige Pferd behalten zu haben. Schon seit etwa zwanzig Minuten waren die Wölfe hinter ihm her, und sie legten dabei eine verbissene Zähigkeit an den Tag, die für diese ganze Verfolgung und ihren Haß kennzeichnend war. Noch immer ließ die Dämmerung auf sich warten, und ein Teil des Rudels hatte schon bis auf knapp dreihundert Yard aufgeholt. Wann immer das Gelände es zuließ, wandte Lee Buckley sich um und sah, daß es sich nur um drei der Burschen handelte. Einer davon war zweifellos der Mestize auf seinem stämmigen Appaloosa.
+
+Input Text: Sein Leben hing von dem Palomino ab, und jetzt bedauerte er es nicht
+mehr, dieses auffällige Pferd behalten zu haben. Schon seit etwa
+zwanzig Minuten waren die Wölfe hinter ihm her, und sie legten dabei
+eine verbissene Zähigkeit an den Tag, die für diese ganze Verfolgung
+und ihren Haß kennzeichnend war. Noch immer ließ die Dämmerung auf
+sich warten, und ein Teil des Rudels hatte schon bis auf knapp
+dreihundert Yard aufgeholt. Wann immer das Gelände es zuließ, wandte
+Lee Buckley sich um und sah, daß es sich nur um drei der Burschen
+handelte. Einer davon war zweifellos der Mestize auf seinem stämmigen
+Appaloosa.
+
+Acrostic: Sein
+Result: SUCCESS
+Result Text: Sein Leben hing von dem Palomino ab, und jetzt bedauerte er
+es nicht mehr, dieses auffällige Pferd behalten zu haben. Schon se-
+it etwa zwanzig Minuten waren die Wölfe hinter ihm her, und sie legte-
+n dabei eine verbissene Zähigkeit an den Tag, die für diese ganze
+Verfolgung und ihren Haß kennzeichnend war. Noch immer ließ die
+Dämmerung auf sich warten, und ein Teil des Rudels hatte schon bis auf
+knapp dreihundert Yard aufgeholt. Wann immer das Gelände es zuließ,
+wandte Lee Buckley sich um und sah, daß es sich nur um drei der
+Burschen handelte. Einer davon war zweifellos der Mestize auf seinem
+stämmigen Appaloosa.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 271
+Number of Goal Checks: 271
+Execution Time: 19
+
+Input Text: Sein Leben hing von dem Palomino ab, und jetzt bedauerte er es nicht
+mehr, dieses auffällige Pferd behalten zu haben. Schon seit etwa
+zwanzig Minuten waren die Wölfe hinter ihm her, und sie legten dabei
+eine verbissene Zähigkeit an den Tag, die für diese ganze Verfolgung
+und ihren Haß kennzeichnend war. Noch immer ließ die Dämmerung auf
+sich warten, und ein Teil des Rudels hatte schon bis auf knapp
+dreihundert Yard aufgeholt. Wann immer das Gelände es zuließ, wandte
+Lee Buckley sich um und sah, daß es sich nur um drei der Burschen
+handelte. Einer davon war zweifellos der Mestize auf seinem stämmigen
+Appaloosa.
+
+Acrostic: sich
+Result: SUCCESS
+Result Text: Sein Leben hing von dem Palomino ab, und jetzt bedauerte er es n-
+icht mehr, dieses auffaellige Pferd behalten zu haben. S-
+chon seit etwa zwanzig Minuten waren die Wölfe hinter ihm
+her, und sie legten dabei eine verbissene Zähigkeit an den Tag, die
+fuer diese ganze Verfolgung und ihren Hass kennzeichnend war. Noch
+immer liess die Daemmerung auf sich warten, und ein Teil des Rudels
+hatte schon bis auf knapp dreihundert Yard aufgeholt. Wann immer das
+Gelaende es zuliess, wandte Lee Buckley sich um und sah, dass es sich
+nur um drei der Burschen handelte. Einer davon war zweifellos der
+Mestize auf seinem staemmigen Appaloosa.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+LineBreakOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+WrongSpellingOperation
+LineBreakOperation
+WrongHyphenationOperation
+LineBreakOperation
+Number of Genereted Nodes: 6891
+Number of Goal Checks: 6891
+Execution Time: 43
+
+
+==========================================================
+
+
+=============================Text/William/3.txt=============================
+Current Time: Thu Jan 29 20:25:06 CET 2015
+Input String: Jo fuhr langsam auf den Patio. Wagen neben Wagen parkte dort. Aus der Bar drang Susans rauchige Altstimme. Ein junges Paar stieg in einen Camero. Jo wartete, bis sie abfuhren. Er rollte in die Lücke, stellte den Motor ab und schaltete die Scheinwerfer aus. Coolidge lehnte gefesselt in den Polstern der Rücksitze. Er stöhnte. Dover, auf den Beifahrersitz gehievt, war aus seiner Betäubung erwacht. Auch er war gefesselt. Jo lief ins Hauptgebäude und trieb Bernie auf. Gemeinsam transportierten sie die Ganoven in den Keller. Bernie hatte das Licht angeknipst. Die kalkigen Wände waren kahl. Nur ein paar Gartenmöbel standen herum.
+
+Input Text: Jo fuhr langsam auf den Patio. Wagen neben Wagen parkte dort. Aus der
+Bar drang Susans rauchige Altstimme. Ein junges Paar stieg in einen
+Camero. Jo wartete, bis sie abfuhren. Er rollte in die Lücke, stellte
+den Motor ab und schaltete die Scheinwerfer aus. Coolidge lehnte
+gefesselt in den Polstern der Rücksitze. Er stöhnte. Dover, auf den
+Beifahrersitz gehievt, war aus seiner Betäubung erwacht. Auch er war
+gefesselt. Jo lief ins Hauptgebäude und trieb Bernie auf. Gemeinsam
+transportierten sie die Ganoven in den Keller. Bernie hatte das Licht
+angeknipst. Die kalkigen Wände waren kahl. Nur ein paar Gartenmöbel
+standen herum.
+
+Acrostic: Jo
+Result: SUCCESS
+Result Text: Jo fuhr langsam auf den Patio. Wagen neben Wagen parkte d-
+ort. Aus der Bar drang Susans rauchige Altstimme. Ein junges Paar sti-
+eg in einen Camero. Jo wartete, bis sie abfuhren. Er rollte in die Lü-
+cke, stellte den Motor ab und schaltete die Scheinwerfer aus. Coolidge
+lehnte gefesselt in den Polstern der Rücksitze. Er stöhnte. Dover, auf
+den Beifahrersitz gehievt, war aus seiner Betäubung erwacht. Auch er
+war gefesselt. Jo lief ins Hauptgebäude und trieb Bernie auf.
+Gemeinsam transportierten sie die Ganoven in den Keller. Bernie hatte
+das Licht angeknipst. Die kalkigen Wände waren kahl. Nur ein paar
+Gartenmöbel standen herum.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 974
+Number of Goal Checks: 974
+Execution Time: 25
+
+Input Text: Jo fuhr langsam auf den Patio. Wagen neben Wagen parkte dort. Aus der
+Bar drang Susans rauchige Altstimme. Ein junges Paar stieg in einen
+Camero. Jo wartete, bis sie abfuhren. Er rollte in die Lücke, stellte
+den Motor ab und schaltete die Scheinwerfer aus. Coolidge lehnte
+gefesselt in den Polstern der Rücksitze. Er stöhnte. Dover, auf den
+Beifahrersitz gehievt, war aus seiner Betäubung erwacht. Auch er war
+gefesselt. Jo lief ins Hauptgebäude und trieb Bernie auf. Gemeinsam
+transportierten sie die Ganoven in den Keller. Bernie hatte das Licht
+angeknipst. Die kalkigen Wände waren kahl. Nur ein paar Gartenmöbel
+standen herum.
+
+Acrostic: Jahr
+Result: TIMEOUT
+Number of Genereted Nodes: 103691
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 103691
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/4.txt=============================
+Current Time: Thu Jan 29 20:55:08 CET 2015
+Input String: Noch immer liefen die Kommentare und die Meldungen über den Bildschirm und wurden von den Terranern und den Moritatoren ausgewertet. Der neue Taschkar, der durch die Übernahme des Amtes alle individuellen Eigenschaften abgelegt hatte, darunter seinen Eigennamen, ließ die Planeten geradezu mit Nachrichten überschütten. Ständig gab es Kommentare, die deutlich machten, daß eine Richtungsänderung von hundertachtzig Grad bevorstand. Alles sollte besser und schöner, billiger und netter werden - und der Taschkar verbürgte sich dafür. Eine halbe Stunde später sagte Lavascha: " Wenn Sie recht haben, Cascal, dann ist der Tod des Taschkars vielleicht gar kein Hindernis für uns bei der Suche nach dem Ganjo und Rhodan. " Cascal entgegnete leise: " Ich glaube nicht.
+
+Input Text: Noch immer liefen die Kommentare und die Meldungen über den
+Bildschirm und wurden von den Terranern und den Moritatoren
+ausgewertet. Der neue Taschkar, der durch die Übernahme des Amtes alle
+individuellen Eigenschaften abgelegt hatte, darunter seinen
+Eigennamen, ließ die Planeten geradezu mit Nachrichten überschütten.
+Ständig gab es Kommentare, die deutlich machten, daß eine
+Richtungsänderung von hundertachtzig Grad bevorstand. Alles sollte
+besser und schöner, billiger und netter werden und der Taschkar
+verbürgte sich dafür. Eine halbe Stunde später sagte Lavascha: " Wenn
+Sie recht haben, Cascal, dann ist der Tod des Taschkars vielleicht gar
+kein Hindernis für uns bei der Suche nach dem Ganjo und Rhodan. "
+Cascal entgegnete leise: " Ich glaube nicht.
+
+Acrostic: Noch
+Result: TIMEOUT
+Number of Genereted Nodes: 215506
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 215506
+Execution Time: 901
+
+Input Text: Noch immer liefen die Kommentare und die Meldungen über den
+Bildschirm und wurden von den Terranern und den Moritatoren
+ausgewertet. Der neue Taschkar, der durch die Übernahme des Amtes alle
+individuellen Eigenschaften abgelegt hatte, darunter seinen
+Eigennamen, ließ die Planeten geradezu mit Nachrichten überschütten.
+Ständig gab es Kommentare, die deutlich machten, daß eine
+Richtungsänderung von hundertachtzig Grad bevorstand. Alles sollte
+besser und schöner, billiger und netter werden und der Taschkar
+verbürgte sich dafür. Eine halbe Stunde später sagte Lavascha: " Wenn
+Sie recht haben, Cascal, dann ist der Tod des Taschkars vielleicht gar
+kein Hindernis für uns bei der Suche nach dem Ganjo und Rhodan. "
+Cascal entgegnete leise: " Ich glaube nicht.
+
+Acrostic: nicht
+Result: TIMEOUT
+Number of Genereted Nodes: 251682
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 251682
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/6.txt=============================
+Current Time: Thu Jan 29 21:25:10 CET 2015
+Input String: Was Jasmin verschweigt. Mogelbeere. Noch um 1800 gehörte der Mogelbeerbaum zu den häufigsten Baumarten der südlichen Länder. Die Mogelbeere (als unreife Frucht) wurde von den weiblichen Bewohnern Italiens, Jugoslawiens, Spaniens und Südfrankreichs lange Zeit als orales Verhütungsmittel benutzt. Die getrocknete, etwa pillengroße Beere garantierte bei regelmäßiger Einnahme nach (nicht vor!) dem täglichen Morgenstuhlgang dauerhafte Verhinderung einer Empfängnis. Optimator-Priester aus München führten bei einer Wallfahrt die Mogelbeere aus Italien nach Deutschland ein. Zunächst profitierten ausnahmslos alle Nonnenklöster deutscher Bistümer von der Beere; erst nach ca. 70 Jahren fand auch das deutsche Bürgertum zu der Mogelbeere (vermutlich über einige ausgediente Nonnen).
+
+Input Text: Was Jasmin verschweigt. Mogelbeere. Noch um 1800 gehörte der
+Mogelbeerbaum zu den häufigsten Baumarten der südlichen Länder. Die
+Mogelbeere (als unreife Frucht) wurde von den weiblichen Bewohnern
+Italiens, Jugoslawiens, Spaniens und Südfrankreichs lange Zeit als
+orales Verhütungsmittel benutzt. Die getrocknete, etwa pillengroße
+Beere garantierte bei regelmäßiger Einnahme nach (nicht vor!) dem
+täglichen Morgenstuhlgang dauerhafte Verhinderung einer Empfängnis.
+Optimator-Priester aus München führten bei einer Wallfahrt die
+Mogelbeere aus Italien nach Deutschland ein. Zunächst profitierten
+ausnahmslos alle Nonnenklöster deutscher Bistümer von der Beere; erst
+nach ca. 70 Jahren fand auch das deutsche Bürgertum zu der Mogelbeere
+(vermutlich über einige ausgediente Nonnen).
+
+Acrostic: Was
+Result: TIMEOUT
+Number of Genereted Nodes: 206045
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 206045
+Execution Time: 901
+
+Input Text: Was Jasmin verschweigt. Mogelbeere. Noch um 1800 gehörte der
+Mogelbeerbaum zu den häufigsten Baumarten der südlichen Länder. Die
+Mogelbeere (als unreife Frucht) wurde von den weiblichen Bewohnern
+Italiens, Jugoslawiens, Spaniens und Südfrankreichs lange Zeit als
+orales Verhütungsmittel benutzt. Die getrocknete, etwa pillengroße
+Beere garantierte bei regelmäßiger Einnahme nach (nicht vor!) dem
+täglichen Morgenstuhlgang dauerhafte Verhinderung einer Empfängnis.
+Optimator-Priester aus München führten bei einer Wallfahrt die
+Mogelbeere aus Italien nach Deutschland ein. Zunächst profitierten
+ausnahmslos alle Nonnenklöster deutscher Bistümer von der Beere; erst
+nach ca. 70 Jahren fand auch das deutsche Bürgertum zu der Mogelbeere
+(vermutlich über einige ausgediente Nonnen).
+
+Acrostic: werden
+Result: TIMEOUT
+Number of Genereted Nodes: 231746
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 231746
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/7.txt=============================
+Current Time: Thu Jan 29 21:40:29 CET 2015
+Input String: Wieder ein Hilfskreuzer. Zur zweiten Feindfahrt lief U 46 mit der alten Besatzung im ersten Augustdrittel aus St. Nazaire aus. Das Einsatzgebiet des Bootes waren die Nordatlantik-Konvoi-Routen. Die Besatzung war ausgeruht, das Boot so gut wie möglich wieder getrimmt. Engelbert Endrass brannte darauf, wieder auf See zu sein, im Einsatz gegen das Meer und einen in dem Operationsgebiet mit Zerstörern und Flugzeugen lauernden Gegner. Am 14. August hatte U 46 seinen Standort im Raum südlich Island erreicht. Das Wetter war gut. Die See ging schwach, und vom Gegner war noch immer nichts zu sehen.
+
+Input Text: Wieder ein Hilfskreuzer. Zur zweiten Feindfahrt lief U 46 mit der
+alten Besatzung im ersten Augustdrittel aus St. Nazaire aus. Das
+Einsatzgebiet des Bootes waren die Nordatlantik-Konvoi-Routen. Die
+Besatzung war ausgeruht, das Boot so gut wie möglich wieder getrimmt.
+Engelbert Endrass brannte darauf, wieder auf See zu sein, im Einsatz
+gegen das Meer und einen in dem Operationsgebiet mit Zerstörern und
+Flugzeugen lauernden Gegner. Am 14. August hatte U 46 seinen Standort
+im Raum südlich Island erreicht. Das Wetter war gut. Die See ging
+schwach, und vom Gegner war noch immer nichts zu sehen.
+
+Acrostic: Wieder
+Result: SUCCESS
+Result Text: Wieder ein Hilfskreuzer. Zur zweiten Feindfahrt l-
+ief U 46 mit der alten Besatzung im ersten Augustdritt-
+el aus St. Nazaire aus. Das Einsatzgebiet des Bootes waren
+die Nordatlantik-Konvoi-Routen. Die Besatzung war ausg-
+eruht, das Boot so gut wie möglich wieder getrimmt. Engelbert End-
+rass brannte darauf, wieder auf See zu sein, im Einsatz gegen das Mee-
+r und einen in dem Operationsgebiet mit Zerstörern und Flugzeugen lau-
+ernden Gegner. Am 14. August hatte U 46 seinen Standort im Raum südli-
+ch Island erreicht. Das Wetter war gut. Die See ging schwach, und vom
+Gegner war noch immer nichts zu sehen.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+LineBreakOperation
+WrongHyphenationOperation
+LineBreakOperation
+LineBreakOperation
+WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 500
+Number of Goal Checks: 500
+Execution Time: 16
+
+Input Text: Wieder ein Hilfskreuzer. Zur zweiten Feindfahrt lief U 46 mit der
+alten Besatzung im ersten Augustdrittel aus St. Nazaire aus. Das
+Einsatzgebiet des Bootes waren die Nordatlantik-Konvoi-Routen. Die
+Besatzung war ausgeruht, das Boot so gut wie möglich wieder getrimmt.
+Engelbert Endrass brannte darauf, wieder auf See zu sein, im Einsatz
+gegen das Meer und einen in dem Operationsgebiet mit Zerstörern und
+Flugzeugen lauernden Gegner. Am 14. August hatte U 46 seinen Standort
+im Raum südlich Island erreicht. Das Wetter war gut. Die See ging
+schwach, und vom Gegner war noch immer nichts zu sehen.
+
+Acrostic: werden
+Result: TIMEOUT
+Number of Genereted Nodes: 50944
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 50944
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/8.txt=============================
+Current Time: Thu Jan 29 21:55:30 CET 2015
+Input String: X-RAY-3 wirbelte herum, als er plötzlich auf das Geräusch aufmerksam wurde, das seitlich hinter einem Felsblock entstand. Er glaubte zu träumen, als er es sah. Eine Frau, genau wie die Fremde, die Keimatse in seinem Tokioer Büro untergebracht hatte! Ein Affenwesen, von dem der irrsinnige Professor Yondo einige geschaffen haben sollte! Larry merkte, wie sein Blut in den Schläfen hämmerte und der Pulsschlag sich beschleunigte. Yondo sollte ein Versteck haben! Sollte durch einen tragischen Zufall das Flugzeug in unmittelbarer Nähe dieses Verstecks, so weit von Tokio entfernt, abgestürzt sein? Dann war es ausgeschlossen, daß man Yondo und seine Mutanten fand.
+
+Input Text: X-RAY-3 wirbelte herum, als er plötzlich auf das Geräusch aufmerksam
+wurde, das seitlich hinter einem Felsblock entstand. Er glaubte zu
+träumen, als er es sah. Eine Frau, genau wie die Fremde, die Keimatse
+in seinem Tokioer Büro untergebracht hatte! Ein Affenwesen, von dem
+der irrsinnige Professor Yondo einige geschaffen haben sollte! Larry
+merkte, wie sein Blut in den Schläfen hämmerte und der Pulsschlag sich
+beschleunigte. Yondo sollte ein Versteck haben! Sollte durch einen
+tragischen Zufall das Flugzeug in unmittelbarer Nähe dieses Verstecks,
+so weit von Tokio entfernt, abgestürzt sein? Dann war es
+ausgeschlossen, daß man Yondo und seine Mutanten fand.
+
+Acrostic: XRAY
+Result: TIMEOUT
+Number of Genereted Nodes: 124374
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 124374
+Execution Time: 901
+
+Input Text: X-RAY-3 wirbelte herum, als er plötzlich auf das Geräusch aufmerksam
+wurde, das seitlich hinter einem Felsblock entstand. Er glaubte zu
+träumen, als er es sah. Eine Frau, genau wie die Fremde, die Keimatse
+in seinem Tokioer Büro untergebracht hatte! Ein Affenwesen, von dem
+der irrsinnige Professor Yondo einige geschaffen haben sollte! Larry
+merkte, wie sein Blut in den Schläfen hämmerte und der Pulsschlag sich
+beschleunigte. Yondo sollte ein Versteck haben! Sollte durch einen
+tragischen Zufall das Flugzeug in unmittelbarer Nähe dieses Verstecks,
+so weit von Tokio entfernt, abgestürzt sein? Dann war es
+ausgeschlossen, daß man Yondo und seine Mutanten fand.
+
+Acrostic: X
+Result: SUCCESS
+Result Text: X-RAY-3 wirbelte herum, als er plötzlich auf das Geräusch aufmerksam
+wurde, das seitlich hinter einem Felsblock entstand. Er glaubte zu
+träumen, als er es sah. Eine Frau, genau wie die Fremde, die Keimatse
+in seinem Tokioer Büro untergebracht hatte! Ein Affenwesen, von dem
+der irrsinnige Professor Yondo einige geschaffen haben sollte! Larry
+merkte, wie sein Blut in den Schläfen hämmerte und der Pulsschlag sich
+beschleunigte. Yondo sollte ein Versteck haben! Sollte durch einen
+tragischen Zufall das Flugzeug in unmittelbarer Nähe dieses Verstecks,
+so weit von Tokio entfernt, abgestürzt sein? Dann war es
+ausgeschlossen, daß man Yondo und seine Mutanten fand.
+
+Applied Operators (In Final Result): Number of Genereted Nodes: 1
+Number of Goal Checks: 1
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/9.txt=============================
+Current Time: Thu Jan 29 22:25:33 CET 2015
+Input String: Zur Dreistufigkeit der ordentlichen Gerichtsbarkeit. Dr. Rogge vom Geschäftsführenden Vorstand (GfV) des Deutschen Richterbundes (DRB) hat hier kürzlich (DRiZ 1970, 149) das Problem der Dreistufigkeit mit begrüßenswerter Ausführlichkeit dargestellt, die Beschlüsse des GfV vom 20. 3.1970 mitgeteilt und hierzu eine Begründung gegeben. Die Richterschaft ist aufgefordert, darüber nachzudenken, zu diskutieren und eine Willensbildung herbeizuführen. Dem soll der folgende Beitrag dienen, der sich auf die Zivilgerichtsbarkeit beschränkt. Jede Reform setzt voraus, daß Bestehendes verbesserungsbedürftig ist.
+
+Input Text: Zur Dreistufigkeit der ordentlichen Gerichtsbarkeit. Dr. Rogge vom
+Geschäftsführenden Vorstand (GfV) des Deutschen Richterbundes (DRB)
+hat hier kürzlich (DRiZ 1970, 149) das Problem der Dreistufigkeit mit
+begrüßenswerter Ausführlichkeit dargestellt, die Beschlüsse des GfV
+vom 20. 3.1970 mitgeteilt und hierzu eine Begründung gegeben. Die
+Richterschaft ist aufgefordert, darüber nachzudenken, zu diskutieren
+und eine Willensbildung herbeizuführen. Dem soll der folgende Beitrag
+dienen, der sich auf die Zivilgerichtsbarkeit beschränkt. Jede Reform
+setzt voraus, daß Bestehendes verbesserungsbedürftig ist.
+
+Acrostic: Zur
+Result: TIMEOUT
+Number of Genereted Nodes: 284226
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 284226
+Execution Time: 901
+
+Input Text: Zur Dreistufigkeit der ordentlichen Gerichtsbarkeit. Dr. Rogge vom
+Geschäftsführenden Vorstand (GfV) des Deutschen Richterbundes (DRB)
+hat hier kürzlich (DRiZ 1970, 149) das Problem der Dreistufigkeit mit
+begrüßenswerter Ausführlichkeit dargestellt, die Beschlüsse des GfV
+vom 20. 3.1970 mitgeteilt und hierzu eine Begründung gegeben. Die
+Richterschaft ist aufgefordert, darüber nachzudenken, zu diskutieren
+und eine Willensbildung herbeizuführen. Dem soll der folgende Beitrag
+dienen, der sich auf die Zivilgerichtsbarkeit beschränkt. Jede Reform
+setzt voraus, daß Bestehendes verbesserungsbedürftig ist.
+
+Acrostic: zu
+Result: TIMEOUT
+Number of Genereted Nodes: 329950
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 329950
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/10.txt=============================
+Current Time: Thu Jan 29 22:55:35 CET 2015
+Input String: Histologische Einteilung des Lymphoma malignum Hodgkin und seine Bedeutung für die Prognose. In den Jahren 1948 bis 1967 wurden im Biopsiematerial 559 Fälle von Lymphoma malignum Hodgkin diagnostiziert. Unsere Ergebnisse zeigen, daß die Erkrankung meist um das dreißigste Lebensjahr auftritt und beide Geschlechter fast gleichmäßig befällt. Die Biopsien wurden auf Grund der von Lukes und Butler angegebenen Kriterien histologisch in vier Formen unterteilt: 1. lymphozytenreiche Form, 2.noduläre Sklerose, 3.gemischte Form, 4.lymphozytenarme Form.
+
+Input Text: Histologische Einteilung des Lymphoma malignum Hodgkin und seine
+Bedeutung für die Prognose. In den Jahren 1948 bis 1967 wurden im
+Biopsiematerial 559 Fälle von Lymphoma malignum Hodgkin
+diagnostiziert. Unsere Ergebnisse zeigen, daß die Erkrankung meist um
+das dreißigste Lebensjahr auftritt und beide Geschlechter fast
+gleichmäßig befällt. Die Biopsien wurden auf Grund der von Lukes und
+Butler angegebenen Kriterien histologisch in vier Formen unterteilt:
+1. lymphozytenreiche Form, 2.noduläre Sklerose, 3.gemischte Form,
+4.lymphozytenarme Form.
+
+Acrostic: Histologische
+Result: TIMEOUT
+Number of Genereted Nodes: 125326
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 125326
+Execution Time: 901
+
+Input Text: Histologische Einteilung des Lymphoma malignum Hodgkin und seine
+Bedeutung für die Prognose. In den Jahren 1948 bis 1967 wurden im
+Biopsiematerial 559 Fälle von Lymphoma malignum Hodgkin
+diagnostiziert. Unsere Ergebnisse zeigen, daß die Erkrankung meist um
+das dreißigste Lebensjahr auftritt und beide Geschlechter fast
+gleichmäßig befällt. Die Biopsien wurden auf Grund der von Lukes und
+Butler angegebenen Kriterien histologisch in vier Formen unterteilt:
+1. lymphozytenreiche Form, 2.noduläre Sklerose, 3.gemischte Form,
+4.lymphozytenarme Form.
+
+Acrostic: hat
+Result: TIMEOUT
+Number of Genereted Nodes: 172478
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 172478
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/11.txt=============================
+Current Time: Thu Jan 29 23:10:36 CET 2015
+Input String: Die Hochwasserkatastrophe in Tunesien im Herbst 1969. Beobachtung über die Auswirkung in der Naturlandschaft und Kulturlandschaft. Hochwasserkatastrophen gehören zum episodischen Erscheinungsbild des durch große Variabilität gekennzeichneten hygrischen Jahresganges des Klimas Nordafrikas. Sie sind dabei weniger ein Kennzeichen besonders feuchter Winter (" Feuchtjahre " mit häufigen und ergiebigen Niederschlägen in der winterlichen Jahreszeit des Mediterranklimas), als vielmehr Auswirkungen konzentriert in wenigen Tagen fallender Regenmengen höchster Niederschlagssummen, die meistens den mittleren Jahreswert bei weitem übertreffen.
+
+Input Text: Die Hochwasserkatastrophe in Tunesien im Herbst 1969. Beobachtung
+über die Auswirkung in der Naturlandschaft und Kulturlandschaft.
+Hochwasserkatastrophen gehören zum episodischen Erscheinungsbild des
+durch große Variabilität gekennzeichneten hygrischen Jahresganges des
+Klimas Nordafrikas. Sie sind dabei weniger ein Kennzeichen besonders
+feuchter Winter (" Feuchtjahre " mit häufigen und ergiebigen
+Niederschlägen in der winterlichen Jahreszeit des Mediterranklimas),
+als vielmehr Auswirkungen konzentriert in wenigen Tagen fallender
+Regenmengen höchster Niederschlagssummen, die meistens den mittleren
+Jahreswert bei weitem übertreffen.
+
+Acrostic: Die
+Result: TIMEOUT
+Number of Genereted Nodes: 201505
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 201505
+Execution Time: 901
+
+Input Text: Die Hochwasserkatastrophe in Tunesien im Herbst 1969. Beobachtung
+über die Auswirkung in der Naturlandschaft und Kulturlandschaft.
+Hochwasserkatastrophen gehören zum episodischen Erscheinungsbild des
+durch große Variabilität gekennzeichneten hygrischen Jahresganges des
+Klimas Nordafrikas. Sie sind dabei weniger ein Kennzeichen besonders
+feuchter Winter (" Feuchtjahre " mit häufigen und ergiebigen
+Niederschlägen in der winterlichen Jahreszeit des Mediterranklimas),
+als vielmehr Auswirkungen konzentriert in wenigen Tagen fallender
+Regenmengen höchster Niederschlagssummen, die meistens den mittleren
+Jahreswert bei weitem übertreffen.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Hochwasserkatastrophe in Tunesien im Herbst 1969. B-
+eobachtung über die in der Naturlandschaft und Kultu-
+rlandschaft. Hochwasserkatastrophen gehören zum episodischen
+Erscheinungsbild des durch große Variabilität gekennzeichneten
+hygrischen Jahresganges des Klimas Nordafrikas. Sie sind dabei weniger
+ein Kennzeichen besonders feuchter Winter (" Feuchtjahre " mit
+häufigen und ergiebigen Niederschlägen in der winterlichen Jahreszeit
+des Mediterranklimas), als vielmehr Auswirkungen konzentriert in
+wenigen Tagen fallender Regenmengen höchster Niederschlagssummen, die
+meistens den mittleren Jahreswert bei weitem übertreffen.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+LineBreakOperation
+WorInsertionDeletionOperation
+Number of Genereted Nodes: 290
+Number of Goal Checks: 290
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/12.txt=============================
+Current Time: Thu Jan 29 23:25:38 CET 2015
+Input String: Bemerkungen zur modernen Darstellung nationaler Geschichte. Eine neuere Darstellung deutscher Geschichte auf 335 Seiten kommt einer Nachfrage entgegen, nicht nur für den deutschen Bereich, sondern offenbar auch im Ausland, wie die bald erfolgte Übersetzung des hier angezeigten Bandes ins Englische ausweist. Manch Angehöriger der Historikerzunft wird eine moderne knappe Schilderung der nationalen Geschichte mit einem Gefühl, gemischt aus Anerkennung und Zweifel, zur Hand nehmen. Solch fachmännischer Zwiespalt erklärt sich wohl zunächst aus dem Eingeständnis, daß die Forderung nach einer derartigen Darstellung zu Recht besteht, und andererseits aus den Zuständigkeitsbedenken in der differenzierten Forschungssituation, aus Soll und Haben.
+
+Input Text: Bemerkungen zur modernen Darstellung nationaler Geschichte. Eine
+neuere Darstellung deutscher Geschichte auf 335 Seiten kommt einer
+Nachfrage entgegen, nicht nur für den deutschen Bereich, sondern
+offenbar auch im Ausland, wie die bald erfolgte Übersetzung des hier
+angezeigten Bandes ins Englische ausweist. Manch Angehöriger der
+Historikerzunft wird eine moderne knappe Schilderung der nationalen
+Geschichte mit einem Gefühl, gemischt aus Anerkennung und Zweifel, zur
+Hand nehmen. Solch fachmännischer Zwiespalt erklärt sich wohl zunächst
+aus dem Eingeständnis, daß die Forderung nach einer derartigen
+Darstellung zu Recht besteht, und andererseits aus den
+Zuständigkeitsbedenken in der differenzierten Forschungssituation, aus
+Soll und Haben.
+
+Acrostic: Bemerkungen
+Result: TIMEOUT
+Number of Genereted Nodes: 190600
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 190600
+Execution Time: 901
+
+Input Text: Bemerkungen zur modernen Darstellung nationaler Geschichte. Eine
+neuere Darstellung deutscher Geschichte auf 335 Seiten kommt einer
+Nachfrage entgegen, nicht nur für den deutschen Bereich, sondern
+offenbar auch im Ausland, wie die bald erfolgte Übersetzung des hier
+angezeigten Bandes ins Englische ausweist. Manch Angehöriger der
+Historikerzunft wird eine moderne knappe Schilderung der nationalen
+Geschichte mit einem Gefühl, gemischt aus Anerkennung und Zweifel, zur
+Hand nehmen. Solch fachmännischer Zwiespalt erklärt sich wohl zunächst
+aus dem Eingeständnis, daß die Forderung nach einer derartigen
+Darstellung zu Recht besteht, und andererseits aus den
+Zuständigkeitsbedenken in der differenzierten Forschungssituation, aus
+Soll und Haben.
+
+Acrostic: bei
+Result: SUCCESS
+Result Text: Bemerkungen zur modernen Darstellung nationaler Geschichte. Ein-
+e neuere Darstellung deutscher Geschichte auf 335 Se-
+iten kommt einer Nachfrage entgegen, nicht nur für den deutschen
+Bereich, sondern offenbar auch im Ausland, wie die bald erfolgte
+Übersetzung des hier angezeigten Bandes ins Englische ausweist. Manch
+Angehöriger der Historikerzunft wird eine moderne knappe Schilderung
+der nationalen Geschichte mit einem Gefühl, gemischt aus Anerkennung
+und Zweifel, zur Hand nehmen. Solch fachmännischer Zwiespalt erklärt
+sich wohl zunächst aus dem Eingeständnis, daß die Forderung nach einer
+derartigen Darstellung zu Recht besteht, und andererseits aus den
+Zuständigkeitsbedenken in der differenzierten Forschungssituation, aus
+Soll und Haben.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+LineBreakOperation
+Number of Genereted Nodes: 202
+Number of Goal Checks: 202
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/13.txt=============================
+Current Time: Thu Jan 29 23:25:49 CET 2015
+Input String: Die Sprache der Schüler aus sozial und kulturell benachteiligten Bevölkerungsschichten. Seit verhältnismäßig kurzer Zeit erst greift die erziehungspsychologische und erziehungs soziologische Forschung in vollem Umfang die Problematik auf, die für Kinder aus wirtschaftlich, sozial und kulturell benachteiligten Unterschichten im schulischen und außerschulischen Bildungsprozeß besteht. Untersuchungen haben klar ergeben, daß Kinder der Unterschichten vergleichsweise geringere schulische Erfolgschancen haben als Kinder, die aus der bürgerlichen Mittelschicht kommen.
+
+Input Text: Die Sprache der Schüler aus sozial und kulturell benachteiligten
+Bevölkerungsschichten. Seit verhältnismäßig kurzer Zeit erst greift
+die erziehungspsychologische und erziehungs soziologische Forschung in
+vollem Umfang die Problematik auf, die für Kinder aus wirtschaftlich,
+sozial und kulturell benachteiligten Unterschichten im schulischen und
+außerschulischen Bildungsprozeß besteht. Untersuchungen haben klar
+ergeben, daß Kinder der Unterschichten vergleichsweise geringere
+schulische Erfolgschancen haben als Kinder, die aus der bürgerlichen
+Mittelschicht kommen.
+
+Acrostic: Die
+Result: SUCCESS
+Result Text: Die Sprache der Schüler aus sozial und kulturell benachteil-
+igten Bevölkerungsschichten. Seit verhältnismäßig kurzer Zeit erst gr-
+eift die erziehungspsychologische und erziehungs soziologische Forsch-
+ung in vollem Umfang die Problematik auf, die für Kinder aus wirtscha-
+ftlich, sozial und kulturell benachteiligten Unterschichten im schuli-
+schen und außerschulischen Bildungsprozeß besteht. Untersuchungen hab-
+en klar ergeben, daß Kinder der Unterschichten vergleichsweise gering-
+ere schulische Erfolgschancen haben als Kinder, die aus der bürgerlic-
+hen Mittelschicht kommen.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 28
+Number of Goal Checks: 28
+Execution Time: 0
+
+Input Text: Die Sprache der Schüler aus sozial und kulturell benachteiligten
+Bevölkerungsschichten. Seit verhältnismäßig kurzer Zeit erst greift
+die erziehungspsychologische und erziehungs soziologische Forschung in
+vollem Umfang die Problematik auf, die für Kinder aus wirtschaftlich,
+sozial und kulturell benachteiligten Unterschichten im schulischen und
+außerschulischen Bildungsprozeß besteht. Untersuchungen haben klar
+ergeben, daß Kinder der Unterschichten vergleichsweise geringere
+schulische Erfolgschancen haben als Kinder, die aus der bürgerlichen
+Mittelschicht kommen.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Die Sprache der Schüler aus sozial und kulturell benacht-
+eiligten Bevölkerungsschichten. Seit verhältnismäßig kurzer Zeit e-
+rst greift die erziehungspsychologische und erziehungs soziologische
+Fors- chung in vollem Umfang die Problematik auf, die für Kinder aus
+wirtsc- haftlich, sozial und kulturell benachteiligten Unterschichten
+im schu- lischen und außerschulischen Bildungsprozeß besteht. Untersu-
+chungen h- aben klar ergeben, daß Kinder der Unterschichten vergleich-
+sweise geri- ngere schulische Erfolgschancen haben als Kinder, die au-
+s der bürgerl- ichen Mittelschicht kommen.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 177
+Number of Goal Checks: 177
+Execution Time: 11
+
+
+==========================================================
+
+
+=============================Text/William/15.txt=============================
+Current Time: Thu Jan 29 23:55:51 CET 2015
+Input String: Hamburg zeigt Camus auf der Singbühne. Im Februar 1942 notiert Albert Camus in sein Tagebuch eine Sentenz von Marc Aurel: " Was ein geplantes Werk aufhält, wird selber zum Werk. " Camus setzt hinzu: " Was den Weg versperrt, bringt uns weiter. " So meldet sich das Trauma der Abweisung wieder. Was dem Franzosen einst die Laufbahn, die Zulassung zum Staatsexamen vereitelt hatte, brachte dem Freiwilligen bei Ausbruch des Zweiten Weltkrieges die Ausmusterung: Krankheit. Sie ist zum geheimen Steuerungselement seiner Lebensweise, seiner Arbeitsdisziplin, seiner Denkweise geworden. Der Mensch in der Revolte, der Mythos von Sisyphos, die Pest: Camus wendet mit diesen inzwischen berühmten Symbolen immer auch die eigene, sehr private Erfahrung einer Überwältigung durch Übermacht und der Selbstbefreiung ins Allgemeine.
+
+Input Text: Hamburg zeigt Camus auf der Singbühne. Im Februar 1942 notiert Albert
+Camus in sein Tagebuch eine Sentenz von Marc Aurel: " Was ein
+geplantes Werk aufhält, wird selber zum Werk. " Camus setzt hinzu: "
+Was den Weg versperrt, bringt uns weiter. " So meldet sich das Trauma
+der Abweisung wieder. Was dem Franzosen einst die Laufbahn, die
+Zulassung zum Staatsexamen vereitelt hatte, brachte dem Freiwilligen
+bei Ausbruch des Zweiten Weltkrieges die Ausmusterung: Krankheit. Sie
+ist zum geheimen Steuerungselement seiner Lebensweise, seiner
+Arbeitsdisziplin, seiner Denkweise geworden. Der Mensch in der
+Revolte, der Mythos von Sisyphos, die Pest: Camus wendet mit diesen
+inzwischen berühmten Symbolen immer auch die eigene, sehr private
+Erfahrung einer Überwältigung durch Übermacht und der Selbstbefreiung
+ins Allgemeine.
+
+Acrostic: Hamburg
+Result: TIMEOUT
+Number of Genereted Nodes: 113017
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 113017
+Execution Time: 901
+
+Input Text: Hamburg zeigt Camus auf der Singbühne. Im Februar 1942 notiert Albert
+Camus in sein Tagebuch eine Sentenz von Marc Aurel: " Was ein
+geplantes Werk aufhält, wird selber zum Werk. " Camus setzt hinzu: "
+Was den Weg versperrt, bringt uns weiter. " So meldet sich das Trauma
+der Abweisung wieder. Was dem Franzosen einst die Laufbahn, die
+Zulassung zum Staatsexamen vereitelt hatte, brachte dem Freiwilligen
+bei Ausbruch des Zweiten Weltkrieges die Ausmusterung: Krankheit. Sie
+ist zum geheimen Steuerungselement seiner Lebensweise, seiner
+Arbeitsdisziplin, seiner Denkweise geworden. Der Mensch in der
+Revolte, der Mythos von Sisyphos, die Pest: Camus wendet mit diesen
+inzwischen berühmten Symbolen immer auch die eigene, sehr private
+Erfahrung einer Überwältigung durch Übermacht und der Selbstbefreiung
+ins Allgemeine.
+
+Acrostic: hat
+Result: TIMEOUT
+Number of Genereted Nodes: 120117
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 120117
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/16.txt=============================
+Current Time: Fri Jan 30 00:10:52 CET 2015
+Input String: Er kennt den Star wie kaum ein anderer: der Münchener Fotograf Horst Prange war immer dabei, wenn Heinz Rühmann seine Fernsehspiele drehte. In TV Hören *plus Sehen berichtet er nun darüber. Heinz Rühmann wie er lebt, wie er arbeitet, wie er wirklich ist. Jahrelang habe ich mit Rühmann gelacht und gelitten. Als Kinobesucher. Dann lernte ich ihn persönlich kennen. Während der Dreharbeiten zu " Mein Freund Harvey ". Jeder im Atelier war bemüht, diesem Mann, der sich so vehement verschenkte, alles zu Gefallen zu tun. Alles lief und tummelte sich. Vom Produzenten angefangen, der froh war, diesen goldenen Fisch an der Angel zu haben, bis hin zum Maskenbildner, der sich an der Prominenz wärmte.
+
+Input Text: Er kennt den Star wie kaum ein anderer: der Münchener Fotograf Horst
+Prange war immer dabei, wenn Heinz Rühmann seine Fernsehspiele drehte.
+In TV Hören *plus Sehen berichtet er nun darüber. Heinz Rühmann wie er
+lebt, wie er arbeitet, wie er wirklich ist. Jahrelang habe ich mit
+Rühmann gelacht und gelitten. Als Kinobesucher. Dann lernte ich ihn
+persönlich kennen. Während der Dreharbeiten zu " Mein Freund Harvey ".
+Jeder im Atelier war bemüht, diesem Mann, der sich so vehement
+verschenkte, alles zu Gefallen zu tun. Alles lief und tummelte sich.
+Vom Produzenten angefangen, der froh war, diesen goldenen Fisch an der
+Angel zu haben, bis hin zum Maskenbildner, der sich an der Prominenz
+wärmte.
+
+Acrostic: Er
+Result: SUCCESS
+Result Text: Er kennt den Star wie kaum ein anderer: der Münchener Fotograf Ho-
+rst Prange war immer dabei, wenn Heinz Rühmann seine Fernsehspiele dr-
+ehte. In TV Hören *plus Sehen berichtet er nun darüber. Heinz Rühmann
+wie er lebt, wie er arbeitet, wie er wirklich ist. Jahrelang habe ich
+mit Rühmann gelacht und gelitten. Als Kinobesucher. Dann lernte ich i-
+hn persönlich kennen. Während der Dreharbeiten zu " Mein Freund Harve-
+y ". Jeder im Atelier war bemüht, diesem Mann, der sich so vehement
+verschenkte, alles zu Gefallen zu tun. Alles lief und tummelte sich.
+Vom Produzenten angefangen, der froh war, diesen goldenen Fisch an der
+Angel zu haben, bis hin zum Maskenbildner, der sich an der Prominenz
+wärmte.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+Number of Genereted Nodes: 37
+Number of Goal Checks: 37
+Execution Time: 0
+
+Input Text: Er kennt den Star wie kaum ein anderer: der Münchener Fotograf Horst
+Prange war immer dabei, wenn Heinz Rühmann seine Fernsehspiele drehte.
+In TV Hören *plus Sehen berichtet er nun darüber. Heinz Rühmann wie er
+lebt, wie er arbeitet, wie er wirklich ist. Jahrelang habe ich mit
+Rühmann gelacht und gelitten. Als Kinobesucher. Dann lernte ich ihn
+persönlich kennen. Während der Dreharbeiten zu " Mein Freund Harvey ".
+Jeder im Atelier war bemüht, diesem Mann, der sich so vehement
+verschenkte, alles zu Gefallen zu tun. Alles lief und tummelte sich.
+Vom Produzenten angefangen, der froh war, diesen goldenen Fisch an der
+Angel zu haben, bis hin zum Maskenbildner, der sich an der Prominenz
+wärmte.
+
+Acrostic: ein
+Result: TIMEOUT
+Number of Genereted Nodes: 136673
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 136673
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/17.txt=============================
+Current Time: Fri Jan 30 00:25:54 CET 2015
+Input String: Erotik im Büro (2): Die Überstunde. Viele Frauen wissen nicht, was ihre Männer den ganzen Tag tun. Hier erfahren sie ein paar Einzelheiten darüber: Ich spreche aus Erfahrung: Finger weg von der Sekretärin! Erich S., 49, Direktor einer süddeutschen Speditionsfirma, zahlt für das Liebesverhältnis mit seiner Sekretärin einen hohen Preis - in bar: Ich weiß, daß ich auch mit schuld bin. Deshalb fällt es Annemarie ja so leicht, mich zu (...) na ja, erpressen ist so ein hartes Wort (...) ich will mal lieber sagen, nicht finanziell zu schröpfen. Es gab eine Zeit, da habe ich rotgesehen, wenn ein anderer Mann nur ein paar Worte mit ihr sprach.
+
+Input Text: Erotik im Büro (2): Die Überstunde. Viele Frauen wissen nicht, was
+ihre Männer den ganzen Tag tun. Hier erfahren sie ein paar
+Einzelheiten darüber: Ich spreche aus Erfahrung: Finger weg von der
+Sekretärin! Erich S., 49, Direktor einer süddeutschen Speditionsfirma,
+zahlt für das Liebesverhältnis mit seiner Sekretärin einen hohen Preis
+in bar: Ich weiß, daß ich auch mit schuld bin. Deshalb fällt es
+Annemarie ja so leicht, mich zu (...) na ja, erpressen ist so ein
+hartes Wort (...) ich will mal lieber sagen, nicht finanziell zu
+schröpfen. Es gab eine Zeit, da habe ich rotgesehen, wenn ein anderer
+Mann nur ein paar Worte mit ihr sprach.
+
+Acrostic: Erotik
+Result: TIMEOUT
+Number of Genereted Nodes: 163023
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 163023
+Execution Time: 901
+
+Input Text: Erotik im Büro (2): Die Überstunde. Viele Frauen wissen nicht, was
+ihre Männer den ganzen Tag tun. Hier erfahren sie ein paar
+Einzelheiten darüber: Ich spreche aus Erfahrung: Finger weg von der
+Sekretärin! Erich S., 49, Direktor einer süddeutschen Speditionsfirma,
+zahlt für das Liebesverhältnis mit seiner Sekretärin einen hohen Preis
+in bar: Ich weiß, daß ich auch mit schuld bin. Deshalb fällt es
+Annemarie ja so leicht, mich zu (...) na ja, erpressen ist so ein
+hartes Wort (...) ich will mal lieber sagen, nicht finanziell zu
+schröpfen. Es gab eine Zeit, da habe ich rotgesehen, wenn ein anderer
+Mann nur ein paar Worte mit ihr sprach.
+
+Acrostic: ein
+Result: SUCCESS
+Result Text: Erotik im Büro (2): Die Überstunde. Viele Frauen wissen nicht, was
+ihre Männer den ganzen Tag tun. Hier erfahren sie ei-
+n paar Einzelheiten darüber: Ich spreche aus Erfahrung: Finger weg
+von der Sekretärin! Erich S., 49, Direktor einer süddeutschen
+Speditionsfirma, zahlt für das Liebesverhältnis mit seiner Sekretärin
+einen hohen Preis in bar: Ich weiß, daß ich auch mit schuld bin.
+Deshalb fällt es Annemarie ja so leicht, mich zu (...) na ja,
+erpressen ist so ein hartes Wort (...) ich will mal lieber sagen,
+nicht finanziell zu schröpfen. Es gab eine Zeit, da habe ich
+rotgesehen, wenn ein anderer Mann nur ein paar Worte mit ihr sprach.
+
+Applied Operators (In Final Result): LineBreakOperation
+Number of Genereted Nodes: 4
+Number of Goal Checks: 4
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/19.txt=============================
+Current Time: Fri Jan 30 00:40:56 CET 2015
+Input String: Oral-genitale Kontakte. Von lateinisch os (math.Op.) Mund und genitale (math.Op.) Geschlechtsteil: gebräuchlichster wissenschaftlicher Ausdruck für Fellatio und Cunnilingus, die Reizung der Geschlechtsteile mit dem Mund. Nach dem Kinsey-Report wird der Cunnilingus von etwa der Hälfte aller Männer gelegentlich praktiziert, Fellatio dagegen von den Frauen wesentlich seltener. Bei der Befragung deutscher Studenten durch Professor Hans Giese und Dr. Gunter Schmidt ergab sich kein wesentlicher Unterschied zwischen Männern und Frauen in der Ausübung oral-genitaler Kontakte.
+
+Input Text: Oral-genitale Kontakte. Von lateinisch os (math.Op.) Mund und
+genitale (math.Op.) Geschlechtsteil: gebräuchlichster
+wissenschaftlicher Ausdruck für Fellatio und Cunnilingus, die Reizung
+der Geschlechtsteile mit dem Mund. Nach dem Kinsey-Report wird der
+Cunnilingus von etwa der Hälfte aller Männer gelegentlich praktiziert,
+Fellatio dagegen von den Frauen wesentlich seltener. Bei der Befragung
+deutscher Studenten durch Professor Hans Giese und Dr. Gunter Schmidt
+ergab sich kein wesentlicher Unterschied zwischen Männern und Frauen
+in der Ausübung oral-genitaler Kontakte.
+
+Acrostic: Oralgenitale
+Result: TIMEOUT
+Number of Genereted Nodes: 189018
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 189018
+Execution Time: 901
+
+Input Text: Oral-genitale Kontakte. Von lateinisch os (math.Op.) Mund und
+genitale (math.Op.) Geschlechtsteil: gebräuchlichster
+wissenschaftlicher Ausdruck für Fellatio und Cunnilingus, die Reizung
+der Geschlechtsteile mit dem Mund. Nach dem Kinsey-Report wird der
+Cunnilingus von etwa der Hälfte aller Männer gelegentlich praktiziert,
+Fellatio dagegen von den Frauen wesentlich seltener. Bei der Befragung
+deutscher Studenten durch Professor Hans Giese und Dr. Gunter Schmidt
+ergab sich kein wesentlicher Unterschied zwischen Männern und Frauen
+in der Ausübung oral-genitaler Kontakte.
+
+Acrostic: oder
+Result: SUCCESS
+Result Text: Oral-genitale Kontakte. Von lateinisch os (math.Op.) Mund un-
+d genitale (math.Op.) Geschlechtsteil: gebräuchlichst-
+er wissenschaftlicher Ausdruck für Fellatio und Cunnilingus, die
+Reizung der Geschlechtsteile mit dem Mund. Nach dem Kinsey-Report
+wird der Cunnilingus von etwa der Hälfte aller Männer gelegentlich
+praktiziert, Fellatio dagegen von den Frauen wesentlich seltener. Bei
+der Befragung deutscher Studenten durch Professor Hans Giese und Dr.
+Gunter Schmidt ergab sich kein wesentlicher Unterschied zwischen
+Männern und Frauen in der Ausübung oral-genitaler Kontakte.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+WrongHyphenationOperation
+LineBreakOperation
+Number of Genereted Nodes: 184
+Number of Goal Checks: 184
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/20.txt=============================
+Current Time: Fri Jan 30 01:10:58 CET 2015
+Input String: Nordrhein-Westfalen-Programm 1975. Ministerpräsident Kühn gab am Dienstag, 7.4.1970, in einer Pressekonferenz das NRW-Programm 1975 bekannt. Das Programm umfaßt alle bedeutenden Planungen der Landesregierung für die Jahre 1971 bis 1975. Auf Anregung des Ministerpräsidenten wurde das NRW-Programm 1975 in eineinvierteljähriger Arbeit von den Ministerien und der Staatskanzlei entwickelt; es wurde mit 22 Verbänden und Spitzenorganisationen erörtert, umfaßt und führt fort den Generalverkehrsplan, die mittelfristige Finanzplanung, das Entwicklungsprogramm Ruhr, Fachplanungen wie wasserwirtschaftliche Pläne, Sportprogramme; es berücksichtigt die Empfehlungen der Beiräte des Bundes, des Wissenschaftsrates, des Bildungsrates, des Hochschulplanungsbeirates, Gedanken aus Entschließungen von Konferenzen, etwa der Rektorenkonferenz, der Assistentenkonferenz und von Verbänden, wurde durch sechs große Sachverständigengutachten vorbereitet, ist materiell ein mittelfristiger Handlungsplan der Landesregierung, ist formell ein Beschluß der Landesregierung vom 3.März 1970, ist im EWG- Raum erstmalig ein Landesprogramm, das an langfristigen Zielen orientierte konkrete Maßnahmen und ein Gesamtfinanzierungsprogramm dafür für die gesamte Regierungsplanung enthält.
+
+Input Text: Nordrhein-Westfalen-Programm 1975. Ministerpräsident Kühn gab am
+Dienstag, 7.4.1970, in einer Pressekonferenz das NRW-Programm 1975
+bekannt. Das Programm umfaßt alle bedeutenden Planungen der
+Landesregierung für die Jahre 1971 bis 1975. Auf Anregung des
+Ministerpräsidenten wurde das NRW-Programm 1975 in
+eineinvierteljähriger Arbeit von den Ministerien und der Staatskanzlei
+entwickelt; es wurde mit 22 Verbänden und Spitzenorganisationen
+erörtert, umfaßt und führt fort den Generalverkehrsplan, die
+mittelfristige Finanzplanung, das Entwicklungsprogramm Ruhr,
+Fachplanungen wie wasserwirtschaftliche Pläne, Sportprogramme; es
+berücksichtigt die Empfehlungen der Beiräte des Bundes, des
+Wissenschaftsrates, des Bildungsrates, des Hochschulplanungsbeirates,
+Gedanken aus Entschließungen von Konferenzen, etwa der
+Rektorenkonferenz, der Assistentenkonferenz und von Verbänden, wurde
+durch sechs große Sachverständigengutachten vorbereitet, ist materiell
+ein mittelfristiger Handlungsplan der Landesregierung, ist formell ein
+Beschluß der Landesregierung vom 3.März 1970, ist im EWGRaum
+erstmalig ein Landesprogramm, das an langfristigen Zielen orientierte
+konkrete Maßnahmen und ein Gesamtfinanzierungsprogramm dafür für die
+gesamte Regierungsplanung enthält.
+
+Acrostic: NordrheinWestfalenProgramm
+Result: TIMEOUT
+Number of Genereted Nodes: 308089
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 308089
+Execution Time: 901
+
+Input Text: Nordrhein-Westfalen-Programm 1975. Ministerpräsident Kühn gab am
+Dienstag, 7.4.1970, in einer Pressekonferenz das NRW-Programm 1975
+bekannt. Das Programm umfaßt alle bedeutenden Planungen der
+Landesregierung für die Jahre 1971 bis 1975. Auf Anregung des
+Ministerpräsidenten wurde das NRW-Programm 1975 in
+eineinvierteljähriger Arbeit von den Ministerien und der Staatskanzlei
+entwickelt; es wurde mit 22 Verbänden und Spitzenorganisationen
+erörtert, umfaßt und führt fort den Generalverkehrsplan, die
+mittelfristige Finanzplanung, das Entwicklungsprogramm Ruhr,
+Fachplanungen wie wasserwirtschaftliche Pläne, Sportprogramme; es
+berücksichtigt die Empfehlungen der Beiräte des Bundes, des
+Wissenschaftsrates, des Bildungsrates, des Hochschulplanungsbeirates,
+Gedanken aus Entschließungen von Konferenzen, etwa der
+Rektorenkonferenz, der Assistentenkonferenz und von Verbänden, wurde
+durch sechs große Sachverständigengutachten vorbereitet, ist materiell
+ein mittelfristiger Handlungsplan der Landesregierung, ist formell ein
+Beschluß der Landesregierung vom 3.März 1970, ist im EWGRaum
+erstmalig ein Landesprogramm, das an langfristigen Zielen orientierte
+konkrete Maßnahmen und ein Gesamtfinanzierungsprogramm dafür für die
+gesamte Regierungsplanung enthält.
+
+Acrostic: nicht
+Result: TIMEOUT
+Number of Genereted Nodes: 358935
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 358935
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/21.txt=============================
+Current Time: Fri Jan 30 01:26:00 CET 2015
+Input String: Zusammengefaßte Ziele, Maßnahmen und Kosten. Zur besseren Übersicht werden die Ziele, Maßnahmen und Kosten des Nordrhein-Westfalen-Programms 1975 zunächst in der Kurzfassung der einzelnen Abschnitte dargestellt. Teil 3: Arbeit und Wirtschaft. Kernenergie Entwicklung von Hochtemperaturreaktoren mit unmittelbar angeschlossener Heliumgasturbine; größerer Anteil der Kernenergie an der Stromerzeugung; Anwendung von Prozeßwärme insbesondere zur Kohlevergasung, Erzverhüttung und Herstellung chemischer Rohstoffe. Bau eines 300-MWe-Hochtemperaturreaktors als Prototyp und Projektierung eines Leistungsreaktors mit Heliumgasturbine; Errichtung eines Sonderforschungsbereiches " Prozeßwärme " an der Kernforschungsanlage Jülich.
+
+Input Text: Zusammengefaßte Ziele, Maßnahmen und Kosten. Zur besseren Übersicht
+werden die Ziele, Maßnahmen und Kosten des
+Nordrhein-Westfalen-Programms 1975 zunächst in der Kurzfassung der
+einzelnen Abschnitte dargestellt. Teil 3: Arbeit und Wirtschaft.
+Kernenergie Entwicklung von Hochtemperaturreaktoren mit unmittelbar
+angeschlossener Heliumgasturbine; größerer Anteil der Kernenergie an
+der Stromerzeugung; Anwendung von Prozeßwärme insbesondere zur
+Kohlevergasung, Erzverhüttung und Herstellung chemischer Rohstoffe.
+Bau eines 300-MWe-Hochtemperaturreaktors als Prototyp und
+Projektierung eines Leistungsreaktors mit Heliumgasturbine; Errichtung
+eines Sonderforschungsbereiches " Prozeßwärme " an der
+Kernforschungsanlage Jülich.
+
+Acrostic: Zusammengefaßte
+Result: TIMEOUT
+Number of Genereted Nodes: 219676
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 219676
+Execution Time: 901
+
+Input Text: Zusammengefaßte Ziele, Maßnahmen und Kosten. Zur besseren Übersicht
+werden die Ziele, Maßnahmen und Kosten des
+Nordrhein-Westfalen-Programms 1975 zunächst in der Kurzfassung der
+einzelnen Abschnitte dargestellt. Teil 3: Arbeit und Wirtschaft.
+Kernenergie Entwicklung von Hochtemperaturreaktoren mit unmittelbar
+angeschlossener Heliumgasturbine; größerer Anteil der Kernenergie an
+der Stromerzeugung; Anwendung von Prozeßwärme insbesondere zur
+Kohlevergasung, Erzverhüttung und Herstellung chemischer Rohstoffe.
+Bau eines 300-MWe-Hochtemperaturreaktors als Prototyp und
+Projektierung eines Leistungsreaktors mit Heliumgasturbine; Errichtung
+eines Sonderforschungsbereiches " Prozeßwärme " an der
+Kernforschungsanlage Jülich.
+
+Acrostic: zu
+Result: SUCCESS
+Result Text: Zusammengefaßte Ziele, Maßnahmen und Kosten. Zur besseren
+uebersicht werden die Ziele, Maßnahmen und Kosten des
+Nordrhein-Westfalen-Programms 1975 zunächst in der Kurzfassung der
+einzelnen Abschnitte dargestellt. Teil 3: Arbeit und Wirtschaft.
+Kernenergie Entwicklung von Hochtemperaturreaktoren mit unmittelbar
+angeschlossener Heliumgasturbine; größerer Anteil der Kernenergie an
+der Stromerzeugung; Anwendung von Prozeßwärme insbesondere zur
+Kohlevergasung, Erzverhüttung und Herstellung chemischer Rohstoffe.
+Bau eines 300-MWe-Hochtemperaturreaktors als Prototyp und
+Projektierung eines Leistungsreaktors mit Heliumgasturbine; Errichtung
+eines Sonderforschungsbereiches " Prozeßwärme " an der
+Kernforschungsanlage Jülich.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongSpellingOperation
+Number of Genereted Nodes: 193
+Number of Goal Checks: 193
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/22.txt=============================
+Current Time: Fri Jan 30 01:56:02 CET 2015
+Input String: Regierung und Verwaltung. Regierung und Verwaltung dienen der Bevölkerung und der Wirtschaft. Organisation und Arbeitsweise der öffentlichen Verwaltung sowie die Form des staatlichen Aufbaues beeinflussen die Güte der Leistungen der Verwaltung. Gebietsreform der Verwaltung. Die Anpassung der Verwaltung an die heutige und zukünftige Entwicklung der Bevölkerung, des Verkehrs, der Technik und der Wirtschaft macht einen Gebietszuschnitt für die Verwaltungseinheiten notwendig, der sicherstellt, daß die öffentlichen Aufgaben gut erfüllt werden können. Erstes Neugliederungsprogramm.
+
+Input Text: Regierung und Verwaltung. Regierung und Verwaltung dienen der
+Bevölkerung und der Wirtschaft. Organisation und Arbeitsweise der
+öffentlichen Verwaltung sowie die Form des staatlichen Aufbaues
+beeinflussen die Güte der Leistungen der Verwaltung. Gebietsreform der
+Verwaltung. Die Anpassung der Verwaltung an die heutige und zukünftige
+Entwicklung der Bevölkerung, des Verkehrs, der Technik und der
+Wirtschaft macht einen Gebietszuschnitt für die Verwaltungseinheiten
+notwendig, der sicherstellt, daß die öffentlichen Aufgaben gut erfüllt
+werden können. Erstes Neugliederungsprogramm.
+
+Acrostic: Regierung
+Result: TIMEOUT
+Number of Genereted Nodes: 132708
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 132708
+Execution Time: 901
+
+Input Text: Regierung und Verwaltung. Regierung und Verwaltung dienen der
+Bevölkerung und der Wirtschaft. Organisation und Arbeitsweise der
+öffentlichen Verwaltung sowie die Form des staatlichen Aufbaues
+beeinflussen die Güte der Leistungen der Verwaltung. Gebietsreform der
+Verwaltung. Die Anpassung der Verwaltung an die heutige und zukünftige
+Entwicklung der Bevölkerung, des Verkehrs, der Technik und der
+Wirtschaft macht einen Gebietszuschnitt für die Verwaltungseinheiten
+notwendig, der sicherstellt, daß die öffentlichen Aufgaben gut erfüllt
+werden können. Erstes Neugliederungsprogramm.
+
+Acrostic: rund
+Result: TIMEOUT
+Number of Genereted Nodes: 161462
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 161462
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/23.txt=============================
+Current Time: Fri Jan 30 02:11:04 CET 2015
+Input String: Wasser, Abfall, Luft und Lärm. Wasser in ausreichender Menge und Güte, eine unschädliche Abfallbeseitigung, saubere Luft und wenig Lärm gehören zu den natürlichen Lebensgrundlagen des Menschen. Diese Grundlagen sind in der Industriegesellschaft stark gefährdet. Es dürfen daher keine Anstrengungen gescheut werden, um den natürlichen Lebensraum für den Menschen zu sichern. Es ist besonders dringlich, die Gewässer zu schützen, weitere Talsperren zu bauen, durch Bekämpfung von Staub und Abgasen die Luft rein zu halten und den Lärm in erträglichen Grenzen zu halten. Wasser.
+
+Input Text: Wasser, Abfall, Luft und Lärm. Wasser in ausreichender Menge und
+Güte, eine unschädliche Abfallbeseitigung, saubere Luft und wenig Lärm
+gehören zu den natürlichen Lebensgrundlagen des Menschen. Diese
+Grundlagen sind in der Industriegesellschaft stark gefährdet. Es
+dürfen daher keine Anstrengungen gescheut werden, um den natürlichen
+Lebensraum für den Menschen zu sichern. Es ist besonders dringlich,
+die Gewässer zu schützen, weitere Talsperren zu bauen, durch
+Bekämpfung von Staub und Abgasen die Luft rein zu halten und den Lärm
+in erträglichen Grenzen zu halten. Wasser.
+
+Acrostic: Wasser
+Result: TIMEOUT
+Number of Genereted Nodes: 198309
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 198309
+Execution Time: 901
+
+Input Text: Wasser, Abfall, Luft und Lärm. Wasser in ausreichender Menge und
+Güte, eine unschädliche Abfallbeseitigung, saubere Luft und wenig Lärm
+gehören zu den natürlichen Lebensgrundlagen des Menschen. Diese
+Grundlagen sind in der Industriegesellschaft stark gefährdet. Es
+dürfen daher keine Anstrengungen gescheut werden, um den natürlichen
+Lebensraum für den Menschen zu sichern. Es ist besonders dringlich,
+die Gewässer zu schützen, weitere Talsperren zu bauen, durch
+Bekämpfung von Staub und Abgasen die Luft rein zu halten und den Lärm
+in erträglichen Grenzen zu halten. Wasser.
+
+Acrostic: werden
+Result: SUCCESS
+Result Text: Wasser, Abfall, Luft und Lärm. Wasser in ausreich-
+ender Menge und Güte, eine unschädliche Abfallbeseitigung, saube-
+re Luft und wenig Lärm gehören zu den natürlichen Lebensgrundlagen
+des Menschen. Diese Grundlagen sind in der Industri-
+egesellschaft stark gefährdet. Es dürfen daher kei-
+ne Anstrengungen gescheut werden, um den natürlichen Lebensraum für
+den Menschen zu sichern. Es ist besonders dringlich, die Gewässer zu
+schützen, weitere Talsperren zu bauen, durch Bekämpfung von Staub und
+Abgasen die Luft rein zu halten und den Lärm in erträglichen Grenzen
+zu halten. Wasser.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+HyphenationOperation
+WrongHyphenationOperation
+HyphenationOperation
+Number of Genereted Nodes: 386
+Number of Goal Checks: 386
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/24.txt=============================
+Current Time: Fri Jan 30 02:26:06 CET 2015
+Input String: Gesundheit und Soziales. Heute ist der Mensch stärker als früher durch äußere und innere Einflüsse gesundheitlich gefährdet, weil die Umweltbedingungen und Lebensbedingungen sich schwerwiegend verändert haben. Anpassungsschwierigkeiten nehmen vielen Menschen das Gefühl des körperlichen, seelischen und sozialen Wohlbefindens. Die Folgen von Motorisierung, industrieller Luftverunreinigung und Wasserverunreinigung, Nahrungsmittelverfälschung, Genußmittel mißbrauch und Arzneimittelmißbrauch, der weitverbreitete körperliche Trainingsverlust, die seelisch-geistige Überforderung durch Massenkommunikationsmittel haben dazu beigetragen, daß als Ausdruck verminderter Belastbarkeit und Widerstandsfähigkeit die Zivilisationskrankheiten immer mehr zunehmen.
+
+Input Text: Gesundheit und Soziales. Heute ist der Mensch stärker als früher
+durch äußere und innere Einflüsse gesundheitlich gefährdet, weil die
+Umweltbedingungen und Lebensbedingungen sich schwerwiegend verändert
+haben. Anpassungsschwierigkeiten nehmen vielen Menschen das Gefühl des
+körperlichen, seelischen und sozialen Wohlbefindens. Die Folgen von
+Motorisierung, industrieller Luftverunreinigung und
+Wasserverunreinigung, Nahrungsmittelverfälschung, Genußmittel
+mißbrauch und Arzneimittelmißbrauch, der weitverbreitete körperliche
+Trainingsverlust, die seelisch-geistige Überforderung durch
+Massenkommunikationsmittel haben dazu beigetragen, daß als Ausdruck
+verminderter Belastbarkeit und Widerstandsfähigkeit die
+Zivilisationskrankheiten immer mehr zunehmen.
+
+Acrostic: Gesundheit
+Result: TIMEOUT
+Number of Genereted Nodes: 185216
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 185216
+Execution Time: 901
+
+Input Text: Gesundheit und Soziales. Heute ist der Mensch stärker als früher
+durch äußere und innere Einflüsse gesundheitlich gefährdet, weil die
+Umweltbedingungen und Lebensbedingungen sich schwerwiegend verändert
+haben. Anpassungsschwierigkeiten nehmen vielen Menschen das Gefühl des
+körperlichen, seelischen und sozialen Wohlbefindens. Die Folgen von
+Motorisierung, industrieller Luftverunreinigung und
+Wasserverunreinigung, Nahrungsmittelverfälschung, Genußmittel
+mißbrauch und Arzneimittelmißbrauch, der weitverbreitete körperliche
+Trainingsverlust, die seelisch-geistige Überforderung durch
+Massenkommunikationsmittel haben dazu beigetragen, daß als Ausdruck
+verminderter Belastbarkeit und Widerstandsfähigkeit die
+Zivilisationskrankheiten immer mehr zunehmen.
+
+Acrostic: gegen
+Result: SUCCESS
+Result Text: Gesundheit und Soziales. Heute ist der Mensch stärker als früh-
+er durch äußere und innere Einflüsse gesundheitlich
+gefährdet, weil die Umweltbedingungen und Lebensbedingung-
+en sich schwerwiegend verändert haben. Anpassungsschwierigkeiten
+nehmen vielen Menschen das Gefühl des körperlichen, seelischen und
+sozialen Wohlbefindens. Die Folgen von Motorisierung, industrieller
+Luftverunreinigung und Wasserverunreinigung, Nahrung-
+smittelverfälschung, Genußmittel mißbrauch und Arzne-
+imittelmißbrauch, der weitverbreitete körperliche Tr-
+ainingsverlust, die seelisch-geistige Überforderung durch
+Massenkommunikationsmittel haben dazu beigetragen, daß als Ausdruck
+verminderter Belastbarkeit und Widerstandsfähigkeit die
+Zivilisationskrankheiten immer mehr zunehmen.
+
+Applied Operators (In Final Result): WrongHyphenationOperation
+LineBreakOperation
+LineBreakOperation
+WrongHyphenationOperation
+LineBreakOperation
+Number of Genereted Nodes: 474
+Number of Goal Checks: 474
+Execution Time: 0
+
+
+==========================================================
+
+
+=============================Text/William/25.txt=============================
+Current Time: Fri Jan 30 02:56:08 CET 2015
+Input String: Freizeit und Kultur. Freizeit und kulturelles Leben gewinnen an Bedeutung. Mehr Menschen beteiligen sich in größerem Umfang an Aktivitäten in diesen Bereichen. Das äußert sich auch in der Bewertung von Standorten. Waren noch vor wenigen Jahren die Arbeitsmöglichkeiten und Verdienstmöglichkeiten für Zuzug und Seßhaftigkeit allein maßgebend, so tritt heute immer mehr der " Freizeitwert " in den Vordergrund. Freizeit. Die für den einzelnen frei verfügbare Zeit nimmt zu. Im Durchschnitt wird die Nettofreizeit bis 1980 um etwa ein Fünftel steigen.
+
+Input Text: Freizeit und Kultur. Freizeit und kulturelles Leben gewinnen an
+Bedeutung. Mehr Menschen beteiligen sich in größerem Umfang an
+Aktivitäten in diesen Bereichen. Das äußert sich auch in der Bewertung
+von Standorten. Waren noch vor wenigen Jahren die Arbeitsmöglichkeiten
+und Verdienstmöglichkeiten für Zuzug und Seßhaftigkeit allein
+maßgebend, so tritt heute immer mehr der " Freizeitwert " in den
+Vordergrund. Freizeit. Die für den einzelnen frei verfügbare Zeit
+nimmt zu. Im Durchschnitt wird die Nettofreizeit bis 1980 um etwa ein
+Fünftel steigen.
+
+Acrostic: Freizeit
+Result: TIMEOUT
+Number of Genereted Nodes: 188683
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 188683
+Execution Time: 901
+
+Input Text: Freizeit und Kultur. Freizeit und kulturelles Leben gewinnen an
+Bedeutung. Mehr Menschen beteiligen sich in größerem Umfang an
+Aktivitäten in diesen Bereichen. Das äußert sich auch in der Bewertung
+von Standorten. Waren noch vor wenigen Jahren die Arbeitsmöglichkeiten
+und Verdienstmöglichkeiten für Zuzug und Seßhaftigkeit allein
+maßgebend, so tritt heute immer mehr der " Freizeitwert " in den
+Vordergrund. Freizeit. Die für den einzelnen frei verfügbare Zeit
+nimmt zu. Im Durchschnitt wird die Nettofreizeit bis 1980 um etwa ein
+Fünftel steigen.
+
+Acrostic: für
+Result: TIMEOUT
+Number of Genereted Nodes: 234649
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 234649
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/26.txt=============================
+Current Time: Fri Jan 30 03:26:10 CET 2015
+Input String: Planung, Bau und Verkehr. Den überwiegenden Teil Planung, Bau und Verkehr. Den überwiegenden Teil seines täglichen Lebens verbringt der Mensch in einer gebauten Umwelt, sei es in der Wohnung, in der Wohnumgebung, am Arbeitsplatz oder auf den Verkehrswegen. Diese Umwelt mitzugestalten, ist ihm meistens verwehrt. Er findet sie vor und unterliegt ihren Bedingungen. Daran wird deutlich, wie entscheidend vorausschauende Planung ist und welche Verantwortung sie zunehmend zu tragen hat; denn je dichter sich Nutzungen im Raum konzentrieren, um so schwerer wird ein Ausgleich unterschiedlicher Interessen.
+
+Input Text: Planung, Bau und Verkehr. Den überwiegenden Teil Planung, Bau und
+Verkehr. Den überwiegenden Teil seines täglichen Lebens verbringt der
+Mensch in einer gebauten Umwelt, sei es in der Wohnung, in der
+Wohnumgebung, am Arbeitsplatz oder auf den Verkehrswegen. Diese Umwelt
+mitzugestalten, ist ihm meistens verwehrt. Er findet sie vor und
+unterliegt ihren Bedingungen. Daran wird deutlich, wie entscheidend
+vorausschauende Planung ist und welche Verantwortung sie zunehmend zu
+tragen hat; denn je dichter sich Nutzungen im Raum konzentrieren, um
+so schwerer wird ein Ausgleich unterschiedlicher Interessen.
+
+Acrostic: Planung
+Result: TIMEOUT
+Number of Genereted Nodes: 81624
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 81624
+Execution Time: 901
+
+Input Text: Planung, Bau und Verkehr. Den überwiegenden Teil Planung, Bau und
+Verkehr. Den überwiegenden Teil seines täglichen Lebens verbringt der
+Mensch in einer gebauten Umwelt, sei es in der Wohnung, in der
+Wohnumgebung, am Arbeitsplatz oder auf den Verkehrswegen. Diese Umwelt
+mitzugestalten, ist ihm meistens verwehrt. Er findet sie vor und
+unterliegt ihren Bedingungen. Daran wird deutlich, wie entscheidend
+vorausschauende Planung ist und welche Verantwortung sie zunehmend zu
+tragen hat; denn je dichter sich Nutzungen im Raum konzentrieren, um
+so schwerer wird ein Ausgleich unterschiedlicher Interessen.
+
+Acrostic: Prozent
+Result: TIMEOUT
+Number of Genereted Nodes: 111854
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 111854
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/27.txt=============================
+Current Time: Fri Jan 30 03:56:13 CET 2015
+Input String: Arbeit und Wirtschaft. Im Mittelpunkt des Wirtschaftslebens steht das Wohl des Menschen. Das Bemühen um das Wachstum der Wirtschaft muß davon bestimmt sein, dem arbeitenden Menschen einen Arbeitsplatz zu sichern, dem jungen Menschen eine bessere Ausbildung zu geben und die soziale Stellung des alten Menschen zu verbessern. Der Lebensstandard aller muß erhöht und die öffentliche Grundausstattung in Stadt und Land merklich angehoben werden. Diese Ziele sind nur zu erreichen, wenn unter Berücksichtigung der gesamtwirtschaftlichen Entwicklung ein hohes Wachstum in allen Wirtschaftszweigen und in allen Teilen Nordrhein-Westfalens langfristig gesichert ist.
+
+Input Text: Arbeit und Wirtschaft. Im Mittelpunkt des Wirtschaftslebens steht das
+Wohl des Menschen. Das Bemühen um das Wachstum der Wirtschaft muß
+davon bestimmt sein, dem arbeitenden Menschen einen Arbeitsplatz zu
+sichern, dem jungen Menschen eine bessere Ausbildung zu geben und die
+soziale Stellung des alten Menschen zu verbessern. Der Lebensstandard
+aller muß erhöht und die öffentliche Grundausstattung in Stadt und
+Land merklich angehoben werden. Diese Ziele sind nur zu erreichen,
+wenn unter Berücksichtigung der gesamtwirtschaftlichen Entwicklung ein
+hohes Wachstum in allen Wirtschaftszweigen und in allen Teilen
+Nordrhein-Westfalens langfristig gesichert ist.
+
+Acrostic: Arbeit
+Result: TIMEOUT
+Number of Genereted Nodes: 247541
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 247541
+Execution Time: 901
+
+Input Text: Arbeit und Wirtschaft. Im Mittelpunkt des Wirtschaftslebens steht das
+Wohl des Menschen. Das Bemühen um das Wachstum der Wirtschaft muß
+davon bestimmt sein, dem arbeitenden Menschen einen Arbeitsplatz zu
+sichern, dem jungen Menschen eine bessere Ausbildung zu geben und die
+soziale Stellung des alten Menschen zu verbessern. Der Lebensstandard
+aller muß erhöht und die öffentliche Grundausstattung in Stadt und
+Land merklich angehoben werden. Diese Ziele sind nur zu erreichen,
+wenn unter Berücksichtigung der gesamtwirtschaftlichen Entwicklung ein
+hohes Wachstum in allen Wirtschaftszweigen und in allen Teilen
+Nordrhein-Westfalens langfristig gesichert ist.
+
+Acrostic: auf
+Result: TIMEOUT
+Number of Genereted Nodes: 272752
+Exception Message: End by timeout
+Exception Cause: null
+Exception Class: class java.util.concurrent.TimeoutException
+Stack Trace: model.Algorithm.execute(Algorithm.java:120)
+controller.AlgorithmTester.runTests(AlgorithmTester.java:170)
+controller.AlgorithmTester.execute(AlgorithmTester.java:218)
+controller.Main.main(Main.java:74)
+Number of Goal Checks: 272752
+Execution Time: 901
+
+
+==========================================================
+
+
+=============================Text/William/28.txt=============================
+Current Time: Fri Jan 30 03:56:41 CET 2015
+Input String: Der Reisewetterbericht vom 3.Dezember. Wetter und Temperaturen von 10 Uhr:. Insel Sylt bedeckt 3 Grad, Cuxhaven Regen 5, Schleswig Regen 2, Lübeck Regen 8, Berlin Regen 7, Koblenz wolkig 10, Trier Regen 9, Neustadt /Weinstraße Regen., Frankfurt/Flughafen Regen 8, Feldberg/Taunus Regen 4, Freudenstadt Regen 3, Freiburg bedeckt 9, Feldberg/Schwarzwald Schauer 0, Konstanz Regen 6, Oberstdorf Regen 2, Garmisch bedeckt 1, Berchtesgaden bedeckt 2, Zugspitze Nebel (math.Op.) 9 Grad. Ostende bedeckt 11, Amsterdam wolkig 9, Kopenhagen Schneeregen 2, Innsbruck bedeckt 3, Zürich Regen 5, Locarno wolkig 4, Bozen wolkig 0, Venedig wolkig 5, Rom wolkig 8, Nizza heiter 9, Barcelona heiter 6, Mallorca heiter 8, M laga heiter 9, Prag bedeckt 6, Belgrad wolkig 4, Athen bedeckt 17, Konstanza bedeckt 7, Warna wolkig 8, Istanbul bedeckt 10 Grad.
+
+Input Text: Der Reisewetterbericht vom 3.Dezember. Wetter und Temperaturen von 10
+Uhr:. Insel Sylt bedeckt 3 Grad, Cuxhaven Regen 5, Schleswig Regen 2,
+Lübeck Regen 8, Berlin Regen 7, Koblenz wolkig 10, Trier Regen 9,
+Neustadt /Weinstraße Regen., Frankfurt/Flughafen Regen 8,
+Feldberg/Taunus Regen 4, Freudenstadt Regen 3, Freiburg bedeckt 9,
+Feldberg/Schwarzwald Schauer 0, Konstanz Regen 6, Oberstdorf Regen 2,
+Garmisch bedeckt 1, Berchtesgaden bedeckt 2, Zugspitze Nebel
+(math.Op.) 9 Grad. Ostende bedeckt 11, Amsterdam wolkig 9, Kopenhagen
+Schneeregen 2, Innsbruck bedeckt 3, Zürich Regen 5, Locarno wolkig 4,
+Bozen wolkig 0, Venedig wolkig 5, Rom wolkig 8, Nizza heiter 9,
+Barcelona heiter 6, Mallorca heiter 8, M laga heiter 9, Prag bedeckt
+6, Belgrad wolkig 4, Athen bedeckt 17, Konstanza bedeckt 7, Warna
+wolkig 8, Istanbul bedeckt 10 Grad.
+
+Acrostic: Der
+Result: SUCCESS
+Result Text: Der Reisewetterbericht vom 3.Dezember. Wetter und Temperatur-
+en von 10 Uhr:. Insel Sylt bedeckt 3 Grad, Cuxhaven Regen 5, Schleswig
+Regen 2, Lübeck Regen 8, Berlin Regen 7, Koblenz wolkig 10, Trier
+Regen 9, Neustadt /Weinstraße Regen., Frankfurt/Flughafen Regen 8,
+Feldberg/Taunus Regen 4, Freudenstadt Regen 3, Freiburg bedeckt 9,
+Feldberg/Schwarzwald Schauer 0, Konstanz Regen 6, Oberstdorf Regen 2,
+Garmisch bedeckt 1, Berchtesgaden bedeckt 2, Zugspitze Nebel
+(math.Op.) 9 Grad. Ostende bedeckt 11, Amsterdam wolkig 9, Kopenhagen
+Schneeregen 2, Innsbruck bedeckt 3, Zürich Regen 5, Locarno wolkig 4,
+Bozen wolkig 0, Venedig wolkig 5, Rom wolkig 8, Nizza heiter 9,
+Barcelona heiter 6, Mallorca heiter 8, M laga heiter 9, Prag bedeckt
+6, Belgrad wolkig 4, Athen bedeckt 17, Konstanza bedeckt 7, Warna
+wolkig 8, Istanbul bedeckt 10 Grad.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 844
+Number of Goal Checks: 844
+Execution Time: 25
+
+Input Text: Der Reisewetterbericht vom 3.Dezember. Wetter und Temperaturen von 10
+Uhr:. Insel Sylt bedeckt 3 Grad, Cuxhaven Regen 5, Schleswig Regen 2,
+Lübeck Regen 8, Berlin Regen 7, Koblenz wolkig 10, Trier Regen 9,
+Neustadt /Weinstraße Regen., Frankfurt/Flughafen Regen 8,
+Feldberg/Taunus Regen 4, Freudenstadt Regen 3, Freiburg bedeckt 9,
+Feldberg/Schwarzwald Schauer 0, Konstanz Regen 6, Oberstdorf Regen 2,
+Garmisch bedeckt 1, Berchtesgaden bedeckt 2, Zugspitze Nebel
+(math.Op.) 9 Grad. Ostende bedeckt 11, Amsterdam wolkig 9, Kopenhagen
+Schneeregen 2, Innsbruck bedeckt 3, Zürich Regen 5, Locarno wolkig 4,
+Bozen wolkig 0, Venedig wolkig 5, Rom wolkig 8, Nizza heiter 9,
+Barcelona heiter 6, Mallorca heiter 8, M laga heiter 9, Prag bedeckt
+6, Belgrad wolkig 4, Athen bedeckt 17, Konstanza bedeckt 7, Warna
+wolkig 8, Istanbul bedeckt 10 Grad.
+
+Acrostic: der
+Result: SUCCESS
+Result Text: Der Reisewetterbericht vom 3.Dezember. Wetter und Temperatur-
+en von 10 Uhr:. Insel Sylt bedeckt 3 Grad, Cuxhaven Regen 5, Schleswig
+Regen 2, Lübeck Regen 8, Berlin Regen 7, Koblenz wolkig 10, Trier
+Regen 9, Neustadt /Weinstraße Regen., Frankfurt/Flughafen Regen 8,
+Feldberg/Taunus Regen 4, Freudenstadt Regen 3, Freiburg bedeckt 9,
+Feldberg/Schwarzwald Schauer 0, Konstanz Regen 6, Oberstdorf Regen 2,
+Garmisch bedeckt 1, Berchtesgaden bedeckt 2, Zugspitze Nebel
+(math.Op.) 9 Grad. Ostende bedeckt 11, Amsterdam wolkig 9, Kopenhagen
+Schneeregen 2, Innsbruck bedeckt 3, Zürich Regen 5, Locarno wolkig 4,
+Bozen wolkig 0, Venedig wolkig 5, Rom wolkig 8, Nizza heiter 9,
+Barcelona heiter 6, Mallorca heiter 8, M laga heiter 9, Prag bedeckt
+6, Belgrad wolkig 4, Athen bedeckt 17, Konstanza bedeckt 7, Warna
+wolkig 8, Istanbul bedeckt 10 Grad.
+
+Applied Operators (In Final Result): LineBreakOperation
+WrongHyphenationOperation
+Number of Genereted Nodes: 844
+Number of Goal Checks: 844
+Execution Time: 2
+
+
+==========================================================
+
