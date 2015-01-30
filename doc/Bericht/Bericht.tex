@@ -14,7 +14,7 @@
 \usepackage{url}
 \usepackage{alltt}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[nottoc]{tocbibind}
+\usepackage[nottoc]{tocbibind}	
 \usepackage{algorithm}
 \usepackage{algorithmicx}
 \usepackage[noend]{algpseudocode}
@@ -63,7 +63,7 @@ Authors:\\
 Bruno Soares Fillmann () \\
 Fernando Bombardelli da Silva (bombardelli.f@mailbox.tu-berlin.de)\\
 Jürgen Bauer (jbauer@mailbox.tu-berlin.de) \\
-\vspace{2.5cm}William Bombardelli da Silva (wbombardellis@mailbox.tu-berlin.de)}
+\vspace{2cm}William Bombardelli da Silva (wbombardellis@mailbox.tu-berlin.de)}
 
 \date{February 2$^{nd}$, 2015} % Insert date here if you want it to appear below your name
 
@@ -353,7 +353,7 @@ When running the algorithm we observed that often, say the first 2-3 letters of 
 
 
 \section{Operators}
-[CITE CRITERIA FOR THE CHOICE OF THE OPERATORS]
+Below are the explanations over the implemented operators. Most of these operators were selected basically because their probability of happenning in a successful solution according to \cite[p.~2025]{Stein}.
 
 \subsection{Ensure Constraints}
 An operation was created to ensure the texts created by the other operations are within the constraints imposed such as minimum and maximum line length. A text containing an acrostic can't be given as an answer if it's not valid. One benefit of having this operator is that other operators do not have to worry about being compliant to the constraints, leaving these worries to be solved by this one instead. Another benefit is the added variability which it provides, allowing texts which would be otherwise unusable, and it's potentially valuable changes useless, to be used.
@@ -421,7 +421,7 @@ After inserting the word \emph{"mir"} in the sentence \emph{"Ich kann nicht vors
 
 The Word Insertion or Deletion operator takes as input a text. Then first it tries to insert a new word in each space and second tries to remove each word of the text. The condition to insert a new word \emph{w} in the \emph{i-th} space of the text is that \emph{w} has to fit the context around the \emph{i-th} space. It means that from the set of all possible words of the language, only a restricted subset can be inserted in this place. More specifically, the algorithm starts by taking for each space in the text \emph{n} words around it as context $-$ In our implementation in this context $n = 4$. This is a so called n-gram, an array of words. After this, the n-gram just taken is sent to the context database (which is in this implementation the Netspeak API \cite{Netspeak}), that returns the possible words that could be inserted in the required space. For each of these possible words a new version of the text is created with the word inside. \par
 
-Analogously, for each word \emph{w} in the text a n-gram including the words around it is created $-$ In our implementation we take two words from each side, so here $n=5$. \emph{w} is then taken out of the n-gram, which is tested against the context database to check whether this n-gram is frequent enough in the language. If the answer is positive a new version of the text without \emph{w} is created. Our implementation allows the adjustment of the minimum frequency cited above, but we set it to zero, so a broader set of deletions is executed. \par
+Analogously, for each word \emph{w} in the text a n-gram including the words around it is created $-$ In our implementation we take two words from each side, so here $n=5$. \emph{w} is then taken out of the n-gram, which is tested against the context database to check whether this n-gram is frequent enough in the language. In other words, the frequency \emph{F} of such n-gram is compared with a minimum acceptable frequency $F_{min}$. If $F \ge F_{min}$ a new version of the text without \emph{w} is created. Our implementation allows the adjustment of $F_{min}$, but we set it to zero as default, so a broader set of deletions is executed. \par
 
 The queries to the context database are made in form of HTTP requests to the Netspeak web service using the Netspeak API. \par
 
@@ -543,13 +543,11 @@ We let the Redis database started in the same system where the tests run. The in
 %	Summary of Findings
 %----------------------------------------------------------------------------------------
 \chapter{Summary of Findings}
-The algorithm described in this report is able to build acrostics with short words (we have achieved acrostics with 6 letters) in reasonable time. These acrostics have regular quality, in the sense that some paraphrasing operations are easily perceived by the reader $-$ the wrong hyphenation is one of them. The use of synonyms without checking the context lowers the quality as well. Additionally, the algorithm can generate result in a few minutes for a good number of cases, what makes possible its use in some practical situations, aiding a process that was totally human so far. The review of the result by a human is although necessary. \par
-
-//comment result here??\par
+The algorithm described in this report is able to build acrostics with short words (we have achieved acrostics with 6 letters) in reasonable time. These acrostics have regular quality, in the sense that some paraphrasing operations are easily perceived by the reader $-$ the wrong hyphenation is one of them. The use of synonyms without checking the context lowers the quality as well. Additionally, the algorithm can generate a result in a few minutes for a good number of cases, what makes its use possible in some practical situation. The review of the result by a human is although necessary. \par
 
 In despite of these results, we did not develop all the operators described in the reference paper (\cite{Stein}) mainly for project time reasons. A broader experimental discussion with a higher number of tests and a discussion about quality metrics on the text would be interesting as well, although it would be out of the scope of the project. \par
 
-What should be noted in the problem of generating acrostics, is that the success depends highly on certain conditions of the text. When the target acrostic has uncommon letters, it becomes naturally more difficult to accomplish the result. This yields the need for more powerful operators, operators able to change more the structure of the text or insert new elements that aids the generation of the desired letters in the beginning of the lines. In this vein, a grammatical operator that could change swap the position of grammatical elements would be helpful, like illustrated in the example below. \par
+What should be noted in the problem of generating acrostics, is that the success depends highly on certain conditions of the text. When the target acrostic has uncommon letters, it becomes naturally more difficult to accomplish the result. This yields the need for more powerful operators, operators able to change more the structure of the text or insert new elements that aids the generation of the desired letters in the beginning of the lines. In this vein, a grammatical operator that could swap the position of grammatical elements would be helpful, like illustrated in the example below. \par
 
 \begin{figure}[H]
 \begin{quote}
@@ -563,9 +561,9 @@ Einfacher wird es, wenn Sie wissen, was Sie wollen.
 \caption{Example of possible additional operator}
 \end{figure}
 
-Other possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first search, while if the computing resources are scarce the desired is a depth-first search. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implementation of a n-gram database locally may smooth the problem. \par
+Another possible improvement is the development of a non-empirical method for defining costs for each operation. The choice of such parameters seems to be vital for the success of the search method. According to \cite[p.~2023]{Stein}, a bad choice may lead to a breadth-first search, while if the computing resources are scarce the desired is a depth-first search. The time consumed by requests to the n-gram web service are also sources of problems for such environments. But in this case the implementation of a n-gram database locally may smooth the problem. \par
 
-The use of the Netspeak API seems to be another issue, once it does not produce many options for inserting or removing words. A solution would be the implementation of the complete Google n-gram database locally. Even though the use of context in form of n-gram are sometimes too restrictive. This could be therefore a discussion for future work.
+The use of the Netspeak API seems to be another issue, since it does not produce many options for inserting or removing words. A solution would be the implementation of the complete Google n-gram database locally. Even though the use of context in form of n-gram are sometimes too restrictive. This could be therefore a discussion for future work.
 
 
 %----------------------------------------------------------------------------------------
