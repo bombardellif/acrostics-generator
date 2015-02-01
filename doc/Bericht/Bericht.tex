@@ -220,7 +220,7 @@ A more precise formulation of the $A^*$-algorithm is given in the following pseu
 \newpage
 
 \begin{algorithm}
-\caption{$A^*$-algorithm}\label{Astar}
+\caption{$A^*$-algorithm}\label{AstarAlgo}
 \begin{algorithmic}[1]
 \Function{$A^*$}{$start$, $acrostic$}
 
@@ -438,32 +438,32 @@ Naturally it is then required that the Redis server is running and listening to 
 \begin{quote}
 \begin{alltt}
 Diese war unterdessen in das Aussehen gerückt, was die Gegenwart
-\textbf{damals} hatte, sie war sehr schön, aber immer traurig, weil sie sich
+\emph{\textbf{damals}} hatte, sie war sehr schön, aber immer traurig, weil sie sich
 vor ihrem Bräutigam fürchtete und weil sie von den Schwestern, die
 keinen Mann bekommen, beständig seinetwegen geneckt wurde. Eines Tages
 rief ein heller Trompetenschall alle drei Schwestern ans Fenster.
 \end{alltt}
 \end{quote}
-\caption{Example of synonym application $-$ Original Text}
+\caption{Example of synonym application $-$ Original text}
 \end{figure}
 
 \begin{figure}[H]
 \begin{quote}
 \begin{alltt}
-Diese war unterdessen in das Aussehen gerückt, was die Gegenwart
-\textbf{in jenen tagen} hatte, sie war sehr schön, aber immer traurig, weil si-
-e sich vor ihrem Bräutigam fürchtete und weil sie von den Schwe-
-stern, die keinen Mann bekommen, beständig seinetwegen geneckt wurde.
-Eines Tages rief ein heller Trompetenschall alle drei Schwestern ans
+\textcolor{Blue}{D}iese war unterdessen in das Aussehen gerückt, was die Gegenwart
+\emph{\textbf{\textcolor{Blue}{i}n jenen tagen}} hatte, sie war sehr schön, aber immer traurig, weil si-
+\textcolor{Blue}{e} sich vor ihrem Bräutigam fürchtete und weil sie von den Schwe-
+\textcolor{Blue}{s}tern, die keinen Mann bekommen, beständig seinetwegen geneckt wurde.
+\textcolor{Blue}{E}ines Tages rief ein heller Trompetenschall alle drei Schwestern ans
 Fenster.
 \end{alltt}
 \end{quote}
-\caption{Example of synonym application $-$ Paraphrased Text}
+\caption{Example of synonym application $-$ Paraphrased text creating the acrostic "Diese"\label{fig:SynonymResult}}
 \end{figure}
 
 The application of the synonym operation brings much more possibilities for new paraphrased versions of the original text. It happens because, when comparing with Word Insertion and Deletion, the probability of changing a word in the text with this operation is higher since it does not check the context around the changed word, therefore allowing many words to be replaced.
 
-Consequently, the drawback is a considerable loss of quality in the results, because of the fact that synonyms are strongly related to context, and some replacements may change substantially the meanings of the resulting texts.
+Consequently, the drawback is a considerable loss of quality in the results, because of the fact that synonyms are strongly related to context, and some replacements may change substantially the meanings of the resulting texts (see example \ref{fig:SynonymResult}).
 
 \subsection{Line break}
 The fastest and most basic operation is the line break. A line break can be applied in two cases:
@@ -523,21 +523,19 @@ We let the Redis database started in the same system where the tests run. The in
 
 \section{Experiment Discussion}
 
-\begin{table}
+\begin{table}[h]
 \centering
-\begin{tabular}{l | l | l | l | l}
+\begin{tabular}{p{3cm} | p{2cm} | p{2cm} | p{2.5cm} | p{2cm} | p{2.5cm}}
 	\hline
-	\textbf{Configuration} & \textbf{Success Rate} & \textbf{Runtime} & \textbf{Nodes} & \textbf{Timeout Rate} \\ \hline
-		\textbf{A* + Self-reference}	& S	& S	& S	& S \\ \hline
-		\textbf{A* + Most Common}		& S	& S	& S	& S \\ \hline
-		\textbf{Greedy A* + Self-reference}	& S & S	& S	& S \\ \hline
-		\textbf{Greedy A* + Most Common}	& S & S	& S	& S \\
-	\hline
+	\textbf{Configuration} & \textbf{Success Rate} & \textbf{Success Runtime} & \textbf{Nodes When Success} & \textbf{Timeout Rate} & \textbf{Nodes When Timeout} \\ \hline
+	\textbf{A* + Self-reference}	& 37,62\%	& 31,97 s	& 46112,82	& 62,38\%	& 675794,78 \\ \hline
+	\textbf{A* + Most Common}		& 64,36\%	& 29,74 s	& 52547,68	& 35,64\%	& 568845,14 \\ \hline
+	\textbf{Greedy A* + Self-reference}	& 60,40\%	& 30,64 s	& 24033,31	& 39,60\%	& 488660,52 \\ \hline
+	\textbf{Greedy A* + Most Common}	& 76,24\%	& 9,40 s	& 24639,19	& 23,76\%	& 304303,41 \\ \hline
 \end{tabular}
 \label{tab:results}
 \caption{Experimental results}
 \end{table}
-
 
 %----------------------------------------------------------------------------------------
 %	Summary of Findings
@@ -605,21 +603,9 @@ Institut für Deutsche Sprache Programmbereich Korpuslinguistik, via Email, in D
 \bibitem{AstarAlgorithm}
 \url{http://de.wikipedia.org/wiki/A*-Algorithmus}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-\bibitem{AStar}
+\bibitem{Corpora}
 	Quasthoff, U.; M. Richter; C. Biemann. \emph{Corpus Portal for Search in Monolingual Corpora}. Proceedings of the fifth international conference on Language Resources and Evaluation, LREC 2006, Genoa, pp. 1799-1802.
+
 \bibitem{AStar}
 	Dechter, Rina; Pearl, Judea. \emph{Generalized best-first search strategies and the optimality of A*}. Journal of the ACM (JACM), Volume 32 Issue 3, Pages 505-536, New York, July 1985.
 \end{thebibliography}
