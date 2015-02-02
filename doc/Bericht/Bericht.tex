@@ -339,7 +339,7 @@ In this work several external resources were used. The algorithm itself was code
 \end{description}
 
 \section{Orthographic Operations}
-We split the operations in two groups: Semantic, which are the ones that may change the context and the meaning of the text, and orthographic, which are the ones where the employment does not change the meaning or the context. Most of these operators were selected based on their probability of occuring in a successful solution according to \cite[p.~2025]{Stein}. Below are the descriptions of the implemented orthographic operations.
+We split the operations in two groups: Semantic, which are the ones that may change the context and the meaning of the text, and orthographic, which are the ones where the employment does not change the meaning or the context. Most of these operators were selected based on their probability of occurring in a successful solution according to \cite[p.~2025]{Stein}. Below are the descriptions of the implemented orthographic operations.
 
 
 \subsection{Wrong Hyphenation}
@@ -443,7 +443,7 @@ might occur in several contexts, e.g.
 
 \end{itemize}
 
-Another issue is that there is a wide variety of punctuations which could mark the end of a sentence. These punctuations include question marks, exclamation marks, ellipses, semi-cola, cola.
+Another issue is that there is a wide variety of punctuation marks which could mark the end of a sentence. These punctuations include question marks, exclamation marks, ellipses, semi-cola, cola.
 
 To overcome these problems we make use of a sentence-splitter library, called Sentrick (cf. \cite{Sentrick}).
 
@@ -621,7 +621,7 @@ After running the mentioned test suite, we obtained the following results.
 	\hline
 \end{tabular}
 \label{tab:operations_freq}
-\caption{Operations employment frequency. The operation (Column1), frequency of use on a solution path in A* (column 2) and frequency of use on a solution path in Greedy A* (column 3).}
+\caption{Operations employment frequency. The operation (Column 1), frequency of use on a solution path in A* (Column 2) and frequency of use on a solution path in Greedy A* (Column 3).}
 \end{table}
 
 From these results we have reached a few conclusions. Differences are present between generating an acrostic of the most common word and generating a self referential acrostic. We attribute this fact to the most common words having fewer letters on average and containing letters that are in general more common. We have run two versions of our search algorithm, of these the greedy one had a higher success rate and spent a shorter amount of time on average. This is brought by the greedy algorithm being less concerned with the overall quality of the text, therefore achieving more results faster and with a lesser generation of nodes. The greedy algorithm values depth in the tree more highly than the other version, this is also a contributing fact to the faster finding of solutions.
