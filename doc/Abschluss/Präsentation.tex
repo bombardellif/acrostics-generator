@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+%\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pdfpages}
+\usepackage{textpos}
+
+\graphicspath{ {img/} }
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Generating Acrostics via Paraphrasing and Heuristic Search]{Generating Acrostics via Paraphrasing and Heuristic Search $-$ Final Presentation} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author[Bruno, Fernando, Jürgen, William]{Bruno Soares Fillmann\\
+Fernando Bombardelli da Silva\\
+Jürgen Bauer\\
+William Bombardelli da Silva
+} % Your name
+\institute[TU Berlin] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Technische Universität Berlin \\ % Your institution for the title page
+Datenbanksysteme und Informationsmanagement \\
+DBPRO – Database Projects (WS 2014/2015) \\
+\medskip
+%\textit{fbdasilva@inf.ufrgs.br} % Your email address
+}
+\date{9.02.2015} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Organization} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Goal of the Project} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Goal of the Project}
+\begin{itemize}
+	\item Creation of acrostics from German texts.
+	\item Use the A* algorithm to solve the search problem.
+	\item Apply the heuristic with proper modifications for the German language.
+	\item Find datasources in German (Thesaurus, hyphenation rules, etc.).
+	\item Implement the operators described in the paper to achieve results in German texts.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Goal of the Project}
+\begin{itemize}
+	\item Set proper costs for each of the operators.
+	\item Collect texts to use as examples.
+	\item Solve the problems in a reasonable time.
+	\item Evaluate the efficiency of our algorithm.
+	\item Evaluate the usage rate of the operators.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Subtasks from the Original Goals}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Subtasks from the Original Goals}
+\begin{itemize}
+	\item Understand the paper and the method.
+	\item Analyze the problem.
+	\item Design an architecture for the application.
+	\item Choose proper technological tools.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Subtasks from the Original Goals}
+\begin{itemize}
+	\item Choose the most promising operators.
+	\item Implement the best first (A*) algorithm itself.
+	\item Set up a test suite for evaluation of the application.
+	\item Interpret the results from the tests.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Development and Difficulties}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Development and Difficulties}
+\begin{itemize}
+	\item Make sequence diagram for the most critical parts of the project.
+	\item Develop the application in Java 8.
+	\item Use NetSpeakAPI for context dependent operators.
+	\item Use the key-value store server (Redis) for the synonyms database.
+	\item Use Open Thesaurus as the German synonyms database.
+	\item Use several Java libraries for hyphenation, line break, etc.
+	
+	% A little more about development
+	% the difficulties (Netspeak API slowness, bad synonyms, ...)
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Evaluation of Results}
+%------------------------------------------------
+% We find an example, comment it (1 Slide)
+% show the tables of evaluation (from our paper), comment it (1 Slide)
+
+%------------------------------------------------
+\section{Unreached Goals}
+%------------------------------------------------
+% Unreached goals
+
+%------------------------------------------------
+\section{References}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{References}
+\scriptsize
+\begin{thebibliography}{1}
+\bibitem{Stein}
+	Benno Stein, Matthias Hagen, and Christof Bräutigam. \emph{Generating Acrostics via Paraphrasing and Heuristic Search}. \\
+	In Junichi Tsujii and Jan Hajic, editors, 25th International Conference on Computational Linguistics (COLING 14), pages 2018-2029, August 2014. Association for Computational Linguistics.
+\bibitem{Spiegel}
+	Spiegel Online. \emph{Griechenland und die Euro-Zone: Der fast unmögliche Rausschmiss}. \\
+	http://www.spiegel.de/wirtschaft/soziales/griechenland-euro-austritt-waere-moeglich-aber-kompliziert-a-1011361.html. Am 07. Januar 2015
+\bibitem{Blau}
+	Hilko. \emph{Blau ist keine traurige Farbe}. \\
+	https://deutschlich.wordpress.com/2013/03/12/blau-ist-keine-traurige-farbe. Am 07. Januar 2015
+\bibitem{Redis}
+	\emph{Redis}. http://redis.io/. Am 07. Januar 2015
+\bibitem{Thesuarus}
+	\emph{Synonym - OpenThesaurus - Deutscher Thesaurus}. https://www.openthesaurus.de/. Am 07. Januar 2015
+\end{thebibliography}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{Questions?}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
