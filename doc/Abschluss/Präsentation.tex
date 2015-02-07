@@ -107,7 +107,7 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \medskip
 %\textit{fbdasilva@inf.ufrgs.br} % Your email address
 }
-\date{9.02.2015} % Date, can be changed to a custom date
+\date{09.02.2015} % Date, can be changed to a custom date
 
 \begin{document}
 
@@ -130,75 +130,221 @@ DBPRO – Database Projects (WS 2014/2015) \\
 
 \begin{frame}
 \frametitle{Goal of the Project}
+%\begin{itemize}	%\item
+\textbf{Goal:} Implement the methods and techniques to generate acrostics as described in 	\cite{Stein} for German language.
+	
+
+ 
+
+	
+	
+	
+	
+	%\item Use the A* algorithm to solve the search problem.
+	%\item Apply the heuristic with proper modifications for the German language.
+	%\item Find datasources in German (Thesaurus, hyphenation rules, etc.).
+	%\item Implement the operators described in the paper to achieve results in German texts.
+%\end{itemize}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Goal of the Project}
+%\begin{itemize}
+%	\item Set proper costs for each of the operators.
+%	\item Collect texts to use as examples.
+%	\item Solve the problems in a reasonable time.
+%	\item Evaluate the efficiency of our algorithm.
+%	\item Evaluate the usage rate of the operators.
+%\end{itemize}
+%\end{frame}
+
+%-----------------------------------------------
+\section{Subtasks of the original goal}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Subtasks of the original goal}
 \begin{itemize}
-	\item Creation of acrostics from German texts.
-	\item Use the A* algorithm to solve the search problem.
-	\item Apply the heuristic with proper modifications for the German language.
-	\item Find datasources in German (Thesaurus, hyphenation rules, etc.).
-	\item Implement the operators described in the paper to achieve results in German texts.
+	\item Understand the paper and the method
+	\item Design an architecture for the application	
+	\item Collect comparable German text corpora, statistics and libraries
+	(TEX Hyphenation, NetSpeakAPI, Thesaurus, etc.)
+	\item Implement the most promising paraphrasing operators\\
+	(line break, hyphenation, wrong 
+	hyphenation, word insertion/deletion, synonym, spelling)
+	\item Implement the $A^*$-algorithm
+	\item Evaluate the results
+	
+	
+	%\item Analyze the problem.
+	
+	%\item Choose proper technological tools.
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Goal of the Project}
-\begin{itemize}
-	\item Set proper costs for each of the operators.
-	\item Collect texts to use as examples.
-	\item Solve the problems in a reasonable time.
-	\item Evaluate the efficiency of our algorithm.
-	\item Evaluate the usage rate of the operators.
-\end{itemize}
-\end{frame}
+
+
+%\begin{frame}
+%\frametitle{Subtasks from the Original Goals}
+%\begin{itemize}
+%	\item Choose the most promising operators.
+%	\item Implement the best first (A*) algorithm itself.
+%	\item Set up a test suite for evaluation of the application.
+%	\item Interpret the results from the tests.
+%\end{itemize}
+%\end{frame}
 
 %------------------------------------------------
-\section{Subtasks from the Original Goals}
+\section{How we reached the goals?}
 %------------------------------------------------
 \begin{frame}
-\frametitle{Subtasks from the Original Goals}
+\frametitle{How we reached the goals?}
 \begin{itemize}
-	\item Understand the paper and the method.
-	\item Analyze the problem.
-	\item Design an architecture for the application.
-	\item Choose proper technological tools.
-\end{itemize}
-\end{frame}
+	\item UML-diagram for the application
+	\item Sequence diagram for the $A^*$-algorithm
+	\item Developed the application in Java 8 with Netbeans
 
-\begin{frame}
-\frametitle{Subtasks from the Original Goals}
-\begin{itemize}
-	\item Choose the most promising operators.
-	\item Implement the best first (A*) algorithm itself.
-	\item Set up a test suite for evaluation of the application.
-	\item Interpret the results from the tests.
-\end{itemize}
-\end{frame}
+	\item Use various libraries, web services and databases to implement
+	the operators
+	
+	\item Implemented a test application for evaluating the results, with
+	a timeout after 15 min
 
-%------------------------------------------------
-\section{Development and Difficulties}
-%------------------------------------------------
-\begin{frame}
-\frametitle{Development and Difficulties}
-\begin{itemize}
-	\item Make sequence diagram for the most critical parts of the project.
-	\item Develop the application in Java 8.
-	\item Use NetSpeakAPI for context dependent operators.
-	\item Use the key-value store server (Redis) for the synonyms database.
-	\item Use Open Thesaurus as the German synonyms database.
-	\item Use several Java libraries for hyphenation, line break, etc.
+	
+	
+	%\item Use NetSpeakAPI for context dependent operators.
+	%\item Use the key-value store server (Redis) for the synonyms database.
+	%\item Use Open Thesaurus as the German synonyms database.
+	%\item Use several Java libraries for hyphenation, line break, etc.
 	
 	% A little more about development
 	% the difficulties (Netspeak API slowness, bad synonyms, ...)
 \end{itemize}
 \end{frame}
 
+
 %------------------------------------------------
-\section{Evaluation of Results}
+\section{Which difficulties occur?}
 %------------------------------------------------
+\begin{frame}
+\frametitle{Which difficulties occur?}
+\begin{itemize}
+	\item Synonym operation only inserts synonyms without considering
+	the context (Google N-Gram)
+	
+	\item NetSpeakAPI don't yields many results for German language
+	
+	
+	
+	\item Organization of the input text as line:
+	%\begin{itemize}
+		
+%		\item no clear separation of operator applications
+%		(e.g. various hyphens produced by ensure constraints)
+		
+		\item more than one letter at a time could be generated, misfits
+		the theoretical framework of the $A^*$-algorithm as described in the paper.
+	
+	%\end{itemize}	
+	
+	
+	
+
+	
+
+
+		
+	
+	
+	%\item Use NetSpeakAPI for context dependent operators.
+	%\item Use the key-value store server (Redis) for the synonyms database.
+	%\item Use Open Thesaurus as the German synonyms database.
+	%\item Use several Java libraries for hyphenation, line break, etc.
+	
+	% A little more about development
+	% the difficulties (Netspeak API slowness, bad synonyms, ...)
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Which difficulties occur?}
+\begin{itemize}
+
+	
+	\item \textbf{Recommendation:} view the text as one single line and apply
+	line break only to generate a letter. When the acrostic is generated,
+	break the lines according to the constraints. 
+
+
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%------------------------------------------------
+\section{Unreached Goals}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Unreached Goals}
+\begin{itemize}
+
+	
+	\item only the most promising operators were implemented
+	\item no real operator to generate the first letter of the acrostic
+	\item no operator \textbf{not} mentioned in the paper was implemented
+	
+
+
+\end{itemize}
+\end{frame}
+
+
+
+%------------------------------------------------
+\section{Example}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Example}
+Here it would be great to have an example without wrong hyphenation.
+
+
+\end{frame}
+
+
+
+
+
+
 % We find an example, comment it (1 Slide)
 % show the tables of evaluation (from our paper), comment it (1 Slide)
 
 %------------------------------------------------
-\section{Unreached Goals}
+
 %------------------------------------------------
 % Unreached goals
 
