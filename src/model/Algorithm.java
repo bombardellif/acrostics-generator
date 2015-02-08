@@ -57,7 +57,7 @@ public class Algorithm {
         //has to be corrected later!
         ArrayList<Operation> operatorList = new ArrayList<>();
         operatorList.add(new LineBreakOperation());
-        operatorList.add(new WrongHyphenationOperation());
+        //operatorList.add(new WrongHyphenationOperation());
         operatorList.add(new WordInsertionDeletionOperation());
         operatorList.add(new SynonymOperation());
         operatorList.add(new HyphenationOperation());

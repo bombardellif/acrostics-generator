@@ -37,6 +37,6 @@ public class WordInsertionDeletionOperation extends ContextDependentOperation {
     
     @Override
     public String toString(){
-        return "WorInsertionDeletionOperation";
+        return "WordInsertionDeletionOperation";
     }
 }

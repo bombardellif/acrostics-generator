@@ -125,20 +125,13 @@ DBPRO – Database Projects (WS 2014/2015) \\
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{Goal of the Project} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Goals} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
 \begin{frame}
 \frametitle{Goal of the Project}
 %\begin{itemize}	%\item
-\textbf{Goal:} Implement the methods and techniques to generate acrostics as described in 	\cite{Stein} for German language.
-	
-
- 
-
-	
-	
-	
+\textbf{Goal:} Implement the methods and techniques to generate acrostics for the German language as described in the paper \emph{Generating Acrostics via Paraphrasing and Heuristic Search} of Benno Stein, Matthias Hagen, and Christof Bräutigam, published in August 2014 \cite{Stein}.
 	
 	%\item Use the A* algorithm to solve the search problem.
 	%\item Apply the heuristic with proper modifications for the German language.
@@ -159,7 +152,7 @@ DBPRO – Database Projects (WS 2014/2015) \\
 %\end{frame}
 
 %-----------------------------------------------
-\section{Subtasks of the original goal}
+\section{Subtasks}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Subtasks of the original goal}
@@ -194,18 +187,16 @@ DBPRO – Database Projects (WS 2014/2015) \\
 %\end{frame}
 
 %------------------------------------------------
-\section{How we reached the goals?}
+\section{Method}
 %------------------------------------------------
 \begin{frame}
-\frametitle{How we reached the goals?}
+\frametitle{How have we reached the goals?}
 \begin{itemize}
 	\item UML-diagram for the application
 	\item Sequence diagram for the $A^*$-algorithm
 	\item Developed the application in Java 8 with Netbeans
-
-	\item Use various libraries, web services and databases to implement
+	\item Used various libraries, web services and databases to implement
 	the operators
-	
 	\item Implemented a test application for evaluating the results, with
 	a timeout after 15 min
 
@@ -215,95 +206,44 @@ DBPRO – Database Projects (WS 2014/2015) \\
 	%\item Use the key-value store server (Redis) for the synonyms database.
 	%\item Use Open Thesaurus as the German synonyms database.
 	%\item Use several Java libraries for hyphenation, line break, etc.
-	
-	% A little more about development
-	% the difficulties (Netspeak API slowness, bad synonyms, ...)
 \end{itemize}
 \end{frame}
 
 
 %------------------------------------------------
-\section{Which difficulties occur?}
+\section{Difficulties}
 %------------------------------------------------
 \begin{frame}
-\frametitle{Which difficulties occur?}
+\frametitle{Which difficulties did occur?}
 \begin{itemize}
 	\item Synonym operation only inserts synonyms without considering
 	the context (Google N-Gram)
-	
-	\item NetSpeakAPI don't yields many results for German language
-	
-	
-	
+	\item Lack of powerful grammatical operator
+	\item NetSpeakAPI doesn't yield many results for the German language
+	\item NetSpeakAPI's requests to the web server takes much time
+	\item The empirical choice of costs is not optimal for the search
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Which difficulties did occur?}
+\begin{itemize}
 	\item Organization of the input text as line:
-	%\begin{itemize}
+	\begin{itemize}
 		
 %		\item no clear separation of operator applications
 %		(e.g. various hyphens produced by ensure constraints)
 		
-		\item more than one letter at a time could be generated, misfits
-		the theoretical framework of the $A^*$-algorithm as described in the paper.
-	
-	%\end{itemize}	
-	
-	
-	
-
-	
-
-
+		\item More than one letter of the acrostic can be generated at a time, not following the theoretical framework of the $A^*$-algorithm as described in the paper.
 		
-	
-	
-	%\item Use NetSpeakAPI for context dependent operators.
-	%\item Use the key-value store server (Redis) for the synonyms database.
-	%\item Use Open Thesaurus as the German synonyms database.
-	%\item Use several Java libraries for hyphenation, line break, etc.
-	
-	% A little more about development
-	% the difficulties (Netspeak API slowness, bad synonyms, ...)
+		\item \textbf{Recommendation:} view the text as one single line and apply
+			line break only to generate a letter. When the acrostic is generated,
+			break the lines according to the constraints.
+	\end{itemize}
 \end{itemize}
 \end{frame}
-
-
-
-\begin{frame}
-\frametitle{Which difficulties occur?}
-\begin{itemize}
-
-	
-	\item \textbf{Recommendation:} view the text as one single line and apply
-	line break only to generate a letter. When the acrostic is generated,
-	break the lines according to the constraints. 
-
-
-\end{itemize}
-\end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 %------------------------------------------------
@@ -312,14 +252,11 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \begin{frame}
 \frametitle{Unreached Goals}
 \begin{itemize}
-
-	
-	\item only the most promising operators were implemented
-	\item no real operator to generate the first letter of the acrostic
-	\item no operator \textbf{not} mentioned in the paper was implemented
-	
-
-
+	\item Only the most promising operators were implemented.
+	\item No real operator to generate the first letter of the acrostic
+	\item No operator \textbf{not} mentioned in the paper was coded.
+	\item No local databases for \emph{n-gram} were implemented.
+	\item No sophisticated quality measures were implemented.
 \end{itemize}
 \end{frame}
 
@@ -329,25 +266,37 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \section{Example}
 %------------------------------------------------
 \begin{frame}
+
 \frametitle{Example}
-Here it would be great to have an example without wrong hyphenation.
+Original Text: \footnote{\tiny \url{http://german.airportljubljana.co/Billig\_nach\_Klagenfurt.php}} \\
+\texttt{\scriptsize Billig nach Hamburg. 24/7 taxidienst bietet ihnen kostengünstige und \\
+zuverlässige verkehr aus Kiel. Mit erfahrung in der branche wir \\
+garantieren die niedrigsten preis nach Hamburg. Gleiche preis gilt \\
+auch wenn sie taxi aus Kiel stadt nach Hamburg nehmen. \\}
 
+Final Text: \par
 
+\texttt{\footnotesize{B} \scriptsize illig nach Hamburg. 24/7 taxidienst bietet ihnen kostengünstige \\
+\footnotesize{u} \scriptsize nd zuverlässige verkehr aus Kiel. Mit erfahrung in der bran- \\
+\footnotesize{c} \scriptsize he wir garantieren ihnen die niedrigsten preis nach \\
+\footnotesize{H} \scriptsize amburg. Gleiche preis gilt auch wenn sie taxi aus Kiel stadt nach \\
+Hamburg nehmen. \\}
 \end{frame}
 
-
-
-
-
-
-% We find an example, comment it (1 Slide)
 % show the tables of evaluation (from our paper), comment it (1 Slide)
-
 %------------------------------------------------
 
 %------------------------------------------------
-% Unreached goals
+\section{Results}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Results}
+% show the tables of evaluation (from our paper), comment it (1 Slide)
+\end{frame}
+%------------------------------------------------
 
+%------------------------------------------------
+% Bibliography
 %------------------------------------------------
 \section{References}
 %------------------------------------------------
