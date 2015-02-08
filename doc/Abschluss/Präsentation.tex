@@ -253,7 +253,7 @@ DBPRO – Database Projects (WS 2014/2015) \\
 \frametitle{Unreached Goals}
 \begin{itemize}
 	\item Only the most promising operators were implemented.
-	\item No real operator to generate the first letter of the acrostic
+	\item No effective operator to generate the first letter of the acrostic.
 	\item No operator \textbf{not} mentioned in the paper was coded.
 	\item No local databases for \emph{n-gram} were implemented.
 	\item No sophisticated quality measures were implemented.
@@ -290,8 +290,64 @@ Hamburg nehmen. \\}
 \section{Results}
 %------------------------------------------------
 \begin{frame}
+\frametitle{Results $-$ Evaluation}
+\begin{itemize}
+	\item 100 Texts.
+	\item 4 different ways.
+		\begin{description}
+			\item[A* + Self-referential:] Regular A* as the algorithm and the first word of the text as the acrostic.
+			\item[A* + Most Common:] Regular A* as the algorithm and the most common word in German, that starts with the first letter of the text, as the acrostic.
+			\item[Greedy A* + Self-referential:] Greedy A* (ignore costs of operations) as the algorithm and the first word of the text as the acrostic.
+			\item[Greedy A* + Most Common:] Greedy A* as the algorithm and the most common word in German, that starts with the first letter of the text, as the acrostic.
+		\end{description}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{Results}
 % show the tables of evaluation (from our paper), comment it (1 Slide)
+
+\begin{small}
+\begin{table}[h]
+\centering
+\begin{tabular}{p{2.4cm} | p{1.3cm} | p{1.3cm} | p{1.3cm} | p{1.3cm} | p{1.3cm}}
+	\hline
+	\textbf{Configuration} & \textbf{Success Rate} & \textbf{Success Runtime} & \textbf{Nodes When Success} & \textbf{Timeout Rate} & \textbf{Nodes When Timeout} \\ \hline
+	\textbf{A* + Self-referential}	& 37,62\%	& 31,97 s	& 46112,82	& 62,38\%	& 675794,78 \\ \hline
+	\textbf{A* + Most Common}		& 64,36\%	& 29,74 s	& 52547,68	& 35,64\%	& 568845,14 \\ \hline
+	\textbf{Greedy A* + Self-referential}	& 60,40\%	& 30,64 s	& 24033,31	& 39,60\%	& 488660,52 \\ \hline
+	\textbf{Greedy A* + Most Common}	& 76,24\%	& 9,40 s	& 24639,19	& 23,76\%	& 304303,41 \\ \hline
+\end{tabular}
+\label{tab:results}
+\caption{Experimental results}
+\end{table}
+\end{small}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results $-$ Frequency of the operators}
+% show the tables of evaluation (from our paper), comment it (1 Slide)
+
+\begin{small}
+\begin{table}[h]
+\centering
+\begin{tabular}{l | l | l}
+	\hline
+	\textbf{Operation} &	\textbf{A*} &	\textbf{Greedy A*} \\ \hline
+	\textbf{LineBreak} &	23,74\% &	14,29\% \\
+	\textbf{WrongHyphenation} &	39,39\% &	31,63\% \\
+	\textbf{Hyphenation} &	5,05\% &	0,34\% \\
+	\textbf{WordInsertionDeletion} &	0,51\% &	0,34\% \\
+	\textbf{Synonym} &	29,80\% &	45,58\% \\
+	\textbf{WrongSpelling} &	1,52\% &	7,82\% \\
+	\hline
+\end{tabular}
+\label{tab:operations_freq}
+\caption{Operations employment frequency}
+\end{table}
+\end{small}
+
 \end{frame}
 %------------------------------------------------
 
@@ -308,16 +364,15 @@ Hamburg nehmen. \\}
 \bibitem{Stein}
 	Benno Stein, Matthias Hagen, and Christof Bräutigam. \emph{Generating Acrostics via Paraphrasing and Heuristic Search}. \\
 	In Junichi Tsujii and Jan Hajic, editors, 25th International Conference on Computational Linguistics (COLING 14), pages 2018-2029, August 2014. Association for Computational Linguistics.
-\bibitem{Spiegel}
-	Spiegel Online. \emph{Griechenland und die Euro-Zone: Der fast unmögliche Rausschmiss}. \\
-	http://www.spiegel.de/wirtschaft/soziales/griechenland-euro-austritt-waere-moeglich-aber-kompliziert-a-1011361.html. Am 07. Januar 2015
-\bibitem{Blau}
-	Hilko. \emph{Blau ist keine traurige Farbe}. \\
-	https://deutschlich.wordpress.com/2013/03/12/blau-ist-keine-traurige-farbe. Am 07. Januar 2015
-\bibitem{Redis}
-	\emph{Redis}. http://redis.io/. Am 07. Januar 2015
-\bibitem{Thesuarus}
-	\emph{Synonym - OpenThesaurus - Deutscher Thesaurus}. https://www.openthesaurus.de/. Am 07. Januar 2015
+\bibitem{Netspeak}
+	Martin Potthast, Martin Trenkmann, and Benno Stein.
+	\emph{Netspeak: Assisting Writers in Choosing Words}. \\
+	In Cathal Gurrin et al, editors, Advances in Information Retrieval. 32nd European Conference on Information Retrieval (ECIR 10) volume 5993 of Lecture Notes in Computer Science, pages 672, Berlin Heidelberg New York, March 2010. Springer.
+\bibitem{FirstLetterFrequencies}
+\emph{Private Communication} with Rainer Perkuhn,
+Institut für Deutsche Sprache Programmbereich Korpuslinguistik, via Email, in Dezember 2014. He send us two files of an old study of Cyril Belica, including the first letter frequencies.
+\bibitem{AStar}
+	Dechter, Rina; Pearl, Judea. \emph{Generalized best-first search strategies and the optimality of A*}. Journal of the ACM (JACM), Volume 32 Issue 3, Pages 505-536, New York, July 1985.
 \end{thebibliography}
 \end{frame}
 %------------------------------------------------
