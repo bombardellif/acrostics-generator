@@ -129,15 +129,54 @@ DBPRO – Database Projects (WS 2014/2015) \\
 %------------------------------------------------
 
 \begin{frame}
+\frametitle{The Problem}
+\begin{itemize}
+\item Given a text T and an acrostic X, find a paraphrased version of T that encodes X in the first letters of each line.
+\end{itemize}
+Original Text: \footnote{\tiny \url{http://www.gutenberg.org/browse/languages/de}} \\
+\texttt{\tiny Zuerst wollte er mit dem unteren Teil seines Körpers aus dem Bett \\
+hinauskommen, aber dieser untere Teil, den er übrigens noch nicht \\
+gesehen hatte und von dem er sich auch keine rechte Vorstellung machen \\
+konnte, erwies sich als zu schwer beweglich; es ging so langsam; und \\
+als er schließlich, fast wild geworden, mit gesammelter Kraft, ohne \\
+Rücksicht sich vorwärtsstieß, hatte er die Richtung falsch gewählt...\\}
+
+Result Text: \\
+
+\texttt{\scriptsize{Z}\tiny uerst wollte er mit dem unteren Teil seines Körpers a-\\
+\scriptsize{u}\tiny s dem Bett hinauskommen, aber dieser untere Teil, den\\
+\scriptsize{e}\tiny r übrigens noch nicht gesehen hatte und von dem er sich auch keine\\
+\scriptsize{r}\tiny echte Vorstellung machen konnte, erwies sich als zu\\
+\scriptsize{s}\tiny chwer beweglich; es ging so langsam; und als er schließlich, fas-\\
+\scriptsize{t}\tiny \ wild geworden, mit gesammelter Kraft, ohne Rücksicht sich\\
+vorwärtsstieß, hatte er die Richtung falsch gewählt...\\}
+\end{frame}
+
+\begin{frame}
 \frametitle{Goal of the Project}
 %\begin{itemize}	%\item
-\textbf{Goal:} Implement the methods and techniques to generate acrostics for the German language as described in the paper \emph{Generating Acrostics via Paraphrasing and Heuristic Search} of Benno Stein, Matthias Hagen, and Christof Bräutigam, published in August 2014 \cite{Stein}.
+\textbf{Goal:} Implement the methods and techniques to generate acrostics for the German language as described in the paper \emph{Generating Acrostics via Paraphrasing and Heuristic Search} of Benno Stein, Matthias Hagen, and Christof Bräutigam, published in August 2014 \cite{Stein}. \par
+
+\textbf{Main idea of the algorithm:}
+	\begin{itemize}
+	\item Modeled as a search problem in a tree.
+	\item The vertices are states (texts) and the edges are operations over states.
+	\item Artificial intelligence is applied for the search strategy (A* Algorithm).
+	\end{itemize}
 	
 	%\item Use the A* algorithm to solve the search problem.
 	%\item Apply the heuristic with proper modifications for the German language.
 	%\item Find datasources in German (Thesaurus, hyphenation rules, etc.).
 	%\item Implement the operators described in the paper to achieve results in German texts.
 %\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\vspace*{-15pt}
+\hspace*{-25pt}
+\includegraphics[scale=0.44]{a_star.png}
+\end{figure}
 \end{frame}
 
 %\begin{frame}
@@ -276,14 +315,32 @@ auch wenn sie taxi aus Kiel stadt nach Hamburg nehmen. \\}
 
 Final Text: \par
 
-\texttt{\footnotesize{B} \scriptsize illig nach Hamburg. 24/7 taxidienst bietet ihnen kostengünstige \\
-\footnotesize{u} \scriptsize nd zuverlässige verkehr aus Kiel. Mit erfahrung in der bran- \\
-\footnotesize{c} \scriptsize he wir garantieren ihnen die niedrigsten preis nach \\
-\footnotesize{H} \scriptsize amburg. Gleiche preis gilt auch wenn sie taxi aus Kiel stadt nach \\
+\texttt{\footnotesize{B}\scriptsize illig nach Hamburg. 24/7 taxidienst bietet ihnen kostengünstige \\
+\footnotesize{u}\scriptsize nd zuverlässige verkehr aus Kiel. Mit erfahrung in der bran- \\
+\footnotesize{c}\scriptsize he wir garantieren ihnen die niedrigsten preis nach \\
+\footnotesize{H}\scriptsize amburg. Gleiche preis gilt auch wenn sie taxi aus Kiel stadt nach \\
 Hamburg nehmen. \\}
 \end{frame}
 
-% show the tables of evaluation (from our paper), comment it (1 Slide)
+\begin{frame}
+\frametitle{Example}
+Original Text: \footnote{\tiny \url{http://www.gutenberg.org/browse/languages/de}} \\
+\texttt{\scriptsize Diese war unterdessen in das Aussehen gerückt, was die Gegenwart\\
+damals hatte, sie war sehr schön, aber immer traurig, weil sie sich\\
+vor ihrem Bräutigam fürchtete und weil sie von den Schwestern, die\\
+keinen Mann bekommen, beständig seinetwegen geneckt wurde. Eines Tages\\
+rief ein heller Trompetenschall alle drei Schwestern ans...\\
+}
+
+Final Text: \par
+
+\texttt{\footnotesize{D}\scriptsize iese war unterdessen in das Aussehen gerückt, was die Gegenwart\\
+\footnotesize{i}\scriptsize n jenen tagen hatte, sie war sehr schön, aber immer traurig, weil si-\\
+\footnotesize{e}\scriptsize \ sich vor ihrem Bräutigam fürchtete und weil sie von den Schwe-\\
+\footnotesize{s}\scriptsize tern, die keinen Mann bekommen, beständig seinetwegen geneckt wurde.\\
+\footnotesize{E}\scriptsize ines Tages rief ein heller Trompetenschall alle drei Schwestern ans...\\}
+\end{frame}
+
 %------------------------------------------------
 
 %------------------------------------------------
